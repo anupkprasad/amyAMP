@@ -162,7 +162,7 @@ def read_fasta(*fasta_files) -> dict:
 
 
 ### Table of physiochemical properties, need for PC6 conversion 
-def get_conversion_table(path = "/media/anupkumar/Backup Plus/project/ML_project/data_master/physical_chemical_6.txt", norm=True): 
+def get_conversion_table(path = "/media/anup/BackupPlus/project/ML_project/data_master/physical_chemical_6.txt", norm=True): 
     table = pd.read_csv(path, sep=" ", index_col=0)
     index = list(table.index)
     if norm:
@@ -491,7 +491,7 @@ def tSNE2D_df(fastafiles, table, filename):
         encoded = get_encoded_seqs(selected_seqs, table)
         encoded = encoded.reshape(-1,30,6)
         encoded6f = encoded.reshape(-1,6)
-        tsne = TSNE(n_components=2, random_state=0, learning_rate=70, n_iter=2000, n_iter_without_progress=400, verbose=1)
+        tsne = TSNE(n_components=2, random_state=0, learning_rate=70, max_iter=2000, n_iter_without_progress=400, verbose=1)
         #tsne = TSNE(n_components=2)
         encoded3f = tsne.fit_transform(encoded6f)
         print("\n\n\n " + str(len(encoded3f)) + "\n\n\n ")
@@ -521,7 +521,7 @@ def tSNE3DI(fastafiles, table, filename, data_size = 250):
         
         encoded = encoded.reshape(-1,30,6)
         encoded6f = encoded.reshape(-1,6)
-        tsne = TSNE(n_components=3, random_state=0, learning_rate=70, n_iter=2000, n_iter_without_progress=400, verbose=1)
+        tsne = TSNE(n_components=3, random_state=0, learning_rate=70, max_iter=2000, n_iter_without_progress=400, verbose=1)
         encodedf = tsne.fit_transform(encoded6f)
         print(len(encodedf))
         lbl = []
@@ -697,7 +697,7 @@ def tSNE(fastafiles, table, filename, data_size = 128):
         
         encoded = encoded.reshape(-1,30,6)
         encoded6f = encoded.reshape(-1,6)
-        tsne = TSNE(n_components=3, random_state=0, learning_rate=70, n_iter=2000, n_iter_without_progress=400, verbose=1)
+        tsne = TSNE(n_components=3, random_state=0, learning_rate=70, max_iter=2000, n_iter_without_progress=400, verbose=1)
         encoded3f = tsne.fit_transform(encoded6f)
         ax.scatter(encoded3f[:,0], encoded3f[:,1], encoded3f[:,2], c = c[i-1], marker = marker[i-1], label=phio_prop[i-1], alpha = alpha[i-1])
     ax.legend()
@@ -725,7 +725,7 @@ def tSNE2D(fastafiles, table, filename, data_size = 128):
         
         encoded = encoded.reshape(-1,30,6)
         encoded6f = encoded.reshape(-1,6)
-        tsne = TSNE(n_components=2, random_state=0, learning_rate=70, n_iter=2000, n_iter_without_progress=400, verbose=1)
+        tsne = TSNE(n_components=2, random_state=0, learning_rate=70, max_iter=2000, n_iter_without_progress=400, verbose=1)
         encoded2f = tsne.fit_transform(encoded6f)
         ax.scatter(encoded2f[:,0], encoded2f[:,1], c = c[i-1], marker = marker[i-1], label=phio_prop[i-1], alpha = alpha[i-1])
     ax.legend()

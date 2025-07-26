@@ -9,12 +9,28 @@ It imports models to do basic stats for model evaluations
     plot frequency
     plot tSNE
 """
-
+import sys
+sys.path.append("/home/anup/workspace/amyAMP")
 import torch
 from __main__ import *  ### import namespace of caller script
 from scripts import util
 from models_nn import model as model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+filter_max = 100  ## filters in Conv and linear (encoded dimention) NN
+run_num = 10  ## number of training run
+batch_generate = 1000 ###number of peptides want to generate
+
+path_data = "/home/anup/workspace/amyAMP/data_master/"
+fasta_AMPs = [path_data+"amps/dbaasp/dbaasp_APR_processed.fasta"]
+fasta_AMYs =[path_data+"amyloid/amys_uniqueAI4AMP_processedtotrain.fasta"]
+
+path_root = os.path.dirname(os.path.abspath(__file__))
+path_model = path_root + "/model_saved_231206/"   ### model folder which is gooing to analyse
+
+path_result = path_model + "/results_" + str(run_num)+  "/"  ### analysis output dir
+if not os.path.exists(path_result):
+    os.makedirs(path_result)
 
 
 path_data = path_data
@@ -32,30 +48,8 @@ filter_max = filter_max  ## maximum filters applied in NN
 run_num = run_num  ## number of training run
 batch_generate = batch_generate ###number of peptides want to generate
 
-####### load models
-G, E, D = model.get_model_and_optimizer(filter_max)
 
-stat = torch.load(path_model + 'modelsNoptimiser_state_dict_r'+ str(run_num)+'.tar')
-stat_list = {'D_state_dict': D,
-'E_state_dict': E,
-'G_state_dict': G}
-
-for i, (key ,value) in enumerate(stat_list.items()):
-    if i < 3:
-        value.to(device)
-    value.load_state_dict(stat[key])
-        
-G.eval()
-E.eval()
-D.eval()
-
-########        write all fasta 
 table = util.get_conversion_table(path_data+"physical_chemical_6.txt")
-#generate fasta
-z = torch.randn(batch_generate, filter_max, 1, 1)
-z = z.to(device)
-generated_seqs = util.generate_seqs(G, table, z)
-util.write_fasta(generated_seqs, path_result + "seqs_generated"+str(batch_generate)+".fasta")
 
 ### write AMPs and AMYs shuffled seqs
 seq_object = util.get_shuffled_sample(*fasta_AMPs,num_seqs = batch_generate)
@@ -65,7 +59,7 @@ seq_object = util.get_shuffled_sample(*fasta_AMYs,num_seqs = batch_generate)
 util.write_fasta(seq_object, path_result + "seqs_realAMYs"+ str(batch_generate) + ".fasta")
 
 
-#####        analysis and plot
+#####        analsis and plot
 ###violin plot of phy_chem properties
 l_fasta = [path_result+"seqs_generated"+str(batch_generate)+".fasta",
            path_result+"seqs_realAMPs"+str(batch_generate)+".fasta",
@@ -106,6 +100,9 @@ for i, f in enumerate(l_fasta):
     else:
         fr = util.GetPhychem(f, amidated=True).aa_freq()
         fr_list.append(list(fr.values()))
+
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 df = pd.DataFrame(fr_list[1:])

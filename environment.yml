@@ -1,0 +1,16 @@
+name: amyAMP
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - python=3.11
+  - seaborn
+  - pytorch
+  - matplotlib
+  - scikit-learn
+  - ipykernel
+  - biopython
+  - peptides
+  - plotly
+prefix: /home/anup/miniconda3/envs/amyAMP
