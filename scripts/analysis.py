@@ -1,4 +1,5 @@
-#%% module info
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 It imports models to do basic stats for model evaluations
     generate peptide sequences
@@ -8,13 +9,14 @@ It imports models to do basic stats for model evaluations
     plot frequency
     plot tSNE
 """
-#%%import libraries
+
 import torch
 from __main__ import *  ### import namespace of caller script
 from scripts import util
 from models_nn import model as model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#%%variables
+
+
 path_data = path_data
 fasta_AMPs = fasta_AMPs
 fasta_AMYs =fasta_AMYs
@@ -30,7 +32,7 @@ filter_max = filter_max  ## maximum filters applied in NN
 run_num = run_num  ## number of training run
 batch_generate = batch_generate ###number of peptides want to generate
 
-#%%load models
+####### load models
 G, E, D = model.get_model_and_optimizer(filter_max)
 
 stat = torch.load(path_model + 'modelsNoptimiser_state_dict_r'+ str(run_num)+'.tar')
@@ -47,7 +49,7 @@ G.eval()
 E.eval()
 D.eval()
 
-#%% write all fasta 
+########        write all fasta 
 table = util.get_conversion_table(path_data+"physical_chemical_6.txt")
 #generate fasta
 z = torch.randn(batch_generate, filter_max, 1, 1)
@@ -62,7 +64,8 @@ util.write_fasta(seq_object, path_result + "seqs_realAMPs"+str(batch_generate)+"
 seq_object = util.get_shuffled_sample(*fasta_AMYs,num_seqs = batch_generate)
 util.write_fasta(seq_object, path_result + "seqs_realAMYs"+ str(batch_generate) + ".fasta")
 
-#%% analsis and plot
+
+#####        analysis and plot
 ###violin plot of phy_chem properties
 l_fasta = [path_result+"seqs_generated"+str(batch_generate)+".fasta",
            path_result+"seqs_realAMPs"+str(batch_generate)+".fasta",
@@ -79,7 +82,7 @@ for p in prop:
         data.append(phychem_prop1[p])
     util.plot_violin(data, path_result+p + ".png", title=p.capitalize())
 
-#%%plot loss and identity
+############    plot loss and identity
 f = path_model + 'collectedseqs_loss_epochinfo_r'+ str(run_num)+'.json'
 # returns JSON object as a dictionary
 loss_n_identity = torch.load(f)
