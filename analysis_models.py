@@ -7,10 +7,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 filter_max = 100  ## filters in Conv and linear (encoded dimention) NN
-run_num = 10  ## number of training run
+run_num = 2  ## number of training run
 batch_generate = 1000 ###number of peptides want to generate
 
-path_data = "/home/anup/workspace/amyAMP/data_master/"
+path_data = "/home/anupkumar/workplace/amyAMP/data_master/"
 fasta_AMPs = [path_data+"amps/dbaasp/dbaasp_APR_processed.fasta"]
 fasta_AMYs =[path_data+"amyloid/amys_uniqueAI4AMP_processedtotrain.fasta"]
 
@@ -33,6 +33,6 @@ conditions_AMPs = {"AMP Score": 0.95,"Hemolysis /Y/N": "No"}
 score_AMYs = 0.95
 
 import sys
-sys.path.append("/home/anup/workspace/amyAMP")
+sys.path.append("/home/anup/workplace/amyAMP")
 from scripts import analysis_generated_seqs
 ai4amp_waltz = analysis_generated_seqs.ai4amp_waltz
