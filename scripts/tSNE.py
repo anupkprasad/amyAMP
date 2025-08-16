@@ -64,10 +64,11 @@ def get_embedded_data(fastafiles, table):
         if len(selected_seqs) == 0:
             group_sizes.append(0)
             continue
-            
+        
         encoded = get_encoded_seqs(selected_seqs, table)
         encoded_flat = encoded.reshape(-1, 30 * 6)
         
+        encoded_flat = encoded_flat[0:125]
         all_data.append(encoded_flat)
         group_sizes.append(len(encoded_flat))
     
@@ -87,7 +88,7 @@ def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
     """
     Improved t-SNE with better parameters and multiple perplexity values
     """
-    colors = ['#FF6B6B', "#870BA5", '#45B7D1', "#E7EF04"]
+    colors = ['red','black', "blue", "cyan"]
     markers = ['o', 's', '^', 'D']
     
     scaler = StandardScaler()
@@ -142,7 +143,7 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
         print("UMAP not installed. Install with: pip install umap-learn")
         return None
     
-    colors = ['#FF6B6B', "#870BA5", '#45B7D1', "#E7EF04"]
+    colors = ['red','black', "blue", "cyan"]
     
     scaler = StandardScaler()
     combined_data_scaled = scaler.fit_transform(embedded_data)
@@ -178,7 +179,7 @@ def pca_analysis(embedded_data, group_sizes, group_labels, filename_base):
     """
     PCA analysis with variance explanation
     """
-    colors = ['#FF6B6B', "#870BA5", '#45B7D1', "#E7EF04"]
+    colors = ['red','black', "blue", "cyan"]
     
     scaler = StandardScaler()
     combined_data_scaled = scaler.fit_transform(embedded_data)
@@ -224,10 +225,10 @@ def density_plots(embedded_data, group_sizes, group_labels, filename_base):
     Create density plots for each physicochemical property
     """
     property_names = ["H1", "V", "P1", "Pl", "PKa", "NCl"]
-    colors = ['#FF6B6B', "#870BA5", '#45B7D1', "#E7EF04"]
+    colors = ['red','black', "blue", "cyan"]
     
     # Reshape data to get individual amino acid features
-    reshaped_data = embedded_data.reshape(-1, 30 * 6)
+    reshaped_data = embedded_data.reshape(-1, 30 , 6)
     avg_features = np.mean(reshaped_data, axis=1)  # Average over sequence length
     
     fig, axes = plt.subplots(2, 3, figsize=(18, 12), dpi=300)
@@ -271,7 +272,7 @@ def comprehensive_analysis(fastafiles, table, output_dir):
     improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
     umap_visualization(embedded_data, group_sizes, group_labels, filename_base)
     pca_analysis(embedded_data, group_sizes, group_labels, filename_base)
-    #density_plots(embedded_data, group_sizes, group_labels, filename_base)
+    density_plots(embedded_data, group_sizes, group_labels, filename_base)
 
 #### Enhanced visualization analysis
 if __name__ == "__main__":
