@@ -68,7 +68,7 @@ def get_embedded_data(fastafiles, table):
         encoded = get_encoded_seqs(selected_seqs, table)
         encoded_flat = encoded.reshape(-1, 30 * 6)
         
-        encoded_flat = encoded_flat[0:125]
+        encoded_flat = encoded_flat
         all_data.append(encoded_flat)
         group_sizes.append(len(encoded_flat))
     
