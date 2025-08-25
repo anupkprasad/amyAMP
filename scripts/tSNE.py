@@ -8,9 +8,11 @@ import seaborn as sns
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import silhouette_score
 import pandas as pd
 sys.path.append(os.path.expanduser("~/workspace/amyAMP"))
-from scripts import util
+from scripts import util, plotStyle
+plotStyle.setPlotStyle()
 
 def get_encoded_seqs(selected_seqs, table):
     """
@@ -40,7 +42,7 @@ def get_encoded_seqs(selected_seqs, table):
                     encoded_seq[i] = np.zeros(n_features)  # Unknown amino acid
             
             encoded_seqs.append(encoded_seq)
-        
+        group_labels
         return np.array(encoded_seqs)
 
 
@@ -51,7 +53,7 @@ def get_embedded_data(fastafiles, table):
     """
     all_data = []
     group_sizes = []
-    group_labels = ["amyAMPs", "AMPs", "AMYs", "Random-peps"]
+    group_labels = ["AMP", "AMY", "AmyAmp", "Random"]
 
     for i, fastafile in enumerate(fastafiles):
         if not os.path.exists(fastafile):
@@ -88,14 +90,14 @@ def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
     """
     Improved t-SNE with better parameters and multiple perplexity values
     """
-    colors = ['red','black', "blue", "cyan"]
+    colors = ['blue', 'orange', 'red', 'cyan']
     markers = ['o', 's', '^', 'D']
     
     scaler = StandardScaler()
     combined_data_scaled = scaler.fit_transform(embedded_data)
     
     perplexities = [10, 30, 70]
-    fig, axes = plt.subplots(1, len(perplexities), figsize=(15, 5), dpi=300)
+    fig, axes = plt.subplots(1, len(perplexities), figsize=(10.5, 3.5), dpi=600)
     if len(perplexities) == 1:
         axes = [axes]
     
@@ -119,13 +121,14 @@ def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
             group_data = transformed_data[start_idx:end_idx]
             
             ax.scatter(group_data[:, 0], group_data[:, 1], 
-                      c=colors[i % len(colors)], marker=markers[i % len(markers)], 
-                      label=label, alpha=0.7, s=20, edgecolors='black', linewidth=0.5)
+                      facecolors='none', edgecolors=colors[i % len(colors)], 
+                      marker=markers[i % len(markers)], label=label, alpha=0.5, 
+                      s=5, linewidth=0.8)
             start_idx = end_idx
         
-        ax.set_title(f't-SNE (perplexity={actual_perplexity})')
-        ax.legend(fontsize=8)
-        ax.grid(True, alpha=0.3)
+        #ax.set_title(f't-SNE (perplexity={actual_perplexity})')
+        ax.legend(fontsize=7)
+        # ax.grid(True, alpha=0.3)
     
     plt.tight_layout()
     plt.savefig(f"{filename_base}_tsne_comparison.png", dpi=300, bbox_inches='tight')
@@ -143,7 +146,7 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
         print("UMAP not installed. Install with: pip install umap-learn")
         return None
     
-    colors = ['red','black', "blue", "cyan"]
+    colors = ['blue', 'orange', 'red', 'cyan']
     
     scaler = StandardScaler()
     combined_data_scaled = scaler.fit_transform(embedded_data)
@@ -151,7 +154,7 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
     reducer = umap.UMAP(n_neighbors=15, min_dist=0.1, n_components=2, random_state=42)
     embedding = reducer.fit_transform(combined_data_scaled)
     
-    plt.figure(figsize=(10, 8), dpi=300)
+    plt.figure(figsize=(3.5, 3.5), dpi=600)
     
     start_idx = 0
     for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
@@ -162,15 +165,16 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
         group_data = embedding[start_idx:end_idx]
         
         plt.scatter(group_data[:, 0], group_data[:, 1], 
-                   c=colors[i % len(colors)], label=label, alpha=0.7, s=20)
+                   facecolors='none', edgecolors=colors[i % len(colors)], 
+                   label=label, alpha=0.5, s=5, linewidth=0.8)
         start_idx = end_idx
     
-    plt.title('UMAP Projection of Peptide Sequences')
+    #plt.title('UMAP Projection of Peptide Sequences')
     plt.xlabel('UMAP 1')
     plt.ylabel('UMAP 2')
-    plt.legend()
-    plt.grid(True, alpha=0.3)
-    plt.savefig(f"{filename_base}_umap.png", dpi=300, bbox_inches='tight')
+    plt.legend(fontsize=7)
+    # plt.grid(True, alpha=0.3)
+    plt.savefig(f"{filename_base}_umap.png", dpi=600, bbox_inches='tight')
     plt.show()
     
     return embedding
@@ -179,7 +183,7 @@ def pca_analysis(embedded_data, group_sizes, group_labels, filename_base):
     """
     PCA analysis with variance explanation
     """
-    colors = ['red','black', "blue", "cyan"]
+    colors = ['blue', 'orange', 'red', 'cyan']
     
     scaler = StandardScaler()
     combined_data_scaled = scaler.fit_transform(embedded_data)
@@ -187,14 +191,14 @@ def pca_analysis(embedded_data, group_sizes, group_labels, filename_base):
     pca = PCA()
     pca_result = pca.fit_transform(combined_data_scaled)
     
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6), dpi=300)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 3.5), dpi=600)
     
     ax1.plot(range(1, len(pca.explained_variance_ratio_) + 1), 
              np.cumsum(pca.explained_variance_ratio_), 'bo-')
     ax1.set_xlabel('Number of Components')
     ax1.set_ylabel('Cumulative Explained Variance Ratio')
-    ax1.set_title('PCA Explained Variance')
-    ax1.grid(True, alpha=0.3)
+    #ax1.set_title('PCA Explained Variance')
+    # ax1.grid(True, alpha=0.3)
     
     start_idx = 0
     for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
@@ -205,34 +209,125 @@ def pca_analysis(embedded_data, group_sizes, group_labels, filename_base):
         group_data = pca_result[start_idx:end_idx]
         
         ax2.scatter(group_data[:, 0], group_data[:, 1], 
-                   c=colors[i % len(colors)], label=label, alpha=0.7, s=20)
+                   facecolors='none', edgecolors=colors[i % len(colors)], 
+                   label=label, alpha=0.5, s=5, linewidth=0.8)
         start_idx = end_idx
     
     ax2.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.2%} variance)')
     ax2.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.2%} variance)')
-    ax2.set_title('PCA Projection')
-    ax2.legend()
-    ax2.grid(True, alpha=0.3)
+    #ax2.set_title('PCA Projection')
+    ax2.legend(fontsize=7)
+    # ax2.grid(True, alpha=0.3)
     
     plt.tight_layout()
-    plt.savefig(f"{filename_base}_pca.png", dpi=300, bbox_inches='tight')
+    plt.savefig(f"{filename_base}_pca.png", dpi=600, bbox_inches='tight')
     plt.show()
     
     return pca_result, pca.explained_variance_ratio_
+
+def dbscan_clustering(embedded_data, group_sizes, group_labels, filename_base):
+    """
+    DBSCAN clustering visualization
+    """
+    from sklearn.cluster import DBSCAN
+    
+    colors = ['blue', 'orange', 'red', 'cyan']
+    
+    scaler = StandardScaler()
+    combined_data_scaled = scaler.fit_transform(embedded_data)
+    
+    # Apply PCA for dimensionality reduction before DBSCAN
+    pca = PCA(n_components=50, random_state=42)
+    pca_data = pca.fit_transform(combined_data_scaled)
+    
+    # Apply DBSCAN clustering
+    dbscan = DBSCAN(eps=0.5, min_samples=5)
+    cluster_labels = dbscan.fit_predict(pca_data)
+    
+    # Apply t-SNE for 2D visualization
+    tsne = TSNE(n_components=2, random_state=42, perplexity=30, 
+               learning_rate=200, max_iter=1000)
+    tsne_data = tsne.fit_transform(pca_data)
+    
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6), dpi=600)
+    
+    # Left plot: Original groups
+    ax1.set_title('Original Groups', fontweight='bold', fontsize=12)
+    start_idx = 0
+    for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
+        if group_size == 0:
+            continue
+            
+        end_idx = start_idx + group_size
+        group_data = tsne_data[start_idx:end_idx]
+        
+        ax1.scatter(group_data[:, 0], group_data[:, 1], 
+                   facecolors='none', edgecolors=colors[i % len(colors)], 
+                   label=label, alpha=0.7, s=8, linewidth=0.8)
+        start_idx = end_idx
+    
+    ax1.set_xlabel('t-SNE 1')
+    ax1.set_ylabel('t-SNE 2')
+    ax1.legend(fontsize=8)
+    
+    # Right plot: DBSCAN clusters
+    ax2.set_title('DBSCAN Clusters', fontweight='bold', fontsize=12)
+    
+    unique_labels = set(cluster_labels)
+    cluster_colors = plt.cm.Set1(np.linspace(0, 1, len(unique_labels)))
+    
+    for k, col in zip(unique_labels, cluster_colors):
+        if k == -1:
+            # Black used for noise
+            col = 'black'
+            marker = 'x'
+            label = 'Noise'
+            alpha = 0.3
+        else:
+            marker = 'o'
+            label = f'Cluster {k}'
+            alpha = 0.7
+            
+        class_member_mask = (cluster_labels == k)
+        xy = tsne_data[class_member_mask]
+        
+        ax2.scatter(xy[:, 0], xy[:, 1], facecolors='none', edgecolors=col,
+                   marker=marker, label=label, alpha=alpha, s=8, linewidth=0.8)
+    
+    ax2.set_xlabel('t-SNE 1')
+    ax2.set_ylabel('t-SNE 2')
+    ax2.legend(fontsize=8)
+    
+    plt.tight_layout()
+    plt.savefig(f"{filename_base}_dbscan_clustering.png", dpi=600, bbox_inches='tight')
+    plt.show()
+    
+    # Print clustering statistics
+    n_clusters = len(set(cluster_labels)) - (1 if -1 in cluster_labels else 0)
+    n_noise = list(cluster_labels).count(-1)
+    
+    print(f"DBSCAN Clustering Results:")
+    print(f"Number of clusters: {n_clusters}")
+    print(f"Number of noise points: {n_noise}")
+    print(f"Silhouette score: {silhouette_score(pca_data, cluster_labels) if n_clusters > 1 else 'N/A (need >1 cluster)'}")
+    
+    return cluster_labels, tsne_data
 
 def density_plots(embedded_data, group_sizes, group_labels, filename_base):
     """
     Create density plots for each physicochemical property
     """
     property_names = ["H1", "V", "P1", "Pl", "PKa", "NCl"]
-    colors = ['red','black', "blue", "cyan"]
+    colors = ['blue', 'orange', 'red', 'cyan']
     
     # Reshape data to get individual amino acid features
     reshaped_data = embedded_data.reshape(-1, 30 , 6)
     avg_features = np.mean(reshaped_data, axis=1)  # Average over sequence length
     
-    fig, axes = plt.subplots(2, 3, figsize=(18, 12), dpi=300)
+    fig, axes = plt.subplots(2, 3, figsize=(7, 5), dpi=600)
     axes = axes.flatten()
+    
+    subplot_labels = ['(a)', '(b)', '(c)', '(d)', '(e)', '(f)']
     
     for prop_idx in range(6):
         ax = axes[prop_idx]
@@ -250,14 +345,22 @@ def density_plots(embedded_data, group_sizes, group_labels, filename_base):
                    label=label, density=True, color=colors[i % len(colors)])
             start_idx = end_idx
         
-        ax.set_title(f'Distribution of {property_names[prop_idx]}')
+        ax.set_title(f'{subplot_labels[prop_idx]} Distribution of {property_names[prop_idx]}', 
+                    loc='left', fontweight='bold', fontsize=10)
         ax.set_xlabel(property_names[prop_idx])
-        ax.set_ylabel('Density')
-        ax.legend()
-        ax.grid(True, alpha=0.3)
+        
+        # Only show y-label in subplots (a) and (d)
+        if prop_idx == 0 or prop_idx == 3:
+            ax.set_ylabel('Density')
+        
+        # Only show legend in the first subplot (a) with two columns
+        if prop_idx == 0:
+            ax.legend(fontsize=7)
+        
+        # ax.grid(True, alpha=0.3)
     
-    plt.tight_layout()
-    plt.savefig(f"{filename_base}_distributions.png", dpi=300, bbox_inches='tight')
+    plt.tight_layout(pad=0.5, h_pad=0.5, w_pad=0.5)
+    plt.savefig(f"{filename_base}_distributions.png", dpi=600, bbox_inches='tight')
     plt.show()
 
 def comprehensive_analysis(fastafiles, table, output_dir):
@@ -272,7 +375,10 @@ def comprehensive_analysis(fastafiles, table, output_dir):
     improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
     umap_visualization(embedded_data, group_sizes, group_labels, filename_base)
     pca_analysis(embedded_data, group_sizes, group_labels, filename_base)
+    dbscan_clustering(embedded_data, group_sizes, group_labels, filename_base)
     density_plots(embedded_data, group_sizes, group_labels, filename_base)
+
+
 
 #### Enhanced visualization analysis
 if __name__ == "__main__":
@@ -285,9 +391,9 @@ if __name__ == "__main__":
         os.makedirs(path_result)
         
     table = util.get_conversion_table(path_data+"physical_chemical_6.txt")
-    l_fasta = [path_result+ "sequence/"+"seqs_generated"+str(batch_generate)+".fasta",
-               path_result+"sequence/"+"seqs_realAMPs"+str(batch_generate)+".fasta",
+    l_fasta = [path_result+"sequence/"+"seqs_realAMPs"+str(batch_generate)+".fasta",
                path_result+"sequence/"+"seqs_realAMYs"+str(batch_generate)+".fasta",
+               path_result+ "sequence/"+"seqs_generated"+str(batch_generate)+".fasta",
                path_data+ "random_pep_uni.fasta"]
 
     comprehensive_analysis(l_fasta, table, path_result)
