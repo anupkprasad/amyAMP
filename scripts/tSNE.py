@@ -324,7 +324,7 @@ def density_plots(embedded_data, group_sizes, group_labels, filename_base):
     reshaped_data = embedded_data.reshape(-1, 30 , 6)
     avg_features = np.mean(reshaped_data, axis=1)  # Average over sequence length
     
-    fig, axes = plt.subplots(2, 3, figsize=(7, 5), dpi=600)
+    fig, axes = plt.subplots(2, 3, figsize=(7, 4.5), dpi=600)
     axes = axes.flatten()
     
     subplot_labels = ['(a)', '(b)', '(c)', '(d)', '(e)', '(f)']
