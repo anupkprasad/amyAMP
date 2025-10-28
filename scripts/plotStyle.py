@@ -17,9 +17,9 @@ def setPlotStyle():
 
     # Font and line settings for single-column plots
     rc_fonts = {
-        "font.size": 12,
-        "axes.titlesize": 12,
-        "axes.labelsize": 10,
+        "font.size": 8,
+        "axes.titlesize": 10,
+        "axes.labelsize": 8,
         "xtick.labelsize": 8,
         "ytick.labelsize": 8,
         "lines.linewidth": 1,
