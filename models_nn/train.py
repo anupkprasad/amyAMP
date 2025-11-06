@@ -3,8 +3,9 @@ import os
 import torch
 from models_nn import model as model
 from scripts import util
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-from __main__ import batch_size  ### import namespace of caller script
+#device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# Set device
+device = torch.device("cpu")  # Force CPU execution
 
 ### def
 def save_model(path_model, E,G,D,optimizer_EG,optimizer_D, dataloader, loss_all, collected_seqs, epoch, run_num):
@@ -33,27 +34,28 @@ def save_model(path_model, E,G,D,optimizer_EG,optimizer_D, dataloader, loss_all,
                 }, path_model+'collectedseqs_loss_epochinfo_r'+ str(run_num)+'.json')
     return
 
-def load_model(path_model,E, G, D, optimizer_EG, optimizer_D, run_num):
-    ## save model_para
-    stat = torch.load(path_model + 'modelsNoptimiser_state_dict_r'+ str(run_num-1)+'.tar')
-    dataloader = torch.load(path_model +'dataloader.pt')
+def load_model(path_model, E, G, D, optimizer_EG, optimizer_D, run_num):
+    # Load model parameters with map_location to ensure compatibility with CPU
+    stat = torch.load(path_model + 'modelsNoptimiser_state_dict_r' + str(run_num - 1) + '.tar', map_location=torch.device('cpu'))
+    dataloader = torch.load(path_model + 'dataloader.pt', map_location=torch.device('cpu'))
 
-    stat_list = {'E_state_dict': E,
-    'G_state_dict': G,
-    'D_state_dict': D,
-    'optimizer_EG_state_dict': optimizer_EG,
-    'optimizer_D_state_dict': optimizer_D
+    stat_list = {
+        'E_state_dict': E,
+        'G_state_dict': G,
+        'D_state_dict': D,
+        'optimizer_EG_state_dict': optimizer_EG,
+        'optimizer_D_state_dict': optimizer_D
     }
-    for i, (key ,value) in enumerate(stat_list.items()):
-        if i < 3:
+    for i, (key, value) in enumerate(stat_list.items()):
+        if i < 3:  # For E, G, D
             value.to(device)
         value.load_state_dict(stat[key])
-        
-    #JSON object as a dictionary
-    f = torch.load(path_model + 'collectedseqs_loss_epochinfo_r'+ str(run_num-1)+'.json')
+
+    # Load additional information
+    f = torch.load(path_model + 'collectedseqs_loss_epochinfo_r' + str(run_num - 1) + '.json', map_location=torch.device('cpu'))
     loss_all = f["loss_all"]
     epoch = f["epoch"]
-    return E,G,D,optimizer_EG,optimizer_D,dataloader, loss_all, epoch
+    return E, G, D, optimizer_EG, optimizer_D, dataloader, loss_all, epoch
 
 
 
@@ -148,7 +150,7 @@ def training(path_model, epoch, train_data=None, batch_size= 128, filter_max = 3
 
 
 from torchsummary import summary_string
-def models_summary(filter_max, path_model):
+def models_summary(filter_max, path_model, batch_size=128):
     G = model.Generator(filter_max)
     E = model.Encoder(filter_max)
     D = model.Discriminator()
@@ -169,5 +171,5 @@ def models_summary(filter_max, path_model):
         f.write("\n\n ####### Discriminator ####### \n\n")
         f.write(result_d)
     return
-            
+
 
