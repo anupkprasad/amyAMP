@@ -12,12 +12,12 @@ from sklearn.metrics import silhouette_score
 import pandas as pd
 from mpl_toolkits.mplot3d import Axes3D
 
-sys.path.append(os.path.expanduser("~/workspace/amyAMP"))
+sys.path.append(os.path.expanduser("~/workspace/amyAMP/"))
 from scripts import util, plotStyle
 plotStyle.setPlotStyle()
 
 # Define high-contrast color palette
-CONTRAST_COLORS = ['#E63946', '#06FFA5', "#754DE3", '#FFD60A']  # Red, Mint, Purple, Yellow
+CONTRAST_COLORS = ['#1f77b4', '#d62728', '#FFD60A']  # Blue, Red, Yellow
 MARKERS = ['o', 'o', 'o', 'o']  # Same marker for all datasets
 
 def get_encoded_seqs(selected_seqs, table):
@@ -47,27 +47,18 @@ def get_encoded_seqs(selected_seqs, table):
 
 def get_embedded_data(fastafiles, table):
     """
-    Get embedded data from multiple FASTA files
-    Reordered to put AmyAmp first
+    Get embedded data from multiple FASTA files.
+    Each dataset in `fastafiles` is treated as a separate group.
     """
     all_data = []
     group_sizes = []
-    # Reordered: AmyAmp, AMP, AMY, Random
-    group_labels = ["amyAMP", "AMP", "AMY", "RandPep"]
-    
-    # Reordered indices: 2 (AmyAmp), 0 (AMP), 1 (AMY), 3 (Random)
-    reordered_indices = [2, 0, 1, 3]
+    group_labels = ["amyAMP", "trainPep", "randPep"]  # Labels for the three datasets
 
-    for idx in reordered_indices:
-        if idx >= len(fastafiles):
-            group_sizes.append(0)
-            continue
-            
-        fastafile = fastafiles[idx]
+    for fastafile, label in zip(fastafiles, group_labels):
         if not os.path.exists(fastafile):
             group_sizes.append(0)
             continue
-            
+        
         fasta_seqs = util.read_fasta(fastafile)
         selected_seqs = {id_: seq for id_, seq in fasta_seqs.items() if len(seq) < 30}
         
@@ -76,18 +67,14 @@ def get_embedded_data(fastafiles, table):
             continue
         
         encoded = get_encoded_seqs(selected_seqs, table)
-        print(encoded.shape)
-        arr_squeezed = np.squeeze(encoded, axis=1)  # shape becomes (128, 30, 6)
-        # Take mean along the sequence length axis (axis=1)
-        encoded_flat = np.mean(arr_squeezed, axis=1)  # shape: (128, 6)
-        #encoded_flat = arr_squeezed.reshape(-1, 30 * 6)
-        
+        arr_squeezed = np.squeeze(encoded, axis=1)  # Shape becomes (N, 30, 6)
+        encoded_flat = np.mean(arr_squeezed, axis=1)  # Shape: (N, 6)
         all_data.append(encoded_flat)
         group_sizes.append(len(encoded_flat))
     
     combined_data = np.vstack(all_data) if all_data else np.empty((0, 180))
     
-    return combined_data, group_sizes, group_labels, encoded
+    return combined_data, group_sizes, group_labels, all_data
 
 
 
@@ -388,75 +375,8 @@ def improved_tSNE_3D(embedded_data, group_sizes, group_labels, filename_base):
 
 def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
     """
-    Improved 2D t-SNE with contrasting colors and same markers
-    """
-    scaler = StandardScaler()
-    combined_data_scaled = scaler.fit_transform(embedded_data)
-    
-    # PCA preprocessing
-    pca = PCA(n_components=50, random_state=42)
-    pca_data = pca.fit_transform(combined_data_scaled)
-    
-    perplexities = [10, 30, 70]
-    fig, axes = plt.subplots(1, len(perplexities), figsize=(18, 5), dpi=600)
-    if len(perplexities) == 1:
-        axes = [axes]
-    
-    for idx, perplexity in enumerate(perplexities):
-        actual_perplexity = min(perplexity, len(combined_data_scaled) // 4)
-        if actual_perplexity < 5:
-            actual_perplexity = 5
-            
-        tsne = TSNE(
-            n_components=2,
-            perplexity=actual_perplexity,
-            max_iter=1000,  # Changed from n_iter
-            random_state=42,
-            n_jobs=-1
-        )
-        
-        transformed_data = tsne.fit_transform(pca_data)
-        ax = axes[idx]
-        
-        start_idx = 0
-        for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
-            if group_size == 0:
-                continue
-                
-            end_idx = start_idx + group_size
-            group_data = transformed_data[start_idx:end_idx]
-            
-            ax.scatter(group_data[:, 0], group_data[:, 1], 
-                      c=CONTRAST_COLORS[i % len(CONTRAST_COLORS)],
-                      marker=MARKERS[i % len(MARKERS)], label=label, 
-                      alpha=0.7, s=40, edgecolors='black', linewidth=0.5)
-            start_idx = end_idx
-        
-        ax.set_xlabel('t-SNE 1')
-        ax.set_ylabel('t-SNE 2')
-        ax.set_title(f't-SNE 2D (perplexity={actual_perplexity})')
-        ax.legend(loc='best')
-        ax.grid(True, alpha=0.2, linestyle='--')
-    
-    plt.tight_layout()
-    plt.savefig(f"{filename_base}_tsne_2d.png", dpi=600, bbox_inches='tight')
-    plt.show()
-    
-    return transformed_data
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
-import matplotlib.pyplot as plt
-
-# Make sure you define these before calling the function
-# CONTRAST_COLORS = ['#1f77b4', '#ff7f0e', ...]
-# MARKERS = ['o', 's', '^', ...]
-
-def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
-    """
     Improved 2D t-SNE with contrasting colors and same markers.
-    Returns a dictionary mapping each perplexity to its 2D t-SNE coordinates.
-    Handles small feature numbers correctly for PCA preprocessing.
+    Saves a separate plot for perplexity 30.
     """
     # Scale the data
     scaler = StandardScaler()
@@ -483,7 +403,7 @@ def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
         tsne = TSNE(
             n_components=2,
             perplexity=actual_perplexity,
-            max_iter=1000,   # Updated for scikit-learn >=1.3
+            max_iter=1000,  # Updated for scikit-learn >=0.22
             random_state=42
         )
         
@@ -503,7 +423,7 @@ def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
                 group_data[:, 0], group_data[:, 1],
                 c=CONTRAST_COLORS[i % len(CONTRAST_COLORS)],
                 marker=MARKERS[i % len(MARKERS)],
-                label=label,
+                label="trainPep" if label == "training data" else label,  # Update label
                 alpha=0.7,
                 s=40,
                 edgecolors='black' if MARKERS[i % len(MARKERS)] in ['o','s','^','D'] else 'none',
@@ -516,6 +436,30 @@ def improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base):
         ax.set_title(f't-SNE 2D (perplexity={actual_perplexity})')
         ax.legend(loc='best')
         ax.grid(True, alpha=0.2, linestyle='--')
+        
+        # Save a separate plot for perplexity 30
+        if perplexity == 30:
+            plt.figure(figsize=(8, 6), dpi=600)
+            
+            # Create a color array for all points based on their group
+            color_array = np.zeros(len(transformed_data), dtype=object)
+            start_idx = 0
+            for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
+                end_idx = start_idx + group_size
+                color_array[start_idx:end_idx] = CONTRAST_COLORS[i % len(CONTRAST_COLORS)]
+                start_idx = end_idx
+            
+            plt.scatter(
+                transformed_data[:, 0], transformed_data[:, 1],
+                c=color_array,  # Assign colors to each point
+                alpha=0.7, s=40, edgecolors='black', linewidth=0.5
+            )
+            plt.xlabel('t-SNE 1')
+            plt.ylabel('t-SNE 2')
+            plt.title('t-SNE 2D (Perplexity=30)')
+            plt.grid(True, alpha=0.2, linestyle='--')
+            plt.savefig(f"{filename_base}_tsne_2d_perplexity_30.png", dpi=600, bbox_inches='tight')
+            plt.show()
     
     plt.tight_layout()
     plt.savefig(f"{filename_base}_tsne_2d.png", dpi=600, bbox_inches='tight')
@@ -540,7 +484,7 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
     reducer = umap.UMAP(n_neighbors=15, min_dist=0.1, n_components=2, random_state=42)
     embedding = reducer.fit_transform(combined_data_scaled)
     
-    plt.figure(figsize=(8, 6), dpi=600)
+    plt.figure(figsize=(3.5, 3.5), dpi=600)
     
     start_idx = 0
     for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
@@ -553,13 +497,13 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
         plt.scatter(group_data[:, 0], group_data[:, 1], 
                    c=CONTRAST_COLORS[i % len(CONTRAST_COLORS)],
                    marker=MARKERS[i % len(MARKERS)], label=label, 
-                   alpha=0.7, s=40, edgecolors='black', linewidth=0.5)
+                   alpha=0.7, s=10, edgecolors='black', linewidth=0.25)
         start_idx = end_idx
     
     plt.xlabel('UMAP 1')
     plt.ylabel('UMAP 2')
-    plt.title('UMAP Projection')
-    plt.legend()
+    #plt.title('UMAP Projection')
+    plt.legend(fontsize=7)
     plt.grid(True, alpha=0.2, linestyle='--')
     plt.savefig(f"{filename_base}_umap.png", dpi=600, bbox_inches='tight')
     plt.show()
@@ -569,23 +513,25 @@ def umap_visualization(embedded_data, group_sizes, group_labels, filename_base):
 
 def violin_plots(embedded_data, group_sizes, group_labels, filename_base):
     """
-    Create violin plots for physicochemical properties with AmyAmp first
+    Create violin plots for physicochemical properties with reordered plots.
     """
-    property_names = ["H1", "V", "P1", "Pl", "PKa", "NCl"]
-    
-    # embedded_data already has shape (n_samples, 6) - average features per sequence
-    avg_features = embedded_data  # No need to reshape or average again
-    
+    # Reorder property names to flip (a) and (d)
+    property_names = ["Pl", "V", "P1", "H1", "PKa", "NCl"]  # Swapped "H1" and "Pl"
+
+    # Rearrange the columns of embedded_data to match the new property order
+    property_order = [3, 1, 2, 0, 4, 5]  # Indices corresponding to the new order
+    avg_features = embedded_data[:, property_order]  # Rearrange columns
+
     # Create DataFrame for violin plots
     data_list = []
     start_idx = 0
     for i, (group_size, label) in enumerate(zip(group_sizes, group_labels)):
         if group_size == 0:
             continue
-            
+
         end_idx = start_idx + group_size
         group_data = avg_features[start_idx:end_idx]  # Shape: (group_size, 6)
-        
+
         for prop_idx, prop_name in enumerate(property_names):
             for value in group_data[:, prop_idx]:  # Extract column for this property
                 data_list.append({
@@ -594,61 +540,62 @@ def violin_plots(embedded_data, group_sizes, group_labels, filename_base):
                     'Group': label
                 })
         start_idx = end_idx
-    
+
     df = pd.DataFrame(data_list)
-    
+
     # Create violin plots
     fig, axes = plt.subplots(2, 3, figsize=(7, 4.5), dpi=600)
     axes = axes.flatten()
-    
+
+    # Updated subplot labels to match the new order
     subplot_labels = ['(a)', '(b)', '(c)', '(d)', '(e)', '(f)']
-    
+
     for prop_idx, prop_name in enumerate(property_names):
         ax = axes[prop_idx]
-        
+
         # Filter data for this property
         prop_data = df[df['Property'] == prop_name]
-        
+
         # Get groups in order (AmyAmp is already first in group_labels)
         groups_present = [label for label in group_labels if label in prop_data['Group'].values]
-        
+
         # Create violin plot with contrasting colors
         parts = ax.violinplot(
-            [prop_data[prop_data['Group'] == label]['Value'].values 
+            [prop_data[prop_data['Group'] == label]['Value'].values
              for label in groups_present],
             positions=range(len(groups_present)),
             showmeans=True,
             showmedians=True,
             widths=0.7
         )
-        
+
         # Color the violins (AmyAmp gets first color) with thinner edges
         for pc, color in zip(parts['bodies'], CONTRAST_COLORS):
             pc.set_facecolor(color)
             pc.set_alpha(0.7)
             pc.set_edgecolor('black')
             pc.set_linewidth(0.5)
-        
+
         # Style the other elements with thinner lines
         for partname in ('cbars', 'cmins', 'cmaxes', 'cmedians', 'cmeans'):
             if partname in parts:
                 vp = parts[partname]
                 vp.set_edgecolor('black')
                 vp.set_linewidth(0.8)
-        
+
         # Bold subtitle
         ax.set_title(f'{subplot_labels[prop_idx]} {prop_name}', loc='left', fontweight='bold')
-        
+
         # Set x-tick labels
         ax.set_xticks(range(len(groups_present)))
         ax.set_xticklabels(groups_present, rotation=0)
-        
+
         # Only show y-label in leftmost subplots
         if prop_idx % 3 == 0:
             ax.set_ylabel('Value')
-        
+
         ax.grid(True, alpha=0.2, linestyle='--', axis='y')
-    
+
     plt.tight_layout(pad=1.5, h_pad=2, w_pad=2)
     plt.savefig(f"{filename_base}_violin_plots.png", dpi=600, bbox_inches='tight')
     plt.show()
@@ -770,27 +717,22 @@ def comprehensive_analysis(fastafiles, table, output_dir):
         print(f"  {label}: {size} sequences")
     print()
     
-    print("Running 3D PCA analysis...")
-    pca_analysis_3D(embedded_data, group_sizes, group_labels, filename_base)
+    # print("Running 3D PCA analysis...")
+    # pca_analysis_3D(embedded_data, group_sizes, group_labels, filename_base)
     
-    # print("Running 3D t-SNE analysis...")
-    # improved_tSNE_3D(embedded_data, group_sizes, group_labels, filename_base)
-    
-    print("Running 2D t-SNE analysis...")
-    improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
+    # print("Running 2D t-SNE analysis...")
+    # improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
     
     print("Running UMAP analysis...")
     umap_visualization(embedded_data, group_sizes, group_labels, filename_base)
     
-    print("Running 2D PCA analysis...")
-    pca_analysis(embedded_data, group_sizes, group_labels, filename_base)
-    
-    # print("Running DBSCAN clustering...")
-    # dbscan_clustering(embedded_data, group_sizes, group_labels, filename_base)
+    # print("Running 2D PCA analysis...")
+    # pca_analysis(embedded_data, group_sizes, group_labels, filename_base)
     
     print("Creating violin plots...")
     violin_plots(embedded_data, group_sizes, group_labels, filename_base)
-    
+    print("Creating amino acid frequency bar plot...")
+    amino_acid_frequency_barplot(fastafiles, group_labels, filename_base)
     print("\n" + "="*60)
     print("Analysis Complete! All plots saved to:", output_dir)
     print("="*60 + "\n")
@@ -798,8 +740,60 @@ def comprehensive_analysis(fastafiles, table, output_dir):
     return encoded_data
 
 
+def amino_acid_frequency_barplot(fastafiles, group_labels, filename_base):
+    """
+    Generate a grouped bar plot for amino acid frequency (fractions) across all datasets.
+    """
+    amino_acids = sorted("ACDEFGHIKLMNPQRSTVWY")  # Standard amino acids in alphabetical order
+    amino_acid_counts = {label: {aa: 0 for aa in amino_acids} for label in group_labels}
+
+    # Count amino acids for each dataset
+    for fastafile, label in zip(fastafiles, group_labels):
+        if not os.path.exists(fastafile):
+            continue
+        fasta_seqs = util.read_fasta(fastafile)
+        for seq in fasta_seqs.values():
+            for aa in seq:
+                if aa in amino_acid_counts[label]:
+                    amino_acid_counts[label][aa] += 1
+
+    # Normalize counts to fractions
+    amino_acid_fractions = {}
+    for label, counts in amino_acid_counts.items():
+        total_count = sum(counts.values())
+        if total_count > 0:
+            amino_acid_fractions[label] = {aa: count / total_count for aa, count in counts.items()}
+        else:
+            amino_acid_fractions[label] = {aa: 0 for aa in amino_acids}
+
+    # Prepare data for plotting
+    dataset_colors = {
+        "amyAMP": "#d62728",         # Red
+        "trainPep": "#1f77b4",       # Blue
+        "randPep": "#FFD60A"         # Yellow
+    }
+    x = np.arange(len(amino_acids))  # X-axis positions for amino acids
+    width = 0.25  # Width of each bar
+
+    plt.figure(figsize=(3.5, 3), dpi=600)
+    for i, label in enumerate(group_labels):
+        fractions = [amino_acid_fractions[label][aa] for aa in amino_acids]
+        plt.bar(x + i * width, fractions, width, label=label, color=dataset_colors[label], edgecolor='black', alpha=0.8)
+
+    # Customize plot
+    plt.xticks(x + width, amino_acids)
+    plt.xlabel('Amino Acids')
+    plt.ylabel('Fraction')
+    #plt.title('Amino Acid Frequency Comparison (Fraction)', fontsize=14)
+    plt.legend(fontsize=7)
+    plt.grid(axis='y', alpha=0.3, linestyle='--')
+    plt.tight_layout()
+
+    # Save and show the plot
+    plt.savefig(f"{filename_base}_amino_acid_frequency_comparison_fraction.png", dpi=600, bbox_inches='tight')
+    plt.show()
+
 if __name__ == "__main__":
-    run_num = 10
     batch_generate = 1000
 
     path_data = os.path.expanduser("~/workspace/amyAMP/data_master/")
@@ -809,10 +803,9 @@ if __name__ == "__main__":
         
     table = util.get_conversion_table(path_data+"physical_chemical_6.txt")
     l_fasta = [
-        path_result+"sequence/"+"seqs_realAMPs"+str(batch_generate)+".fasta",
-        path_result+"sequence/"+"seqs_realAMYs"+str(batch_generate)+".fasta",
-        path_result+"sequence/"+"seqs_generated"+str(batch_generate)+".fasta",
-        path_data+"random_peptides_1000.fasta"
+        path_result+"sequence/"+"seqs_generated_postprocessed.fasta",
+        path_result+"sequence/"+"seqs_realAMPs_realAMYs1000.fasta",
+        path_result+"sequence/"+"random_peptides_1000.fasta"
     ]
 
     encoded_data = comprehensive_analysis(l_fasta, table, path_result)

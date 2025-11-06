@@ -5,7 +5,7 @@ Created on 2025-06-28 (Y/M/D) at 18:17
 @author: Anup K. Prasad
 email: anupkprasad121@gmail.com
 """
-import sys
+import os
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from matplotlib import font_manager
@@ -19,15 +19,15 @@ def setPlotStyle():
     rc_fonts = {
         "font.size": 8,
         "axes.titlesize": 10,
-        "axes.labelsize": 8,
-        "xtick.labelsize": 8,
-        "ytick.labelsize": 8,
+        "axes.labelsize": 10,
+        "xtick.labelsize": 10,
+        "ytick.labelsize": 10,
         "lines.linewidth": 1,
     }
 
     mpl.rcParams.update(rc_fonts)
-    mpl.rcParams["font.weight"] = "bold"
-    mpl.rcParams["axes.labelweight"] = "bold"
+    # mpl.rcParams["font.weight"] = "bold"
+    # mpl.rcParams["axes.labelweight"] = "bold"
 
     # Tick width and size settings
     mpl.rcParams['xtick.major.size'] = 1.5
@@ -40,7 +40,8 @@ def setPlotStyle():
     mpl.rcParams['ytick.minor.width'] = 1
 
     # Load custom fonts (Arial from external directory)
-    font_dirs = ['/home/anup/myScripts/utils/arialFonts/']
+    username = os.getlogin()
+    font_dirs = [f'/home/{username}/myScripts/utils/arialFonts/']
     font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
 
     for font_file in font_files:
