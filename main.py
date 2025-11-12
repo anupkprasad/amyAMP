@@ -3,7 +3,7 @@ import torch
 import os
 import sys
 from models_nn import train
-from models_nn import model as model
+from models_nn import model_new as model
 from scripts import util  #, analysis_generated_seqs
 
 # Add the project root directory to the system path
