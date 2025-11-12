@@ -37,6 +37,8 @@ def save_model(path_model, E,G,D,optimizer_EG,optimizer_D, dataloader, loss_all,
 def load_model(path_model, E, G, D, optimizer_EG, optimizer_D, run_num):
     # Load model parameters with map_location to ensure compatibility with CPU
     stat = torch.load(path_model + 'modelsNoptimiser_state_dict_r' + str(run_num - 1) + '.tar', map_location=torch.device('cpu'))
+    print("Checkpoint keys:", list(stat.keys())[:10])
+    print("Model keys:", list(E.state_dict().keys())[:10])
     dataloader = torch.load(path_model + 'dataloader.pt', map_location=torch.device('cpu'))
 
     stat_list = {
