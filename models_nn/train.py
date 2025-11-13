@@ -48,6 +48,7 @@ def load_model(path_model, E, G, D, optimizer_EG, optimizer_D, run_num):
         'optimizer_EG_state_dict': optimizer_EG,
         'optimizer_D_state_dict': optimizer_D
     }
+    print("Loading model and optimizer states...")
     for i, (key, value) in enumerate(stat_list.items()):
         if i < 3:  # For E, G, D
             value.to(device)

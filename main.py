@@ -3,7 +3,7 @@ import torch
 import os
 import sys
 from models_nn import train
-from models_nn import model_new as model
+from models_nn import model as model
 from scripts import util  #, analysis_generated_seqs
 
 # Add the project root directory to the system path
@@ -77,9 +77,10 @@ def train_model(dataloader):
 
 
 # Function to get model summary and generate peptides
-def generate_peptides():
+def generate_peptides(path_model):
     #train.models_summary(filter_max, path_model)
         ### varriables
+    table = util.get_conversion_table(path_PC6)
     G, E, D = model.get_model_and_optimizer() 
     E = E.to(device)
     G = G.to(device)
@@ -96,9 +97,10 @@ def generate_peptides():
     all_parms = train.load_model(path_model, E, G, D, optimizer_EG, optimizer_D, run_num)
     E,G,D,optimizer_EG,optimizer_D,dataloader, loss_all, epoch_i = all_parms
     z = torch.randn(batch_size, filter_max, 1, 1).to(device)
-    Gz = G(z)
+    generated_seqs = util.generate_seqs(G, table, z)
+    util.write_fasta(generated_seqs, os.path.join(path_model, "final_generated_seq.fasta"))
     print("Peptides generated successfully.")
-    return Gz
+    return
 
 
 # Function to analyze generated data
@@ -115,7 +117,7 @@ def main(task):
     if task == "train":
         train_model(dataloader)
     elif task == "generate":
-        generate_peptides()
+        generate_peptides(path_model=path_model)
     elif task == "analyze":
         analyze_generated_data()
     else:

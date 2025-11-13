@@ -261,13 +261,17 @@ def decode_elucidian(seqs, table):
     return decode_seqs
 
 
-def generate_seqs(net, table, noise, *epoch):
+def generate_seqs(net, table, noise, epoch = None):
     generated = net(noise)
     decoded_seqs = decode_elucidian(generated, table)
     seqs = {}
     for i, decoded_seq in enumerate(decoded_seqs):
         seq = [aa for aa in decoded_seq if aa != "X"] ## unpadding
-        seqs["seq_epochs_{epoch}_num_{num}".format(epoch = epoch, num = i + 1)] = "".join(seq)
+        if epoch == None:
+            seqs["seq_num_{num}".format(num = i + 1)] = "".join(seq)
+        else:
+            seqs["seq_epochs_{epoch}_num_{num}".format(epoch = epoch, num = i + 1)] = "".join(seq)
+
     return seqs
 
 
