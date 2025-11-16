@@ -370,7 +370,7 @@ def improved_tSNE_3D(embedded_data, group_sizes, group_labels, filename_base):
             )
             start_idx = end_idx
         
-        ax.set_title(f'Perplexity = {adjusted_perplexity}', fontsize=12, pad=10)
+        ax.set_title(f'Perplexity = {adjusted_perplexity}', fontsize=10, pad=10)
         ax.set_xlabel('t-SNE 1', fontsize=10)
         ax.set_ylabel('t-SNE 2', fontsize=10)
         ax.set_zlabel('t-SNE 3', fontsize=10)
@@ -378,7 +378,7 @@ def improved_tSNE_3D(embedded_data, group_sizes, group_labels, filename_base):
         ax.grid(True, alpha=0.3)
     
     plt.suptitle('3D t-SNE Visualization with Different Perplexities', 
-                 fontsize=14, y=0.98)
+                 fontsize=10, y=0.98)
     plt.tight_layout()
     plt.savefig(filename_base + '_tsne_3D.png', dpi=600, bbox_inches='tight')
     plt.close()
@@ -580,7 +580,8 @@ def violin_plots(embedded_data, group_sizes, group_labels, filename_base):
         
         # Set x-tick labels
         ax.set_xticks(range(len(groups_present)))
-        ax.set_xticklabels(groups_present, rotation=0)
+        ax.set_xticklabels(groups_present, rotation=25)
+        
         
         # Only show y-label in leftmost subplots
         if prop_idx % 3 == 0:
@@ -691,6 +692,57 @@ def dbscan_clustering(embedded_data, group_sizes, group_labels, filename_base):
     return cluster_labels, tsne_data
 
 
+
+def amino_acid_frequency_barplot(fastafiles, group_labels, filename_base):
+    """
+    Generate a grouped bar plot for amino acid frequency (fractions) across all datasets.
+    """
+    amino_acids = sorted("ACDEFGHIKLMNPQRSTVWY")  # Standard amino acids in alphabetical order
+    amino_acid_counts = {label: {aa: 0 for aa in amino_acids} for label in group_labels}
+
+    # Count amino acids for each dataset
+    for fastafile, label in zip(fastafiles, group_labels):
+        if not os.path.exists(fastafile):
+            continue
+        fasta_seqs = util.read_fasta(fastafile)
+        for seq in fasta_seqs.values():
+            for aa in seq:
+                if aa in amino_acid_counts[label]:
+                    amino_acid_counts[label][aa] += 1
+
+    # Normalize counts to fractions
+    amino_acid_fractions = {}
+    for label, counts in amino_acid_counts.items():
+        total_count = sum(counts.values())
+        if total_count > 0:
+            amino_acid_fractions[label] = {aa: count / total_count for aa, count in counts.items()}
+        else:
+            amino_acid_fractions[label] = {aa: 0 for aa in amino_acids}
+
+    # Prepare data for plotting
+    dataset_colors = {label: CONTRAST_COLORS[i % len(CONTRAST_COLORS)] for i, label in enumerate(group_labels)}
+    x = np.arange(len(amino_acids))  # X-axis positions for amino acids
+    width = 0.2  # Width of each bar
+
+    plt.figure(figsize=(3.5, 3.5), dpi=600)
+    for i, label in enumerate(group_labels):
+        fractions = [amino_acid_fractions[label][aa] for aa in amino_acids]
+        plt.bar(x + i * width, fractions, width, label=label, color=dataset_colors[label], alpha=0.8)
+
+    # Customize plot
+    plt.xticks(x + width, amino_acids)
+    plt.xlabel('Amino Acids')
+    plt.ylabel('Fraction')
+    #plt.title('Amino Acid Frequency Comparison (Fraction)', fontsize=14)
+    plt.legend(fontsize=7)
+    plt.grid(axis='y', alpha=0.3, linestyle='--')
+    plt.tight_layout()
+
+    # Save and show the plot
+    plt.savefig(f"{filename_base}_amino_acid_frequency_comparison_fraction.png", dpi=600, bbox_inches='tight')
+    plt.show()
+
+
 def comprehensive_analysis(fastafiles, table, output_dir):
     """
     Run all analysis methods with enhanced visualizations
@@ -715,8 +767,8 @@ def comprehensive_analysis(fastafiles, table, output_dir):
     # print("Running 3D t-SNE analysis...")
     # improved_tSNE_3D(embedded_data, group_sizes, group_labels, filename_base)
     
-    print("Running 2D t-SNE analysis...")
-    improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
+    # print("Running 2D t-SNE analysis...")
+    # improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
     
     print("Running UMAP analysis...")
     umap_visualization(embedded_data, group_sizes, group_labels, filename_base)
@@ -730,6 +782,7 @@ def comprehensive_analysis(fastafiles, table, output_dir):
     print("Creating violin plots...")
     violin_plots(embedded_data, group_sizes, group_labels, filename_base)
     
+    amino_acid_frequency_barplot(fastafiles, group_labels, filename_base)
     print("\n" + "="*60)
     print("Analysis Complete! All plots saved to:", output_dir)
     print("="*60 + "\n")

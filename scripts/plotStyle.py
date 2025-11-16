@@ -17,11 +17,11 @@ def setPlotStyle():
 
     # Font and line settings for single-column plots
     rc_fonts = {
-        "font.size": 8,
+        "font.size": 10,
         "axes.titlesize": 10,
-        "axes.labelsize": 10,
-        "xtick.labelsize": 10,
-        "ytick.labelsize": 10,
+        "axes.labelsize": 8,
+        "xtick.labelsize": 8,
+        "ytick.labelsize": 8,
         "lines.linewidth": 1,
     }
 

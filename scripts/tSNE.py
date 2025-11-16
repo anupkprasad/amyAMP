@@ -699,46 +699,6 @@ def dbscan_clustering(embedded_data, group_sizes, group_labels, filename_base):
     return cluster_labels, tsne_data
 
 
-def comprehensive_analysis(fastafiles, table, output_dir):
-    """
-    Run all analysis methods with enhanced visualizations
-    """
-    os.makedirs(output_dir, exist_ok=True)
-    filename_base = os.path.join(output_dir, "peptide_analysis")
-    
-    print("\n" + "="*60)
-    print("Starting Comprehensive Peptide Analysis")
-    print("="*60 + "\n")
-    
-    embedded_data, group_sizes, group_labels, encoded_data = get_embedded_data(fastafiles, table)
-    
-    print(f"Dataset Summary:")
-    for label, size in zip(group_labels, group_sizes):
-        print(f"  {label}: {size} sequences")
-    print()
-    
-    # print("Running 3D PCA analysis...")
-    # pca_analysis_3D(embedded_data, group_sizes, group_labels, filename_base)
-    
-    # print("Running 2D t-SNE analysis...")
-    # improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
-    
-    print("Running UMAP analysis...")
-    umap_visualization(embedded_data, group_sizes, group_labels, filename_base)
-    
-    # print("Running 2D PCA analysis...")
-    # pca_analysis(embedded_data, group_sizes, group_labels, filename_base)
-    
-    print("Creating violin plots...")
-    violin_plots(embedded_data, group_sizes, group_labels, filename_base)
-    print("Creating amino acid frequency bar plot...")
-    amino_acid_frequency_barplot(fastafiles, group_labels, filename_base)
-    print("\n" + "="*60)
-    print("Analysis Complete! All plots saved to:", output_dir)
-    print("="*60 + "\n")
-
-    return encoded_data
-
 
 def amino_acid_frequency_barplot(fastafiles, group_labels, filename_base):
     """
@@ -792,6 +752,49 @@ def amino_acid_frequency_barplot(fastafiles, group_labels, filename_base):
     # Save and show the plot
     plt.savefig(f"{filename_base}_amino_acid_frequency_comparison_fraction.png", dpi=600, bbox_inches='tight')
     plt.show()
+
+
+
+def comprehensive_analysis(fastafiles, table, output_dir):
+    """
+    Run all analysis methods with enhanced visualizations
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    filename_base = os.path.join(output_dir, "peptide_analysis")
+    
+    print("\n" + "="*60)
+    print("Starting Comprehensive Peptide Analysis")
+    print("="*60 + "\n")
+    
+    embedded_data, group_sizes, group_labels, encoded_data = get_embedded_data(fastafiles, table)
+    
+    print(f"Dataset Summary:")
+    for label, size in zip(group_labels, group_sizes):
+        print(f"  {label}: {size} sequences")
+    print()
+    
+    # print("Running 3D PCA analysis...")
+    # pca_analysis_3D(embedded_data, group_sizes, group_labels, filename_base)
+    
+    # print("Running 2D t-SNE analysis...")
+    # improved_tSNE2D(embedded_data, group_sizes, group_labels, filename_base)
+    
+    print("Running UMAP analysis...")
+    umap_visualization(embedded_data, group_sizes, group_labels, filename_base)
+    
+    # print("Running 2D PCA analysis...")
+    # pca_analysis(embedded_data, group_sizes, group_labels, filename_base)
+    
+    print("Creating violin plots...")
+    violin_plots(embedded_data, group_sizes, group_labels, filename_base)
+    print("Creating amino acid frequency bar plot...")
+    amino_acid_frequency_barplot(fastafiles, group_labels, filename_base)
+    print("\n" + "="*60)
+    print("Analysis Complete! All plots saved to:", output_dir)
+    print("="*60 + "\n")
+
+    return encoded_data
+
 
 if __name__ == "__main__":
     batch_generate = 1000

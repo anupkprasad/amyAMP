@@ -44,7 +44,7 @@ def plot_multihist(data_list, save_file, bins = 70):
 # Define paths
 path_data = os.path.expanduser("~/workspace/amyAMP/")
 path_result = os.path.expanduser("~/workspace/amyAMP/results/")
-path_model = os.path.expanduser("~/workspace/amyAMP/scripts/model_saved_231206/")
+path_model = os.path.expanduser("~/workspace/amyAMP/model_saved/")
 
 
 # Define FASTA files
@@ -53,8 +53,8 @@ fasta_random = [path_result + "sequence/random_peptides_1000.fasta"]
 
 
 collected_seqs = {}
-for r in range(2):  # Assuming `run_num` is 1
-    collection = torch.load(path_data + 'model_saved_231206/collectedseqs_loss_epochinfo_r' + str(r + 1) + '.json')
+for r in range(2):  # `run_num: training run` is 2
+    collection = torch.load(path_model + 'collectedseqs_loss_epochinfo_r' + str(r + 1) + '.json')
     collected_seqs.update(collection["collected_seqs"])
 
 # Select epochs exponentially from all available epochs
