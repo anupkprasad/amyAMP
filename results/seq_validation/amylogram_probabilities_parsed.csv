@@ -1,0 +1,969 @@
+input_name,probability,is_amyloid,Category
+seq_epochs_()_num_31,0.1015,no,<0.5 Low
+seq_epochs_()_num_4,0.1484,no,<0.5 Low
+seq_epochs_()_num_29,0.1814,no,<0.5 Low
+seq_epochs_()_num_18,0.1919,no,<0.5 Low
+seq_epochs_()_num_46,0.1968,no,<0.5 Low
+seq_epochs_()_num_2,0.2091,no,<0.5 Low
+seq_epochs_()_num_26,0.2381,no,<0.5 Low
+seq_epochs_()_num_14,0.2383,no,<0.5 Low
+seq_epochs_()_num_30,0.2397,no,<0.5 Low
+seq_epochs_()_num_35,0.2503,no,<0.5 Low
+seq_epochs_()_num_8,0.2811,no,<0.5 Low
+seq_epochs_()_num_6,0.282,no,<0.5 Low
+seq_epochs_()_num_40,0.3048,no,<0.5 Low
+seq_epochs_()_num_5,0.337,no,<0.5 Low
+seq_epochs_()_num_11,0.3441,no,<0.5 Low
+seq_epochs_()_num_23,0.3482,no,<0.5 Low
+seq_epochs_()_num_36,0.3574,no,<0.5 Low
+seq_epochs_()_num_15,0.3584,no,<0.5 Low
+seq_epochs_()_num_27,0.3715,no,<0.5 Low
+seq_epochs_()_num_42,0.3849,no,<0.5 Low
+seq_epochs_()_num_39,0.3978,no,<0.5 Low
+seq_epochs_()_num_37,0.3981,no,<0.5 Low
+seq_epochs_()_num_19,0.4061,no,<0.5 Low
+seq_epochs_()_num_22,0.4088,no,<0.5 Low
+seq_epochs_()_num_33,0.4177,no,<0.5 Low
+seq_epochs_()_num_41,0.422,no,<0.5 Low
+seq_epochs_()_num_43,0.4351,no,<0.5 Low
+seq_epochs_()_num_3,0.451,no,<0.5 Low
+seq_epochs_()_num_50,0.4591,no,<0.5 Low
+seq_epochs_()_num_38,0.4868,no,<0.5 Low
+seq_epochs_()_num_28,0.4984,no,<0.5 Low
+seq_epochs_()_num_17,0.5676,yes,0.5-0.6 Moderate
+seq_epochs_()_num_20,0.5799,yes,0.5-0.6 Moderate
+seq_epochs_()_num_32,0.6256,yes,0.6-0.7 High
+seq_epochs_()_num_45,0.6486,yes,0.6-0.7 High
+seq_epochs_()_num_7,0.662,yes,0.6-0.7 High
+seq_epochs_()_num_49,0.6706,yes,0.6-0.7 High
+seq_epochs_()_num_1,0.6746,yes,0.6-0.7 High
+seq_epochs_()_num_47,0.69,yes,0.6-0.7 High
+seq_epochs_()_num_24,0.6964,yes,0.6-0.7 High
+seq_epochs_()_num_21,0.7047,yes,>=0.7 Very High
+seq_epochs_()_num_16,0.7221,yes,>=0.7 Very High
+seq_epochs_()_num_48,0.7225,yes,>=0.7 Very High
+seq_epochs_()_num_25,0.7346,yes,>=0.7 Very High
+seq_epochs_()_num_9,0.7399,yes,>=0.7 Very High
+seq_epochs_()_num_10,0.7499,yes,>=0.7 Very High
+seq_epochs_()_num_13,0.7809,yes,>=0.7 Very High
+seq_epochs_()_num_34,0.8057,yes,>=0.7 Very High
+seq_epochs_()_num_44,0.8195,yes,>=0.7 Very High
+seq_epochs_()_num_12,0.8627,yes,>=0.7 Very High
+seq_epochs_()_num_451,0.5611,yes,0.5-0.6 Moderate
+seq_epochs_()_num_452,0.7757,yes,>=0.7 Very High
+seq_epochs_()_num_453,0.5494,yes,0.5-0.6 Moderate
+seq_epochs_()_num_454,0.5813,yes,0.5-0.6 Moderate
+seq_epochs_()_num_455,0.6899,yes,0.6-0.7 High
+seq_epochs_()_num_456,0.4055,no,<0.5 Low
+seq_epochs_()_num_457,0.7581,yes,>=0.7 Very High
+seq_epochs_()_num_458,0.5539,yes,0.5-0.6 Moderate
+seq_epochs_()_num_459,0.6937,yes,0.6-0.7 High
+seq_epochs_()_num_460,0.4782,no,<0.5 Low
+seq_epochs_()_num_462,0.2756,no,<0.5 Low
+seq_epochs_()_num_463,0.3027,no,<0.5 Low
+seq_epochs_()_num_464,0.254,no,<0.5 Low
+seq_epochs_()_num_465,0.7047,yes,>=0.7 Very High
+seq_epochs_()_num_466,0.2461,no,<0.5 Low
+seq_epochs_()_num_467,0.4652,no,<0.5 Low
+seq_epochs_()_num_468,0.2095,no,<0.5 Low
+seq_epochs_()_num_469,0.1235,no,<0.5 Low
+seq_epochs_()_num_470,0.844,yes,>=0.7 Very High
+seq_epochs_()_num_471,0.7814,yes,>=0.7 Very High
+seq_epochs_()_num_472,0.6688,yes,0.6-0.7 High
+seq_epochs_()_num_473,0.2771,no,<0.5 Low
+seq_epochs_()_num_474,0.3613,no,<0.5 Low
+seq_epochs_()_num_475,0.5627,yes,0.5-0.6 Moderate
+seq_epochs_()_num_476,0.2986,no,<0.5 Low
+seq_epochs_()_num_477,0.7351,yes,>=0.7 Very High
+seq_epochs_()_num_478,0.7711,yes,>=0.7 Very High
+seq_epochs_()_num_479,0.3755,no,<0.5 Low
+seq_epochs_()_num_480,0.3051,no,<0.5 Low
+seq_epochs_()_num_481,0.6268,yes,0.6-0.7 High
+seq_epochs_()_num_482,0.7628,yes,>=0.7 Very High
+seq_epochs_()_num_483,0.6062,yes,0.6-0.7 High
+seq_epochs_()_num_484,0.5403,yes,0.5-0.6 Moderate
+seq_epochs_()_num_485,0.1448,no,<0.5 Low
+seq_epochs_()_num_486,0.7036,yes,>=0.7 Very High
+seq_epochs_()_num_487,0.6064,yes,0.6-0.7 High
+seq_epochs_()_num_488,0.456,no,<0.5 Low
+seq_epochs_()_num_489,0.5084,yes,0.5-0.6 Moderate
+seq_epochs_()_num_490,0.274,no,<0.5 Low
+seq_epochs_()_num_491,0.5291,yes,0.5-0.6 Moderate
+seq_epochs_()_num_492,0.5808,yes,0.5-0.6 Moderate
+seq_epochs_()_num_493,0.3071,no,<0.5 Low
+seq_epochs_()_num_494,0.2303,no,<0.5 Low
+seq_epochs_()_num_495,0.2112,no,<0.5 Low
+seq_epochs_()_num_496,0.6724,yes,0.6-0.7 High
+seq_epochs_()_num_498,0.3586,no,<0.5 Low
+seq_epochs_()_num_499,0.5491,yes,0.5-0.6 Moderate
+seq_epochs_()_num_500,0.7249,yes,>=0.7 Very High
+seq_epochs_()_num_501,0.7538,yes,>=0.7 Very High
+seq_epochs_()_num_502,0.3261,no,<0.5 Low
+seq_epochs_()_num_503,0.3243,no,<0.5 Low
+seq_epochs_()_num_504,0.4187,no,<0.5 Low
+seq_epochs_()_num_505,0.5415,yes,0.5-0.6 Moderate
+seq_epochs_()_num_506,0.7403,yes,>=0.7 Very High
+seq_epochs_()_num_507,0.5317,yes,0.5-0.6 Moderate
+seq_epochs_()_num_508,0.3362,no,<0.5 Low
+seq_epochs_()_num_509,0.309,no,<0.5 Low
+seq_epochs_()_num_510,0.3466,no,<0.5 Low
+seq_epochs_()_num_511,0.6794,yes,0.6-0.7 High
+seq_epochs_()_num_512,0.6948,yes,0.6-0.7 High
+seq_epochs_()_num_513,0.7145,yes,>=0.7 Very High
+seq_epochs_()_num_514,0.3631,no,<0.5 Low
+seq_epochs_()_num_515,0.4531,no,<0.5 Low
+seq_epochs_()_num_517,0.5114,yes,0.5-0.6 Moderate
+seq_epochs_()_num_518,0.4751,no,<0.5 Low
+seq_epochs_()_num_519,0.2596,no,<0.5 Low
+seq_epochs_()_num_520,0.6347,yes,0.6-0.7 High
+seq_epochs_()_num_521,0.4462,no,<0.5 Low
+seq_epochs_()_num_522,0.4932,no,<0.5 Low
+seq_epochs_()_num_523,0.4784,no,<0.5 Low
+seq_epochs_()_num_524,0.4194,no,<0.5 Low
+seq_epochs_()_num_525,0.7126,yes,>=0.7 Very High
+seq_epochs_()_num_526,0.7461,yes,>=0.7 Very High
+seq_epochs_()_num_527,0.416,no,<0.5 Low
+seq_epochs_()_num_528,0.3675,no,<0.5 Low
+seq_epochs_()_num_529,0.6306,yes,0.6-0.7 High
+seq_epochs_()_num_530,0.352,no,<0.5 Low
+seq_epochs_()_num_531,0.3785,no,<0.5 Low
+seq_epochs_()_num_532,0.1504,no,<0.5 Low
+seq_epochs_()_num_533,0.5717,yes,0.5-0.6 Moderate
+seq_epochs_()_num_534,0.591,yes,0.5-0.6 Moderate
+seq_epochs_()_num_535,0.8384,yes,>=0.7 Very High
+seq_epochs_()_num_536,0.2572,no,<0.5 Low
+seq_epochs_()_num_538,0.3476,no,<0.5 Low
+seq_epochs_()_num_539,0.7774,yes,>=0.7 Very High
+seq_epochs_()_num_540,0.157,no,<0.5 Low
+seq_epochs_()_num_541,0.5943,yes,0.5-0.6 Moderate
+seq_epochs_()_num_542,0.5459,yes,0.5-0.6 Moderate
+seq_epochs_()_num_543,0.1953,no,<0.5 Low
+seq_epochs_()_num_544,0.6013,yes,0.6-0.7 High
+seq_epochs_()_num_545,0.5869,yes,0.5-0.6 Moderate
+seq_epochs_()_num_546,0.6735,yes,0.6-0.7 High
+seq_epochs_()_num_547,0.2473,no,<0.5 Low
+seq_epochs_()_num_548,0.6435,yes,0.6-0.7 High
+seq_epochs_()_num_549,0.6357,yes,0.6-0.7 High
+seq_epochs_()_num_550,0.4491,no,<0.5 Low
+seq_epochs_()_num_551,0.6366,yes,0.6-0.7 High
+seq_epochs_()_num_552,0.5041,yes,0.5-0.6 Moderate
+seq_epochs_()_num_553,0.127,no,<0.5 Low
+seq_epochs_()_num_554,0.7011,yes,>=0.7 Very High
+seq_epochs_()_num_555,0.5407,yes,0.5-0.6 Moderate
+seq_epochs_()_num_556,0.3444,no,<0.5 Low
+seq_epochs_()_num_557,0.24,no,<0.5 Low
+seq_epochs_()_num_558,0.167,no,<0.5 Low
+seq_epochs_()_num_559,0.7791,yes,>=0.7 Very High
+seq_epochs_()_num_560,0.4445,no,<0.5 Low
+seq_epochs_()_num_561,0.7055,yes,>=0.7 Very High
+seq_epochs_()_num_562,0.2537,no,<0.5 Low
+seq_epochs_()_num_563,0.3582,no,<0.5 Low
+seq_epochs_()_num_564,0.2531,no,<0.5 Low
+seq_epochs_()_num_565,0.4077,no,<0.5 Low
+seq_epochs_()_num_566,0.4234,no,<0.5 Low
+seq_epochs_()_num_567,0.7213,yes,>=0.7 Very High
+seq_epochs_()_num_568,0.7246,yes,>=0.7 Very High
+seq_epochs_()_num_569,0.207,no,<0.5 Low
+seq_epochs_()_num_570,0.6018,yes,0.6-0.7 High
+seq_epochs_()_num_571,0.725,yes,>=0.7 Very High
+seq_epochs_()_num_572,0.3913,no,<0.5 Low
+seq_epochs_()_num_573,0.3677,no,<0.5 Low
+seq_epochs_()_num_574,0.6199,yes,0.6-0.7 High
+seq_epochs_()_num_575,0.2772,no,<0.5 Low
+seq_epochs_()_num_576,0.7013,yes,>=0.7 Very High
+seq_epochs_()_num_577,0.3466,no,<0.5 Low
+seq_epochs_()_num_578,0.6426,yes,0.6-0.7 High
+seq_epochs_()_num_579,0.5417,yes,0.5-0.6 Moderate
+seq_epochs_()_num_580,0.2324,no,<0.5 Low
+seq_epochs_()_num_581,0.6366,yes,0.6-0.7 High
+seq_epochs_()_num_582,0.8295,yes,>=0.7 Very High
+seq_epochs_()_num_583,0.0507,no,<0.5 Low
+seq_epochs_()_num_584,0.3646,no,<0.5 Low
+seq_epochs_()_num_585,0.281,no,<0.5 Low
+seq_epochs_()_num_586,0.5704,yes,0.5-0.6 Moderate
+seq_epochs_()_num_587,0.7791,yes,>=0.7 Very High
+seq_epochs_()_num_588,0.5674,yes,0.5-0.6 Moderate
+seq_epochs_()_num_590,0.2677,no,<0.5 Low
+seq_epochs_()_num_591,0.3872,no,<0.5 Low
+seq_epochs_()_num_592,0.3006,no,<0.5 Low
+seq_epochs_()_num_593,0.5452,yes,0.5-0.6 Moderate
+seq_epochs_()_num_594,0.5041,yes,0.5-0.6 Moderate
+seq_epochs_()_num_595,0.3571,no,<0.5 Low
+seq_epochs_()_num_596,0.3809,no,<0.5 Low
+seq_epochs_()_num_597,0.6013,yes,0.6-0.7 High
+seq_epochs_()_num_598,0.7584,yes,>=0.7 Very High
+seq_epochs_()_num_599,0.3071,no,<0.5 Low
+seq_epochs_()_num_600,0.2342,no,<0.5 Low
+seq_epochs_()_num_601,0.6287,yes,0.6-0.7 High
+seq_epochs_()_num_602,0.8098,yes,>=0.7 Very High
+seq_epochs_()_num_603,0.3678,no,<0.5 Low
+seq_epochs_()_num_604,0.4997,no,<0.5 Low
+seq_epochs_()_num_605,0.315,no,<0.5 Low
+seq_epochs_()_num_606,0.2624,no,<0.5 Low
+seq_epochs_()_num_607,0.4056,no,<0.5 Low
+seq_epochs_()_num_608,0.1091,no,<0.5 Low
+seq_epochs_()_num_609,0.1822,no,<0.5 Low
+seq_epochs_()_num_610,0.5264,yes,0.5-0.6 Moderate
+seq_epochs_()_num_611,0.0829,no,<0.5 Low
+seq_epochs_()_num_612,0.291,no,<0.5 Low
+seq_epochs_()_num_613,0.1965,no,<0.5 Low
+seq_epochs_()_num_614,0.5243,yes,0.5-0.6 Moderate
+seq_epochs_()_num_615,0.2761,no,<0.5 Low
+seq_epochs_()_num_616,0.6775,yes,0.6-0.7 High
+seq_epochs_()_num_617,0.6179,yes,0.6-0.7 High
+seq_epochs_()_num_618,0.3109,no,<0.5 Low
+seq_epochs_()_num_619,0.3731,no,<0.5 Low
+seq_epochs_()_num_620,0.1773,no,<0.5 Low
+seq_epochs_()_num_621,0.811,yes,>=0.7 Very High
+seq_epochs_()_num_622,0.4384,no,<0.5 Low
+seq_epochs_()_num_623,0.7757,yes,>=0.7 Very High
+seq_epochs_()_num_624,0.3525,no,<0.5 Low
+seq_epochs_()_num_626,0.7546,yes,>=0.7 Very High
+seq_epochs_()_num_627,0.4055,no,<0.5 Low
+seq_epochs_()_num_628,0.3026,no,<0.5 Low
+seq_epochs_()_num_629,0.1878,no,<0.5 Low
+seq_epochs_()_num_630,0.4088,no,<0.5 Low
+seq_epochs_()_num_631,0.1993,no,<0.5 Low
+seq_epochs_()_num_632,0.4506,no,<0.5 Low
+seq_epochs_()_num_633,0.3236,no,<0.5 Low
+seq_epochs_()_num_634,0.5521,yes,0.5-0.6 Moderate
+seq_epochs_()_num_635,0.4865,no,<0.5 Low
+seq_epochs_()_num_637,0.8692,yes,>=0.7 Very High
+seq_epochs_()_num_638,0.2129,no,<0.5 Low
+seq_epochs_()_num_639,0.5863,yes,0.5-0.6 Moderate
+seq_epochs_()_num_640,0.4761,no,<0.5 Low
+seq_epochs_()_num_641,0.8988,yes,>=0.7 Very High
+seq_epochs_()_num_642,0.3699,no,<0.5 Low
+seq_epochs_()_num_643,0.3773,no,<0.5 Low
+seq_epochs_()_num_644,0.7687,yes,>=0.7 Very High
+seq_epochs_()_num_645,0.8302,yes,>=0.7 Very High
+seq_epochs_()_num_646,0.1968,no,<0.5 Low
+seq_epochs_()_num_647,0.3886,no,<0.5 Low
+seq_epochs_()_num_648,0.2702,no,<0.5 Low
+seq_epochs_()_num_649,0.8349,yes,>=0.7 Very High
+seq_epochs_()_num_650,0.2177,no,<0.5 Low
+seq_epochs_()_num_651,0.4472,no,<0.5 Low
+seq_epochs_()_num_652,0.2932,no,<0.5 Low
+seq_epochs_()_num_653,0.4143,no,<0.5 Low
+seq_epochs_()_num_654,0.2064,no,<0.5 Low
+seq_epochs_()_num_655,0.6507,yes,0.6-0.7 High
+seq_epochs_()_num_656,0.677,yes,0.6-0.7 High
+seq_epochs_()_num_657,0.1329,no,<0.5 Low
+seq_epochs_()_num_658,0.6366,yes,0.6-0.7 High
+seq_epochs_()_num_659,0.6667,yes,0.6-0.7 High
+seq_epochs_()_num_660,0.7036,yes,>=0.7 Very High
+seq_epochs_()_num_661,0.6055,yes,0.6-0.7 High
+seq_epochs_()_num_662,0.7534,yes,>=0.7 Very High
+seq_epochs_()_num_663,0.4106,no,<0.5 Low
+seq_epochs_()_num_664,0.6024,yes,0.6-0.7 High
+seq_epochs_()_num_665,0.2947,no,<0.5 Low
+seq_epochs_()_num_666,0.6851,yes,0.6-0.7 High
+seq_epochs_()_num_667,0.8794,yes,>=0.7 Very High
+seq_epochs_()_num_668,0.7294,yes,>=0.7 Very High
+seq_epochs_()_num_669,0.6428,yes,0.6-0.7 High
+seq_epochs_()_num_670,0.1739,no,<0.5 Low
+seq_epochs_()_num_671,0.5951,yes,0.5-0.6 Moderate
+seq_epochs_()_num_672,0.3708,no,<0.5 Low
+seq_epochs_()_num_673,0.1332,no,<0.5 Low
+seq_epochs_()_num_674,0.2565,no,<0.5 Low
+seq_epochs_()_num_675,0.6115,yes,0.6-0.7 High
+seq_epochs_()_num_677,0.7069,yes,>=0.7 Very High
+seq_epochs_()_num_678,0.3309,no,<0.5 Low
+seq_epochs_()_num_679,0.719,yes,>=0.7 Very High
+seq_epochs_()_num_680,0.7799,yes,>=0.7 Very High
+seq_epochs_()_num_681,0.3082,no,<0.5 Low
+seq_epochs_()_num_682,0.639,yes,0.6-0.7 High
+seq_epochs_()_num_683,0.8557,yes,>=0.7 Very High
+seq_epochs_()_num_684,0.3628,no,<0.5 Low
+seq_epochs_()_num_685,0.8146,yes,>=0.7 Very High
+seq_epochs_()_num_686,0.7354,yes,>=0.7 Very High
+seq_epochs_()_num_687,0.5388,yes,0.5-0.6 Moderate
+seq_epochs_()_num_688,0.6746,yes,0.6-0.7 High
+seq_epochs_()_num_689,0.5525,yes,0.5-0.6 Moderate
+seq_epochs_()_num_690,0.5025,yes,0.5-0.6 Moderate
+seq_epochs_()_num_691,0.7133,yes,>=0.7 Very High
+seq_epochs_()_num_692,0.7387,yes,>=0.7 Very High
+seq_epochs_()_num_693,0.6242,yes,0.6-0.7 High
+seq_epochs_()_num_694,0.1983,no,<0.5 Low
+seq_epochs_()_num_695,0.4287,no,<0.5 Low
+seq_epochs_()_num_696,0.6403,yes,0.6-0.7 High
+seq_epochs_()_num_697,0.3627,no,<0.5 Low
+seq_epochs_()_num_698,0.656,yes,0.6-0.7 High
+seq_epochs_()_num_699,0.5924,yes,0.5-0.6 Moderate
+seq_epochs_()_num_700,0.3188,no,<0.5 Low
+seq_epochs_()_num_701,0.3673,no,<0.5 Low
+seq_epochs_()_num_702,0.6699,yes,0.6-0.7 High
+seq_epochs_()_num_703,0.5492,yes,0.5-0.6 Moderate
+seq_epochs_()_num_704,0.8206,yes,>=0.7 Very High
+seq_epochs_()_num_705,0.4461,no,<0.5 Low
+seq_epochs_()_num_706,0.4441,no,<0.5 Low
+seq_epochs_()_num_707,0.6847,yes,0.6-0.7 High
+seq_epochs_()_num_708,0.5084,yes,0.5-0.6 Moderate
+seq_epochs_()_num_709,0.5984,yes,0.5-0.6 Moderate
+seq_epochs_()_num_710,0.3692,no,<0.5 Low
+seq_epochs_()_num_711,0.4175,no,<0.5 Low
+seq_epochs_()_num_712,0.1967,no,<0.5 Low
+seq_epochs_()_num_713,0.6518,yes,0.6-0.7 High
+seq_epochs_()_num_715,0.8661,yes,>=0.7 Very High
+seq_epochs_()_num_716,0.5186,yes,0.5-0.6 Moderate
+seq_epochs_()_num_717,0.4702,no,<0.5 Low
+seq_epochs_()_num_719,0.5642,yes,0.5-0.6 Moderate
+seq_epochs_()_num_720,0.7102,yes,>=0.7 Very High
+seq_epochs_()_num_721,0.5915,yes,0.5-0.6 Moderate
+seq_epochs_()_num_722,0.5676,yes,0.5-0.6 Moderate
+seq_epochs_()_num_723,0.3562,no,<0.5 Low
+seq_epochs_()_num_724,0.6132,yes,0.6-0.7 High
+seq_epochs_()_num_725,0.6604,yes,0.6-0.7 High
+seq_epochs_()_num_726,0.7206,yes,>=0.7 Very High
+seq_epochs_()_num_728,0.2645,no,<0.5 Low
+seq_epochs_()_num_729,0.4769,no,<0.5 Low
+seq_epochs_()_num_730,0.2307,no,<0.5 Low
+seq_epochs_()_num_731,0.7308,yes,>=0.7 Very High
+seq_epochs_()_num_733,0.6607,yes,0.6-0.7 High
+seq_epochs_()_num_734,0.7181,yes,>=0.7 Very High
+seq_epochs_()_num_735,0.5786,yes,0.5-0.6 Moderate
+seq_epochs_()_num_736,0.1093,no,<0.5 Low
+seq_epochs_()_num_737,0.1534,no,<0.5 Low
+seq_epochs_()_num_738,0.2866,no,<0.5 Low
+seq_epochs_()_num_739,0.4875,no,<0.5 Low
+seq_epochs_()_num_740,0.6476,yes,0.6-0.7 High
+seq_epochs_()_num_742,0.7995,yes,>=0.7 Very High
+seq_epochs_()_num_743,0.3381,no,<0.5 Low
+seq_epochs_()_num_744,0.5122,yes,0.5-0.6 Moderate
+seq_epochs_()_num_745,0.5725,yes,0.5-0.6 Moderate
+seq_epochs_()_num_746,0.4996,no,<0.5 Low
+seq_epochs_()_num_747,0.7383,yes,>=0.7 Very High
+seq_epochs_()_num_748,0.2533,no,<0.5 Low
+seq_epochs_()_num_749,0.4332,no,<0.5 Low
+seq_epochs_()_num_750,0.6722,yes,0.6-0.7 High
+seq_epochs_()_num_751,0.7333,yes,>=0.7 Very High
+seq_epochs_()_num_752,0.3497,no,<0.5 Low
+seq_epochs_()_num_753,0.5264,yes,0.5-0.6 Moderate
+seq_epochs_()_num_754,0.3206,no,<0.5 Low
+seq_epochs_()_num_755,0.6699,yes,0.6-0.7 High
+seq_epochs_()_num_756,0.5943,yes,0.5-0.6 Moderate
+seq_epochs_()_num_757,0.4211,no,<0.5 Low
+seq_epochs_()_num_758,0.5458,yes,0.5-0.6 Moderate
+seq_epochs_()_num_759,0.8308,yes,>=0.7 Very High
+seq_epochs_()_num_760,0.3575,no,<0.5 Low
+seq_epochs_()_num_761,0.5842,yes,0.5-0.6 Moderate
+seq_epochs_()_num_762,0.3768,no,<0.5 Low
+seq_epochs_()_num_763,0.5043,yes,0.5-0.6 Moderate
+seq_epochs_()_num_764,0.3058,no,<0.5 Low
+seq_epochs_()_num_765,0.5403,yes,0.5-0.6 Moderate
+seq_epochs_()_num_766,0.1953,no,<0.5 Low
+seq_epochs_()_num_767,0.282,no,<0.5 Low
+seq_epochs_()_num_768,0.6332,yes,0.6-0.7 High
+seq_epochs_()_num_769,0.3734,no,<0.5 Low
+seq_epochs_()_num_770,0.6877,yes,0.6-0.7 High
+seq_epochs_()_num_771,0.575,yes,0.5-0.6 Moderate
+seq_epochs_()_num_772,0.3303,no,<0.5 Low
+seq_epochs_()_num_773,0.4385,no,<0.5 Low
+seq_epochs_()_num_774,0.6411,yes,0.6-0.7 High
+seq_epochs_()_num_775,0.4055,no,<0.5 Low
+seq_epochs_()_num_776,0.3237,no,<0.5 Low
+seq_epochs_()_num_777,0.6248,yes,0.6-0.7 High
+seq_epochs_()_num_779,0.7496,yes,>=0.7 Very High
+seq_epochs_()_num_780,0.3223,no,<0.5 Low
+seq_epochs_()_num_781,0.4551,no,<0.5 Low
+seq_epochs_()_num_782,0.7996,yes,>=0.7 Very High
+seq_epochs_()_num_783,0.4443,no,<0.5 Low
+seq_epochs_()_num_784,0.5889,yes,0.5-0.6 Moderate
+seq_epochs_()_num_785,0.6448,yes,0.6-0.7 High
+seq_epochs_()_num_786,0.1806,no,<0.5 Low
+seq_epochs_()_num_787,0.7172,yes,>=0.7 Very High
+seq_epochs_()_num_788,0.4923,no,<0.5 Low
+seq_epochs_()_num_789,0.6436,yes,0.6-0.7 High
+seq_epochs_()_num_790,0.3783,no,<0.5 Low
+seq_epochs_()_num_791,0.4043,no,<0.5 Low
+seq_epochs_()_num_792,0.7346,yes,>=0.7 Very High
+seq_epochs_()_num_793,0.3533,no,<0.5 Low
+seq_epochs_()_num_794,0.4226,no,<0.5 Low
+seq_epochs_()_num_795,0.2089,no,<0.5 Low
+seq_epochs_()_num_796,0.7461,yes,>=0.7 Very High
+seq_epochs_()_num_797,0.3119,no,<0.5 Low
+seq_epochs_()_num_798,0.6692,yes,0.6-0.7 High
+seq_epochs_()_num_799,0.7715,yes,>=0.7 Very High
+seq_epochs_()_num_800,0.161,no,<0.5 Low
+seq_epochs_()_num_801,0.5158,yes,0.5-0.6 Moderate
+seq_epochs_()_num_802,0.7516,yes,>=0.7 Very High
+seq_epochs_()_num_803,0.456,no,<0.5 Low
+seq_epochs_()_num_804,0.2708,no,<0.5 Low
+seq_epochs_()_num_805,0.7791,yes,>=0.7 Very High
+seq_epochs_()_num_806,0.7154,yes,>=0.7 Very High
+seq_epochs_()_num_807,0.1901,no,<0.5 Low
+seq_epochs_()_num_808,0.5454,yes,0.5-0.6 Moderate
+seq_epochs_()_num_809,0.3061,no,<0.5 Low
+seq_epochs_()_num_810,0.6239,yes,0.6-0.7 High
+seq_epochs_()_num_811,0.4995,no,<0.5 Low
+seq_epochs_()_num_812,0.8811,yes,>=0.7 Very High
+seq_epochs_()_num_813,0.1993,no,<0.5 Low
+seq_epochs_()_num_814,0.7306,yes,>=0.7 Very High
+seq_epochs_()_num_815,0.5931,yes,0.5-0.6 Moderate
+seq_epochs_()_num_816,0.3465,no,<0.5 Low
+seq_epochs_()_num_817,0.2524,no,<0.5 Low
+seq_epochs_()_num_818,0.6953,yes,0.6-0.7 High
+seq_epochs_()_num_819,0.3334,no,<0.5 Low
+seq_epochs_()_num_820,0.4614,no,<0.5 Low
+seq_epochs_()_num_821,0.6199,yes,0.6-0.7 High
+seq_epochs_()_num_822,0.16,no,<0.5 Low
+seq_epochs_()_num_823,0.5712,yes,0.5-0.6 Moderate
+seq_epochs_()_num_824,0.2726,no,<0.5 Low
+seq_epochs_()_num_825,0.5692,yes,0.5-0.6 Moderate
+seq_epochs_()_num_826,0.3548,no,<0.5 Low
+seq_epochs_()_num_827,0.63,yes,0.6-0.7 High
+seq_epochs_()_num_828,0.6213,yes,0.6-0.7 High
+seq_epochs_()_num_829,0.2287,no,<0.5 Low
+seq_epochs_()_num_830,0.561,yes,0.5-0.6 Moderate
+seq_epochs_()_num_831,0.7198,yes,>=0.7 Very High
+seq_epochs_()_num_832,0.6256,yes,0.6-0.7 High
+seq_epochs_()_num_833,0.5872,yes,0.5-0.6 Moderate
+seq_epochs_()_num_834,0.3871,no,<0.5 Low
+seq_epochs_()_num_835,0.1094,no,<0.5 Low
+seq_epochs_()_num_836,0.3106,no,<0.5 Low
+seq_epochs_()_num_837,0.6849,yes,0.6-0.7 High
+seq_epochs_()_num_838,0.8195,yes,>=0.7 Very High
+seq_epochs_()_num_839,0.4925,no,<0.5 Low
+seq_epochs_()_num_840,0.4228,no,<0.5 Low
+seq_epochs_()_num_841,0.5611,yes,0.5-0.6 Moderate
+seq_epochs_()_num_842,0.1826,no,<0.5 Low
+seq_epochs_()_num_843,0.5611,yes,0.5-0.6 Moderate
+seq_epochs_()_num_844,0.2142,no,<0.5 Low
+seq_epochs_()_num_845,0.5092,yes,0.5-0.6 Moderate
+seq_epochs_()_num_846,0.3653,no,<0.5 Low
+seq_epochs_()_num_847,0.5435,yes,0.5-0.6 Moderate
+seq_epochs_()_num_848,0.3524,no,<0.5 Low
+seq_epochs_()_num_849,0.147,no,<0.5 Low
+seq_epochs_()_num_850,0.6688,yes,0.6-0.7 High
+seq_epochs_()_num_851,0.6999,yes,0.6-0.7 High
+seq_epochs_()_num_852,0.7246,yes,>=0.7 Very High
+seq_epochs_()_num_853,0.7306,yes,>=0.7 Very High
+seq_epochs_()_num_854,0.6995,yes,0.6-0.7 High
+seq_epochs_()_num_855,0.7757,yes,>=0.7 Very High
+seq_epochs_()_num_856,0.0799,no,<0.5 Low
+seq_epochs_()_num_857,0.8018,yes,>=0.7 Very High
+seq_epochs_()_num_858,0.1607,no,<0.5 Low
+seq_epochs_()_num_859,0.3747,no,<0.5 Low
+seq_epochs_()_num_860,0.6802,yes,0.6-0.7 High
+seq_epochs_()_num_861,0.1488,no,<0.5 Low
+seq_epochs_()_num_862,0.6565,yes,0.6-0.7 High
+seq_epochs_()_num_863,0.4555,no,<0.5 Low
+seq_epochs_()_num_864,0.3755,no,<0.5 Low
+seq_epochs_()_num_865,0.2961,no,<0.5 Low
+seq_epochs_()_num_866,0.6488,yes,0.6-0.7 High
+seq_epochs_()_num_867,0.7197,yes,>=0.7 Very High
+seq_epochs_()_num_868,0.1605,no,<0.5 Low
+seq_epochs_()_num_869,0.2898,no,<0.5 Low
+seq_epochs_()_num_870,0.6934,yes,0.6-0.7 High
+seq_epochs_()_num_871,0.8004,yes,>=0.7 Very High
+seq_epochs_()_num_872,0.7295,yes,>=0.7 Very High
+seq_epochs_()_num_873,0.5704,yes,0.5-0.6 Moderate
+seq_epochs_()_num_875,0.8823,yes,>=0.7 Very High
+seq_epochs_()_num_876,0.7932,yes,>=0.7 Very High
+seq_epochs_()_num_877,0.888,yes,>=0.7 Very High
+seq_epochs_()_num_878,0.6117,yes,0.6-0.7 High
+seq_epochs_()_num_879,0.501,yes,0.5-0.6 Moderate
+seq_epochs_()_num_880,0.7788,yes,>=0.7 Very High
+seq_epochs_()_num_881,0.1907,no,<0.5 Low
+seq_epochs_()_num_882,0.7135,yes,>=0.7 Very High
+seq_epochs_()_num_883,0.816,yes,>=0.7 Very High
+seq_epochs_()_num_884,0.2962,no,<0.5 Low
+seq_epochs_()_num_885,0.6013,yes,0.6-0.7 High
+seq_epochs_()_num_886,0.275,no,<0.5 Low
+seq_epochs_()_num_887,0.7892,yes,>=0.7 Very High
+seq_epochs_()_num_888,0.4799,no,<0.5 Low
+seq_epochs_()_num_889,0.5093,yes,0.5-0.6 Moderate
+seq_epochs_()_num_890,0.4083,no,<0.5 Low
+seq_epochs_()_num_891,0.509,yes,0.5-0.6 Moderate
+seq_epochs_()_num_892,0.1853,no,<0.5 Low
+seq_epochs_()_num_893,0.5937,yes,0.5-0.6 Moderate
+seq_epochs_()_num_894,0.5633,yes,0.5-0.6 Moderate
+seq_epochs_()_num_895,0.6688,yes,0.6-0.7 High
+seq_epochs_()_num_896,0.5808,yes,0.5-0.6 Moderate
+seq_epochs_()_num_897,0.3935,no,<0.5 Low
+seq_epochs_()_num_898,0.1926,no,<0.5 Low
+seq_epochs_()_num_899,0.5534,yes,0.5-0.6 Moderate
+seq_epochs_()_num_900,0.4046,no,<0.5 Low
+seq_epochs_()_num_901,0.2499,no,<0.5 Low
+seq_epochs_()_num_902,0.7687,yes,>=0.7 Very High
+seq_epochs_()_num_903,0.7135,yes,>=0.7 Very High
+seq_epochs_()_num_904,0.6487,yes,0.6-0.7 High
+seq_epochs_()_num_905,0.8776,yes,>=0.7 Very High
+seq_epochs_()_num_906,0.6227,yes,0.6-0.7 High
+seq_epochs_()_num_907,0.6842,yes,0.6-0.7 High
+seq_epochs_()_num_908,0.7036,yes,>=0.7 Very High
+seq_epochs_()_num_909,0.6366,yes,0.6-0.7 High
+seq_epochs_()_num_910,0.0723,no,<0.5 Low
+seq_epochs_()_num_911,0.5471,yes,0.5-0.6 Moderate
+seq_epochs_()_num_912,0.252,no,<0.5 Low
+seq_epochs_()_num_913,0.2452,no,<0.5 Low
+seq_epochs_()_num_914,0.6935,yes,0.6-0.7 High
+seq_epochs_()_num_915,0.6497,yes,0.6-0.7 High
+seq_epochs_()_num_916,0.4215,no,<0.5 Low
+seq_epochs_()_num_917,0.2844,no,<0.5 Low
+seq_epochs_()_num_918,0.4303,no,<0.5 Low
+seq_epochs_()_num_919,0.3362,no,<0.5 Low
+seq_epochs_()_num_920,0.3773,no,<0.5 Low
+seq_epochs_()_num_921,0.1858,no,<0.5 Low
+seq_epochs_()_num_922,0.5267,yes,0.5-0.6 Moderate
+seq_epochs_()_num_923,0.4957,no,<0.5 Low
+seq_epochs_()_num_924,0.2677,no,<0.5 Low
+seq_epochs_()_num_925,0.6813,yes,0.6-0.7 High
+seq_epochs_()_num_926,0.6021,yes,0.6-0.7 High
+seq_epochs_()_num_927,0.5842,yes,0.5-0.6 Moderate
+seq_epochs_()_num_928,0.7306,yes,>=0.7 Very High
+seq_epochs_()_num_929,0.7222,yes,>=0.7 Very High
+seq_epochs_()_num_930,0.5561,yes,0.5-0.6 Moderate
+seq_epochs_()_num_931,0.1522,no,<0.5 Low
+seq_epochs_()_num_932,0.3533,no,<0.5 Low
+seq_epochs_()_num_933,0.5263,yes,0.5-0.6 Moderate
+seq_epochs_()_num_934,0.1329,no,<0.5 Low
+seq_epochs_()_num_935,0.5172,yes,0.5-0.6 Moderate
+seq_epochs_()_num_936,0.3166,no,<0.5 Low
+seq_epochs_()_num_937,0.4129,no,<0.5 Low
+seq_epochs_()_num_938,0.6057,yes,0.6-0.7 High
+seq_epochs_()_num_939,0.3429,no,<0.5 Low
+seq_epochs_()_num_940,0.5875,yes,0.5-0.6 Moderate
+seq_epochs_()_num_941,0.6576,yes,0.6-0.7 High
+seq_epochs_()_num_942,0.3405,no,<0.5 Low
+seq_epochs_()_num_943,0.2777,no,<0.5 Low
+seq_epochs_()_num_944,0.3867,no,<0.5 Low
+seq_epochs_()_num_945,0.4689,no,<0.5 Low
+seq_epochs_()_num_946,0.3506,no,<0.5 Low
+seq_epochs_()_num_947,0.6958,yes,0.6-0.7 High
+seq_epochs_()_num_948,0.2963,no,<0.5 Low
+seq_epochs_()_num_949,0.5388,yes,0.5-0.6 Moderate
+seq_epochs_()_num_950,0.4984,no,<0.5 Low
+seq_epochs_()_num_51,0.4287,no,<0.5 Low
+seq_epochs_()_num_52,0.1755,no,<0.5 Low
+seq_epochs_()_num_53,0.6453,yes,0.6-0.7 High
+seq_epochs_()_num_54,0.4227,no,<0.5 Low
+seq_epochs_()_num_55,0.7126,yes,>=0.7 Very High
+seq_epochs_()_num_56,0.3273,no,<0.5 Low
+seq_epochs_()_num_57,0.7503,yes,>=0.7 Very High
+seq_epochs_()_num_58,0.6265,yes,0.6-0.7 High
+seq_epochs_()_num_59,0.2461,no,<0.5 Low
+seq_epochs_()_num_60,0.6849,yes,0.6-0.7 High
+seq_epochs_()_num_61,0.1649,no,<0.5 Low
+seq_epochs_()_num_62,0.3301,no,<0.5 Low
+seq_epochs_()_num_63,0.7667,yes,>=0.7 Very High
+seq_epochs_()_num_64,0.057,no,<0.5 Low
+seq_epochs_()_num_65,0.4571,no,<0.5 Low
+seq_epochs_()_num_66,0.1364,no,<0.5 Low
+seq_epochs_()_num_67,0.8488,yes,>=0.7 Very High
+seq_epochs_()_num_68,0.2547,no,<0.5 Low
+seq_epochs_()_num_69,0.7123,yes,>=0.7 Very High
+seq_epochs_()_num_70,0.6981,yes,0.6-0.7 High
+seq_epochs_()_num_71,0.2141,no,<0.5 Low
+seq_epochs_()_num_72,0.3055,no,<0.5 Low
+seq_epochs_()_num_73,0.6239,yes,0.6-0.7 High
+seq_epochs_()_num_74,0.4824,no,<0.5 Low
+seq_epochs_()_num_75,0.3957,no,<0.5 Low
+seq_epochs_()_num_76,0.1261,no,<0.5 Low
+seq_epochs_()_num_77,0.5965,yes,0.5-0.6 Moderate
+seq_epochs_()_num_78,0.5411,yes,0.5-0.6 Moderate
+seq_epochs_()_num_79,0.3946,no,<0.5 Low
+seq_epochs_()_num_80,0.2136,no,<0.5 Low
+seq_epochs_()_num_81,0.6322,yes,0.6-0.7 High
+seq_epochs_()_num_82,0.5235,yes,0.5-0.6 Moderate
+seq_epochs_()_num_83,0.5033,yes,0.5-0.6 Moderate
+seq_epochs_()_num_84,0.6248,yes,0.6-0.7 High
+seq_epochs_()_num_85,0.4215,no,<0.5 Low
+seq_epochs_()_num_86,0.3236,no,<0.5 Low
+seq_epochs_()_num_87,0.5638,yes,0.5-0.6 Moderate
+seq_epochs_()_num_88,0.306,no,<0.5 Low
+seq_epochs_()_num_89,0.5366,yes,0.5-0.6 Moderate
+seq_epochs_()_num_90,0.3037,no,<0.5 Low
+seq_epochs_()_num_91,0.352,no,<0.5 Low
+seq_epochs_()_num_92,0.3832,no,<0.5 Low
+seq_epochs_()_num_93,0.5208,yes,0.5-0.6 Moderate
+seq_epochs_()_num_94,0.4247,no,<0.5 Low
+seq_epochs_()_num_95,0.6426,yes,0.6-0.7 High
+seq_epochs_()_num_96,0.5055,yes,0.5-0.6 Moderate
+seq_epochs_()_num_97,0.604,yes,0.6-0.7 High
+seq_epochs_()_num_98,0.2729,no,<0.5 Low
+seq_epochs_()_num_99,0.5194,yes,0.5-0.6 Moderate
+seq_epochs_()_num_100,0.2545,no,<0.5 Low
+seq_epochs_()_num_951,0.7212,yes,>=0.7 Very High
+seq_epochs_()_num_952,0.429,no,<0.5 Low
+seq_epochs_()_num_953,0.7757,yes,>=0.7 Very High
+seq_epochs_()_num_954,0.419,no,<0.5 Low
+seq_epochs_()_num_955,0.7757,yes,>=0.7 Very High
+seq_epochs_()_num_956,0.5525,yes,0.5-0.6 Moderate
+seq_epochs_()_num_957,0.3855,no,<0.5 Low
+seq_epochs_()_num_958,0.2439,no,<0.5 Low
+seq_epochs_()_num_960,0.4954,no,<0.5 Low
+seq_epochs_()_num_961,0.1186,no,<0.5 Low
+seq_epochs_()_num_962,0.4123,no,<0.5 Low
+seq_epochs_()_num_963,0.2981,no,<0.5 Low
+seq_epochs_()_num_964,0.3902,no,<0.5 Low
+seq_epochs_()_num_965,0.4941,no,<0.5 Low
+seq_epochs_()_num_966,0.6435,yes,0.6-0.7 High
+seq_epochs_()_num_967,0.4865,no,<0.5 Low
+seq_epochs_()_num_968,0.8873,yes,>=0.7 Very High
+seq_epochs_()_num_969,0.5813,yes,0.5-0.6 Moderate
+seq_epochs_()_num_970,0.6574,yes,0.6-0.7 High
+seq_epochs_()_num_971,0.1806,no,<0.5 Low
+seq_epochs_()_num_972,0.8308,yes,>=0.7 Very High
+seq_epochs_()_num_973,0.6818,yes,0.6-0.7 High
+seq_epochs_()_num_974,0.6688,yes,0.6-0.7 High
+seq_epochs_()_num_975,0.6428,yes,0.6-0.7 High
+seq_epochs_()_num_976,0.8456,yes,>=0.7 Very High
+seq_epochs_()_num_978,0.6877,yes,0.6-0.7 High
+seq_epochs_()_num_979,0.3675,no,<0.5 Low
+seq_epochs_()_num_980,0.5099,yes,0.5-0.6 Moderate
+seq_epochs_()_num_981,0.8644,yes,>=0.7 Very High
+seq_epochs_()_num_982,0.4386,no,<0.5 Low
+seq_epochs_()_num_983,0.6913,yes,0.6-0.7 High
+seq_epochs_()_num_984,0.1779,no,<0.5 Low
+seq_epochs_()_num_985,0.3274,no,<0.5 Low
+seq_epochs_()_num_986,0.6376,yes,0.6-0.7 High
+seq_epochs_()_num_987,0.6181,yes,0.6-0.7 High
+seq_epochs_()_num_988,0.2281,no,<0.5 Low
+seq_epochs_()_num_989,0.2563,no,<0.5 Low
+seq_epochs_()_num_990,0.6855,yes,0.6-0.7 High
+seq_epochs_()_num_991,0.306,no,<0.5 Low
+seq_epochs_()_num_992,0.3728,no,<0.5 Low
+seq_epochs_()_num_993,0.5692,yes,0.5-0.6 Moderate
+seq_epochs_()_num_994,0.2658,no,<0.5 Low
+seq_epochs_()_num_995,0.484,no,<0.5 Low
+seq_epochs_()_num_997,0.191,no,<0.5 Low
+seq_epochs_()_num_998,0.4207,no,<0.5 Low
+seq_epochs_()_num_999,0.3408,no,<0.5 Low
+seq_epochs_()_num_1000,0.4062,no,<0.5 Low
+seq_epochs_()_num_101,0.4935,no,<0.5 Low
+seq_epochs_()_num_102,0.5041,yes,0.5-0.6 Moderate
+seq_epochs_()_num_103,0.2984,no,<0.5 Low
+seq_epochs_()_num_104,0.1814,no,<0.5 Low
+seq_epochs_()_num_105,0.5875,yes,0.5-0.6 Moderate
+seq_epochs_()_num_106,0.6877,yes,0.6-0.7 High
+seq_epochs_()_num_107,0.8678,yes,>=0.7 Very High
+seq_epochs_()_num_108,0.8898,yes,>=0.7 Very High
+seq_epochs_()_num_109,0.4539,no,<0.5 Low
+seq_epochs_()_num_110,0.1264,no,<0.5 Low
+seq_epochs_()_num_111,0.0733,no,<0.5 Low
+seq_epochs_()_num_112,0.69,yes,0.6-0.7 High
+seq_epochs_()_num_113,0.7441,yes,>=0.7 Very High
+seq_epochs_()_num_114,0.8627,yes,>=0.7 Very High
+seq_epochs_()_num_115,0.5813,yes,0.5-0.6 Moderate
+seq_epochs_()_num_116,0.3613,no,<0.5 Low
+seq_epochs_()_num_117,0.5984,yes,0.5-0.6 Moderate
+seq_epochs_()_num_118,0.2293,no,<0.5 Low
+seq_epochs_()_num_119,0.426,no,<0.5 Low
+seq_epochs_()_num_120,0.2962,no,<0.5 Low
+seq_epochs_()_num_121,0.7076,yes,>=0.7 Very High
+seq_epochs_()_num_123,0.677,yes,0.6-0.7 High
+seq_epochs_()_num_124,0.1319,no,<0.5 Low
+seq_epochs_()_num_125,0.485,no,<0.5 Low
+seq_epochs_()_num_126,0.5252,yes,0.5-0.6 Moderate
+seq_epochs_()_num_127,0.1366,no,<0.5 Low
+seq_epochs_()_num_128,0.293,no,<0.5 Low
+seq_epochs_()_num_129,0.3576,no,<0.5 Low
+seq_epochs_()_num_130,0.6775,yes,0.6-0.7 High
+seq_epochs_()_num_131,0.616,yes,0.6-0.7 High
+seq_epochs_()_num_132,0.2067,no,<0.5 Low
+seq_epochs_()_num_133,0.706,yes,>=0.7 Very High
+seq_epochs_()_num_134,0.4952,no,<0.5 Low
+seq_epochs_()_num_135,0.7715,yes,>=0.7 Very High
+seq_epochs_()_num_136,0.5704,yes,0.5-0.6 Moderate
+seq_epochs_()_num_137,0.5403,yes,0.5-0.6 Moderate
+seq_epochs_()_num_138,0.4226,no,<0.5 Low
+seq_epochs_()_num_139,0.726,yes,>=0.7 Very High
+seq_epochs_()_num_140,0.4518,no,<0.5 Low
+seq_epochs_()_num_141,0.2376,no,<0.5 Low
+seq_epochs_()_num_142,0.5283,yes,0.5-0.6 Moderate
+seq_epochs_()_num_143,0.2932,no,<0.5 Low
+seq_epochs_()_num_144,0.3276,no,<0.5 Low
+seq_epochs_()_num_145,0.2344,no,<0.5 Low
+seq_epochs_()_num_146,0.4294,no,<0.5 Low
+seq_epochs_()_num_147,0.7996,yes,>=0.7 Very High
+seq_epochs_()_num_148,0.5815,yes,0.5-0.6 Moderate
+seq_epochs_()_num_149,0.7356,yes,>=0.7 Very High
+seq_epochs_()_num_150,0.6849,yes,0.6-0.7 High
+seq_epochs_()_num_151,0.6208,yes,0.6-0.7 High
+seq_epochs_()_num_152,0.5676,yes,0.5-0.6 Moderate
+seq_epochs_()_num_153,0.199,no,<0.5 Low
+seq_epochs_()_num_154,0.6828,yes,0.6-0.7 High
+seq_epochs_()_num_155,0.3474,no,<0.5 Low
+seq_epochs_()_num_157,0.6301,yes,0.6-0.7 High
+seq_epochs_()_num_158,0.2752,no,<0.5 Low
+seq_epochs_()_num_159,0.175,no,<0.5 Low
+seq_epochs_()_num_160,0.4789,no,<0.5 Low
+seq_epochs_()_num_161,0.7249,yes,>=0.7 Very High
+seq_epochs_()_num_162,0.5265,yes,0.5-0.6 Moderate
+seq_epochs_()_num_163,0.6187,yes,0.6-0.7 High
+seq_epochs_()_num_164,0.5826,yes,0.5-0.6 Moderate
+seq_epochs_()_num_165,0.4065,no,<0.5 Low
+seq_epochs_()_num_166,0.6981,yes,0.6-0.7 High
+seq_epochs_()_num_167,0.3276,no,<0.5 Low
+seq_epochs_()_num_168,0.6935,yes,0.6-0.7 High
+seq_epochs_()_num_169,0.2608,no,<0.5 Low
+seq_epochs_()_num_170,0.5529,yes,0.5-0.6 Moderate
+seq_epochs_()_num_171,0.537,yes,0.5-0.6 Moderate
+seq_epochs_()_num_172,0.5498,yes,0.5-0.6 Moderate
+seq_epochs_()_num_173,0.8898,yes,>=0.7 Very High
+seq_epochs_()_num_174,0.4227,no,<0.5 Low
+seq_epochs_()_num_175,0.8988,yes,>=0.7 Very High
+seq_epochs_()_num_176,0.3244,no,<0.5 Low
+seq_epochs_()_num_177,0.6322,yes,0.6-0.7 High
+seq_epochs_()_num_178,0.6064,yes,0.6-0.7 High
+seq_epochs_()_num_179,0.2305,no,<0.5 Low
+seq_epochs_()_num_180,0.5727,yes,0.5-0.6 Moderate
+seq_epochs_()_num_181,0.6354,yes,0.6-0.7 High
+seq_epochs_()_num_182,0.7198,yes,>=0.7 Very High
+seq_epochs_()_num_183,0.7076,yes,>=0.7 Very High
+seq_epochs_()_num_184,0.1972,no,<0.5 Low
+seq_epochs_()_num_185,0.4413,no,<0.5 Low
+seq_epochs_()_num_186,0.4363,no,<0.5 Low
+seq_epochs_()_num_187,0.1946,no,<0.5 Low
+seq_epochs_()_num_188,0.2503,no,<0.5 Low
+seq_epochs_()_num_189,0.1166,no,<0.5 Low
+seq_epochs_()_num_190,0.2197,no,<0.5 Low
+seq_epochs_()_num_191,0.3039,no,<0.5 Low
+seq_epochs_()_num_192,0.6111,yes,0.6-0.7 High
+seq_epochs_()_num_193,0.5342,yes,0.5-0.6 Moderate
+seq_epochs_()_num_195,0.3966,no,<0.5 Low
+seq_epochs_()_num_196,0.3645,no,<0.5 Low
+seq_epochs_()_num_197,0.3122,no,<0.5 Low
+seq_epochs_()_num_198,0.3946,no,<0.5 Low
+seq_epochs_()_num_199,0.2563,no,<0.5 Low
+seq_epochs_()_num_200,0.6937,yes,0.6-0.7 High
+seq_epochs_()_num_201,0.3785,no,<0.5 Low
+seq_epochs_()_num_202,0.2885,no,<0.5 Low
+seq_epochs_()_num_203,0.4151,no,<0.5 Low
+seq_epochs_()_num_205,0.3282,no,<0.5 Low
+seq_epochs_()_num_206,0.4404,no,<0.5 Low
+seq_epochs_()_num_207,0.3943,no,<0.5 Low
+seq_epochs_()_num_208,0.6152,yes,0.6-0.7 High
+seq_epochs_()_num_209,0.5813,yes,0.5-0.6 Moderate
+seq_epochs_()_num_210,0.4924,no,<0.5 Low
+seq_epochs_()_num_211,0.7225,yes,>=0.7 Very High
+seq_epochs_()_num_212,0.3929,no,<0.5 Low
+seq_epochs_()_num_213,0.603,yes,0.6-0.7 High
+seq_epochs_()_num_214,0.6349,yes,0.6-0.7 High
+seq_epochs_()_num_215,0.448,no,<0.5 Low
+seq_epochs_()_num_216,0.2794,no,<0.5 Low
+seq_epochs_()_num_217,0.567,yes,0.5-0.6 Moderate
+seq_epochs_()_num_218,0.6405,yes,0.6-0.7 High
+seq_epochs_()_num_219,0.2593,no,<0.5 Low
+seq_epochs_()_num_220,0.7313,yes,>=0.7 Very High
+seq_epochs_()_num_221,0.401,no,<0.5 Low
+seq_epochs_()_num_222,0.4765,no,<0.5 Low
+seq_epochs_()_num_223,0.6417,yes,0.6-0.7 High
+seq_epochs_()_num_224,0.561,yes,0.5-0.6 Moderate
+seq_epochs_()_num_225,0.6953,yes,0.6-0.7 High
+seq_epochs_()_num_226,0.7376,yes,>=0.7 Very High
+seq_epochs_()_num_227,0.5219,yes,0.5-0.6 Moderate
+seq_epochs_()_num_228,0.5692,yes,0.5-0.6 Moderate
+seq_epochs_()_num_230,0.5399,yes,0.5-0.6 Moderate
+seq_epochs_()_num_232,0.4845,no,<0.5 Low
+seq_epochs_()_num_233,0.1311,no,<0.5 Low
+seq_epochs_()_num_234,0.3394,no,<0.5 Low
+seq_epochs_()_num_235,0.6332,yes,0.6-0.7 High
+seq_epochs_()_num_236,0.6877,yes,0.6-0.7 High
+seq_epochs_()_num_237,0.1853,no,<0.5 Low
+seq_epochs_()_num_238,0.4131,no,<0.5 Low
+seq_epochs_()_num_239,0.4982,no,<0.5 Low
+seq_epochs_()_num_240,0.5502,yes,0.5-0.6 Moderate
+seq_epochs_()_num_241,0.8004,yes,>=0.7 Very High
+seq_epochs_()_num_242,0.5004,yes,0.5-0.6 Moderate
+seq_epochs_()_num_243,0.5712,yes,0.5-0.6 Moderate
+seq_epochs_()_num_244,0.7,yes,>=0.7 Very High
+seq_epochs_()_num_245,0.3833,no,<0.5 Low
+seq_epochs_()_num_246,0.6604,yes,0.6-0.7 High
+seq_epochs_()_num_247,0.3053,no,<0.5 Low
+seq_epochs_()_num_248,0.4987,no,<0.5 Low
+seq_epochs_()_num_249,0.2522,no,<0.5 Low
+seq_epochs_()_num_250,0.4215,no,<0.5 Low
+seq_epochs_()_num_251,0.2532,no,<0.5 Low
+seq_epochs_()_num_252,0.3869,no,<0.5 Low
+seq_epochs_()_num_253,0.3272,no,<0.5 Low
+seq_epochs_()_num_254,0.2799,no,<0.5 Low
+seq_epochs_()_num_255,0.7263,yes,>=0.7 Very High
+seq_epochs_()_num_256,0.7964,yes,>=0.7 Very High
+seq_epochs_()_num_257,0.7082,yes,>=0.7 Very High
+seq_epochs_()_num_259,0.5143,yes,0.5-0.6 Moderate
+seq_epochs_()_num_260,0.7546,yes,>=0.7 Very High
+seq_epochs_()_num_261,0.4065,no,<0.5 Low
+seq_epochs_()_num_263,0.4008,no,<0.5 Low
+seq_epochs_()_num_264,0.6953,yes,0.6-0.7 High
+seq_epochs_()_num_265,0.6415,yes,0.6-0.7 High
+seq_epochs_()_num_266,0.5535,yes,0.5-0.6 Moderate
+seq_epochs_()_num_267,0.5517,yes,0.5-0.6 Moderate
+seq_epochs_()_num_268,0.7308,yes,>=0.7 Very High
+seq_epochs_()_num_269,0.5727,yes,0.5-0.6 Moderate
+seq_epochs_()_num_270,0.3309,no,<0.5 Low
+seq_epochs_()_num_271,0.6332,yes,0.6-0.7 High
+seq_epochs_()_num_272,0.7403,yes,>=0.7 Very High
+seq_epochs_()_num_273,0.3045,no,<0.5 Low
+seq_epochs_()_num_274,0.6144,yes,0.6-0.7 High
+seq_epochs_()_num_275,0.4578,no,<0.5 Low
+seq_epochs_()_num_276,0.3598,no,<0.5 Low
+seq_epochs_()_num_277,0.3216,no,<0.5 Low
+seq_epochs_()_num_278,0.669,yes,0.6-0.7 High
+seq_epochs_()_num_279,0.3935,no,<0.5 Low
+seq_epochs_()_num_280,0.1932,no,<0.5 Low
+seq_epochs_()_num_281,0.3386,no,<0.5 Low
+seq_epochs_()_num_282,0.3705,no,<0.5 Low
+seq_epochs_()_num_283,0.4242,no,<0.5 Low
+seq_epochs_()_num_284,0.7538,yes,>=0.7 Very High
+seq_epochs_()_num_285,0.2109,no,<0.5 Low
+seq_epochs_()_num_286,0.7105,yes,>=0.7 Very High
+seq_epochs_()_num_287,0.6115,yes,0.6-0.7 High
+seq_epochs_()_num_288,0.5859,yes,0.5-0.6 Moderate
+seq_epochs_()_num_289,0.5398,yes,0.5-0.6 Moderate
+seq_epochs_()_num_290,0.5803,yes,0.5-0.6 Moderate
+seq_epochs_()_num_291,0.6764,yes,0.6-0.7 High
+seq_epochs_()_num_292,0.3562,no,<0.5 Low
+seq_epochs_()_num_293,0.2123,no,<0.5 Low
+seq_epochs_()_num_294,0.4588,no,<0.5 Low
+seq_epochs_()_num_295,0.5692,yes,0.5-0.6 Moderate
+seq_epochs_()_num_296,0.296,no,<0.5 Low
+seq_epochs_()_num_297,0.3995,no,<0.5 Low
+seq_epochs_()_num_298,0.2599,no,<0.5 Low
+seq_epochs_()_num_299,0.5725,yes,0.5-0.6 Moderate
+seq_epochs_()_num_300,0.6175,yes,0.6-0.7 High
+seq_epochs_()_num_301,0.3106,no,<0.5 Low
+seq_epochs_()_num_302,0.4544,no,<0.5 Low
+seq_epochs_()_num_303,0.5388,yes,0.5-0.6 Moderate
+seq_epochs_()_num_304,0.7969,yes,>=0.7 Very High
+seq_epochs_()_num_305,0.4094,no,<0.5 Low
+seq_epochs_()_num_306,0.4502,no,<0.5 Low
+seq_epochs_()_num_307,0.1362,no,<0.5 Low
+seq_epochs_()_num_308,0.2108,no,<0.5 Low
+seq_epochs_()_num_309,0.2527,no,<0.5 Low
+seq_epochs_()_num_310,0.2656,no,<0.5 Low
+seq_epochs_()_num_311,0.7346,yes,>=0.7 Very High
+seq_epochs_()_num_312,0.6948,yes,0.6-0.7 High
+seq_epochs_()_num_313,0.6473,yes,0.6-0.7 High
+seq_epochs_()_num_314,0.157,no,<0.5 Low
+seq_epochs_()_num_315,0.2867,no,<0.5 Low
+seq_epochs_()_num_316,0.1514,no,<0.5 Low
+seq_epochs_()_num_317,0.6804,yes,0.6-0.7 High
+seq_epochs_()_num_318,0.6504,yes,0.6-0.7 High
+seq_epochs_()_num_319,0.5279,yes,0.5-0.6 Moderate
+seq_epochs_()_num_320,0.5839,yes,0.5-0.6 Moderate
+seq_epochs_()_num_321,0.5642,yes,0.5-0.6 Moderate
+seq_epochs_()_num_323,0.2899,no,<0.5 Low
+seq_epochs_()_num_324,0.7496,yes,>=0.7 Very High
+seq_epochs_()_num_325,0.0744,no,<0.5 Low
+seq_epochs_()_num_326,0.2938,no,<0.5 Low
+seq_epochs_()_num_327,0.7263,yes,>=0.7 Very High
+seq_epochs_()_num_328,0.1516,no,<0.5 Low
+seq_epochs_()_num_329,0.6366,yes,0.6-0.7 High
+seq_epochs_()_num_330,0.2688,no,<0.5 Low
+seq_epochs_()_num_331,0.4151,no,<0.5 Low
+seq_epochs_()_num_332,0.2257,no,<0.5 Low
+seq_epochs_()_num_333,0.6842,yes,0.6-0.7 High
+seq_epochs_()_num_334,0.2941,no,<0.5 Low
+seq_epochs_()_num_335,0.2512,no,<0.5 Low
+seq_epochs_()_num_336,0.7095,yes,>=0.7 Very High
+seq_epochs_()_num_337,0.444,no,<0.5 Low
+seq_epochs_()_num_339,0.5735,yes,0.5-0.6 Moderate
+seq_epochs_()_num_340,0.4407,no,<0.5 Low
+seq_epochs_()_num_341,0.2437,no,<0.5 Low
+seq_epochs_()_num_342,0.3267,no,<0.5 Low
+seq_epochs_()_num_343,0.6449,yes,0.6-0.7 High
+seq_epochs_()_num_344,0.2337,no,<0.5 Low
+seq_epochs_()_num_345,0.6667,yes,0.6-0.7 High
+seq_epochs_()_num_346,0.2962,no,<0.5 Low
+seq_epochs_()_num_347,0.6369,yes,0.6-0.7 High
+seq_epochs_()_num_348,0.7356,yes,>=0.7 Very High
+seq_epochs_()_num_349,0.7391,yes,>=0.7 Very High
+seq_epochs_()_num_350,0.2799,no,<0.5 Low
+seq_epochs_()_num_351,0.4287,no,<0.5 Low
+seq_epochs_()_num_352,0.4551,no,<0.5 Low
+seq_epochs_()_num_353,0.6476,yes,0.6-0.7 High
+seq_epochs_()_num_354,0.5517,yes,0.5-0.6 Moderate
+seq_epochs_()_num_355,0.8018,yes,>=0.7 Very High
+seq_epochs_()_num_356,0.4418,no,<0.5 Low
+seq_epochs_()_num_357,0.2356,no,<0.5 Low
+seq_epochs_()_num_358,0.3137,no,<0.5 Low
+seq_epochs_()_num_359,0.1037,no,<0.5 Low
+seq_epochs_()_num_360,0.7757,yes,>=0.7 Very High
+seq_epochs_()_num_361,0.6734,yes,0.6-0.7 High
+seq_epochs_()_num_362,0.401,no,<0.5 Low
+seq_epochs_()_num_363,0.6592,yes,0.6-0.7 High
+seq_epochs_()_num_364,0.3362,no,<0.5 Low
+seq_epochs_()_num_365,0.4624,no,<0.5 Low
+seq_epochs_()_num_366,0.4288,no,<0.5 Low
+seq_epochs_()_num_367,0.5889,yes,0.5-0.6 Moderate
+seq_epochs_()_num_368,0.3675,no,<0.5 Low
+seq_epochs_()_num_369,0.5984,yes,0.5-0.6 Moderate
+seq_epochs_()_num_370,0.1055,no,<0.5 Low
+seq_epochs_()_num_371,0.3628,no,<0.5 Low
+seq_epochs_()_num_372,0.3011,no,<0.5 Low
+seq_epochs_()_num_373,0.7076,yes,>=0.7 Very High
+seq_epochs_()_num_374,0.36,no,<0.5 Low
+seq_epochs_()_num_375,0.4659,no,<0.5 Low
+seq_epochs_()_num_376,0.2133,no,<0.5 Low
+seq_epochs_()_num_377,0.8276,yes,>=0.7 Very High
+seq_epochs_()_num_378,0.4976,no,<0.5 Low
+seq_epochs_()_num_379,0.5107,yes,0.5-0.6 Moderate
+seq_epochs_()_num_380,0.4993,no,<0.5 Low
+seq_epochs_()_num_381,0.6111,yes,0.6-0.7 High
+seq_epochs_()_num_382,0.5006,yes,0.5-0.6 Moderate
+seq_epochs_()_num_383,0.4832,no,<0.5 Low
+seq_epochs_()_num_384,0.1512,no,<0.5 Low
+seq_epochs_()_num_385,0.6254,yes,0.6-0.7 High
+seq_epochs_()_num_386,0.7995,yes,>=0.7 Very High
+seq_epochs_()_num_387,0.4488,no,<0.5 Low
+seq_epochs_()_num_388,0.6091,yes,0.6-0.7 High
+seq_epochs_()_num_389,0.7996,yes,>=0.7 Very High
+seq_epochs_()_num_390,0.6655,yes,0.6-0.7 High
+seq_epochs_()_num_391,0.5808,yes,0.5-0.6 Moderate
+seq_epochs_()_num_392,0.176,no,<0.5 Low
+seq_epochs_()_num_393,0.1327,no,<0.5 Low
+seq_epochs_()_num_394,0.8206,yes,>=0.7 Very High
+seq_epochs_()_num_395,0.3529,no,<0.5 Low
+seq_epochs_()_num_396,0.636,yes,0.6-0.7 High
+seq_epochs_()_num_397,0.3386,no,<0.5 Low
+seq_epochs_()_num_398,0.2996,no,<0.5 Low
+seq_epochs_()_num_399,0.4708,no,<0.5 Low
+seq_epochs_()_num_400,0.3692,no,<0.5 Low
+seq_epochs_()_num_401,0.3132,no,<0.5 Low
+seq_epochs_()_num_402,0.6417,yes,0.6-0.7 High
+seq_epochs_()_num_403,0.5417,yes,0.5-0.6 Moderate
+seq_epochs_()_num_404,0.2956,no,<0.5 Low
+seq_epochs_()_num_405,0.1655,no,<0.5 Low
+seq_epochs_()_num_406,0.7969,yes,>=0.7 Very High
+seq_epochs_()_num_407,0.4856,no,<0.5 Low
+seq_epochs_()_num_408,0.7462,yes,>=0.7 Very High
+seq_epochs_()_num_409,0.4652,no,<0.5 Low
+seq_epochs_()_num_410,0.5139,yes,0.5-0.6 Moderate
+seq_epochs_()_num_411,0.331,no,<0.5 Low
+seq_epochs_()_num_412,0.7226,yes,>=0.7 Very High
+seq_epochs_()_num_413,0.7944,yes,>=0.7 Very High
+seq_epochs_()_num_415,0.4579,no,<0.5 Low
+seq_epochs_()_num_417,0.5216,yes,0.5-0.6 Moderate
+seq_epochs_()_num_418,0.6123,yes,0.6-0.7 High
+seq_epochs_()_num_419,0.0339,no,<0.5 Low
+seq_epochs_()_num_420,0.5754,yes,0.5-0.6 Moderate
+seq_epochs_()_num_421,0.3537,no,<0.5 Low
+seq_epochs_()_num_423,0.4984,no,<0.5 Low
+seq_epochs_()_num_424,0.3755,no,<0.5 Low
+seq_epochs_()_num_425,0.3708,no,<0.5 Low
+seq_epochs_()_num_426,0.5107,yes,0.5-0.6 Moderate
+seq_epochs_()_num_427,0.5384,yes,0.5-0.6 Moderate
+seq_epochs_()_num_428,0.8508,yes,>=0.7 Very High
+seq_epochs_()_num_429,0.3698,no,<0.5 Low
+seq_epochs_()_num_430,0.7162,yes,>=0.7 Very High
+seq_epochs_()_num_431,0.7246,yes,>=0.7 Very High
+seq_epochs_()_num_432,0.6372,yes,0.6-0.7 High
+seq_epochs_()_num_433,0.6215,yes,0.6-0.7 High
+seq_epochs_()_num_434,0.7099,yes,>=0.7 Very High
+seq_epochs_()_num_435,0.197,no,<0.5 Low
+seq_epochs_()_num_436,0.7476,yes,>=0.7 Very High
+seq_epochs_()_num_437,0.143,no,<0.5 Low
+seq_epochs_()_num_438,0.7162,yes,>=0.7 Very High
+seq_epochs_()_num_439,0.72,yes,>=0.7 Very High
+seq_epochs_()_num_440,0.6969,yes,0.6-0.7 High
+seq_epochs_()_num_441,0.6877,yes,0.6-0.7 High
+seq_epochs_()_num_442,0.5117,yes,0.5-0.6 Moderate
+seq_epochs_()_num_443,0.7212,yes,>=0.7 Very High
+seq_epochs_()_num_444,0.7119,yes,>=0.7 Very High
+seq_epochs_()_num_445,0.5638,yes,0.5-0.6 Moderate
+seq_epochs_()_num_446,0.3268,no,<0.5 Low
+seq_epochs_()_num_448,0.8555,yes,>=0.7 Very High
+seq_epochs_()_num_449,0.6507,yes,0.6-0.7 High
+seq_epochs_()_num_450,0.6144,yes,0.6-0.7 High
