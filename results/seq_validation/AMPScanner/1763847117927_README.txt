@@ -1,0 +1,4 @@
+AMP Scanner Vr2. Prediction
+
+TIME: 2025-11-22 21:33:13
+MODEL VERSION: Feb. 2020 - Full Model (trained on all sequences)

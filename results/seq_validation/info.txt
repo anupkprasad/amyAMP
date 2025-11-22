@@ -1,0 +1,8 @@
+AGGRESCAN: http://bioinf.uab.es/cgi-bin/aap/aap_ov.pl
+
+
+
+AMPScaner: https://www.dveltri.com/ascan/v2/ascan.html
+
+
+Amylogram: http://biongram.biotech.uni.wroc.pl/AmyloGram/
