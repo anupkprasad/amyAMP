@@ -66,7 +66,7 @@ def amyloid_properties(seq):
         positive_fraction = sum([seq_str.count(r) for r in charged_positive]) / length
         negative_fraction = sum([seq_str.count(r) for r in charged_negative]) / length
         polar_fraction = sum([seq_str.count(r) for r in polar_residues]) / length
-        net_charge = positive_fraction - negative_fraction
+        net_charge = (positive_fraction - negative_fraction)* length
         charge_density = abs(charge) / length
         aa_counts = Counter(seq_str)
         entropy = -sum([(count/length) * np.log2(count/length) for count in aa_counts.values()])
@@ -148,7 +148,7 @@ plt.style.use('default')
 
 # Properties to visualize (amyloid and antimicrobial relevant)
 viz_properties = [
-    ('positive_fraction', 'Positive Charge Fraction'),
+    ('net_charge', 'Net Charge Distribution'),  # Replaced 'positive_fraction' with 'net_charge'
     ('amp_favorable_fraction', 'AMP-Favorable Residues'),
     ('isoelectric_point', 'Isoelectric Point'),
     ('beta_propensity', 'Beta-sheet Propensity'),
