@@ -8,6 +8,10 @@ from Bio import SeqIO
 import peptides as ptd
 import seaborn as sns
 from sklearn.manifold import TSNE
+import os
+
+# Get project root (one level up from scripts directory)
+PATH_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 """
 Class
@@ -156,13 +160,71 @@ class GetPhychem:
 """
 Def
 """
+
+def force_cpu_execution(func):
+    """
+    Decorator to force CPU execution for any function.
+    Ensures all model and tensor arguments are moved to CPU before execution.
+    
+    Args:
+        func: Function to wrap with CPU enforcement
+    
+    Returns:
+        wrapper: Wrapped function that executes on CPU
+    """
+    def wrapper(*args, **kwargs):
+        # Save original default tensor type
+        original_type = torch.get_default_dtype()
+        
+        # Force CPU
+        torch.set_default_tensor_type(torch.FloatTensor)
+        
+        # Move all tensor arguments to CPU
+        new_args = []
+        for arg in args:
+            if isinstance(arg, torch.nn.Module):
+                # Move model to CPU
+                arg = arg.cpu()
+                # Force all parameters to CPU
+                for param in arg.parameters():
+                    param.data = param.data.cpu()
+            elif isinstance(arg, torch.Tensor):
+                arg = arg.cpu()
+            new_args.append(arg)
+        
+        # Execute function
+        result = func(*new_args, **kwargs)
+        
+        # Restore original type
+        if original_type == torch.float32:
+            torch.set_default_tensor_type(torch.FloatTensor)
+        
+        return result
+    
+    return wrapper
+
+
 def read_fasta(*fasta_files) -> dict:
     seqs = ProcessSeqs(*fasta_files).get_seqs()
     return seqs   
 
 
 ### Table of physiochemical properties, need for PC6 conversion 
-def get_conversion_table(path = "/media/anup/BackupPlus/project/ML_project/data_master/physical_chemical_6.txt", norm=True): 
+def get_conversion_table(path=None, norm=True):
+    """
+    Get PC6 conversion table.
+    
+    Args:
+        path (str, optional): Path to PC6 file. If None, uses default relative path.
+        norm (bool): Whether to normalize values
+    
+    Returns:
+        dict: Conversion table
+    """
+    if path is None:
+        # Use default path relative to project root
+        path = os.path.join(PATH_ROOT, "data_master", "physical_chemical_6.txt")
+    
     table = pd.read_csv(path, sep=" ", index_col=0)
     index = list(table.index)
     if norm:
@@ -171,7 +233,6 @@ def get_conversion_table(path = "/media/anup/BackupPlus/project/ML_project/data_
         for index, aa in enumerate(index):
             table[aa] = np.array(scaled[index])[0:6]
     table["X"] = np.array([0] * 6)
-    
     
     return table
 
@@ -250,9 +311,17 @@ def decode_elucidian(seqs, table):
         decode_seq = ""
         for index in range(seq.shape[0]):
             generated_vector = seq[index]
+            # Ensure generated_vector is on CPU
+            if isinstance(generated_vector, torch.Tensor):
+                generated_vector = generated_vector.cpu()
+            
             similarity = {}
             for key, aa_vector in table.items():
-                aa_vector = torch.FloatTensor(aa_vector)
+                # Force CPU tensor creation
+                aa_vector = torch.FloatTensor(aa_vector).cpu()
+                # Ensure both tensors are on CPU
+                if isinstance(generated_vector, torch.Tensor):
+                    generated_vector = generated_vector.cpu()
                 score = dist(generated_vector, aa_vector)
                 similarity[key] = score
             key_min = min(similarity.keys(), key=(lambda k: similarity[k]))
@@ -262,7 +331,17 @@ def decode_elucidian(seqs, table):
 
 
 def generate_seqs(net, table, noise, epoch = None):
+    # Ensure net and noise are on CPU
+    if hasattr(net, 'cpu'):
+        net = net.cpu()
+    if isinstance(noise, torch.Tensor):
+        noise = noise.cpu()
+    
     generated = net(noise)
+    # Ensure generated is on CPU
+    if isinstance(generated, torch.Tensor):
+        generated = generated.cpu()
+    
     decoded_seqs = decode_elucidian(generated, table)
     seqs = {}
     for i, decoded_seq in enumerate(decoded_seqs):
@@ -608,61 +687,6 @@ def get_shuffled_sample_alternative (*fasta_files, num_seqs = 128)-> dict:
     sample = decode_elucidian(sample, table)
     sample = unpadding_seqs(sample)
     return sample
-
-"""s
-Garbage
-"""
-
-# def get_batchAlignment(seqs1, seqs2):
-#     seqs1 = list(seqs1.values())  ### enquiring seqs
-#     seqs2 = list(seqs2.values())    ### referenced seqs
-#     score_list = []
-#     identical_seqsnum = 0
-#     for seq1 in seqs1:
-#         identity_list = []
-#         if seq1 in seqs2:
-#             identical_seqsnum += 1
-#         else:
-#             for seq2 in seqs2:
-#                 identity_list.append(pairwise2.align.globalxx(seq1, seq2,score_only = True))
-#             score_list.append(max(identity_list))
-#     return score_list, identical_seqsnum
-
-
-
-
-
-
-
-
-# def get_phychem_propfdd(self, l_prop:list):
-#     """
-#     l_prop : list of properties that are in peptides module (installed on system)
-#     Returns : dic(fasta:dict(l_prop:list))
-#     """
-#     l_fasta = [f for f in self.fasta_files]
-#     phychem = {}
-#     for file in l_fasta:
-#         prop = {}
-#         for p in l_prop:
-#             p_value_of_peps = []
-#             for record in SeqIO.parse(file, "fasta"): ### iterrator in fasta peptides (record.id, record.seq)
-#                 peptide = str(record.seq) ## peptide seq in str ""
-#                 peptide = ptd.Peptide(peptide) ## Peptide is a class
-#                 p_value_of_peps.append(getattr(peptide, p)())
-#             prop[p] = p_value_of_peps
-#         phychem[file] = prop
-#     return phychem
-
-# def read_fasta(*fasta_files) -> dict:
-#     fasta = {}
-#     for file in fasta_files:
-#         for record in SeqIO.parse(file, "fasta"):
-#             if record.id in list(fasta.keys()):
-#                 fasta[str(record.id) + str(1)] = str(record.seq)
-#             else:
-#                 fasta[str(record.id)] = str(record.seq)
-#     return fasta   
 
 
 def tSNE2D_need_to_work(real_seqs, gen_seqs, filename):
