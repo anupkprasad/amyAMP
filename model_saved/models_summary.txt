@@ -1,98 +1,91 @@
+================================================================================
+MODEL ARCHITECTURE SUMMARIES
+================================================================================
 
 
- ####### Encoder ####### 
+####### ENCODER #######
 
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1            [128, 9, 31, 9]              72
-         LeakyReLU-2            [128, 9, 31, 9]               0
-     Con2dLr_Block-3            [128, 9, 31, 9]               0
-            Conv2d-4          [128, 18, 29, 10]             972
-         LeakyReLU-5          [128, 18, 29, 10]               0
-     Con2dLr_Block-6          [128, 18, 29, 10]               0
-         MaxPool2d-7           [128, 18, 13, 4]               0
-            Conv2d-8            [128, 72, 6, 3]           7,776
-         LeakyReLU-9            [128, 72, 6, 3]               0
-    Con2dLr_Block-10            [128, 72, 6, 3]               0
-           Conv2d-11           [128, 144, 4, 3]          31,104
-        LeakyReLU-12           [128, 144, 4, 3]               0
-    Con2dLr_Block-13           [128, 144, 4, 3]               0
-        MaxPool2d-14           [128, 144, 2, 1]               0
-           Conv2d-15           [128, 288, 1, 1]          82,944
-          Encoder-16           [128, 288, 1, 1]               0
-================================================================
-Total params: 122,868
-Trainable params: 122,868
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.09
-Forward/backward pass size (MB): 33.27
-Params size (MB): 0.47
-Estimated Total Size (MB): 33.82
-----------------------------------------------------------------
-
-
- ####### Generator ####### 
-
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-   ConvTranspose2d-1           [128, 144, 3, 2]         248,832
-       BatchNorm2d-2           [128, 144, 3, 2]             288
-              ReLU-3           [128, 144, 3, 2]               0
-   ConT2dBnR_Block-4           [128, 144, 3, 2]               0
-   ConvTranspose2d-5            [128, 72, 7, 3]         103,680
-       BatchNorm2d-6            [128, 72, 7, 3]             144
-              ReLU-7            [128, 72, 7, 3]               0
-   ConT2dBnR_Block-8            [128, 72, 7, 3]               0
-   ConvTranspose2d-9           [128, 36, 12, 5]          46,656
-      BatchNorm2d-10           [128, 36, 12, 5]              72
-             ReLU-11           [128, 36, 12, 5]               0
-  ConT2dBnR_Block-12           [128, 36, 12, 5]               0
-  ConvTranspose2d-13           [128, 18, 18, 7]          13,608
-      BatchNorm2d-14           [128, 18, 18, 7]              36
-             ReLU-15           [128, 18, 18, 7]               0
-  ConT2dBnR_Block-16           [128, 18, 18, 7]               0
-  ConvTranspose2d-17            [128, 9, 25, 7]           3,888
-      BatchNorm2d-18            [128, 9, 25, 7]              18
-             ReLU-19            [128, 9, 25, 7]               0
-  ConT2dBnR_Block-20            [128, 9, 25, 7]               0
-  ConvTranspose2d-21            [128, 1, 30, 6]             360
-             Tanh-22            [128, 1, 30, 6]               0
-        Generator-23            [128, 1, 30, 6]               0
-================================================================
-Total params: 417,582
-Trainable params: 417,582
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.14
-Forward/backward pass size (MB): 33.26
-Params size (MB): 1.59
-Estimated Total Size (MB): 34.99
-----------------------------------------------------------------
+Encoder(
+  (model): Sequential(
+    (0): CRBlock(
+      (model): Sequential(
+        (0): Conv2d(1, 64, kernel_size=(1, 100), stride=(1, 1), bias=False)
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (1): CRBlock(
+      (model): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(4, 1), stride=(2, 1), padding=(1, 0), bias=False)
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (2): CRBlock(
+      (model): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(8, 1), stride=(1, 1), padding=(1, 0), bias=False)
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (3): CRBlock(
+      (model): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(4, 1), stride=(2, 1), padding=(1, 0), bias=False)
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (4): Conv2d(512, 100, kernel_size=(5, 1), stride=(1, 1), bias=False)
+  )
+)
+Total parameters: 1081600
 
 
- ####### Discriminator ####### 
+####### GENERATOR #######
 
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-           Flatten-1                 [128, 468]               0
-            Linear-2                [128, 1024]         480,256
-       BatchNorm1d-3                [128, 1024]           2,048
-         LeakyReLU-4                [128, 1024]               0
-            Linear-5                 [128, 512]         524,800
-         LeakyReLU-6                 [128, 512]               0
-            Linear-7                   [128, 1]             513
-     Discriminator-8                   [128, 1]               0
-================================================================
-Total params: 1,007,617
-Trainable params: 1,007,617
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 25.31
-Forward/backward pass size (MB): 4.46
-Params size (MB): 3.84
-Estimated Total Size (MB): 33.62
-----------------------------------------------------------------
+Generator(
+  (model): Sequential(
+    (0): TransposedCBR(
+      (model): Sequential(
+        (0): ConvTranspose2d(100, 512, kernel_size=(5, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+    )
+    (1): TransposedCBR(
+      (model): Sequential(
+        (0): ConvTranspose2d(512, 256, kernel_size=(4, 1), stride=(2, 1), padding=(1, 0), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+    )
+    (2): TransposedCBR(
+      (model): Sequential(
+        (0): ConvTranspose2d(256, 128, kernel_size=(8, 1), stride=(1, 1), padding=(1, 0), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+    )
+    (3): TransposedCBR(
+      (model): Sequential(
+        (0): ConvTranspose2d(128, 64, kernel_size=(4, 1), stride=(2, 1), padding=(1, 0), bias=False)
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+      )
+    )
+    (4): ConvTranspose2d(64, 1, kernel_size=(1, 6), stride=(1, 1), bias=False)
+    (5): Tanh()
+  )
+)
+Total parameters: 1077504
+
+
+####### DISCRIMINATOR #######
+
+Discriminator(
+  (layers): Sequential(
+    (0): Linear(in_features=280, out_features=1024, bias=True)
+    (1): LeakyReLU(negative_slope=0.2)
+    (2): Linear(in_features=1024, out_features=1024, bias=True)
+    (3): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): LeakyReLU(negative_slope=0.2)
+    (5): Linear(in_features=1024, out_features=1, bias=True)
+  )
+)
+Total parameters: 1340417
