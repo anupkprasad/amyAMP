@@ -3,6 +3,10 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![GitHub stars](https://img.shields.io/github/stars/anupkprasad/amyAMP?style=social)](https://github.com/anupkprasad/amyAMP/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/anupkprasad/amyAMP?style=social)](https://github.com/anupkprasad/amyAMP/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/anupkprasad/amyAMP)](https://github.com/anupkprasad/amyAMP/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/anupkprasad/amyAMP)](https://github.com/anupkprasad/amyAMP/commits/main)
 
 **amyAMP** is a BiGAN (Bidirectional Generative Adversarial Network) based machine learning model for generating novel amyloidogenic-antimicrobial peptides (AMPs). The model learns from both antimicrobial peptides and amyloidogenic sequences to generate peptides with dual functionality.
 
