@@ -114,7 +114,8 @@ def load_model(path_model, E, G, D, optimizer_EG, optimizer_D, run_num):
     print(f"Encoder keys (sample): {list(E.state_dict().keys())[:5]}")
     
     # Load dataloader
-    dataloader = torch.load(os.path.join(path_model, 'dataloader.pt'), map_location=DEVICE)
+    dataloader = torch.load(os.path.join(path_model, 'dataloader.pt'), map_location=DEVICE,
+    weights_only=False)
     
     # Load state dictionaries for models and optimizers
     state_dict_mapping = {

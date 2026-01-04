@@ -74,49 +74,6 @@ venv\Scripts\activate  # On Windows
 pip3 install -r requirements.txt
 ```
 
-### Troubleshooting Installation
-
-**PyTorch Installation Issues:**
-```bash
-# CPU-only version (smaller download)
-pip3 install torch --index-url https://download.pytorch.org/whl/cpu
-```
-
-**BioPython Installation Issues:**
-```bash
-# Install from conda if pip fails
-conda install -c conda-forge biopython
-```
-
-**Permission Errors:**
-```bash
-# Use --user flag
-pip3 install --user -r requirements.txt
-```
-
-**Out of Memory During Installation:**
-```bash
-# Install without cache
-pip3 install --no-cache-dir -r requirements.txt
-```
-
-### Verifying Installation
-
-After installation, verify all components:
-
-```bash
-python3 -c "
-import torch
-import numpy as np
-import pandas as pd
-from Bio import SeqIO
-import peptides
-print('✓ All dependencies installed!')
-print(f'PyTorch: {torch.__version__}')
-print(f'NumPy: {np.__version__}')
-"
-```
-
 ## ⚡ Quick Start
 
 ### Generate 1000 Peptides (Easiest Way)
@@ -470,7 +427,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 
 For questions or collaborations:
-- Email: your.email@example.com
+- Email: anupkprasad121@gmail.com
 - GitHub: [@anupkprasad](https://github.com/anupkprasad)
 
 ## 🙏 Acknowledgments
@@ -485,21 +442,10 @@ If you use amyAMP in your research, please cite:
 
 ```bibtex
 @software{amyamp2024,
-  author = {Your Name},
+  author = {Anup K. Prasad},
   title = {amyAMP: BiGAN-based Amyloidogenic-Antimicrobial Peptide Generator},
   year = {2024},
   url = {https://github.com/anupkprasad/amyAMP}
 }
-```
 
-## 🔄 Version History
-
-- **v1.0.0** (2024): Initial release
-  - BiGAN architecture with gradient penalty
-  - PC6 encoding scheme
-  - Comprehensive analysis tools
-  - CPU-optimized execution
-
----
-
-**Made with ❤️ for the peptide research community**
+**Made for the peptide research community**
