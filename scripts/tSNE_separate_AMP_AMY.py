@@ -1,5 +1,5 @@
 """
-tSNE_seperate_AMP_AMY.py
+tSNE_separate_AMP_AMY.py
 ========================
 Comprehensive dimensionality reduction and visualization for peptide datasets.
 
