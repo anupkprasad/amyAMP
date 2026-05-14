@@ -228,11 +228,11 @@ def plot_identity_boxplots(identity_amp, identity_amy, identity_random, selected
     axs[0].boxplot(identity_amp, 
                    positions=range(len(selected_epochs)),
                    patch_artist=True,
-                   medianprops=dict(color="red", linewidth=1.5),
+                   medianprops=dict(color="darkred", linewidth=1.5),
                    flierprops={'marker': 'o', 'markersize': 3, 'markerfacecolor': 'white'},
-                   boxprops=dict(facecolor='lightblue', color='blue', linewidth=1.5),
-                   whiskerprops=dict(color='blue', linewidth=1.5),
-                   capprops=dict(color='blue', linewidth=1.5))
+                   boxprops=dict(facecolor='#FFB3B3', color='#FF4136', linewidth=1.5),
+                   whiskerprops=dict(color='#FF4136', linewidth=1.5),
+                   capprops=dict(color='#FF4136', linewidth=1.5))
     axs[0].set_xticks(range(len(selected_epochs)))
     axs[0].set_xticklabels(custom_xticks, rotation=25, fontsize=10)
     axs[0].set_xlabel("Epochs", fontsize=10)
@@ -245,11 +245,11 @@ def plot_identity_boxplots(identity_amp, identity_amy, identity_random, selected
     axs[1].boxplot(identity_amy,
                    positions=range(len(selected_epochs)),
                    patch_artist=True,
-                   medianprops=dict(color="red", linewidth=1.5),
+                   medianprops=dict(color="darkblue", linewidth=1.5),
                    flierprops={'marker': 'o', 'markersize': 3, 'markerfacecolor': 'white'},
-                   boxprops=dict(facecolor='lightgreen', color='green', linewidth=1.5),
-                   whiskerprops=dict(color='green', linewidth=1.5),
-                   capprops=dict(color='green', linewidth=1.5))
+                   boxprops=dict(facecolor='#B3D9FF', color='#0074D9', linewidth=1.5),
+                   whiskerprops=dict(color='#0074D9', linewidth=1.5),
+                   capprops=dict(color='#0074D9', linewidth=1.5))
     axs[1].set_xticks(range(len(selected_epochs)))
     axs[1].set_xticklabels(custom_xticks, rotation=25, fontsize=10)
     axs[1].set_xlabel("Epochs", fontsize=10)
@@ -262,11 +262,11 @@ def plot_identity_boxplots(identity_amp, identity_amy, identity_random, selected
     axs[2].boxplot(identity_random,
                    positions=range(len(selected_epochs)),
                    patch_artist=True,
-                   medianprops=dict(color="red", linewidth=1.5),
+                   medianprops=dict(color="goldenrod", linewidth=1.5),
                    flierprops={'marker': 'o', 'markersize': 3, 'markerfacecolor': 'white'},
-                   boxprops=dict(facecolor='lightcoral', color='red', linewidth=1.5),
-                   whiskerprops=dict(color='red', linewidth=1.5),
-                   capprops=dict(color='red', linewidth=1.5))
+                   boxprops=dict(facecolor='#FFEB99', color='#FFD60A', linewidth=1.5),
+                   whiskerprops=dict(color='#FFD60A', linewidth=1.5),
+                   capprops=dict(color='#FFD60A', linewidth=1.5))
     axs[2].set_xticks(range(len(selected_epochs)))
     axs[2].set_xticklabels(custom_xticks, rotation=25, fontsize=10)
     axs[2].set_xlabel("Epochs", fontsize=10)
@@ -322,43 +322,43 @@ def plot_identity_histograms(identity_amp, identity_amy, identity_random, save_p
     # Plot for AMP dataset
     counts_amp, edges_amp = np.histogram(identity_amp_last, bins=bins)
     axs[0].bar(edges_amp[:-1], counts_amp, width=np.diff(edges_amp),
-              color='lightblue', edgecolor='blue')
+              color='#FFB3B3', edgecolor='#FF4136')
     axs[0].set_xlabel("Percent Identity (%)", fontsize=10)
     axs[0].set_ylabel("Peptide Number", fontsize=10)
     axs[0].set_title("(d)", loc='left', fontweight='bold', fontsize=12)
     axs[0].annotate(f"Mean: {stats['AMP'][0]:.2f}\nStd: {stats['AMP'][1]:.2f}",
                    xy=(0.95, 0.95), xycoords='axes fraction',
-                   ha='right', va='top', fontsize=8, color='blue',
+                   ha='right', va='top', fontsize=8, color='#FF4136',
                    bbox=dict(boxstyle="round,pad=0.3", facecolor='white',
-                           edgecolor='blue'))
+                           edgecolor='#FF4136'))
     axs[0].grid(alpha=0.3, linestyle='--')
     
     # Plot for AMY dataset
     counts_amy, edges_amy = np.histogram(identity_amy_last, bins=bins)
     axs[1].bar(edges_amy[:-1], counts_amy, width=np.diff(edges_amy),
-              color='lightgreen', edgecolor='green')
+              color='#B3D9FF', edgecolor='#0074D9')
     axs[1].set_xlabel("Percent Identity (%)", fontsize=10)
     axs[1].set_ylabel("Peptide Number", fontsize=10)
     axs[1].set_title("(e)", loc='left', fontweight='bold', fontsize=12)
     axs[1].annotate(f"Mean: {stats['AMY'][0]:.2f}\nStd: {stats['AMY'][1]:.2f}",
                    xy=(0.95, 0.95), xycoords='axes fraction',
-                   ha='right', va='top', fontsize=8, color='green',
+                   ha='right', va='top', fontsize=8, color='#0074D9',
                    bbox=dict(boxstyle="round,pad=0.3", facecolor='white',
-                           edgecolor='green'))
+                           edgecolor='#0074D9'))
     axs[1].grid(alpha=0.3, linestyle='--')
     
     # Plot for random dataset
     counts_random, edges_random = np.histogram(identity_random_last, bins=bins)
     axs[2].bar(edges_random[:-1], counts_random, width=np.diff(edges_random),
-              color='lightcoral', edgecolor='red')
+              color='#FFEB99', edgecolor='#FFD60A')
     axs[2].set_xlabel("Percent Identity (%)", fontsize=10)
     axs[2].set_ylabel("Peptide Number", fontsize=10)
     axs[2].set_title("(f)", loc='left', fontweight='bold', fontsize=12)
     axs[2].annotate(f"Mean: {stats['Random'][0]:.2f}\nStd: {stats['Random'][1]:.2f}",
                    xy=(0.95, 0.95), xycoords='axes fraction',
-                   ha='right', va='top', fontsize=8, color='red',
+                   ha='right', va='top', fontsize=8, color='#FFD60A',
                    bbox=dict(boxstyle="round,pad=0.3", facecolor='white',
-                           edgecolor='red'))
+                           edgecolor='#FFD60A'))
     axs[2].grid(alpha=0.3, linestyle='--')
     
     plt.tight_layout()

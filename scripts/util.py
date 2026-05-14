@@ -11,7 +11,25 @@ from sklearn.manifold import TSNE
 import os
 
 # Get project root (one level up from scripts directory)
-PATH_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Handle both script and Jupyter notebook contexts
+try:
+    PATH_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+except NameError:
+    # In Jupyter notebooks, __file__ may not be available
+    PATH_ROOT = os.path.dirname(os.path.dirname(os.path.abspath('scripts/util.py')))
+
+# Verify PATH_ROOT is correct - should contain 'data_master' directory
+if not os.path.exists(os.path.join(PATH_ROOT, 'data_master')):
+    # Try alternative: assume we're in a notebook in workspace/amyAMP or results/seq_validation
+    if os.path.exists(os.path.expanduser('~/workspace/amyAMP/data_master')):
+        PATH_ROOT = os.path.expanduser('~/workspace/amyAMP')
+    elif os.getcwd().endswith('amyAMP') or 'amyAMP' in os.getcwd():
+        # Find amyAMP directory in current path
+        cwd = os.getcwd()
+        while cwd != '/' and not cwd.endswith('amyAMP'):
+            cwd = os.path.dirname(cwd)
+        if cwd.endswith('amyAMP'):
+            PATH_ROOT = cwd
 
 """
 Class
@@ -222,8 +240,30 @@ def get_conversion_table(path=None, norm=True):
         dict: Conversion table
     """
     if path is None:
-        # Use default path relative to project root
-        path = os.path.join(PATH_ROOT, "data_master", "physical_chemical_6.txt")
+        # Use default path relative to project root - explicitly construct from PATH_ROOT
+        path = os.path.abspath(os.path.join(PATH_ROOT, "data_master", "physical_chemical_6.txt"))
+    
+    # Verify the path exists before trying to read
+    if not os.path.exists(path):
+        # Try alternative paths
+        alternatives = [
+            os.path.expanduser("~/workspace/amyAMP/data_master/physical_chemical_6.txt"),
+            "/home/anupkumar/workspace/amyAMP/data_master/physical_chemical_6.txt",
+            os.path.join(os.getcwd(), "data_master", "physical_chemical_6.txt"),
+        ]
+        for alt_path in alternatives:
+            if os.path.exists(alt_path):
+                path = alt_path
+                break
+        else:
+            raise FileNotFoundError(
+                f"Cannot find physical_chemical_6.txt. Tried:\n"
+                f"  1. {path}\n"
+                f"  2. {alternatives[0]}\n"
+                f"  3. {alternatives[1]}\n"
+                f"Current PATH_ROOT: {PATH_ROOT}\n"
+                f"Current working directory: {os.getcwd()}"
+            )
     
     table = pd.read_csv(path, sep=" ", index_col=0)
     index = list(table.index)
