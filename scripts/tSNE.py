@@ -801,10 +801,11 @@ if __name__ == "__main__":
 
     path_data = os.path.expanduser("~/workspace/amyAMP/data_master/")
     path_result = os.path.expanduser("~/workspace/amyAMP/results/")
+    path_pc6 = os.path.expanduser("~/workspace/amyAMP/data_master/physical_chemical_6.txt")
     if not os.path.exists(path_result):
         os.makedirs(path_result)
         
-    table = util.get_conversion_table(path_data+"physical_chemical_6.txt")
+    table = util.get_conversion_table(path_pc6)
     l_fasta = [
         path_result+"sequence/"+"seqs_generated_postprocessed.fasta",
         path_result+"sequence/"+"seqs_realAMPs_realAMYs1000.fasta",

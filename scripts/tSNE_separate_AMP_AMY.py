@@ -42,7 +42,7 @@ plotStyle.setPlotStyle()
 # ==============================================================================
 
 # Visual styling
-CONTRAST_COLORS = ['#E63946', '#06FFA5', '#754DE3', '#FFD60A']  # Red, Mint, Purple, Yellow
+CONTRAST_COLORS = ['#2ECC40', '#FF4136', '#0074D9', '#FFD60A']  # Green (amyAMP), Red (AMP), Blue (AMY), Yellow (RandPep)
 MARKERS = ['o', 'o', 'o', 'o']  # Same marker for all datasets
 GROUP_LABELS = ["amyAMP", "AMP", "AMY", "RandPep"]
 
@@ -610,12 +610,13 @@ if __name__ == "__main__":
     # Define paths (relative to project root)
     path_data = os.path.join(PATH_ROOT, "data_master")
     path_result = os.path.join(PATH_ROOT, "results")
+    path_pc6 = os.path.join(PATH_ROOT, "data_master", "physical_chemical_6.txt")
     
     # Create results directory if it doesn't exist
     os.makedirs(path_result, exist_ok=True)
     
     # Load PC6 conversion table
-    table = util.get_conversion_table(os.path.join(path_data, "physical_chemical_6.txt"))
+    table = util.get_conversion_table(path_pc6)
     
     # Define FASTA files
     l_fasta = [

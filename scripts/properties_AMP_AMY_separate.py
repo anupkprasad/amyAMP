@@ -43,12 +43,12 @@ PATH_SEQUENCE = os.path.join(PATH_RESULT, "sequence")
 # Dataset configuration
 FASTA_FILES = [
     "seqs_generated_postprocessed.fasta",
-    "seqs_realAMPs1000.fasta",
-    "seqs_realAMYs1000.fasta",
+    "dbaasp_APR_processed_removedJZ.fasta",
+    "amys_uniqueAI4AMP_normalized.fasta",
     "random_peptides_1000.fasta"
 ]
 DATASET_LABELS = ["amyAMP", "AMP", "AMY", "randPep"]
-DATASET_COLORS = ['#E63946', '#06FFA5', '#754DE3', '#FFD60A']  # Red, Mint, Purple, Yellow
+DATASET_COLORS = ['#2ECC40', '#FF4136', '#0074D9', '#FFD60A']  # Red, Mint, Purple, Yellow
 
 # Property acronym mapping for visualizations
 PROPERTY_ACRONYMS = {
