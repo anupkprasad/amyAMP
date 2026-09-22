@@ -80,6 +80,15 @@ ehthumbs.db
 # results/*.csv
 # results/*.json
 
+# Regenerable analysis caches
+results/percent_identity_cache*.npz
+**/percent_identity_cache*.npz
+
+# Backup / duplicate working copies (do not commit)
+*_bckp.py
+* (copy).py
+*(copy).py
+
 # Conda
 .conda/
 *.conda
