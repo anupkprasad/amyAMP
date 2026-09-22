@@ -1,0 +1,3568 @@
+>seq_epochs_()_num_843 
+Positions	Sequence	Average score per residue
+1-13	LRQCQLVMSLLRR	38.2299973076923
+>seq_epochs_()_num_228 
+Positions	Sequence	Average score per residue
+1-5	KLLSQ	52.374582
+7-7	L	5.685619
+9-10	KN	20.7357855
+18-24	GTKKMYP	10.2245578571429
+>seq_epochs_()_num_764 
+Positions	Sequence	Average score per residue
+1-2	VT	30.4347825
+4-15	RLSRLATLFARA	65.8026758333333
+>seq_epochs_()_num_176 
+Positions	Sequence	Average score per residue
+1-19	GFCGFMARVTSAAKMVGTM	45.0448864210526
+21-27	HPVSKMQ	27.5680841428571
+>seq_epochs_()_num_28 
+Positions	Sequence	Average score per residue
+1-8	IDQISQTF	57.148829375
+11-20	YRPVNVTDVV	25.8193981
+>seq_epochs_()_num_766 
+Positions	Sequence	Average score per residue
+4-10	KAMHLGN	29.38366
+12-12	K	11.371237
+>seq_epochs_()_num_68 
+Positions	Sequence	Average score per residue
+5-7	KVR	40.4682273333333
+14-20	LKVATKF	17.3435257142857
+>seq_epochs_()_num_645 
+Positions	Sequence	Average score per residue
+1-8	GSFLVSWM	85.535117
+>seq_epochs_()_num_649 
+Positions	Sequence	Average score per residue
+1-6	LLVSYV	72.5752511666667
+8-10	WMF	24.749164
+>seq_epochs_()_num_172 
+Positions	Sequence	Average score per residue
+>seq_epochs_()_num_241 
+Positions	Sequence	Average score per residue
+1-25	VAYKQMGSVSKTIMSKVAALVATTM	55.25083596
+>seq_epochs_()_num_25 
+Positions	Sequence	Average score per residue
+1-5	GIVVM	65.3511708
+7-7	T	29.431438
+9-21	VKKAIRSCYRVVQ	19.9897090769231
+>seq_epochs_()_num_224 
+Positions	Sequence	Average score per residue
+1-20	SIWNSMVSVIKAGIYAVGHS	56.33779265
+>seq_epochs_()_num_180 
+Positions	Sequence	Average score per residue
+1-14	GNLRVVATLAMMLK	52.5322504285714
+>seq_epochs_()_num_585 
+Positions	Sequence	Average score per residue
+1-7	SAINATS	81.5575731428571
+>seq_epochs_()_num_641 
+Positions	Sequence	Average score per residue
+1-12	KTLFIQLILFRV	83.0546265833334
+>seq_epochs_()_num_656 
+Positions	Sequence	Average score per residue
+1-12	RVVKVLVYKLCK	36.20401325
+>seq_epochs_()_num_198 
+Positions	Sequence	Average score per residue
+1-6	MLVTAM	75.919732
+>seq_epochs_()_num_94 
+Positions	Sequence	Average score per residue
+1-9	GRRYIYHWM	74.9163882222222
+>seq_epochs_()_num_65 
+Positions	Sequence	Average score per residue
+1-2	RS	10.8695655
+5-5	K	8.361204
+7-23	VTKQLFTMLASYTTKNV	55.3413338235294
+>seq_epochs_()_num_587 
+Positions	Sequence	Average score per residue
+1-6	GIFSQM	40.6354515
+8-25	SAGKHIIAHVVGVLANKL	52.8242291111111
+>seq_epochs_()_num_234 
+Positions	Sequence	Average score per residue
+1-11	RRRKIWLWRRR	20.0668894545455
+>seq_epochs_()_num_90 
+Positions	Sequence	Average score per residue
+1-10	KVLKMALTHL	52.4414714
+>seq_epochs_()_num_973 
+Positions	Sequence	Average score per residue
+1-7	ALLTIMG	67.7974198571429
+>seq_epochs_()_num_674 
+Positions	Sequence	Average score per residue
+1-6	GNLRAA	48.77369
+8-8	A	13.712375
+>seq_epochs_()_num_545 
+Positions	Sequence	Average score per residue
+1-17	GITGIMKIVFAGAMVAF	63.3680896470588
+>seq_epochs_()_num_682 
+Positions	Sequence	Average score per residue
+1-10	RKRWLWWWYM	84.5150504
+>seq_epochs_()_num_932 
+Positions	Sequence	Average score per residue
+1-6	KLLRYM	27.87068
+>seq_epochs_()_num_276 
+Positions	Sequence	Average score per residue
+1-7	GGIDVSA	55.7572861428571
+>seq_epochs_()_num_547 
+Positions	Sequence	Average score per residue
+1-8	QKSAVTGM	63.461538125
+>seq_epochs_()_num_690 
+Positions	Sequence	Average score per residue
+1-9	GLIVLTKAV	51.7279818888889
+>seq_epochs_()_num_9 
+Positions	Sequence	Average score per residue
+1-8	IQKAAFLI	56.438127125
+10-11	AH	16.722408
+13-24	KTIKVTNRTYCP	29.93311025
+>seq_epochs_()_num_268 
+Positions	Sequence	Average score per residue
+1-13	AFSAILALVARLI	65.2173912307692
+>seq_epochs_()_num_260 
+Positions	Sequence	Average score per residue
+9-27	KPSAAVLNTLNGVVSMYSS	63.2811124210526
+>seq_epochs_()_num_961 
+Positions	Sequence	Average score per residue
+1-8	NQSIANAA	68.3946485
+>seq_epochs_()_num_705 
+Positions	Sequence	Average score per residue
+1-14	VDWNKIINKAVEVL	57.6445295714286
+>seq_epochs_()_num_686 
+Positions	Sequence	Average score per residue
+2-12	LGAKHSLAFGQ	46.3666768181818
+>seq_epochs_()_num_272 
+Positions	Sequence	Average score per residue
+1-5	FLNWF	67.8260868
+8-13	LMGRML	29.09699
+>seq_epochs_()_num_291 
+Positions	Sequence	Average score per residue
+1-21	GIVKNMLKSVLVSMQMQMCMQ	45.7556937142857
+>seq_epochs_()_num_728 
+Positions	Sequence	Average score per residue
+1-5	RSMIY	52.5752508
+8-21	IKVGTAMAIAGWMK	59.3645484285714
+>seq_epochs_()_num_37 
+Positions	Sequence	Average score per residue
+1-3	ITY	49.6098106666667
+6-7	KM	31.939799
+14-22	KTVTRFLTQ	71.4232627777778
+>seq_epochs_()_num_770 
+Positions	Sequence	Average score per residue
+1-25	GLYNIVQSVGKDAVTHVVSKLTERL	33.40468224
+>seq_epochs_()_num_758 
+Positions	Sequence	Average score per residue
+1-6	LVIVLV	79.93311
+>seq_epochs_()_num_48 
+Positions	Sequence	Average score per residue
+1-1	L	17.391304
+3-16	KALKRIIALIVHFK	64.3096033571429
+>seq_epochs_()_num_7 
+Positions	Sequence	Average score per residue
+1-13	AFLALIAKVAQVI	46.6683816923077
+>seq_epochs_()_num_437 
+Positions	Sequence	Average score per residue
+1-9	RRKVIKASN	53.1772572222222
+>seq_epochs_()_num_441 
+Positions	Sequence	Average score per residue
+1-5	GLFSV	38.7290968
+7-16	KKVASLISGV	55.0501674
+>seq_epochs_()_num_579 
+Positions	Sequence	Average score per residue
+1-15	GKRRYYSWGASMIGI	48.9632108666666
+>seq_epochs_()_num_433 
+Positions	Sequence	Average score per residue
+1-8	PSHLLVLN	52.63377925
+10-11	SG	35.1170565
+13-13	V	12.040134
+>seq_epochs_()_num_449 
+Positions	Sequence	Average score per residue
+1-20	GLFRVVGYMILNGTVKFSQV	57.50836135
+>seq_epochs_()_num_45 
+Positions	Sequence	Average score per residue
+1-15	GKFTMTQKTGSILSP	53.6677813333333
+>seq_epochs_()_num_468 
+Positions	Sequence	Average score per residue
+10-12	RNM	16.276477
+>seq_epochs_()_num_969 
+Positions	Sequence	Average score per residue
+1-5	FIGAI	52.6421404
+7-20	RVAVHIGQALVAKL	61.7295749285714
+>seq_epochs_()_num_406 
+Positions	Sequence	Average score per residue
+1-19	ILCFVSMVVKGVQILVKHC	44.6576307368421
+>seq_epochs_()_num_475 
+Positions	Sequence	Average score per residue
+1-13	FISAIGKLLKGIF	53.0743503846154
+>seq_epochs_()_num_967 
+Positions	Sequence	Average score per residue
+8-10	RTV	36.9007803333333
+12-12	A	9.364548
+15-26	KCAGTGHCVMLT	51.5886285833333
+>seq_epochs_()_num_539 
+Positions	Sequence	Average score per residue
+1-5	GLGNF	68.026756
+7-8	HT	44.648829
+11-23	KFGKAFVGNLVKS	49.6784152307692
+>seq_epochs_()_num_570 
+Positions	Sequence	Average score per residue
+1-13	KITTRWDVYVACQ	60.4322099230769
+>seq_epochs_()_num_483 
+Positions	Sequence	Average score per residue
+1-1	G	50.83612
+3-5	YKV	31.2151616666667
+8-8	N	8.361204
+10-10	M	6.354515
+12-25	HMLNKAVTVVASTL	60.9890112142857
+>seq_epochs_()_num_499 
+Positions	Sequence	Average score per residue
+1-5	VMGTF	68.7625416
+8-22	SAGKMLQAMASMIKT	50.2564102666667
+>seq_epochs_()_num_564 
+Positions	Sequence	Average score per residue
+1-4	RMIA	30.0167225
+7-12	MLRRWF	31.5496096666667
+14-14	W	5.685619
+17-23	KGNVKVH	7.21452428571429
+>seq_epochs_()_num_479 
+Positions	Sequence	Average score per residue
+1-11	MLSAVMDALKS	53.3292792727273
+>seq_epochs_()_num_901 
+Positions	Sequence	Average score per residue
+1-12	RIVKIAVMRMLT	45.1226308333333
+>seq_epochs_()_num_523 
+Positions	Sequence	Average score per residue
+1-9	KTLVVMKYK	54.3664066666667
+>seq_epochs_()_num_70 
+Positions	Sequence	Average score per residue
+1-4	GFLS	35.702341
+7-16	KKVASLIQKV	47.8260867
+>seq_epochs_()_num_601 
+Positions	Sequence	Average score per residue
+1-6	RLVASV	42.6978818333333
+8-23	RKSNAMIVKQLAVKMK	39.673912875
+>seq_epochs_()_num_74 
+Positions	Sequence	Average score per residue
+5-14	RRVAKYVAMY	54.147157
+>seq_epochs_()_num_383 
+Positions	Sequence	Average score per residue
+1-11	SARWVWHWLFR	68.4098509090909
+>seq_epochs_()_num_998 
+Positions	Sequence	Average score per residue
+1-15	GKSKLIKWINKWWRK	34.6042362666667
+>seq_epochs_()_num_774 
+Positions	Sequence	Average score per residue
+1-13	KQVVLLAMKVLVT	61.3841007692308
+>seq_epochs_()_num_735 
+Positions	Sequence	Average score per residue
+1-4	KVAF	68.979933
+8-14	AKRGIFV	56.9995218571429
+>seq_epochs_()_num_776 
+Positions	Sequence	Average score per residue
+1-13	AWADWWQWMTWRR	43.0151787692308
+>seq_epochs_()_num_733 
+Positions	Sequence	Average score per residue
+1-6	LLICIV	88.294314
+>seq_epochs_()_num_986 
+Positions	Sequence	Average score per residue
+1-3	ILA	20.9587513333333
+5-5	L	16.722408
+7-26	RASAVVAPVPLKVVTQTKMS	41.8729098
+>seq_epochs_()_num_666 
+Positions	Sequence	Average score per residue
+1-11	GHLLGGIKKNM	19.5804194545455
+>seq_epochs_()_num_93 
+Positions	Sequence	Average score per residue
+9-13	KKMQY	48.6287624
+19-25	TKKVTNW	8.60009542857143
+>seq_epochs_()_num_270 
+Positions	Sequence	Average score per residue
+1-8	GTWRNIAN	51.170568625
+>seq_epochs_()_num_624 
+Positions	Sequence	Average score per residue
+1-15	KLSAMTHLSMLRLAG	47.1794870666667
+>seq_epochs_()_num_209 
+Positions	Sequence	Average score per residue
+1-5	FIGAV	54.7157192
+7-20	KLSGHVFPAVMSHV	44.4816052857143
+>seq_epochs_()_num_684 
+Positions	Sequence	Average score per residue
+7-16	KMVARLWSRV	36.6889633
+>seq_epochs_()_num_251 
+Positions	Sequence	Average score per residue
+4-10	KKFVKQW	41.3282371428571
+12-17	RAFKRM	22.742475
+>seq_epochs_()_num_930 
+Positions	Sequence	Average score per residue
+1-13	LIGSIWDSSKSLF	46.5654746923077
+>seq_epochs_()_num_325 
+Positions	Sequence	Average score per residue
+1-2	HD	15.384615
+4-4	S	14.381271
+7-19	KSVNSPLSTATAS	43.9156163846154
+>seq_epochs_()_num_971 
+Positions	Sequence	Average score per residue
+1-1	H	7.35786
+3-4	RI	25.083612
+7-7	I	18.394649
+10-17	RICKWFTN	74.414715625
+>seq_epochs_()_num_672 
+Positions	Sequence	Average score per residue
+1-13	LLSKLWATTKTMF	52.4311808461539
+>seq_epochs_()_num_643 
+Positions	Sequence	Average score per residue
+1-5	FLTKI	23.1438128
+8-13	KMWKVF	22.742475
+>seq_epochs_()_num_226 
+Positions	Sequence	Average score per residue
+1-14	GIGGAVISSLKAAW	44.0038222857143
+16-27	GALKGFAQPKAQ	33.7513935
+>seq_epochs_()_num_963 
+Positions	Sequence	Average score per residue
+1-2	HL	6.354515
+4-12	RMKVLSRQV	32.4043106666667
+15-15	T	57.525084
+18-18	H	29.09699
+>seq_epochs_()_num_474 
+Positions	Sequence	Average score per residue
+1-8	LTLVLKLM	75.334448
+>seq_epochs_()_num_257 
+Positions	Sequence	Average score per residue
+1-13	GFLSVIALVGKTL	66.4780036923077
+>seq_epochs_()_num_174 
+Positions	Sequence	Average score per residue
+1-11	MKMIKMILKMV	51.9914867272727
+>seq_epochs_()_num_472 
+Positions	Sequence	Average score per residue
+1-9	ILTLICQVL	53.1772572222222
+>seq_epochs_()_num_387 
+Positions	Sequence	Average score per residue
+1-13	ITMRYSLSVSSLG	50.3215847692308
+16-16	S	9.0301
+18-27	KLHAKYKYMV	32.1070236
+>seq_epochs_()_num_703 
+Positions	Sequence	Average score per residue
+4-15	KRMNEAANYWVM	67.0011145
+>seq_epochs_()_num_389 
+Positions	Sequence	Average score per residue
+1-5	GVLDI	44.9498328
+8-10	GAA	44.0356743333333
+12-25	DIVGHVVSKLYERI	31.9875778571429
+>seq_epochs_()_num_289 
+Positions	Sequence	Average score per residue
+4-4	R	5.351171
+6-22	AKSAAQEVPKAICSVVK	38.5795791176471
+>seq_epochs_()_num_505 
+Positions	Sequence	Average score per residue
+1-20	KCGAFNATVSQFINGVFGNA	63.6120402
+>seq_epochs_()_num_503 
+Positions	Sequence	Average score per residue
+1-15	GMRRTISFAMTMLSG	55.4292082666667
+>seq_epochs_()_num_955 
+Positions	Sequence	Average score per residue
+1-1	K	14.046823
+3-7	KGFVK	33.7123746
+15-26	QAVHHVIKAISH	24.7212933333333
+>seq_epochs_()_num_572 
+Positions	Sequence	Average score per residue
+1-18	GMLNKILKVAAKVAAKLL	44.5930881111111
+>seq_epochs_()_num_907 
+Positions	Sequence	Average score per residue
+1-13	FLGVITKVLSSLM	70.3112938461538
+>seq_epochs_()_num_924 
+Positions	Sequence	Average score per residue
+1-13	AISKYWDTTKGMF	33.1618216153846
+>seq_epochs_()_num_768 
+Positions	Sequence	Average score per residue
+1-4	LLNA	77.25752525
+7-13	HAQHQMF	46.2494031428571
+>seq_epochs_()_num_599 
+Positions	Sequence	Average score per residue
+1-1	K	32.441472
+3-7	KSFVK	33.444816
+10-11	KS	12.207358
+14-26	KTVLTTVVKVLSS	67.1726266923077
+>seq_epochs_()_num_725 
+Positions	Sequence	Average score per residue
+1-10	FIHVLGGMAA	40.8361205
+12-17	FAPKIF	64.7714605
+19-24	TLSKKC	11.036789
+>seq_epochs_()_num_899 
+Positions	Sequence	Average score per residue
+1-15	LNAQYKQWYTLFYRL	79.8662207333333
+>seq_epochs_()_num_607 
+Positions	Sequence	Average score per residue
+1-13	LRRVLNLMKTHLY	21.2760486153846
+>seq_epochs_()_num_760 
+Positions	Sequence	Average score per residue
+1-10	QVKMMSLAVN	50.5685615
+>seq_epochs_()_num_603 
+Positions	Sequence	Average score per residue
+1-10	AFFAMSIKRN	31.4046821
+>seq_epochs_()_num_459 
+Positions	Sequence	Average score per residue
+1-14	FLLSLVGTLVGSIV	70.8074535
+>seq_epochs_()_num_417 
+Positions	Sequence	Average score per residue
+1-2	NV	39.297659
+4-9	HISVSV	79.264214
+>seq_epochs_()_num_568 
+Positions	Sequence	Average score per residue
+1-5	GVLDI	59.7324416
+8-25	GAAKDLAGHMASKVYNKI	28.112226
+>seq_epochs_()_num_581 
+Positions	Sequence	Average score per residue
+1-13	GQSSNVLTNTAMM	56.2387446153846
+>seq_epochs_()_num_52 
+Positions	Sequence	Average score per residue
+1-11	HASKSIKTSFK	20.2189114545455
+>seq_epochs_()_num_753 
+Positions	Sequence	Average score per residue
+1-2	NF	30.1003345
+4-5	KK	8.361204
+8-16	EMGKSGVSV	45.2991452222222
+>seq_epochs_()_num_115 
+Positions	Sequence	Average score per residue
+1-20	FLGALMAGTASVITSITHNL	55.76923065
+>seq_epochs_()_num_477 
+Positions	Sequence	Average score per residue
+1-15	ALLVIKHVIALFVKI	59.4202900666667
+>seq_epochs_()_num_576 
+Positions	Sequence	Average score per residue
+1-13	LLGGLLGVLKKLM	34.4738874615385
+>seq_epochs_()_num_903 
+Positions	Sequence	Average score per residue
+1-21	VLGSLVASMLSNGKAITSFVR	53.4320750476191
+>seq_epochs_()_num_265 
+Positions	Sequence	Average score per residue
+1-18	TLVVMIGKALKAIISLFK	66.0535117222222
+>seq_epochs_()_num_794 
+Positions	Sequence	Average score per residue
+1-18	WLSNITKMTTAMTYFKKC	44.9461167222222
+>seq_epochs_()_num_267 
+Positions	Sequence	Average score per residue
+1-5	FFPHV	35.7190636
+7-8	RS	35.785953
+11-12	HV	26.923077
+14-15	KT	32.2742475
+17-22	HRFVTG	27.759197
+>seq_epochs_()_num_466 
+Positions	Sequence	Average score per residue
+4-4	K	15.384615
+6-6	V	21.73913
+8-9	RM	8.361204
+>seq_epochs_()_num_435 
+Positions	Sequence	Average score per residue
+6-14	KLRAKLYQM	42.9580081111111
+>seq_epochs_()_num_813 
+Positions	Sequence	Average score per residue
+1-11	LLTKMITRYTR	29.4314379090909
+>seq_epochs_()_num_980 
+Positions	Sequence	Average score per residue
+1-13	SMKAIVNTVASAL	53.6917932307692
+>seq_epochs_()_num_681 
+Positions	Sequence	Average score per residue
+1-7	VTAILSR	75.3463928571429
+>seq_epochs_()_num_936 
+Positions	Sequence	Average score per residue
+2-3	RI	12.541806
+5-5	M	17.391304
+7-12	VTKNSV	25.9754738333333
+14-17	GKDV	39.297659
+19-19	A	5.685619
+>seq_epochs_()_num_541 
+Positions	Sequence	Average score per residue
+1-15	IGLQTMKWIMTVLRW	63.1215161333333
+>seq_epochs_()_num_56 
+Positions	Sequence	Average score per residue
+1-5	FLSKI	43.0100334
+7-13	RMVMRLM	43.8127094285714
+>seq_epochs_()_num_938 
+Positions	Sequence	Average score per residue
+1-12	KAISIIATMLGV	64.5763656666667
+>seq_epochs_()_num_978 
+Positions	Sequence	Average score per residue
+1-4	GLFD	27.67558525
+8-9	KA	35.2842805
+12-17	ALGKVA	49.832776
+>seq_epochs_()_num_679 
+Positions	Sequence	Average score per residue
+2-8	KTVVVGT	62.064023
+>seq_epochs_()_num_295 
+Positions	Sequence	Average score per residue
+1-20	AKLIKRLIKLLTSYIKRFWK	32.8762541
+>seq_epochs_()_num_496 
+Positions	Sequence	Average score per residue
+1-20	HGAASMAMKAIGLFILSLHK	51.7892975
+>seq_epochs_()_num_297 
+Positions	Sequence	Average score per residue
+1-3	RWV	47.2686733333333
+5-5	Q	7.023411
+10-12	VRG	42.140468
+15-21	ARQRTCW	6.16340214285714
+>seq_epochs_()_num_73 
+Positions	Sequence	Average score per residue
+1-17	FLGALALGVGKVLTSIM	56.3643516470588
+19-24	GICKHC	21.73913
+>seq_epochs_()_num_783 
+Positions	Sequence	Average score per residue
+1-13	MLASYMKWSFWRR	49.5240546153846
+>seq_epochs_()_num_554 
+Positions	Sequence	Average score per residue
+1-12	VILVVAHFLKSV	56.4659976666667
+>seq_epochs_()_num_711 
+Positions	Sequence	Average score per residue
+1-14	AIMALTSRTLIAGP	53.2011467142857
+>seq_epochs_()_num_381 
+Positions	Sequence	Average score per residue
+1-16	MGLSKTMIHGLLSKLL	52.9264213125
+>seq_epochs_()_num_709 
+Positions	Sequence	Average score per residue
+1-13	FLSGIITGLKSLM	60.7409313076923
+>seq_epochs_()_num_166 
+Positions	Sequence	Average score per residue
+1-16	GWIDIIKKIIGQISSL	58.2357858125
+>seq_epochs_()_num_886 
+Positions	Sequence	Average score per residue
+1-1	G	70.90301
+4-4	K	38.461538
+8-22	GVGKVLTKCTGFCKA	37.3021182
+>seq_epochs_()_num_71 
+Positions	Sequence	Average score per residue
+1-4	SNKI	48.82943125
+6-7	ML	11.3712375
+>seq_epochs_()_num_888 
+Positions	Sequence	Average score per residue
+1-5	RGAKY	40.8695652
+10-16	RRHALAV	12.3745815714286
+>seq_epochs_()_num_185 
+Positions	Sequence	Average score per residue
+1-2	GM	37.959866
+5-5	H	13.043478
+8-9	KG	7.5250835
+>seq_epochs_()_num_533 
+Positions	Sequence	Average score per residue
+1-13	SHAVMLGVNLLMT	66.7609983076923
+>seq_epochs_()_num_916 
+Positions	Sequence	Average score per residue
+1-20	HMFRVTLKVTNHSTNQYQSM	52.3411372
+>seq_epochs_()_num_918 
+Positions	Sequence	Average score per residue
+2-13	RRAKIWWKFWRR	34.7268675
+>seq_epochs_()_num_162 
+Positions	Sequence	Average score per residue
+1-5	VMNIF	72.2408026
+8-13	MHQHMS	17.725753
+>seq_epochs_()_num_154 
+Positions	Sequence	Average score per residue
+1-12	LKTSIRVIVWRG	60.535117
+>seq_epochs_()_num_598 
+Positions	Sequence	Average score per residue
+1-13	FLSALTIVLKTLM	72.806792
+>seq_epochs_()_num_596 
+Positions	Sequence	Average score per residue
+1-4	KKLY	20.31772575
+8-12	KAPQW	44.9498326
+14-14	Y	13.377926
+>seq_epochs_()_num_170 
+Positions	Sequence	Average score per residue
+1-9	FLPALSGLA	51.9881084444445
+12-24	MIPKIMCVFTKKC	27.3475688461538
+>seq_epochs_()_num_286 
+Positions	Sequence	Average score per residue
+1-10	ILLTILGHMT	56.9899665
+>seq_epochs_()_num_303 
+Positions	Sequence	Average score per residue
+1-17	FIPIIGGLAAQFLNKIF	65.9649812941176
+19-24	TISKKC	13.043478
+>seq_epochs_()_num_129 
+Positions	Sequence	Average score per residue
+1-1	K	8.695652
+3-3	R	12.040134
+5-7	MRF	23.522854
+9-16	WRTAVQVR	33.528427875
+>seq_epochs_()_num_692 
+Positions	Sequence	Average score per residue
+1-10	EGWSWYLAKI	63.1772576
+15-15	K	46.822742
+17-22	MRYVHM	9.364548
+>seq_epochs_()_num_278 
+Positions	Sequence	Average score per residue
+1-14	LNWSSIIKKIISAI	48.2322028571429
+>seq_epochs_()_num_136 
+Positions	Sequence	Average score per residue
+1-2	KW	20.90301
+4-8	SIVKT	30.568562
+14-26	KKSLHTVIKTVST	33.0589143846154
+>seq_epochs_()_num_719 
+Positions	Sequence	Average score per residue
+1-10	RAVTTALMLM	71.3377926
+>seq_epochs_()_num_15 
+Positions	Sequence	Average score per residue
+1-7	KILKLVG	40.516006
+>seq_epochs_()_num_700 
+Positions	Sequence	Average score per residue
+>seq_epochs_()_num_120 
+Positions	Sequence	Average score per residue
+3-7	KTQRI	37.9264216
+10-15	TVQRKT	5.351171
+>seq_epochs_()_num_827 
+Positions	Sequence	Average score per residue
+1-13	FIAIIGRLIAGML	52.8942630769231
+>seq_epochs_()_num_696 
+Positions	Sequence	Average score per residue
+1-7	AIVQIFK	92.6421402857143
+>seq_epochs_()_num_825 
+Positions	Sequence	Average score per residue
+1-23	LGNVANVTKSLLSNFLSEFCKNL	62.8180893043478
+>seq_epochs_()_num_739 
+Positions	Sequence	Average score per residue
+1-6	RSIGLV	38.684504
+9-11	KVC	45.5964326666667
+14-17	KMVK	16.38796
+>seq_epochs_()_num_125 
+Positions	Sequence	Average score per residue
+1-3	SIW	42.697882
+5-14	TVGKKFSSTQ	27.3578596
+16-27	KHLNSMATGKTQ	48.6900781666667
+>seq_epochs_()_num_282 
+Positions	Sequence	Average score per residue
+1-8	IQMRAIGS	39.13043475
+>seq_epochs_()_num_18 
+Positions	Sequence	Average score per residue
+1-10	VLRCVTSTMR	46.555184
+>seq_epochs_()_num_36 
+Positions	Sequence	Average score per residue
+4-4	K	11.036789
+6-22	AKSVGGDIPSGYTSAMK	41.1371236470588
+>seq_epochs_()_num_332 
+Positions	Sequence	Average score per residue
+1-5	FWGAM	38.6622072
+7-17	KMAAKVATAFF	58.2851930909091
+>seq_epochs_()_num_850 
+Positions	Sequence	Average score per residue
+1-9	RKLIIYIKK	47.9004084444444
+>seq_epochs_()_num_880 
+Positions	Sequence	Average score per residue
+1-5	GYWTA	46.7558526
+8-18	SKVKLIGVLAI	59.957434
+>seq_epochs_()_num_346 
+Positions	Sequence	Average score per residue
+1-13	GVQNVMATSYSGC	53.5631592307692
+16-22	KAGKLAL	39.0826567142857
+>seq_epochs_()_num_590 
+Positions	Sequence	Average score per residue
+6-6	M	38.795987
+9-9	K	32.77592
+12-12	K	6.354515
+>seq_epochs_()_num_910 
+Positions	Sequence	Average score per residue
+1-8	GSNAMAMA	58.904682
+>seq_epochs_()_num_942 
+Positions	Sequence	Average score per residue
+1-13	MLQCLSMTKNTLT	54.9266789230769
+>seq_epochs_()_num_398 
+Positions	Sequence	Average score per residue
+1-13	ILSSMISAASKLM	65.3202984615385
+>seq_epochs_()_num_91 
+Positions	Sequence	Average score per residue
+2-12	ICRVILIRIAR	41.3803588181818
+>seq_epochs_()_num_485 
+Positions	Sequence	Average score per residue
+1-2	SA	35.117057
+5-6	TT	15.3846155
+8-9	KT	13.5451505
+11-14	KKLK	9.0301005
+16-24	KAMAKMQVA	16.8710517777778
+>seq_epochs_()_num_390 
+Positions	Sequence	Average score per residue
+1-4	NFLH	23.24414725
+6-11	KLRASI	43.1438126666667
+13-13	K	14.715719
+>seq_epochs_()_num_511 
+Positions	Sequence	Average score per residue
+1-13	VVASLLAGVILLT	74.5819399230769
+>seq_epochs_()_num_364 
+Positions	Sequence	Average score per residue
+1-7	LLKVIAK	25.6091735714286
+>seq_epochs_()_num_493 
+Positions	Sequence	Average score per residue
+1-1	K	13.043478
+3-5	KSF	8.58416966666667
+7-8	RM	9.531773
+10-11	KA	16.722408
+13-26	KKTVITNVVKAISS	62.9718106428571
+>seq_epochs_()_num_368 
+Positions	Sequence	Average score per residue
+1-5	GFHNM	45.5518396
+7-17	KSVAKALAKVV	46.1234417272727
+>seq_epochs_()_num_489 
+Positions	Sequence	Average score per residue
+6-7	WD	9.866221
+>seq_epochs_()_num_891 
+Positions	Sequence	Average score per residue
+1-2	KH	27.7591975
+5-5	L	14.046823
+7-24	VRHVSIGWYSVYTTVTHS	65.0873281111111
+>seq_epochs_()_num_360 
+Positions	Sequence	Average score per residue
+1-16	LVGKVVMAVAAVLVAV	62.1864548125
+>seq_epochs_()_num_32 
+Positions	Sequence	Average score per residue
+1-19	LLGSVMYKIVHAVTAISKV	52.737194
+>seq_epochs_()_num_833 
+Positions	Sequence	Average score per residue
+1-8	LIWSKYMK	23.99665575
+>seq_epochs_()_num_373 
+Positions	Sequence	Average score per residue
+1-2	IL	40.301003
+4-23	VHMKTSGQCIPAIMSAVSKH	28.4615384
+>seq_epochs_()_num_394 
+Positions	Sequence	Average score per residue
+1-19	LSLGMMYSVSLLVGVMSQT	54.7086781052632
+>seq_epochs_()_num_873 
+Positions	Sequence	Average score per residue
+1-16	GYIASIRTVATLVSTI	69.0426419375
+>seq_epochs_()_num_819 
+Positions	Sequence	Average score per residue
+4-5	KM	51.5050165
+7-12	LQQKHL	31.103679
+>seq_epochs_()_num_183 
+Positions	Sequence	Average score per residue
+7-20	KLKVAVMSLISIMH	67.8213091428571
+>seq_epochs_()_num_339 
+Positions	Sequence	Average score per residue
+1-18	FVVSMLASSVALIKAWVK	46.0981049444444
+>seq_epochs_()_num_336 
+Positions	Sequence	Average score per residue
+1-5	GMLEY	36.4548494
+9-16	VAGHIQGV	39.005016375
+>seq_epochs_()_num_123 
+Positions	Sequence	Average score per residue
+1-12	KRMWWRLIIFRA	69.7881826666667
+>seq_epochs_()_num_946 
+Positions	Sequence	Average score per residue
+2-9	KKALKMLT	28.846153875
+11-16	VMRLHC	12.040134
+>seq_epochs_()_num_152 
+Positions	Sequence	Average score per residue
+1-7	GIADIVN	56.9517435714286
+>seq_epochs_()_num_948 
+Positions	Sequence	Average score per residue
+1-15	KMRTFTKMSFVKVSG	41.9175028666667
+>seq_epochs_()_num_280 
+Positions	Sequence	Average score per residue
+1-2	IL	32.2742475
+4-13	NMTKWAFLRR	45.451505
+>seq_epochs_()_num_694 
+Positions	Sequence	Average score per residue
+1-3	RII	38.5730213333333
+5-10	LTMKYH	37.123746
+>seq_epochs_()_num_105 
+Positions	Sequence	Average score per residue
+1-8	SVKQQVVM	48.7876255
+10-10	S	12.040134
+>seq_epochs_()_num_146 
+Positions	Sequence	Average score per residue
+1-13	HLCKIVGMRPMFS	33.676357
+>seq_epochs_()_num_99 
+Positions	Sequence	Average score per residue
+1-6	VIAARW	60.3121516666667
+>seq_epochs_()_num_164 
+Positions	Sequence	Average score per residue
+6-13	MHLHHIAL	35.702341125
+>seq_epochs_()_num_428 
+Positions	Sequence	Average score per residue
+3-14	KRQSLLVVTVSY	62.51393525
+16-22	QHCNKLC	27.8547535714286
+>seq_epochs_()_num_379 
+Positions	Sequence	Average score per residue
+1-13	MVSALWMGIGKLV	66.6323640769231
+>seq_epochs_()_num_377 
+Positions	Sequence	Average score per residue
+2-2	L	40.802676
+6-13	FKGATGVV	56.020066875
+>seq_epochs_()_num_737 
+Positions	Sequence	Average score per residue
+1-4	AKNI	42.3076925
+6-11	SIFKRC	28.762542
+>seq_epochs_()_num_79 
+Positions	Sequence	Average score per residue
+1-17	FLPALAGMSAKLVPQIF	52.21326
+19-24	AISKKC	17.725753
+>seq_epochs_()_num_897 
+Positions	Sequence	Average score per residue
+1-4	SILS	44.48160525
+7-8	KQ	36.4548495
+10-10	K	12.374582
+15-15	V	37.123746
+17-26	VHSVMKVVTS	49.2642138
+>seq_epochs_()_num_330 
+Positions	Sequence	Average score per residue
+1-5	KKHSY	36.722408
+8-11	KAKK	14.88294325
+>seq_epochs_()_num_362 
+Positions	Sequence	Average score per residue
+1-13	GLGGAMAGAAQSL	48.3663494615385
+15-21	KAAVKAF	65.2173915714286
+>seq_epochs_()_num_189 
+Positions	Sequence	Average score per residue
+1-8	STTTISPV	42.0986625
+>seq_epochs_()_num_889 
+Positions	Sequence	Average score per residue
+7-13	KRQHFFS	67.367415
+>seq_epochs_()_num_191 
+Positions	Sequence	Average score per residue
+1-13	WLDSYMNTTQKLT	59.506046
+>seq_epochs_()_num_882 
+Positions	Sequence	Average score per residue
+1-16	IIGQLLASVIGILSKL	66.4715719375
+>seq_epochs_()_num_615 
+Positions	Sequence	Average score per residue
+1-2	IT	45.317726
+4-5	WF	32.77592
+8-15	MIKRWLCR	15.844481875
+>seq_epochs_()_num_592 
+Positions	Sequence	Average score per residue
+1-5	RWVRM	48.1605352
+12-18	KKLARYK	38.4615385714286
+>seq_epochs_()_num_392 
+Positions	Sequence	Average score per residue
+1-1	I	9.364548
+3-4	KI	21.5719065
+8-8	I	31.438127
+11-16	VGQHWR	38.461538
+>seq_epochs_()_num_487 
+Positions	Sequence	Average score per residue
+1-8	IIKTLIGI	59.99163875
+11-18	KAVKAVFK	35.284280625
+>seq_epochs_()_num_159 
+Positions	Sequence	Average score per residue
+1-3	LIK	58.974359
+5-10	ITAKRY	8.361204
+>seq_epochs_()_num_893 
+Positions	Sequence	Average score per residue
+1-9	NNMVMYELA	73.5042734444444
+>seq_epochs_()_num_314 
+Positions	Sequence	Average score per residue
+1-2	GQ	29.7658865
+4-10	QDVKEMV	14.4290491428571
+>seq_epochs_()_num_940 
+Positions	Sequence	Average score per residue
+1-19	SVLAQNAKSQTLGLYKAYV	60.9047702631579
+21-26	STLKKS	5.685619
+>seq_epochs_()_num_161 
+Positions	Sequence	Average score per residue
+1-23	LKLMVVMVASGVGKVVTTIVNMH	56.3908681739131
+>seq_epochs_()_num_356 
+Positions	Sequence	Average score per residue
+1-9	LLRWWLRWI	61.9100707777778
+>seq_epochs_()_num_912 
+Positions	Sequence	Average score per residue
+1-6	AFTWRW	50.6131548333333
+>seq_epochs_()_num_219 
+Positions	Sequence	Average score per residue
+2-13	RRFKWLWKFIRR	32.1906355
+>seq_epochs_()_num_852 
+Positions	Sequence	Average score per residue
+1-7	GIIDIFR	81.2709032857143
+>seq_epochs_()_num_88 
+Positions	Sequence	Average score per residue
+1-7	GISNIVK	50.7405641428571
+>seq_epochs_()_num_804 
+Positions	Sequence	Average score per residue
+1-4	GSTI	59.19732425
+>seq_epochs_()_num_57 
+Positions	Sequence	Average score per residue
+1-13	FISAIVGIVHGIF	66.555184
+>seq_epochs_()_num_635 
+Positions	Sequence	Average score per residue
+1-6	MMIMLQ	60.200669
+>seq_epochs_()_num_746 
+Positions	Sequence	Average score per residue
+1-5	RWVQH	23.2107024
+8-8	K	24.749164
+11-18	KKQLAKFK	46.6555185
+>seq_epochs_()_num_85 
+Positions	Sequence	Average score per residue
+1-15	TNSTYTTMATNMIAA	58.6399107333334
+>seq_epochs_()_num_863 
+Positions	Sequence	Average score per residue
+1-5	GMARY	45.2173914
+8-8	K	15.384615
+10-10	K	10.367893
+15-23	GHVGDIMHT	48.4578224444444
+>seq_epochs_()_num_744 
+Positions	Sequence	Average score per residue
+1-6	IIGWRW	41.5830546666667
+>seq_epochs_()_num_848 
+Positions	Sequence	Average score per residue
+1-1	G	13.712375
+6-24	RKVTTGAVPAAAFQYSSPS	45.9954232631579
+>seq_epochs_()_num_821 
+Positions	Sequence	Average score per residue
+1-1	S	8.695652
+3-3	V	14.381271
+6-20	RIAVRMIGMVFNSIC	69.5206244
+>seq_epochs_()_num_371 
+Positions	Sequence	Average score per residue
+1-13	AIRALALNQTISA	62.5675328461538
+>seq_epochs_()_num_856 
+Positions	Sequence	Average score per residue
+2-3	DH	10.535117
+>seq_epochs_()_num_583 
+Positions	Sequence	Average score per residue
+1-8	NNKAIKQA	18.143812875
+>seq_epochs_()_num_200 
+Positions	Sequence	Average score per residue
+1-12	FLISIVGLVLGL	73.0211815833333
+>seq_epochs_()_num_658 
+Positions	Sequence	Average score per residue
+1-14	KICATTTTTVISSA	67.606307
+>seq_epochs_()_num_413 
+Positions	Sequence	Average score per residue
+9-18	KKVHNLLYNS	68.7290969
+>seq_epochs_()_num_605 
+Positions	Sequence	Average score per residue
+1-2	GH	43.143813
+5-11	NMKKIIG	40.611562
+>seq_epochs_()_num_202 
+Positions	Sequence	Average score per residue
+1-11	LTLKIKLGTIM	58.9540892727273
+>seq_epochs_()_num_457 
+Positions	Sequence	Average score per residue
+1-18	GVVAMMVLAVVVWGGIVI	59.2530658888889
+>seq_epochs_()_num_660 
+Positions	Sequence	Average score per residue
+1-2	GY	46.1538465
+4-4	K	29.09699
+8-16	KVGQVIQSV	65.1430697777778
+>seq_epochs_()_num_245 
+Positions	Sequence	Average score per residue
+2-15	RTMMQENMNVVRKR	24.9163882142857
+>seq_epochs_()_num_905 
+Positions	Sequence	Average score per residue
+1-18	AFGSLIAKAASNVAGLVP	53.9204755555556
+>seq_epochs_()_num_444 
+Positions	Sequence	Average score per residue
+1-7	TIIHIAA	67.9885334285714
+>seq_epochs_()_num_519 
+Positions	Sequence	Average score per residue
+1-14	IDWKSMITRIASCI	45.7477305
+>seq_epochs_()_num_78 
+Positions	Sequence	Average score per residue
+3-8	HGLKRM	9.30880716666667
+10-19	HAAKKYCITY	44.6822744
+21-26	AKQKTS	23.745819
+>seq_epochs_()_num_751 
+Positions	Sequence	Average score per residue
+1-17	FLPALTHMTGTVAHHLL	40.5469210588235
+19-24	VITKKT	5.351171
+>seq_epochs_()_num_4 
+Positions	Sequence	Average score per residue
+2-4	QMV	19.397993
+6-8	RIL	10.9253066666667
+10-11	KL	26.588629
+>seq_epochs_()_num_560 
+Positions	Sequence	Average score per residue
+1-21	GILSKMLGAGKCAVFAVPSMC	39.0508042380952
+>seq_epochs_()_num_243 
+Positions	Sequence	Average score per residue
+1-10	MSSIMTLLAG	60.1337793
+>seq_epochs_()_num_113 
+Positions	Sequence	Average score per residue
+1-8	VGLVLAMA	75.62709025
+>seq_epochs_()_num_755 
+Positions	Sequence	Average score per residue
+1-12	IIGVITGLLRSI	63.3500556666667
+>seq_epochs_()_num_922 
+Positions	Sequence	Average score per residue
+2-17	NARKFSSNLQRSFLKH	31.020067
+>seq_epochs_()_num_574 
+Positions	Sequence	Average score per residue
+1-6	GLFSTI	67.1683391666667
+9-25	TAKKLITKAIPMIMEKV	40.8616959411765
+>seq_epochs_()_num_747 
+Positions	Sequence	Average score per residue
+1-10	LAAAVVATVG	56.5886289
+>seq_epochs_()_num_845 
+Positions	Sequence	Average score per residue
+1-21	GVCSSMVSSPAGMLFALTALM	56.8243349523809
+>seq_epochs_()_num_762 
+Positions	Sequence	Average score per residue
+4-4	A	8.361204
+7-9	RTM	7.69230766666667
+11-18	LKMKFVNM	33.737458125
+>seq_epochs_()_num_75 
+Positions	Sequence	Average score per residue
+7-9	KTS	27.424749
+11-19	LTSKVINFH	66.0720921111111
+>seq_epochs_()_num_402 
+Positions	Sequence	Average score per residue
+1-16	LMTILSLLRGGMAWKV	56.918896125
+>seq_epochs_()_num_847 
+Positions	Sequence	Average score per residue
+1-10	KKIALNMLTK	61.3712375
+>seq_epochs_()_num_781 
+Positions	Sequence	Average score per residue
+1-9	AQEVISSAS	63.4708285555555
+>seq_epochs_()_num_788 
+Positions	Sequence	Average score per residue
+1-10	MLAALAGMIC	73.2107026
+>seq_epochs_()_num_796 
+Positions	Sequence	Average score per residue
+5-24	MRQLRIGMYQVIGFYHTTCT	52.89297665
+>seq_epochs_()_num_552 
+Positions	Sequence	Average score per residue
+1-1	A	72.575251
+4-5	KF	38.963211
+7-8	KS	23.5785955
+10-10	G	5.351171
+12-23	VMKKITSFIKNF	57.664437
+>seq_epochs_()_num_89 
+Positions	Sequence	Average score per residue
+1-16	EEVISTIFGRVVGFMP	55.6229095
+>seq_epochs_()_num_811 
+Positions	Sequence	Average score per residue
+1-7	ILRIYTT	56.808409
+10-10	R	8.361204
+>seq_epochs_()_num_556 
+Positions	Sequence	Average score per residue
+1-5	ATANT	49.297659
+7-17	KWQKITYTWAQ	68.501064
+>seq_epochs_()_num_11 
+Positions	Sequence	Average score per residue
+3-9	RVTKWIK	42.3315815714286
+>seq_epochs_()_num_792 
+Positions	Sequence	Average score per residue
+1-17	YIGSLSTSAGLVVAVVT	58.9218965882353
+>seq_epochs_()_num_40 
+Positions	Sequence	Average score per residue
+1-7	APWREIA	26.5647397142857
+9-20	GMQAGGSKTQSC	21.9620955833333
+>seq_epochs_()_num_548 
+Positions	Sequence	Average score per residue
+1-12	MGVIILVCTAYM	82.3299889166667
+>seq_epochs_()_num_543 
+Positions	Sequence	Average score per residue
+1-8	AAAVGTSA	72.031772375
+>seq_epochs_()_num_44 
+Positions	Sequence	Average score per residue
+1-18	LNSYYRLWHNLLEYVRNA	59.0301002777778
+>seq_epochs_()_num_2 
+Positions	Sequence	Average score per residue
+1-9	GMWSMMSTV	40.0222965555555
+11-24	KNCAKGYMPTVTSC	43.8127092857143
+>seq_epochs_()_num_451 
+Positions	Sequence	Average score per residue
+1-1	L	11.036789
+3-15	WRRLLAQILKAVQ	45.3563158461538
+>seq_epochs_()_num_622 
+Positions	Sequence	Average score per residue
+1-9	GLASSIYSV	58.565589
+11-25	KTVVKGAISGIASPF	49.1638797333333
+>seq_epochs_()_num_991 
+Positions	Sequence	Average score per residue
+1-1	G	5.685619
+3-13	EDVVKLISKLM	63.3931284545454
+>seq_epochs_()_num_237 
+Positions	Sequence	Average score per residue
+1-4	KEIV	52.7591975
+6-7	TI	30.9364545
+9-11	KRI	29.877369
+13-18	SMFMHP	35.785953
+>seq_epochs_()_num_984 
+Positions	Sequence	Average score per residue
+1-1	L	25.41806
+4-6	AAC	39.018952
+8-16	FTRNAVFNP	65.7748047777778
+>seq_epochs_()_num_453 
+Positions	Sequence	Average score per residue
+1-5	GIGRF	34.6488294
+11-23	KFGRCFVGEITQS	57.7823513076923
+>seq_epochs_()_num_664 
+Positions	Sequence	Average score per residue
+1-9	HRRYFSQFH	68.3760681111111
+>seq_epochs_()_num_652 
+Positions	Sequence	Average score per residue
+1-7	RIVRIAA	56.5695175714286
+>seq_epochs_()_num_193 
+Positions	Sequence	Average score per residue
+1-6	GLIAKI	37.6254181666667
+9-9	S	78.595318
+11-19	GKFAHASVV	43.1438126666667
+>seq_epochs_()_num_249 
+Positions	Sequence	Average score per residue
+1-6	GTLRNV	59.6432553333333
+8-9	ST	7.1906355
+11-17	KKVVTKP	14.7157191428571
+>seq_epochs_()_num_6 
+Positions	Sequence	Average score per residue
+1-6	SMSVSQ	40.8026756666667
+8-15	LGVVKIAG	50.7525085
+>seq_epochs_()_num_1000 
+Positions	Sequence	Average score per residue
+1-15	GFRVNWKWGFMYAAV	60.2229654666667
+>seq_epochs_()_num_207 
+Positions	Sequence	Average score per residue
+1-15	AMRMYMAMSLSMIAA	55.6967670666667
+>seq_epochs_()_num_995 
+Positions	Sequence	Average score per residue
+1-15	GLTAKMNSGTLLRMI	47.3132666
+>seq_epochs_()_num_839 
+Positions	Sequence	Average score per residue
+1-5	SLLMM	47.1571908
+7-18	KLVVRLLRVVVK	19.620959
+>seq_epochs_()_num_318 
+Positions	Sequence	Average score per residue
+1-20	GIYSNIVAQIKSGVFPVPGA	42.0234113
+>seq_epochs_()_num_327 
+Positions	Sequence	Average score per residue
+1-9	WLVIIWRRR	32.3671493333333
+>seq_epochs_()_num_953 
+Positions	Sequence	Average score per residue
+1-7	KWKSFMK	23.5069278571429
+15-26	KAVHHVIKCITH	25.25083625
+>seq_epochs_()_num_98 
+Positions	Sequence	Average score per residue
+1-10	SNKCVSVAKT	47.9933109
+>seq_epochs_()_num_24 
+Positions	Sequence	Average score per residue
+3-7	VRQKY	38.6622072
+9-11	RAF	45.373467
+13-20	KTGVVFHR	43.896321125
+>seq_epochs_()_num_323 
+Positions	Sequence	Average score per residue
+1-1	K	32.441472
+3-4	KS	14.214047
+14-16	RMA	46.71126
+18-26	HTAVKALTS	62.0215531111111
+>seq_epochs_()_num_20 
+Positions	Sequence	Average score per residue
+1-4	RLKV	31.60535125
+6-15	KVVAKMLTLV	57.1571906
+21-26	KVVKKA	21.73913
+>seq_epochs_()_num_957 
+Positions	Sequence	Average score per residue
+1-5	GIVGS	36.0535118
+9-10	GA	29.765886
+12-21	KITPAVAPVM	25.585284
+>seq_epochs_()_num_60 
+Positions	Sequence	Average score per residue
+1-12	RTVHVIVLMLLK	70.37346725
+>seq_epochs_()_num_64 
+Positions	Sequence	Average score per residue
+1-11	ANSAKSAAYKG	49.5287321818182
+>seq_epochs_()_num_95 
+Positions	Sequence	Average score per residue
+1-8	QMIALTKM	64.130434875
+>seq_epochs_()_num_965 
+Positions	Sequence	Average score per residue
+1-5	LLGNF	58.9966556
+7-12	VMMKSV	56.187291
+>seq_epochs_()_num_949 
+Positions	Sequence	Average score per residue
+1-17	FIPIIGGLAAQFLNKIF	65.9256344705882
+19-24	AISKKC	17.725753
+>seq_epochs_()_num_255 
+Positions	Sequence	Average score per residue
+1-9	GLLVVWRRK	27.796358
+>seq_epochs_()_num_211 
+Positions	Sequence	Average score per residue
+1-17	FLSVMTRLIAKLITHIK	49.6753884705882
+>seq_epochs_()_num_455 
+Positions	Sequence	Average score per residue
+1-13	FLSGIWGVVSNYF	80.5505530769231
+>seq_epochs_()_num_550 
+Positions	Sequence	Average score per residue
+2-4	KTV	27.2017836666667
+6-18	KAAARMVAWVSTY	53.4345253076923
+>seq_epochs_()_num_253 
+Positions	Sequence	Average score per residue
+1-5	AKWHQ	17.8595318
+7-14	ARHVISAL	47.533445125
+>seq_epochs_()_num_213 
+Positions	Sequence	Average score per residue
+1-10	TWKLAGLVTM	62.876254
+>seq_epochs_()_num_411 
+Positions	Sequence	Average score per residue
+2-17	GKNVSTSKFQTQIFKS	64.673912875
+>seq_epochs_()_num_988 
+Positions	Sequence	Average score per residue
+1-4	IKQA	21.404682
+6-7	FH	17.8929765
+10-10	S	5.351171
+>seq_epochs_()_num_668 
+Positions	Sequence	Average score per residue
+1-10	GYVSIGGLMS	55.8862875
+>seq_epochs_()_num_629 
+Positions	Sequence	Average score per residue
+1-2	RM	18.8963215
+4-5	AY	17.2240805
+7-8	KL	77.759197
+10-11	KI	14.0468225
+13-18	VRRCYK	13.377926
+>seq_epochs_()_num_111 
+Positions	Sequence	Average score per residue
+1-13	GKVKNMATKWGAM	27.7334703846154
+>seq_epochs_()_num_627 
+Positions	Sequence	Average score per residue
+1-2	AL	56.688963
+4-4	A	25.752508
+12-12	K	12.70903
+14-15	RL	57.3578595
+17-18	KI	57.1906355
+>seq_epochs_()_num_990 
+Positions	Sequence	Average score per residue
+1-17	NFVSVAKSMVQVGTAFY	52.6264016470588
+>seq_epochs_()_num_446 
+Positions	Sequence	Average score per residue
+1-18	VTLTQSGTMAGHGVTMVM	36.7335562777778
+>seq_epochs_()_num_670 
+Positions	Sequence	Average score per residue
+1-9	QAASSSRQN	26.8673355555556
+11-12	KR	18.896321
+18-24	KSRMWVS	32.298137
+>seq_epochs_()_num_772 
+Positions	Sequence	Average score per residue
+7-13	KGSRELF	45.341615
+>seq_epochs_()_num_920 
+Positions	Sequence	Average score per residue
+1-6	GYLSKV	40.4682271666667
+8-18	DMGKEVITSLS	58.6500453636364
+>seq_epochs_()_num_730 
+Positions	Sequence	Average score per residue
+6-13	SREKIASM	45.944815875
+>seq_epochs_()_num_439 
+Positions	Sequence	Average score per residue
+1-2	AQ	26.7558525
+4-18	LKKVTMVLIVCFTPT	58.573021
+>seq_epochs_()_num_790 
+Positions	Sequence	Average score per residue
+1-13	AFCAYFVWRLIQR	47.9804473846154
+>seq_epochs_()_num_481 
+Positions	Sequence	Average score per residue
+1-3	AKV	24.0802673333333
+5-14	KRIAHVGVMF	37.7926421
+>seq_epochs_()_num_400 
+Positions	Sequence	Average score per residue
+1-9	GMSIISSMR	57.6737271111111
+>seq_epochs_()_num_521 
+Positions	Sequence	Average score per residue
+1-16	RQYVKFISQFNQKLMK	48.8294315
+>seq_epochs_()_num_779 
+Positions	Sequence	Average score per residue
+1-8	KHVWLQLW	53.428093375
+>seq_epochs_()_num_749 
+Positions	Sequence	Average score per residue
+8-12	RVPAV	12.4414714
+15-26	KVVGTAKCIMLV	60.7302119166667
+>seq_epochs_()_num_501 
+Positions	Sequence	Average score per residue
+1-5	ATLLL	66.889632
+7-8	KT	39.632107
+>seq_epochs_()_num_562 
+Positions	Sequence	Average score per residue
+1-16	ARFITTQTMSELKKSI	32.336956625
+>seq_epochs_()_num_385 
+Positions	Sequence	Average score per residue
+1-4	LSLL	53.59531775
+8-15	KRKNFLSM	40.719063625
+17-23	QMDAKTK	20.5446727142857
+>seq_epochs_()_num_408 
+Positions	Sequence	Average score per residue
+1-1	G	38.461538
+5-15	YMRVVVGFIKR	38.5831559090909
+>seq_epochs_()_num_558 
+Positions	Sequence	Average score per residue
+5-5	K	9.364548
+7-18	RMIRLAKNLMNQ	30.9085841666667
+>seq_epochs_()_num_809 
+Positions	Sequence	Average score per residue
+1-9	WTRIQYHLR	37.0494238888889
+>seq_epochs_()_num_404 
+Positions	Sequence	Average score per residue
+6-11	RDRLFN	70.568562
+>seq_epochs_()_num_43 
+Positions	Sequence	Average score per residue
+1-3	TRL	12.0401336666667
+5-12	WRVAMFKA	54.473244
+>seq_epochs_()_num_517 
+Positions	Sequence	Average score per residue
+1-18	NLIRQLWNWICKIATQLK	52.3597176111111
+>seq_epochs_()_num_470 
+Positions	Sequence	Average score per residue
+1-2	KW	37.959866
+4-4	G	21.404682
+6-9	HAKV	25.083612
+11-19	YNRVWGEVL	46.7855815555556
+21-26	AAPSRP	8.695652
+>seq_epochs_()_num_566 
+Positions	Sequence	Average score per residue
+2-7	QKCLKF	36.4548495
+9-10	SH	26.755853
+13-18	HIGQHV	12.040134
+>seq_epochs_()_num_525 
+Positions	Sequence	Average score per residue
+1-22	MSLVMSIIVKVISLFTAFCQVN	69.2459714545455
+>seq_epochs_()_num_117 
+Positions	Sequence	Average score per residue
+1-16	FISGIVRIASEIAPAA	54.5568560625
+>seq_epochs_()_num_951 
+Positions	Sequence	Average score per residue
+1-6	MLVMIC	91.973244
+>seq_epochs_()_num_239 
+Positions	Sequence	Average score per residue
+1-1	G	98.327759
+4-17	KIAKKIANVFASVA	52.5561394285714
+>seq_epochs_()_num_982 
+Positions	Sequence	Average score per residue
+1-4	QSRI	40.6354515
+6-18	SRFKLGTLYGLAM	59.5832259230769
+>seq_epochs_()_num_662 
+Positions	Sequence	Average score per residue
+1-14	IKAMSYLIGGTMLM	56.4739606428571
+16-22	RTFNKKL	19.3979934285714
+>seq_epochs_()_num_119 
+Positions	Sequence	Average score per residue
+1-6	SQLAYT	75.529543
+8-13	TKLAKL	6.020067
+>seq_epochs_()_num_620 
+Positions	Sequence	Average score per residue
+1-7	KSIVLKK	32.5848062857143
+>seq_epochs_()_num_205 
+Positions	Sequence	Average score per residue
+1-6	LDLAKV	32.4972128333333
+8-14	KKVSTMM	63.6407067142857
+>seq_epochs_()_num_462 
+Positions	Sequence	Average score per residue
+2-11	KRVNYRFQFK	48.7625415
+>seq_epochs_()_num_421 
+Positions	Sequence	Average score per residue
+2-15	KTTMYEWMKSLLNK	40.1815575714286
+>seq_epochs_()_num_196 
+Positions	Sequence	Average score per residue
+1-10	LLLQRFSKLL	41.0033445
+>seq_epochs_()_num_419 
+Positions	Sequence	Average score per residue
+1-8	KKSASTMA	59.030100125
+>seq_epochs_()_num_247 
+Positions	Sequence	Average score per residue
+1-5	IEWKK	17.9264214
+7-14	IRKVISAL	41.847825875
+>seq_epochs_()_num_654 
+Positions	Sequence	Average score per residue
+1-18	TTLGNMMKAMASLMSHLK	36.6034929444444
+>seq_epochs_()_num_464 
+Positions	Sequence	Average score per residue
+1-9	IKRKYYMWW	62.5789668888889
+>seq_epochs_()_num_178 
+Positions	Sequence	Average score per residue
+1-12	SIKDIVGLGLTH	60.5351171666667
+>seq_epochs_()_num_232 
+Positions	Sequence	Average score per residue
+7-7	H	12.374582
+9-19	VHAAHQACTMS	54.2718151818182
+>seq_epochs_()_num_841 
+Positions	Sequence	Average score per residue
+1-18	GQMRNVIKVLANVVRQLA	50.6317353333333
+>seq_epochs_()_num_647 
+Positions	Sequence	Average score per residue
+1-4	AVWA	44.89966575
+11-15	KKVKL	15.0501672
+17-19	SMM	40.468227
+21-27	KTVTKTC	47.2527472857143
+>seq_epochs_()_num_926 
+Positions	Sequence	Average score per residue
+1-9	VYRLIYMWM	86.3247864444444
+>seq_epochs_()_num_928 
+Positions	Sequence	Average score per residue
+1-17	FIAVLCALAAKLLNAVF	70.7849694705882
+>seq_epochs_()_num_320 
+Positions	Sequence	Average score per residue
+1-13	FLGAMVGVLGGVI	47.1314638461538
+>seq_epochs_()_num_688 
+Positions	Sequence	Average score per residue
+1-5	GNLVT	42.0735784
+>seq_epochs_()_num_707 
+Positions	Sequence	Average score per residue
+1-15	ADARMWEWLTAILRM	67.4247493333334
+>seq_epochs_()_num_293 
+Positions	Sequence	Average score per residue
+1-4	AKVA	57.10702325
+>seq_epochs_()_num_787 
+Positions	Sequence	Average score per residue
+1-13	MLLDIMALMGKTL	56.1872912307692
+>seq_epochs_()_num_274 
+Positions	Sequence	Average score per residue
+1-4	AIGK	35.36789275
+7-8	HS	16.889632
+11-23	HFGKAIVGEIMKS	47.9547207692308
+>seq_epochs_()_num_81 
+Positions	Sequence	Average score per residue
+1-6	RILSFM	57.8595318333333
+9-9	K	9.0301
+11-18	RKMTTTTV	54.682274
+>seq_epochs_()_num_785 
+Positions	Sequence	Average score per residue
+1-5	FLAAL	75.3846154
+7-17	RASAKVIPAVF	54.9711158181818
+>seq_epochs_()_num_934 
+Positions	Sequence	Average score per residue
+1-12	SMVSTLKTVGSM	52.0624303333333
+>seq_epochs_()_num_63 
+Positions	Sequence	Average score per residue
+1-12	KLWSYILIKLIK	75.7525081666666
+>seq_epochs_()_num_19 
+Positions	Sequence	Average score per residue
+1-7	KIARYLL	59.8184422857143
+>seq_epochs_()_num_975 
+Positions	Sequence	Average score per residue
+1-2	WL	5.685619
+4-15	AKTKIVAMLHYI	68.227425
+>seq_epochs_()_num_677 
+Positions	Sequence	Average score per residue
+1-13	GTAAAVLSSLTAG	54.6951377692308
+>seq_epochs_()_num_23 
+Positions	Sequence	Average score per residue
+1-9	MRRRYWIWV	75.9940544444444
+>seq_epochs_()_num_263 
+Positions	Sequence	Average score per residue
+9-15	RPVFHLF	65.551839
+>seq_epochs_()_num_817 
+Positions	Sequence	Average score per residue
+5-11	KTVKKTG	11.2279022857143
+>seq_epochs_()_num_993 
+Positions	Sequence	Average score per residue
+1-4	GLWK	36.5384615
+14-25	KKVAKTVVQQYI	61.5105910833333
+>seq_epochs_()_num_815 
+Positions	Sequence	Average score per residue
+1-15	GKRRYWDWASGYIGW	48.0267559333333
+>seq_epochs_()_num_61 
+Positions	Sequence	Average score per residue
+8-17	SAGKSIAKAM	44.9163876
+>seq_epochs_()_num_594 
+Positions	Sequence	Average score per residue
+1-13	VISWRWSWWGWRR	42.397736
+>seq_epochs_()_num_617 
+Positions	Sequence	Average score per residue
+4-4	K	18.394649
+6-20	VKKVFKVGMYAVLRG	55.8974360666667
+>seq_epochs_()_num_914 
+Positions	Sequence	Average score per residue
+1-9	KVWSMVKNT	45.4106281111111
+11-11	A	5.685619
+16-27	KGMNAVSLAHQQ	52.48049075
+>seq_epochs_()_num_354 
+Positions	Sequence	Average score per residue
+1-2	GL	37.625418
+4-20	RVVGRAFPSVVAKISSV	48.947472
+>seq_epochs_()_num_21 
+Positions	Sequence	Average score per residue
+1-7	LIVTIMS	69.1352127142857
+>seq_epochs_()_num_895 
+Positions	Sequence	Average score per residue
+1-18	ILKVVNVLHSVMNVMKKL	37.1237458888889
+>seq_epochs_()_num_312 
+Positions	Sequence	Average score per residue
+1-9	GHWSNLVTA	59.0486808888889
+13-23	MAKAGAAGAMK	44.4512009090909
+>seq_epochs_()_num_609 
+Positions	Sequence	Average score per residue
+1-9	IKIVLKTCM	45.6335937777778
+>seq_epochs_()_num_316 
+Positions	Sequence	Average score per residue
+1-13	GTSTMCVTTNAMT	52.3797273076923
+>seq_epochs_()_num_358 
+Positions	Sequence	Average score per residue
+1-12	YRLTIRCWWFKV	54.31995525
+>seq_epochs_()_num_884 
+Positions	Sequence	Average score per residue
+1-19	GFRNLFKSITKVINNCKCY	50.3608520526316
+>seq_epochs_()_num_83 
+Positions	Sequence	Average score per residue
+1-12	RIFRAILIRIIK	69.4258640833333
+>seq_epochs_()_num_308 
+Positions	Sequence	Average score per residue
+1-2	GT	75.7525085
+5-11	LTVRRTA	10.4156712857143
+>seq_epochs_()_num_613 
+Positions	Sequence	Average score per residue
+1-6	GKRRYY	27.591973
+9-9	G	80.936455
+>seq_epochs_()_num_350 
+Positions	Sequence	Average score per residue
+1-13	GLASMFMSGVKAA	47.9032672307692
+15-21	KAAVKTI	48.0649784285714
+>seq_epochs_()_num_861 
+Positions	Sequence	Average score per residue
+2-7	NKVKKI	18.7848383333333
+9-16	RSGLRIMP	49.49832775
+>seq_epochs_()_num_798 
+Positions	Sequence	Average score per residue
+1-4	KTLR	28.67893
+7-7	T	8.361204
+11-22	HMKGWLSINRCP	41.304348
+>seq_epochs_()_num_829 
+Positions	Sequence	Average score per residue
+1-6	GWHKSF	25.863991
+8-25	SNFKKQINSSLTQMMQSQ	40.0780377777778
+>seq_epochs_()_num_342 
+Positions	Sequence	Average score per residue
+2-3	KL	46.9899665
+5-11	KMILRLV	66.6507402857143
+>seq_epochs_()_num_823 
+Positions	Sequence	Average score per residue
+1-6	SVLASI	67.4470456666667
+>seq_epochs_()_num_869 
+Positions	Sequence	Average score per residue
+1-11	RRRKFYIFRRR	27.6071754545455
+>seq_epochs_()_num_806 
+Positions	Sequence	Average score per residue
+1-3	FII	56.4102566666667
+>seq_epochs_()_num_723 
+Positions	Sequence	Average score per residue
+1-14	ADVTQKWTKLLKYA	50.2866696428571
+>seq_epochs_()_num_140 
+Positions	Sequence	Average score per residue
+1-14	GLFSMMANVAGNIM	69.4457716428571
+>seq_epochs_()_num_802 
+Positions	Sequence	Average score per residue
+1-18	RNLVLLVIVALITTVVPM	66.5737642777778
+>seq_epochs_()_num_721 
+Positions	Sequence	Average score per residue
+1-12	FLSMLSYIAPGL	55.8807134166667
+14-19	MICKHL	22.742475
+>seq_epochs_()_num_138 
+Positions	Sequence	Average score per residue
+1-10	AYVSNLNNVL	72.9096991
+>seq_epochs_()_num_217 
+Positions	Sequence	Average score per residue
+6-11	RRVGFL	56.1315498333333
+>seq_epochs_()_num_854 
+Positions	Sequence	Average score per residue
+1-4	ALGN	85.785953
+7-8	TR	28.4280935
+10-23	HKFAKTFAGVLVNC	53.5833731428571
+>seq_epochs_()_num_633 
+Positions	Sequence	Average score per residue
+2-17	KTAVRQSINSVLRRMM	30.811036875
+>seq_epochs_()_num_305 
+Positions	Sequence	Average score per residue
+1-7	ANVKLTF	64.6918297142857
+10-11	SS	49.832776
+13-18	KYMKQM	11.036789
+>seq_epochs_()_num_507 
+Positions	Sequence	Average score per residue
+1-5	ASKLV	39.8662208
+7-12	RMVMRM	13.377926
+>seq_epochs_()_num_307 
+Positions	Sequence	Average score per residue
+1-11	AMSDITKVASN	61.9337182727273
+>seq_epochs_()_num_41 
+Positions	Sequence	Average score per residue
+1-5	GFFTY	57.1237458
+7-7	V	36.120401
+10-17	RMGKWFGD	59.0301005
+20-20	Y	13.377926
+>seq_epochs_()_num_14 
+Positions	Sequence	Average score per residue
+1-8	ALGAMMNK	31.31270875
+>seq_epochs_()_num_10 
+Positions	Sequence	Average score per residue
+1-13	KQVALVWSKLLIA	78.7754052307692
+>seq_epochs_()_num_878 
+Positions	Sequence	Average score per residue
+1-13	FIEVFGRQAANIL	68.8705943846154
+>seq_epochs_()_num_835 
+Positions	Sequence	Average score per residue
+1-1	G	18.394649
+3-4	RQ	21.571906
+8-12	ERMNA	25.9531774
+15-25	TKMGMASTTSL	50.3496504545454
+>seq_epochs_()_num_837 
+Positions	Sequence	Average score per residue
+1-6	IMVLIV	97.993311
+>seq_epochs_()_num_876 
+Positions	Sequence	Average score per residue
+1-12	KTWATVLIKFKK	37.7369008333333
+>seq_epochs_()_num_144 
+Positions	Sequence	Average score per residue
+3-8	LAQKIL	76.6443703333333
+>seq_epochs_()_num_299 
+Positions	Sequence	Average score per residue
+7-24	AARRWWSSASKYACVYPH	54.1434410555555
+>seq_epochs_()_num_515 
+Positions	Sequence	Average score per residue
+8-8	H	50.83612
+11-12	HI	31.939799
+14-25	KALAKVVVQHMV	57.3299886666667
+>seq_epochs_()_num_529 
+Positions	Sequence	Average score per residue
+2-9	VASKIVAA	57.1906355
+>seq_epochs_()_num_103 
+Positions	Sequence	Average score per residue
+>seq_epochs_()_num_513 
+Positions	Sequence	Average score per residue
+1-16	MLAGILYKVAGVISKM	59.7198995625
+>seq_epochs_()_num_426 
+Positions	Sequence	Average score per residue
+1-17	FLAMMVGAAGQMLTHIF	51.0525281764706
+>seq_epochs_()_num_1 
+Positions	Sequence	Average score per residue
+1-11	GTLLSAIKRTI	28.6713284545455
+>seq_epochs_()_num_132 
+Positions	Sequence	Average score per residue
+2-2	K	38.461538
+5-5	R	12.040134
+9-17	KLGRLMTSA	54.0319586666667
+>seq_epochs_()_num_713 
+Positions	Sequence	Average score per residue
+1-5	HSFVY	57.0568562
+8-23	EKVGGVYGKQMFSQHA	48.9548494375
+>seq_epochs_()_num_49 
+Positions	Sequence	Average score per residue
+1-18	IWVVYKKWIRIMMQYRCP	40.5982904444444
+>seq_epochs_()_num_344 
+Positions	Sequence	Average score per residue
+2-23	HHVMTANASVCGAADKSLCATP	48.1909394545455
+>seq_epochs_()_num_944 
+Positions	Sequence	Average score per residue
+1-4	LLST	67.14046825
+7-8	KT	45.819398
+10-11	HT	9.8662205
+14-23	KKMLTTIVKM	47.6254184
+>seq_epochs_()_num_84 
+Positions	Sequence	Average score per residue
+1-5	FMLTV	46.5551838
+8-13	SAGKAV	31.884058
+15-23	TMMCGAVKC	15.8305462222222
+>seq_epochs_()_num_340 
+Positions	Sequence	Average score per residue
+1-12	RIAKLVALKKRF	20.81939775
+>seq_epochs_()_num_334 
+Positions	Sequence	Average score per residue
+1-2	KM	18.2274245
+4-4	N	5.685619
+8-19	RAGAALRHATKV	14.6599779166667
+>seq_epochs_()_num_80 
+Positions	Sequence	Average score per residue
+1-2	AS	13.3779265
+5-6	KT	55.0167225
+8-8	S	25.083612
+11-17	KDVVKAV	58.1462012857143
+>seq_epochs_()_num_800 
+Positions	Sequence	Average score per residue
+1-2	GV	46.655518
+4-5	NM	67.7257525
+>seq_epochs_()_num_348 
+Positions	Sequence	Average score per residue
+1-5	LWSGI	61.7391306
+7-13	NGVKKLL	18.0124225714286
+>seq_epochs_()_num_352 
+Positions	Sequence	Average score per residue
+1-9	WGWKMLGTA	33.8164252222222
+11-20	KHAASNILSM	70.501672
+>seq_epochs_()_num_8 
+Positions	Sequence	Average score per residue
+1-10	GSENRVLTAT	51.4046823
+>seq_epochs_()_num_310 
+Positions	Sequence	Average score per residue
+1-9	GLRIAWRRR	16.1649946666667
+>seq_epochs_()_num_859 
+Positions	Sequence	Average score per residue
+1-5	GQAAM	67.7591972
+7-8	KL	20.2341135
+>seq_epochs_()_num_491 
+Positions	Sequence	Average score per residue
+1-19	VTLGLHASNMAWGVYSAYL	65.1645836842105
+21-26	ATYKKS	12.040134
+>seq_epochs_()_num_871 
+Positions	Sequence	Average score per residue
+1-17	FIAILGALAADMLPHIM	52.5083612352941
+19-24	VIAKKC	12.374582
+>seq_epochs_()_num_396 
+Positions	Sequence	Average score per residue
+2-11	RLTKWIVLYR	83.812709
+>seq_epochs_()_num_831 
+Positions	Sequence	Average score per residue
+1-1	G	88.294314
+3-4	GH	38.7959865
+7-8	HQ	42.3076925
+10-23	KKFAKAIAGEIVHS	51.6244624285714
+>seq_epochs_()_num_375 
+Positions	Sequence	Average score per residue
+3-10	RHVCVMWK	67.558528125
+>seq_epochs_()_num_611 
+Positions	Sequence	Average score per residue
+8-9	SQ	6.8561875
+>seq_epochs_()_num_432 
+Positions	Sequence	Average score per residue
+1-1	K	11.705686
+3-6	KISK	30.68561875
+8-18	YKVVKSIIMHF	52.812405
+>seq_epochs_()_num_215 
+Positions	Sequence	Average score per residue
+6-20	KAKRWWKYILKQLYK	42.1627648666667
+22-27	VHQKHM	14.381271
+>seq_epochs_()_num_430 
+Positions	Sequence	Average score per residue
+1-6	KKQKYI	39.7435895
+8-19	RMFKAGYLIVFK	73.9966553333334
+>seq_epochs_()_num_366 
+Positions	Sequence	Average score per residue
+1-8	GVTQRYLT	53.0936455
+>seq_epochs_()_num_107 
+Positions	Sequence	Average score per residue
+1-17	ILCPKMTLATVGYILMK	57.584104
+>seq_epochs_()_num_509 
+Positions	Sequence	Average score per residue
+1-20	LVGTMTSTTSLSNMALTHSC	57.47491625
+>seq_epochs_()_num_150 
+Positions	Sequence	Average score per residue
+1-12	RNVAVVLIKIAH	41.8338908333333
+>seq_epochs_()_num_631 
+Positions	Sequence	Average score per residue
+4-5	KM	34.6153845
+>seq_epochs_()_num_148 
+Positions	Sequence	Average score per residue
+1-20	KSSVFSGNMNGALMGYIAWT	67.29096975
+>seq_epochs_()_num_109 
+Positions	Sequence	Average score per residue
+1-13	LLKAYLMWHFLRR	48.2891691538462
+>seq_epochs_()_num_69 
+Positions	Sequence	Average score per residue
+1-6	GLYSAV	61.0925305
+8-21	SAGQHVICGITGIC	63.5212612142857
+>seq_epochs_()_num_13 
+Positions	Sequence	Average score per residue
+2-2	T	6.354515
+5-13	RKVLKFGMI	53.734671
+>seq_epochs_()_num_157 
+Positions	Sequence	Average score per residue
+1-9	VKMVIWKSI	77.5919734444444
+>seq_epochs_()_num_535 
+Positions	Sequence	Average score per residue
+1-12	TELSVTLLYTLH	73.8294315833333
+>seq_epochs_()_num_527 
+Positions	Sequence	Average score per residue
+1-9	ATARQTILR	36.7521366666667
+12-19	TKMLYSLM	77.257525375
+>seq_epochs_()_num_29 
+Positions	Sequence	Average score per residue
+1-3	ASM	17.502787
+9-9	K	5.351171
+11-20	KAQMKVMSVM	34.3143814
+>seq_epochs_()_num_187 
+Positions	Sequence	Average score per residue
+2-4	MTK	24.5261983333333
+6-6	I	6.354515
+9-9	V	22.742475
+12-12	K	8.361204
+>seq_epochs_()_num_168 
+Positions	Sequence	Average score per residue
+1-18	GKLHTMLTVASQAASKMT	53.808993
+>seq_epochs_()_num_531 
+Positions	Sequence	Average score per residue
+1-15	VQYNMANKLASMLTA	64.8160536666667
+>seq_epochs_()_num_698 
+Positions	Sequence	Average score per residue
+1-9	ALLSLVSLA	77.591973
+>seq_epochs_()_num_867 
+Positions	Sequence	Average score per residue
+1-8	KIIWLSCC	48.03511725
+>seq_epochs_()_num_284 
+Positions	Sequence	Average score per residue
+1-6	MNVVLN	80.267559
+>seq_epochs_()_num_865 
+Positions	Sequence	Average score per residue
+7-17	AGGHGIGGWGV	42.0188507272727
+>seq_epochs_()_num_127 
+Positions	Sequence	Average score per residue
+1-10	GKIEMSANNA	51.1036791
+>seq_epochs_()_num_742 
+Positions	Sequence	Average score per residue
+1-6	FINVMA	45.2062431666667
+8-13	LAMKIL	82.608696
+>seq_epochs_()_num_101 
+Positions	Sequence	Average score per residue
+1-3	SLR	24.4147156666667
+6-15	KRVAFLTGTV	56.7224082
+>seq_epochs_()_num_640 
+Positions	Sequence	Average score per residue
+5-6	KM	31.9397995
+8-17	KIGHLIKNVV	48.3277593
+>seq_epochs_()_num_301 
+Positions	Sequence	Average score per residue
+1-14	LDLVKAATKVSTMV	54.4672717142857
+>seq_epochs_()_num_142 
+Positions	Sequence	Average score per residue
+1-9	RRRYWWIHH	37.6068377777778
+>seq_epochs_()_num_638 
+Positions	Sequence	Average score per residue
+1-8	SSKLVSVA	57.065217125
+>seq_epochs_()_num_221 
+Positions	Sequence	Average score per residue
+1-6	GKLSSV	48.3835005
+8-18	HAMAKAATNLL	61.6296747272727
+>seq_epochs_()_num_716 
+Positions	Sequence	Average score per residue
+8-10	HVG	36.343367
+12-19	NISKLVFS	72.1571905
+>seq_epochs_()_num_134 
+Positions	Sequence	Average score per residue
+1-9	FLAAMVTLS	59.9777033333333
+12-17	LLPHLY	64.9386843333333
+19-24	AITKKC	6.354515
+>seq_epochs_()_num_223 
+Positions	Sequence	Average score per residue
+1-10	KSLVTILRKM	30.8026754
+>seq_epochs_()_num_424 
+Positions	Sequence	Average score per residue
+1-11	AVQAIMKWGTK	32.0766192727273
+>seq_epochs_()_num_534 
+Positions	Sequence	Average score per residue
+1-1	K	13.712375
+3-5	VYQ	43.7012263333333
+8-16	TKRMIGVVE	36.5663322222222
+19-19	A	8.695652
+>seq_epochs_()_num_508 
+Positions	Sequence	Average score per residue
+1-6	LNLTTI	55.74136
+9-14	MASKAM	51.170569
+>seq_epochs_()_num_536 
+Positions	Sequence	Average score per residue
+2-18	KKMSTFESNYKTFAQTL	63.5254770588236
+>seq_epochs_()_num_612 
+Positions	Sequence	Average score per residue
+10-20	EHVKNTLEYPR	47.6740652727273
+>seq_epochs_()_num_885 
+Positions	Sequence	Average score per residue
+1-4	FISV	59.36454825
+7-13	KLAKGLF	31.4381271428571
+>seq_epochs_()_num_341 
+Positions	Sequence	Average score per residue
+1-3	GMR	29.0969896666667
+5-7	AIK	19.3979933333333
+9-12	KMYK	12.87625425
+18-25	GKKAITKW	15.51003375
+>seq_epochs_()_num_830 
+Positions	Sequence	Average score per residue
+1-9	RRKVWQVAK	31.0293571111111
+>seq_epochs_()_num_595 
+Positions	Sequence	Average score per residue
+1-7	YWKGFIR	33.1103678571429
+14-16	RTV	30.5462653333333
+18-26	HMAVKCISS	63.396507
+>seq_epochs_()_num_3 
+Positions	Sequence	Average score per residue
+1-3	AQS	43.5897433333333
+5-20	MRQLKSQVNYGVMHPM	39.548494875
+>seq_epochs_()_num_870 
+Positions	Sequence	Average score per residue
+1-5	GMWSV	64.2809366
+7-9	KEV	27.87068
+11-25	KQVQHQGISVLMNYI	69.6767000666667
+>seq_epochs_()_num_894 
+Positions	Sequence	Average score per residue
+1-12	MNVVIMKWLMRA	34.754738
+>seq_epochs_()_num_311 
+Positions	Sequence	Average score per residue
+1-11	AGVLVAVKQDV	40.4074186363637
+>seq_epochs_()_num_77 
+Positions	Sequence	Average score per residue
+1-11	IGQWIWRWIKK	44.1775617272727
+>seq_epochs_()_num_915 
+Positions	Sequence	Average score per residue
+1-4	MLII	48.327759
+>seq_epochs_()_num_353 
+Positions	Sequence	Average score per residue
+1-7	HFLSNLV	60.5351168571429
+9-14	YARKLI	17.725753
+>seq_epochs_()_num_30 
+Positions	Sequence	Average score per residue
+6-13	RCRAYENG	45.819398125
+15-22	HPGVFRWC	67.892976875
+>seq_epochs_()_num_853 
+Positions	Sequence	Average score per residue
+1-18	IWGIMLVAAANVITHVLT	61.0925306666667
+>seq_epochs_()_num_858 
+Positions	Sequence	Average score per residue
+1-7	GMSATFS	56.3306257142857
+9-15	GTRLKTA	18.3468708571429
+>seq_epochs_()_num_218 
+Positions	Sequence	Average score per residue
+1-7	CLISSIS	51.2183468571429
+9-21	VIGKVFCLVTQCI	46.2824799230769
+>seq_epochs_()_num_34 
+Positions	Sequence	Average score per residue
+1-10	LLVVMWLWKL	57.7926421
+>seq_epochs_()_num_801 
+Positions	Sequence	Average score per residue
+1-3	ILY	15.050167
+5-9	KMIAW	62.742475
+11-16	KMSNRN	16.0535118333333
+18-19	RY	6.8561875
+22-27	HMKKMV	5.351171
+>seq_epochs_()_num_866 
+Positions	Sequence	Average score per residue
+1-6	KLLSVV	51.2263098333333
+8-8	R	5.685619
+11-11	A	5.685619
+16-16	V	29.765886
+18-27	GKGVSWTHQT	36.7224078
+>seq_epochs_()_num_634 
+Positions	Sequence	Average score per residue
+1-7	KYFDYYY	76.7797421428571
+10-17	KTVKKLNN	18.645485125
+19-27	HYRVYKVVY	36.1204012222222
+>seq_epochs_()_num_639 
+Positions	Sequence	Average score per residue
+1-20	RGAIAVAMRGMTMVHLGMGT	39.2976589
+>seq_epochs_()_num_59 
+Positions	Sequence	Average score per residue
+1-13	SMNGIATGAASML	56.1872909230769
+>seq_epochs_()_num_214 
+Positions	Sequence	Average score per residue
+1-18	LLATTTKMVTVLKLICHI	37.4024524444444
+>seq_epochs_()_num_862 
+Positions	Sequence	Average score per residue
+1-27	GIGSAIIGAGKVGLKGVIHGVASQFAQ	45.9556547777778
+>seq_epochs_()_num_630 
+Positions	Sequence	Average score per residue
+1-5	MQRIM	50.1003344
+8-13	MRKHFV	30.769231
+>seq_epochs_()_num_824 
+Positions	Sequence	Average score per residue
+1-8	KRRWWWLW	73.1187295
+>seq_epochs_()_num_222 
+Positions	Sequence	Average score per residue
+1-10	RWRWWWLWMK	70.9030103
+>seq_epochs_()_num_715 
+Positions	Sequence	Average score per residue
+3-5	RVQ	18.0602006666667
+7-23	KMYNIVNKLINLLVKNV	71.8866809411765
+>seq_epochs_()_num_133 
+Positions	Sequence	Average score per residue
+1-12	AIVSAILHLLKR	38.9074690833333
+>seq_epochs_()_num_528 
+Positions	Sequence	Average score per residue
+1-6	RRLKLS	12.0958751666667
+8-24	KKMSIAWYSLSAMLKKA	43.7733623529412
+>seq_epochs_()_num_300 
+Positions	Sequence	Average score per residue
+1-24	FFGGLAHASAQAVAVAMSAFSHKM	50.5016722083333
+>seq_epochs_()_num_347 
+Positions	Sequence	Average score per residue
+8-8	N	8.361204
+10-10	M	41.471572
+14-14	L	6.354515
+17-25	KGLATVVTW	71.237458
+>seq_epochs_()_num_349 
+Positions	Sequence	Average score per residue
+1-16	GQIVSAKSAAVLGGSM	50.188127125
+>seq_epochs_()_num_104 
+Positions	Sequence	Average score per residue
+1-7	RICNIAK	60.2006687142857
+>seq_epochs_()_num_145 
+Positions	Sequence	Average score per residue
+1-1	R	9.364548
+3-7	KGFMR	24.6822744
+10-11	KV	18.729097
+13-26	KKTAITTAVKSLTS	61.9206881428571
+>seq_epochs_()_num_427 
+Positions	Sequence	Average score per residue
+1-19	FIMVQSQSAVGITMFLNQL	67.7873613157895
+>seq_epochs_()_num_141 
+Positions	Sequence	Average score per residue
+1-15	SWCMKLQTMMATWVK	46.2430324
+>seq_epochs_()_num_431 
+Positions	Sequence	Average score per residue
+1-5	GIVSV	58.1939798
+7-13	KGAAKQV	28.0936454285714
+15-18	KSVV	49.0802675
+20-25	AMMNKI	45.48495
+>seq_epochs_()_num_100 
+Positions	Sequence	Average score per residue
+1-5	WMKLM	41.3377926
+>seq_epochs_()_num_423 
+Positions	Sequence	Average score per residue
+1-20	ANQISTQYTQMRTIQVSQGH	46.03678935
+>seq_epochs_()_num_149 
+Positions	Sequence	Average score per residue
+1-13	FWSGILSMIAGLL	61.4612811538461
+>seq_epochs_()_num_97 
+Positions	Sequence	Average score per residue
+1-3	GMW	49.4983276666667
+5-5	A	17.725753
+8-18	KMLKVIGCVAK	31.9550015454546
+>seq_epochs_()_num_108 
+Positions	Sequence	Average score per residue
+1-25	GLLNIIVSAGKVGLKSVVTAVAEKF	51.55852844
+>seq_epochs_()_num_335 
+Positions	Sequence	Average score per residue
+1-10	GILRKILKAI	31.1036789
+>seq_epochs_()_num_632 
+Positions	Sequence	Average score per residue
+2-9	KRRSIAIA	55.978261
+>seq_epochs_()_num_216 
+Positions	Sequence	Average score per residue
+1-7	SITSVYK	43.0004778571429
+10-10	K	5.685619
+14-19	RMCQYY	77.257525
+>seq_epochs_()_num_610 
+Positions	Sequence	Average score per residue
+1-17	FLTSLMKLAAGVLPTAV	45.2488686470588
+19-24	KFLKPC	12.040134
+>seq_epochs_()_num_343 
+Positions	Sequence	Average score per residue
+3-4	LH	9.8662205
+6-12	KLMNAVV	56.2828474285714
+>seq_epochs_()_num_351 
+Positions	Sequence	Average score per residue
+1-4	QKTV	41.13712375
+>seq_epochs_()_num_860 
+Positions	Sequence	Average score per residue
+1-9	WLVMIAKRK	22.0364177777778
+>seq_epochs_()_num_945 
+Positions	Sequence	Average score per residue
+1-2	WG	45.4849495
+4-5	RD	18.729097
+9-9	G	14.046823
+12-20	KLGATVVGM	62.6532887777778
+>seq_epochs_()_num_309 
+Positions	Sequence	Average score per residue
+1-10	KIVKITLQMS	51.5050166
+>seq_epochs_()_num_877 
+Positions	Sequence	Average score per residue
+1-13	NSVVVLWASWKYL	83.7664009230769
+>seq_epochs_()_num_799 
+Positions	Sequence	Average score per residue
+1-15	GTRTYFHWACAVVAI	53.0657749333333
+>seq_epochs_()_num_836 
+Positions	Sequence	Average score per residue
+>seq_epochs_()_num_868 
+Positions	Sequence	Average score per residue
+2-8	HKMKYLW	22.6946968571429
+>seq_epochs_()_num_828 
+Positions	Sequence	Average score per residue
+2-20	FKVKQLQNSMVWKAVVASA	60.7463475263158
+>seq_epochs_()_num_510 
+Positions	Sequence	Average score per residue
+1-5	KGIAQ	35.2508362
+8-8	K	24.080268
+11-11	A	5.685619
+13-27	VRKVTSTVHPIILQL	49.1192866
+>seq_epochs_()_num_33 
+Positions	Sequence	Average score per residue
+4-10	KMTASSM	38.0315335714286
+12-20	SVVNKIASM	65.5518394444444
+>seq_epochs_()_num_365 
+Positions	Sequence	Average score per residue
+1-1	G	5.351171
+4-6	MRV	12.2630993333333
+8-14	RKLVMML	62.5418064285714
+>seq_epochs_()_num_490 
+Positions	Sequence	Average score per residue
+1-2	FA	61.3712375
+8-19	KVSAAMRTAQQV	30.93645475
+>seq_epochs_()_num_514 
+Positions	Sequence	Average score per residue
+4-9	KYRGWS	48.3835005
+11-11	T	14.381271
+13-19	LKRVISA	47.5394171428571
+>seq_epochs_()_num_832 
+Positions	Sequence	Average score per residue
+1-16	MLSKIVAALTGILTTV	74.6655519375
+>seq_epochs_()_num_376 
+Positions	Sequence	Average score per residue
+3-4	KM	31.103679
+10-17	KMSKIFKS	17.80936475
+>seq_epochs_()_num_506 
+Positions	Sequence	Average score per residue
+2-13	RRVAWLQYFTRR	54.1527313333333
+>seq_epochs_()_num_872 
+Positions	Sequence	Average score per residue
+1-1	I	6.020067
+3-13	RVSVWLGFVRR	39.0392214545454
+>seq_epochs_()_num_395 
+Positions	Sequence	Average score per residue
+6-11	RVRVYN	47.3244148333333
+13-21	GMPVSIYKY	62.7647712222222
+>seq_epochs_()_num_616 
+Positions	Sequence	Average score per residue
+1-6	MMGKLI	23.1326643333333
+8-8	G	85.284281
+11-23	KFGKVIHGVITNN	52.9714434615385
+>seq_epochs_()_num_167 
+Positions	Sequence	Average score per residue
+1-5	GIFAK	47.9598662
+9-17	KRVTRILKQ	18.5432924444444
+>seq_epochs_()_num_618 
+Positions	Sequence	Average score per residue
+1-4	KRLH	22.24080275
+9-12	KKQL	31.77257525
+16-23	KMTAVLKK	34.406354875
+>seq_epochs_()_num_188 
+Positions	Sequence	Average score per residue
+5-7	ALR	14.3812706666667
+9-12	RYKA	23.411371
+20-25	KSQVSW	52.508361
+>seq_epochs_()_num_425 
+Positions	Sequence	Average score per residue
+1-12	LKLLNRIWKWLK	28.400223
+>seq_epochs_()_num_102 
+Positions	Sequence	Average score per residue
+1-6	IMAKLI	29.9331103333333
+8-16	KTIGAIHKI	21.4790042222222
+>seq_epochs_()_num_530 
+Positions	Sequence	Average score per residue
+1-5	SRWSS	45.6856188
+8-16	STGKVIGGP	21.8877741111111
+>seq_epochs_()_num_143 
+Positions	Sequence	Average score per residue
+3-4	KV	36.7892975
+7-16	KIMKWAWYWR	81.2374581
+>seq_epochs_()_num_357 
+Positions	Sequence	Average score per residue
+1-3	WMK	55.5183946666667
+>seq_epochs_()_num_317 
+Positions	Sequence	Average score per residue
+1-10	TRRWWWLWWT	80.7692306
+>seq_epochs_()_num_359 
+Positions	Sequence	Average score per residue
+1-6	ASKITT	50.6688961666667
+10-16	AGRVYKP	17.4390822857143
+>seq_epochs_()_num_315 
+Positions	Sequence	Average score per residue
+1-2	GI	72.4080265
+5-5	M	5.016722
+8-14	KMVKLLN	70.7118967142857
+>seq_epochs_()_num_158 
+Positions	Sequence	Average score per residue
+1-13	KLSSDMVQKVVLP	41.9603807692308
+>seq_epochs_()_num_302 
+Positions	Sequence	Average score per residue
+1-8	GSTIIGAA	45.401338
+>seq_epochs_()_num_805 
+Positions	Sequence	Average score per residue
+1-2	GM	68.896321
+5-12	KIVHHLIK	47.073578375
+>seq_epochs_()_num_807 
+Positions	Sequence	Average score per residue
+4-12	TMMHWGTRL	18.8034191111111
+>seq_epochs_()_num_717 
+Positions	Sequence	Average score per residue
+1-7	TIITVTK	54.2283801428571
+>seq_epochs_()_num_135 
+Positions	Sequence	Average score per residue
+1-9	YINLIYSVW	64.3626904444445
+>seq_epochs_()_num_697 
+Positions	Sequence	Average score per residue
+8-8	K	5.351171
+10-23	MKKVLVQMQTRMQC	30.1003345714286
+>seq_epochs_()_num_139 
+Positions	Sequence	Average score per residue
+1-10	LIGTYQMLLR	70.6354512
+>seq_epochs_()_num_722 
+Positions	Sequence	Average score per residue
+1-2	GM	28.762542
+4-5	KY	7.3578595
+9-11	TPG	28.316611
+13-24	HQVVKIVVQHVQ	52.3132665833333
+>seq_epochs_()_num_298 
+Positions	Sequence	Average score per residue
+1-10	RLSKAGMSWI	49.464883
+>seq_epochs_()_num_51 
+Positions	Sequence	Average score per residue
+6-16	KIQKWWKWFKK	29.7658863636364
+>seq_epochs_()_num_126 
+Positions	Sequence	Average score per residue
+2-22	SHSTKLIVNMVNQVKSQFSKK	38.6845038095238
+>seq_epochs_()_num_743 
+Positions	Sequence	Average score per residue
+1-5	SRAVT	28.896321
+8-8	W	11.036789
+>seq_epochs_()_num_131 
+Positions	Sequence	Average score per residue
+7-19	KMRKIIEWFYSFT	77.6177000769231
+>seq_epochs_()_num_712 
+Positions	Sequence	Average score per residue
+1-6	IELRGI	34.6153846666667
+>seq_epochs_()_num_306 
+Positions	Sequence	Average score per residue
+6-6	R	29.09699
+8-9	KA	46.9899665
+11-13	KTG	32.4414713333333
+>seq_epochs_()_num_283 
+Positions	Sequence	Average score per residue
+1-12	GIVKKWSMMVMR	21.6555185
+>seq_epochs_()_num_923 
+Positions	Sequence	Average score per residue
+1-8	FMPSLFKP	46.070234
+13-24	KKKVYQTYTKMV	54.1527314166667
+>seq_epochs_()_num_573 
+Positions	Sequence	Average score per residue
+13-15	HRV	46.9342253333333
+17-24	KIVVKYMQ	61.413043625
+>seq_epochs_()_num_410 
+Positions	Sequence	Average score per residue
+1-15	LSASMMIWSTLFMRV	69.6321069333333
+>seq_epochs_()_num_53 
+Positions	Sequence	Average score per residue
+1-14	LQMKIVSKVLTYGV	56.9517437857143
+>seq_epochs_()_num_118 
+Positions	Sequence	Average score per residue
+6-7	RL	10.8695655
+10-20	HMLKKMITIPR	31.0428704545455
+>seq_epochs_()_num_454 
+Positions	Sequence	Average score per residue
+1-17	FIGAIGKASFKGIPGVF	45.819398
+19-19	M	10.702341
+>seq_epochs_()_num_420 
+Positions	Sequence	Average score per residue
+1-14	CDWRSIINKVVEIV	71.380793
+>seq_epochs_()_num_763 
+Positions	Sequence	Average score per residue
+1-8	LHHFISKL	40.09197325
+11-23	KMKQFVNKIANQF	61.6413683846154
+>seq_epochs_()_num_463 
+Positions	Sequence	Average score per residue
+1-1	G	80.267559
+7-13	KKMLSSF	57.6206401428571
+>seq_epochs_()_num_110 
+Positions	Sequence	Average score per residue
+1-9	GMTSMTKLV	43.6269044444444
+>seq_epochs_()_num_458 
+Positions	Sequence	Average score per residue
+1-10	QAASIVATIS	82.6421406
+>seq_epochs_()_num_604 
+Positions	Sequence	Average score per residue
+1-24	KSVKLTSSSLSVGWYSASNCMTVA	54.542921
+>seq_epochs_()_num_919 
+Positions	Sequence	Average score per residue
+1-10	KMISINSILK	75.5183949
+>seq_epochs_()_num_415 
+Positions	Sequence	Average score per residue
+5-13	KMVHLAGMM	42.7722035555556
+>seq_epochs_()_num_584 
+Positions	Sequence	Average score per residue
+1-7	GVMGLFG	64.5007167142857
+15-20	RNAKCF	26.0869566666667
+>seq_epochs_()_num_76 
+Positions	Sequence	Average score per residue
+1-9	EMNSNTGTA	30.1374952222222
+>seq_epochs_()_num_750 
+Positions	Sequence	Average score per residue
+1-5	MHVVI	33.8461536
+9-19	KAAVMHAAATV	62.3593794545454
+>seq_epochs_()_num_114 
+Positions	Sequence	Average score per residue
+1-6	STIVLS	66.220736
+>seq_epochs_()_num_927 
+Positions	Sequence	Average score per residue
+1-4	GLRV	52.75919725
+7-13	KMARMFS	65.8862872857143
+>seq_epochs_()_num_904 
+Positions	Sequence	Average score per residue
+1-1	G	9.364548
+3-12	KKAVIIHIRR	34.381271
+>seq_epochs_()_num_777 
+Positions	Sequence	Average score per residue
+1-17	FLGHLSAMIAKVITTFQ	72.9883928235294
+>seq_epochs_()_num_72 
+Positions	Sequence	Average score per residue
+1-20	RNQIFTRISLGSAPGFAGFM	60.20066895
+>seq_epochs_()_num_791 
+Positions	Sequence	Average score per residue
+1-6	RVNIAN	46.5440356666667
+11-23	KLDNIISQVVNQF	74.5304864615385
+>seq_epochs_()_num_812 
+Positions	Sequence	Average score per residue
+1-7	GTFLDFI	61.2517917142857
+9-19	SMGGIQANSCT	56.5521434545455
+>seq_epochs_()_num_401 
+Positions	Sequence	Average score per residue
+1-12	RIHKIANFMQST	53.8182829166667
+>seq_epochs_()_num_786 
+Positions	Sequence	Average score per residue
+1-9	NNAANSSLG	62.4303234444444
+>seq_epochs_()_num_544 
+Positions	Sequence	Average score per residue
+1-13	FLTIIGKIVSGLM	55.4926678461538
+>seq_epochs_()_num_808 
+Positions	Sequence	Average score per residue
+1-17	QSFEKTLQYTGMITALF	65.7289001764706
+>seq_epochs_()_num_518 
+Positions	Sequence	Average score per residue
+1-9	FLFRLAIGV	59.9405426666667
+11-18	KIGTKCFH	15.84448175
+>seq_epochs_()_num_445 
+Positions	Sequence	Average score per residue
+7-10	AKRM	31.772575
+12-13	KY	23.9130435
+16-27	KKVHMIVKEYHK	20.7636565833333
+>seq_epochs_()_num_782 
+Positions	Sequence	Average score per residue
+1-19	FLGALMKLIGGVLTVLKQH	41.2427390526316
+>seq_epochs_()_num_559 
+Positions	Sequence	Average score per residue
+1-9	WLVILAHLV	75.176514
+>seq_epochs_()_num_551 
+Positions	Sequence	Average score per residue
+1-20	FLGAMYKLTSSVITAIYHHL	57.5752509
+>seq_epochs_()_num_816 
+Positions	Sequence	Average score per residue
+1-15	AKTVYTRWWNRIKSV	35.8082498666667
+>seq_epochs_()_num_254 
+Positions	Sequence	Average score per residue
+1-2	MW	12.040134
+4-5	GL	54.5150505
+7-8	KT	13.3779265
+10-11	KA	14.0468225
+18-26	KTAVKAMVT	24.5633594444444
+>seq_epochs_()_num_619 
+Positions	Sequence	Average score per residue
+1-18	NTWSETARNMSVAAYKAM	50.9476030555556
+>seq_epochs_()_num_994 
+Positions	Sequence	Average score per residue
+1-20	VTHIAKTFRSNLNYQASFGY	53.49498325
+>seq_epochs_()_num_212 
+Positions	Sequence	Average score per residue
+1-5	RWCVY	77.792642
+10-13	VRGV	32.0234115
+>seq_epochs_()_num_92 
+Positions	Sequence	Average score per residue
+1-27	ALGSKVISSLKATFRGAIEDFASTKVQ	40.1585532962963
+>seq_epochs_()_num_981 
+Positions	Sequence	Average score per residue
+1-12	GNWAAVIRKLIK	38.6287625833333
+>seq_epochs_()_num_661 
+Positions	Sequence	Average score per residue
+2-7	RITVII	60.4236341666667
+10-11	MG	38.12709
+13-14	AK	8.19398
+18-23	SKVKKY	5.685619
+>seq_epochs_()_num_246 
+Positions	Sequence	Average score per residue
+1-17	FIAILGGLAANFLPKIY	63.0926619411765
+19-24	VISKKC	13.712375
+>seq_epochs_()_num_628 
+Positions	Sequence	Average score per residue
+1-11	GKLTYRALKFL	47.8260868181818
+>seq_epochs_()_num_203 
+Positions	Sequence	Average score per residue
+1-2	KL	29.765886
+4-7	AHRV	16.555184
+10-17	KIKRIIKQ	25.71070225
+>seq_epochs_()_num_669 
+Positions	Sequence	Average score per residue
+1-7	ALVLIMN	83.5164837142857
+>seq_epochs_()_num_989 
+Positions	Sequence	Average score per residue
+1-2	GL	64.0468225
+6-6	L	25.083612
+9-16	KLVRVIKR	16.973244
+>seq_epochs_()_num_665 
+Positions	Sequence	Average score per residue
+1-7	SIITASG	62.0162448571429
+>seq_epochs_()_num_985 
+Positions	Sequence	Average score per residue
+7-20	MTSHLMSVAASKNC	52.5322506428571
+>seq_epochs_()_num_623 
+Positions	Sequence	Average score per residue
+1-18	GQMLMHVLTYHLYKAGMS	40.5611297222222
+>seq_epochs_()_num_208 
+Positions	Sequence	Average score per residue
+1-12	VSLASIISVARR	41.1928653333333
+>seq_epochs_()_num_31 
+Positions	Sequence	Average score per residue
+5-14	RMANRAMASY	48.4615385
+>seq_epochs_()_num_250 
+Positions	Sequence	Average score per residue
+1-20	VGLKYTVTALMSGVNTFSTM	67.60869555
+>seq_epochs_()_num_321 
+Positions	Sequence	Average score per residue
+1-8	LTYVIRVC	43.72909725
+>seq_epochs_()_num_840 
+Positions	Sequence	Average score per residue
+1-7	ITQWKVC	37.2670807142857
+14-21	RTAKSIGT	46.73913025
+>seq_epochs_()_num_409 
+Positions	Sequence	Average score per residue
+1-7	KWKTFLR	31.3903487142857
+10-11	KA	23.076923
+14-26	KTVLHTALKAITS	58.4769747692308
+>seq_epochs_()_num_966 
+Positions	Sequence	Average score per residue
+1-10	GVIVLVATCP	56.0200669
+>seq_epochs_()_num_407 
+Positions	Sequence	Average score per residue
+2-2	K	40.468227
+5-17	KFGHSFQWVATGR	53.4345254615384
+>seq_epochs_()_num_653 
+Positions	Sequence	Average score per residue
+1-14	WLRIVTKYAAMLGC	52.6755853571428
+>seq_epochs_()_num_195 
+Positions	Sequence	Average score per residue
+1-14	LELAQMSTKITSSL	56.8084089285714
+>seq_epochs_()_num_567 
+Positions	Sequence	Average score per residue
+1-8	GVAVVMSH	69.356187375
+>seq_epochs_()_num_524 
+Positions	Sequence	Average score per residue
+>seq_epochs_()_num_526 
+Positions	Sequence	Average score per residue
+1-4	GMYD	28.1772575
+7-22	KHVGSSIAGAVHQVFC	59.5317725
+>seq_epochs_()_num_565 
+Positions	Sequence	Average score per residue
+1-13	GIGSAMLGAAKAA	41.4458450769231
+15-27	KGVVKGLASQFAN	60.0463084615385
+>seq_epochs_()_num_238 
+Positions	Sequence	Average score per residue
+1-13	LIVKQIKNIVKFV	63.4679700769231
+>seq_epochs_()_num_952 
+Positions	Sequence	Average score per residue
+1-6	GLFSKM	42.5306575
+9-25	AGKKLLCKLASSMVNTV	53.6690929411765
+>seq_epochs_()_num_96 
+Positions	Sequence	Average score per residue
+1-9	MYKWIWSWV	89.9293945555556
+>seq_epochs_()_num_731 
+Positions	Sequence	Average score per residue
+1-21	GFLSQMGSAASKIICVVAQHM	49.5301799047619
+>seq_epochs_()_num_452 
+Positions	Sequence	Average score per residue
+1-13	ACIAALIVAVLVP	73.4756881538461
+>seq_epochs_()_num_773 
+Positions	Sequence	Average score per residue
+1-12	RILKTWLLKIVK	34.9219620833333
+>seq_epochs_()_num_54 
+Positions	Sequence	Average score per residue
+1-5	RAIAE	57.0568562
+7-7	W	6.354515
+9-23	KASSLIAKQLSANYK	70.9253066
+>seq_epochs_()_num_999 
+Positions	Sequence	Average score per residue
+1-4	KVIV	54.93311025
+7-7	K	15.384615
+10-11	RW	46.32107
+13-15	KIL	26.7558526666667
+17-18	KI	30.1003345
+>seq_epochs_()_num_50 
+Positions	Sequence	Average score per residue
+1-5	GIFDL	42.742475
+7-14	KQCVKMIK	21.7391305
+>seq_epochs_()_num_443 
+Positions	Sequence	Average score per residue
+1-2	GT	64.214047
+5-7	KQV	38.4615383333333
+9-25	STGGVIANAVVAVMNQV	66.7322447058824
+>seq_epochs_()_num_438 
+Positions	Sequence	Average score per residue
+1-5	FLGVI	54.3812706
+>seq_epochs_()_num_810 
+Positions	Sequence	Average score per residue
+6-26	PVGHLMLNLMGSYFRCCISKP	44.4179009047619
+>seq_epochs_()_num_39 
+Positions	Sequence	Average score per residue
+1-7	GIYRSFL	56.6172955714286
+11-16	QRGLKM	6.354515
+>seq_epochs_()_num_448 
+Positions	Sequence	Average score per residue
+1-3	PFA	38.573021
+5-19	KFGKSLGTLLQWVKC	61.9843924666667
+>seq_epochs_()_num_748 
+Positions	Sequence	Average score per residue
+1-14	SISGISTLTTKFMN	60.2006687857143
+>seq_epochs_()_num_780 
+Positions	Sequence	Average score per residue
+1-4	KALR	16.1371235
+6-6	K	10.702341
+10-17	RKARYFLV	70.35953175
+>seq_epochs_()_num_471 
+Positions	Sequence	Average score per residue
+1-15	VMAVLYKLINTLQTA	69.7212931333333
+>seq_epochs_()_num_403 
+Positions	Sequence	Average score per residue
+1-13	ALSSNVMSAVGLL	57.3192691538461
+>seq_epochs_()_num_789 
+Positions	Sequence	Average score per residue
+1-7	TSLLYHH	29.2403247142857
+10-16	RVVKKYV	54.3717151428572
+>seq_epochs_()_num_328 
+Positions	Sequence	Average score per residue
+1-20	NPFQMTMHVTNISKATQSTE	54.76588615
+>seq_epochs_()_num_921 
+Positions	Sequence	Average score per residue
+3-4	RG	30.769231
+6-10	KKIAF	42.8762542
+13-19	KMKTTCT	15.766842
+>seq_epochs_()_num_326 
+Positions	Sequence	Average score per residue
+1-12	RMVRVVVIRIKR	28.0657746666667
+>seq_epochs_()_num_956 
+Positions	Sequence	Average score per residue
+3-3	R	9.0301
+7-20	RTKLLHGAMITSYC	58.5762065
+>seq_epochs_()_num_502 
+Positions	Sequence	Average score per residue
+1-4	IHCG	45.48494975
+7-8	KL	40.3010035
+10-27	KTVVKCATHVTKTSTTVT	26.3099217777778
+>seq_epochs_()_num_112 
+Positions	Sequence	Average score per residue
+1-2	KL	29.598662
+5-20	KIRTYFKKGYQIIGQV	42.119565125
+>seq_epochs_()_num_561 
+Positions	Sequence	Average score per residue
+1-15	KVLVYLLMKISSMMC	57.1460426
+>seq_epochs_()_num_958 
+Positions	Sequence	Average score per residue
+2-4	NKI	18.84058
+6-6	K	12.374582
+>seq_epochs_()_num_480 
+Positions	Sequence	Average score per residue
+1-17	HMWKKFSQIGKQLTKVV	33.6218769411765
+>seq_epochs_()_num_520 
+Positions	Sequence	Average score per residue
+1-7	GFLSMVG	47.8738651428571
+14-20	KMKSLNS	41.7104634285714
+>seq_epochs_()_num_456 
+Positions	Sequence	Average score per residue
+1-2	RM	33.9464885
+4-4	K	13.043478
+6-20	RVMAKVSNIAQNQQT	52.7536233333333
+>seq_epochs_()_num_5 
+Positions	Sequence	Average score per residue
+1-5	GKIEQ	49.4314384
+7-7	W	7.35786
+9-23	TKTMIKAVQYKVTMK	32.7090302666667
+>seq_epochs_()_num_549 
+Positions	Sequence	Average score per residue
+1-13	FITIISRMLGSIL	65.9377413076923
+>seq_epochs_()_num_412 
+Positions	Sequence	Average score per residue
+7-19	KYKRLFNWFLETQ	69.8482122307692
+>seq_epochs_()_num_386 
+Positions	Sequence	Average score per residue
+1-15	RAVGSVVSNFLWGAV	59.2642140666667
+>seq_epochs_()_num_992 
+Positions	Sequence	Average score per residue
+1-9	RTKDFMVKV	43.2924564444444
+11-11	S	18.394649
+15-26	KVVGTAKPLMVV	27.9542920833333
+>seq_epochs_()_num_230 
+Positions	Sequence	Average score per residue
+1-3	WFQ	61.092531
+5-12	YMRRWTYM	60.9113715
+>seq_epochs_()_num_842 
+Positions	Sequence	Average score per residue
+1-13	GDRVSIRLLVKTM	58.8628761538461
+>seq_epochs_()_num_236 
+Positions	Sequence	Average score per residue
+6-14	VKRVIGVLK	51.0219247777778
+>seq_epochs_()_num_659 
+Positions	Sequence	Average score per residue
+1-11	VNVAMRWFKGL	49.8935848181818
+13-13	G	29.431438
+>seq_epochs_()_num_201 
+Positions	Sequence	Average score per residue
+1-11	GKIKLSQSKQS	33.0191547272727
+>seq_epochs_()_num_177 
+Positions	Sequence	Average score per residue
+2-15	KLRKIITYAVEIVC	66.9135214285714
+>seq_epochs_()_num_244 
+Positions	Sequence	Average score per residue
+1-13	TWHSIVKMIKLKR	19.4237202307692
+>seq_epochs_()_num_192 
+Positions	Sequence	Average score per residue
+1-11	FLGAKVSAVAG	49.1334750909091
+>seq_epochs_()_num_651 
+Positions	Sequence	Average score per residue
+4-9	KEMVRV	40.3567446666667
+11-22	KIAAKHTIMKMH	11.7056856666667
+>seq_epochs_()_num_646 
+Positions	Sequence	Average score per residue
+7-13	RLSRLIS	43.956044
+>seq_epochs_()_num_756 
+Positions	Sequence	Average score per residue
+1-8	SGFLASIV	84.9916385
+>seq_epochs_()_num_240 
+Positions	Sequence	Average score per residue
+1-3	FVI	71.5719066666667
+5-5	S	18.394649
+8-14	KRVAVFA	73.1008125714286
+>seq_epochs_()_num_754 
+Positions	Sequence	Average score per residue
+1-3	MGV	59.9777033333333
+7-13	WRRWWRA	30.3392261428571
+>seq_epochs_()_num_838 
+Positions	Sequence	Average score per residue
+1-23	ILGAIFARNNMAARTLVSWVQQH	49.4837864782609
+>seq_epochs_()_num_655 
+Positions	Sequence	Average score per residue
+1-12	KISSLLMIYVTK	75.6410254166667
+>seq_epochs_()_num_197 
+Positions	Sequence	Average score per residue
+1-2	TK	7.0234115
+4-8	KKMLW	43.7458194
+>seq_epochs_()_num_846 
+Positions	Sequence	Average score per residue
+1-2	LI	46.32107
+4-24	VLRKIINGIKQAIKLITEHLQ	54.2443063809524
+>seq_epochs_()_num_678 
+Positions	Sequence	Average score per residue
+1-6	KKQRYY	45.3734671666667
+10-19	RRNKIFYHIT	76.8227422
+>seq_epochs_()_num_976 
+Positions	Sequence	Average score per residue
+1-19	FLGIIHYITGGVAVIVKRF	55.0431260526316
+>seq_epochs_()_num_319 
+Positions	Sequence	Average score per residue
+2-2	K	6.354515
+4-5	MK	13.377926
+7-25	VIRKWIAALNKLAVAYHKK	40.3098044736842
+>seq_epochs_()_num_935 
+Positions	Sequence	Average score per residue
+1-4	SMWS	67.7257525
+9-20	KMHKSWLTSITR	47.7424749166667
+22-27	TYTKHT	8.026756
+>seq_epochs_()_num_797 
+Positions	Sequence	Average score per residue
+2-3	KK	12.70903
+6-6	T	6.354515
+8-15	HKKVFTWH	52.591973375
+>seq_epochs_()_num_795 
+Positions	Sequence	Average score per residue
+6-6	G	18.394649
+9-15	AAGRMPY	42.3793597142857
+17-24	GLKVHYHP	14.757524875
+>seq_epochs_()_num_264 
+Positions	Sequence	Average score per residue
+1-14	FLYSKLFQLMGSLL	59.8423314285714
+>seq_epochs_()_num_708 
+Positions	Sequence	Average score per residue
+1-5	LFSNV	66.6220736
+7-12	KSVAHA	27.1460423333333
+>seq_epochs_()_num_557 
+Positions	Sequence	Average score per residue
+1-14	VKLKSMASVAKKLI	19.6607740714286
+>seq_epochs_()_num_206 
+Positions	Sequence	Average score per residue
+3-4	WR	25.083612
+6-17	KIKQSSWSNWSQ	44.6488295
+19-27	WHSQLKKMM	10.5908585555556
+>seq_epochs_()_num_687 
+Positions	Sequence	Average score per residue
+1-17	LIGGVMKIACAAVPAVF	47.7867401764706
+>seq_epochs_()_num_248 
+Positions	Sequence	Average score per residue
+1-22	SAWQMLGKIMSAGVTTALQALK	58.4524171363636
+>seq_epochs_()_num_555 
+Positions	Sequence	Average score per residue
+1-15	LSGKNASLLSHILHV	43.0769232666667
+>seq_epochs_()_num_983 
+Positions	Sequence	Average score per residue
+1-18	GSAAMHELIVHTLHNVAS	43.7383872777778
+>seq_epochs_()_num_663 
+Positions	Sequence	Average score per residue
+1-25	GFWKYVSTLGKCAIAHAIGFFSERL	60.01337792
+>seq_epochs_()_num_273 
+Positions	Sequence	Average score per residue
+1-7	HIIKVAS	32.2981362857143
+>seq_epochs_()_num_950 
+Positions	Sequence	Average score per residue
+1-6	GERITT	62.541806
+9-16	TRGRILRS	15.71906325
+>seq_epochs_()_num_621 
+Positions	Sequence	Average score per residue
+1-12	LTVVIASFLLPC	74.8885173333333
+>seq_epochs_()_num_294 
+Positions	Sequence	Average score per residue
+1-13	FIGGIFKVVSKML	56.7275532307692
+>seq_epochs_()_num_896 
+Positions	Sequence	Average score per residue
+1-5	GLVNS	40.2675586
+7-7	K	6.354515
+9-23	AASKISSVAHQIVQT	59.7770344666667
+>seq_epochs_()_num_155 
+Positions	Sequence	Average score per residue
+2-6	KYAVT	47.1571906
+8-17	RTRNIWWRRY	36.9230769
+>seq_epochs_()_num_898 
+Positions	Sequence	Average score per residue
+1-3	NQA	29.2084726666667
+>seq_epochs_()_num_182 
+Positions	Sequence	Average score per residue
+1-15	MQSQMTKSAGSLLAK	44.9944259333333
+>seq_epochs_()_num_190 
+Positions	Sequence	Average score per residue
+1-8	KKIVSTCH	42.6003345
+>seq_epochs_()_num_27 
+Positions	Sequence	Average score per residue
+8-14	MKRELMA	15.9579548571429
+>seq_epochs_()_num_186 
+Positions	Sequence	Average score per residue
+1-10	SLTSNLAASF	56.3879598
+12-19	KYSKVGGT	33.528428
+>seq_epochs_()_num_12 
+Positions	Sequence	Average score per residue
+1-7	SSVLISR	77.1619687142857
+>seq_epochs_()_num_165 
+Positions	Sequence	Average score per residue
+1-27	SMIQQMVSRQEVVGRDILTAATNQKAT	44.0232875185185
+>seq_epochs_()_num_151 
+Positions	Sequence	Average score per residue
+1-17	KDTSLTSSANGVLSVSS	61.7745424705883
+>seq_epochs_()_num_532 
+Positions	Sequence	Average score per residue
+1-2	GL	80.602007
+4-10	KIMNKLM	62.8284761428571
+>seq_epochs_()_num_67 
+Positions	Sequence	Average score per residue
+1-3	QFR	35.4515046666667
+5-20	SDLDELLKDGLVQYVC	46.67642125
+>seq_epochs_()_num_160 
+Positions	Sequence	Average score per residue
+1-7	LSMLLSL	75.9675108571429
+>seq_epochs_()_num_695 
+Positions	Sequence	Average score per residue
+1-22	KSLLMKVTAKLSALAKSMSMCQ	39.9209488181818
+>seq_epochs_()_num_281 
+Positions	Sequence	Average score per residue
+1-6	IIVLQS	80.602007
+>seq_epochs_()_num_740 
+Positions	Sequence	Average score per residue
+1-19	TSLCVNMKSSVVNYATVMS	52.4731562631579
+>seq_epochs_()_num_16 
+Positions	Sequence	Average score per residue
+2-12	NNKVTLFVICK	77.1359078181818
+>seq_epochs_()_num_124 
+Positions	Sequence	Average score per residue
+1-12	VENVSHALTRLS	47.2408024166667
+>seq_epochs_()_num_745 
+Positions	Sequence	Average score per residue
+1-23	GLLSNFYSSAQNLVSKVAATVMP	55.5620183478261
+>seq_epochs_()_num_304 
+Positions	Sequence	Average score per residue
+1-22	ILAFITRMIAAVGKVIHQFATS	61.6600790454546
+>seq_epochs_()_num_736 
+Positions	Sequence	Average score per residue
+1-8	STTVSSGS	45.150501625
+>seq_epochs_()_num_855 
+Positions	Sequence	Average score per residue
+1-1	K	32.441472
+3-4	KS	48.3277595
+11-11	A	10.702341
+15-16	HA	28.2608695
+18-26	HHVVKCITT	61.3154961111111
+>seq_epochs_()_num_720 
+Positions	Sequence	Average score per residue
+6-17	KQSAHGFVTITS	66.8896319166667
+>seq_epochs_()_num_137 
+Positions	Sequence	Average score per residue
+1-4	MLHT	59.44816075
+6-6	V	6.354515
+8-13	QHRKLT	8.361204
+>seq_epochs_()_num_857 
+Positions	Sequence	Average score per residue
+1-12	LFFGAISHLMGM	46.5997768333333
+>seq_epochs_()_num_329 
+Positions	Sequence	Average score per residue
+1-2	GI	63.2107025
+4-6	KML	37.458194
+11-23	GKVKAIQTTIVNS	51.2992024615385
+>seq_epochs_()_num_345 
+Positions	Sequence	Average score per residue
+1-20	HLGLMMAGTAKVIPGIFGSV	55.3344481
+>seq_epochs_()_num_35 
+Positions	Sequence	Average score per residue
+1-3	TSS	24.5261983333333
+5-5	A	6.020067
+7-8	EM	48.494983
+10-20	NYMKNTLSYGR	59.2581331818182
+>seq_epochs_()_num_820 
+Positions	Sequence	Average score per residue
+1-20	GIVSNIGSTFNTGVYLKTSA	65.5685618
+>seq_epochs_()_num_337 
+Positions	Sequence	Average score per residue
+1-17	KWHFLTNLSTLALTAQS	62.8369074705883
+>seq_epochs_()_num_890 
+Positions	Sequence	Average score per residue
+1-10	VMITMTAYHK	33.1103676
+>seq_epochs_()_num_943 
+Positions	Sequence	Average score per residue
+1-3	RIL	13.7123746666667
+5-10	VAGRMC	32.107023
+>seq_epochs_()_num_38 
+Positions	Sequence	Average score per residue
+1-5	KMRAY	36.3879598
+7-10	HLSK	42.72575275
+>seq_epochs_()_num_333 
+Positions	Sequence	Average score per residue
+1-17	FLGVLSALAGKVITHIY	60.5547904705882
+>seq_epochs_()_num_947 
+Positions	Sequence	Average score per residue
+1-18	ILLAMLTTGLGVVKAAFK	49.0895578333334
+>seq_epochs_()_num_47 
+Positions	Sequence	Average score per residue
+1-25	GLFSVLGSTAKALWTKATPVVAEKI	46.04682272
+>seq_epochs_()_num_939 
+Positions	Sequence	Average score per residue
+1-13	VLGKLWDTTKSYF	63.3907899230769
+>seq_epochs_()_num_911 
+Positions	Sequence	Average score per residue
+1-11	VNVTWKLYKRL	41.1371239090909
+13-18	SYVRKT	11.371237
+>seq_epochs_()_num_488 
+Positions	Sequence	Average score per residue
+1-14	QASVITALSHQMIS	70.1385573571429
+>seq_epochs_()_num_393 
+Positions	Sequence	Average score per residue
+2-20	FMPKMLNSSITKTVSSMTC	50.2904417368421
+>seq_epochs_()_num_875 
+Positions	Sequence	Average score per residue
+1-5	QWGDI	35.8528426
+8-13	KTRKWL	23.411371
+>seq_epochs_()_num_591 
+Positions	Sequence	Average score per residue
+1-6	GSYSVQ	40.9141583333333
+8-19	LKKVTLQGGLQG	37.0401339166667
+>seq_epochs_()_num_834 
+Positions	Sequence	Average score per residue
+5-20	RRVSYRNLMYAVQMIR	67.119565125
+>seq_epochs_()_num_374 
+Positions	Sequence	Average score per residue
+1-23	KAISDFWRNVSSIIAKQLVGTMK	56.623527826087
+>seq_epochs_()_num_881 
+Positions	Sequence	Average score per residue
+1-2	TR	30.936455
+4-9	VESKES	25.752508
+>seq_epochs_()_num_849 
+Positions	Sequence	Average score per residue
+2-7	KMLKRI	18.9520625
+9-15	RLIKRLT	11.0845672857143
+>seq_epochs_()_num_378 
+Positions	Sequence	Average score per residue
+1-1	F	85.618729
+3-13	KIFGRLLSKML	50.8361202727273
+>seq_epochs_()_num_363 
+Positions	Sequence	Average score per residue
+8-13	HHRKLL	9.364548
+>seq_epochs_()_num_512 
+Positions	Sequence	Average score per residue
+1-8	LKLYTTIV	66.38796
+>seq_epochs_()_num_370 
+Positions	Sequence	Average score per residue
+2-4	RRV	44.5930876666667
+6-11	WYMKMK	8.361204
+>seq_epochs_()_num_738 
+Positions	Sequence	Average score per residue
+1-13	NTLALASMVRQLA	50.8361201538462
+>seq_epochs_()_num_163 
+Positions	Sequence	Average score per residue
+1-2	ML	61.3712375
+4-10	SRLAHVW	39.6559961428571
+12-17	KGFRKV	6.354515
+>seq_epochs_()_num_399 
+Positions	Sequence	Average score per residue
+1-1	K	34.448161
+3-5	RAY	28.9855073333333
+7-8	HY	56.354515
+10-11	RI	7.1906355
+>seq_epochs_()_num_693 
+Positions	Sequence	Average score per residue
+1-9	FLEIINKLS	75.0650313333333
+>seq_epochs_()_num_397 
+Positions	Sequence	Average score per residue
+1-3	KGI	32.329989
+5-5	S	27.759197
+7-20	VLRVIAKCLISIKK	44.0993787857143
+>seq_epochs_()_num_492 
+Positions	Sequence	Average score per residue
+1-8	GFIGVFCS	54.138796
+10-11	AK	12.876254
+15-25	KAGVHGIMNQI	57.7075100909091
+>seq_epochs_()_num_153 
+Positions	Sequence	Average score per residue
+5-10	MMKKLL	10.702341
+>seq_epochs_()_num_121 
+Positions	Sequence	Average score per residue
+1-18	ILSIMAALSAQVLTHIFC	62.5789669444444
+>seq_epochs_()_num_494 
+Positions	Sequence	Average score per residue
+1-8	KQTTNMVK	29.13879575
+>seq_epochs_()_num_279 
+Positions	Sequence	Average score per residue
+1-16	KTLVQMISNMMVKLMK	39.86204
+>seq_epochs_()_num_147 
+Positions	Sequence	Average score per residue
+1-11	LNLIASYLTAA	71.207054
+13-15	GHI	44.25864
+18-23	TTMKNC	21.73913
+>seq_epochs_()_num_369 
+Positions	Sequence	Average score per residue
+3-6	ERKK	25.334448
+8-19	SAFKKGFMIGII	53.0100335
+>seq_epochs_()_num_106 
+Positions	Sequence	Average score per residue
+1-16	GLFDIVKKLLGVINGL	50.7316054375
+>seq_epochs_()_num_367 
+Positions	Sequence	Average score per residue
+1-2	QS	41.638796
+4-22	VMDAKSQGGLVGMIGVHNT	44.3231824210526
+>seq_epochs_()_num_184 
+Positions	Sequence	Average score per residue
+>seq_epochs_()_num_429 
+Positions	Sequence	Average score per residue
+1-2	IK	20.401338
+4-17	KKFAAKFVKAITDR	25.7525083571429
+>seq_epochs_()_num_372 
+Positions	Sequence	Average score per residue
+2-2	L	9.364548
+4-9	RRWVWA	48.160535
+>seq_epochs_()_num_887 
+Positions	Sequence	Average score per residue
+1-15	KNIAAVVFSYVTTSP	64.659978
+>seq_epochs_()_num_593 
+Positions	Sequence	Average score per residue
+1-1	G	87.29097
+3-4	GK	35.451505
+8-8	S	34.448161
+11-23	KFGKTFMGEITNC	55.5441214615385
+>seq_epochs_()_num_355 
+Positions	Sequence	Average score per residue
+1-5	GLLDL	36.7892976
+8-14	GAAKDIA	38.4137601428571
+16-25	HLGSKLYNKL	35.0501674
+>seq_epochs_()_num_913 
+Positions	Sequence	Average score per residue
+1-9	GFWSKIGSS	53.0286138888889
+13-25	FGKAGAYAYYKNR	41.317211
+>seq_epochs_()_num_892 
+Positions	Sequence	Average score per residue
+3-4	RI	13.3779265
+8-13	LRQCYK	36.789298
+>seq_epochs_()_num_313 
+Positions	Sequence	Average score per residue
+1-19	KRNSTSFSGDLTVANKVLA	50.6424924210526
+>seq_epochs_()_num_82 
+Positions	Sequence	Average score per residue
+1-16	ILHRLYMIGSTWLKCA	48.55769225
+18-18	R	22.408027
+>seq_epochs_()_num_879 
+Positions	Sequence	Average score per residue
+1-24	FLGGVSATTVMALSALHHLMTQMC	39.9944258333333
+>seq_epochs_()_num_588 
+Positions	Sequence	Average score per residue
+1-5	KTKIY	34.5819398
+7-20	RMQVGTMFVFSAFG	78.8342092142857
+>seq_epochs_()_num_917 
+Positions	Sequence	Average score per residue
+1-11	LLGRMFRQVFK	32.6238977272727
+>seq_epochs_()_num_614 
+Positions	Sequence	Average score per residue
+1-16	MMGRLVLMTAGYLARV	64.882943
+>seq_epochs_()_num_883 
+Positions	Sequence	Average score per residue
+1-7	GFYHAIL	42.1882464285714
+9-16	KISVIVCK	49.916387875
+>seq_epochs_()_num_169 
+Positions	Sequence	Average score per residue
+1-12	RIVRVILIKLVK	37.5975471666667
+>seq_epochs_()_num_597 
+Positions	Sequence	Average score per residue
+1-13	FISVIGKLVQGLM	55.7756622307692
+>seq_epochs_()_num_171 
+Positions	Sequence	Average score per residue
+1-15	VFSKFGNWWKLIFKI	49.2307690666667
+>seq_epochs_()_num_909 
+Positions	Sequence	Average score per residue
+1-15	QQQQYQKMSTELLTR	66.0869564
+>seq_epochs_()_num_941 
+Positions	Sequence	Average score per residue
+2-15	KLVKTIMPALLYML	64.2857144285714
+>seq_epochs_()_num_128 
+Positions	Sequence	Average score per residue
+1-1	K	50.167224
+3-4	RK	16.0535115
+7-18	FRQRTVAQVRGR	19.7603121666667
+>seq_epochs_()_num_486 
+Positions	Sequence	Average score per residue
+4-17	KIGKLIGSVLNGFK	64.9784995714286
+>seq_epochs_()_num_864 
+Positions	Sequence	Average score per residue
+1-2	GL	31.438127
+5-16	MRKMIEALHNAW	42.9765885833333
+18-24	MLPNHVQ	26.2302915714286
+>seq_epochs_()_num_287 
+Positions	Sequence	Average score per residue
+3-15	RRVMSWIQKTLSP	44.4301515384615
+>seq_epochs_()_num_130 
+Positions	Sequence	Average score per residue
+1-17	FISIISTLIAGVLTAFK	74.4638991764706
+>seq_epochs_()_num_285 
+Positions	Sequence	Average score per residue
+1-1	K	13.712375
+3-16	LKSMIQSYKAAWKY	46.5121832857143
+>seq_epochs_()_num_699 
+Positions	Sequence	Average score per residue
+1-4	FLAV	42.5585285
+7-11	KHVTG	40.2006686
+13-19	TKLAHQV	19.3979931428571
+>seq_epochs_()_num_391 
+Positions	Sequence	Average score per residue
+1-17	FIAALTTVAANIVPTVM	58.7251621176471
+19-24	TFTKKC	5.351171
+>seq_epochs_()_num_701 
+Positions	Sequence	Average score per residue
+1-1	G	13.377926
+4-24	AMRQAYQGINEAIKYLNENIN	73.7219302380953
+>seq_epochs_()_num_822 
+Positions	Sequence	Average score per residue
+2-17	HTSMTFQGNMAMTGQT	36.998327875
+>seq_epochs_()_num_803 
+Positions	Sequence	Average score per residue
+6-11	KKSMSA	29.09699
+>seq_epochs_()_num_826 
+Positions	Sequence	Average score per residue
+1-7	MSVAIAL	69.4696604285714
+>seq_epochs_()_num_851 
+Positions	Sequence	Average score per residue
+1-3	GFL	48.3835003333333
+8-22	DASKEASAFMSDRIK	30.7915270666667
+>seq_epochs_()_num_86 
+Positions	Sequence	Average score per residue
+1-12	GMEDITSLLRGP	31.1315495833333
+>seq_epochs_()_num_220 
+Positions	Sequence	Average score per residue
+1-9	MFNVLTAAY	59.2716463333333
+>seq_epochs_()_num_637 
+Positions	Sequence	Average score per residue
+1-8	IIASYRVA	46.9481605
+10-13	KTWG	7.85953175
+15-19	LHQRW	24.2809366
+22-27	HLRKML	10.702341
+>seq_epochs_()_num_818 
+Positions	Sequence	Average score per residue
+1-16	GFIGVMMNVAGTLVPV	49.7073579375
+>seq_epochs_()_num_361 
+Positions	Sequence	Average score per residue
+1-10	IMLVISKLLS	62.9765887
+>seq_epochs_()_num_331 
+Positions	Sequence	Average score per residue
+1-2	HK	17.056856
+4-5	AH	15.0501675
+7-14	VLQKLFKL	43.143812625
+16-16	K	8.695652
+18-20	VMH	8.24972133333333
+>seq_epochs_()_num_242 
+Positions	Sequence	Average score per residue
+1-2	SH	10.200669
+4-4	V	5.016722
+10-16	KIVKKIL	44.6727184285714
+>seq_epochs_()_num_908 
+Positions	Sequence	Average score per residue
+1-4	GLGN	83.277592
+7-8	KT	32.943144
+10-23	HKFGSAMVGELLQS	58.1223122857143
+>seq_epochs_()_num_906 
+Positions	Sequence	Average score per residue
+1-3	RTF	89.186176
+5-21	YYRVKVSSVMGKNMLCQ	35.5498720588235
+>seq_epochs_()_num_606 
+Positions	Sequence	Average score per residue
+1-7	GLNTIFK	82.2742471428571
+>seq_epochs_()_num_657 
+Positions	Sequence	Average score per residue
+1-6	SMVSSL	47.4916388333333
+9-10	ST	42.140468
+12-18	RLSKMVM	14.1901574285714
+>seq_epochs_()_num_199 
+Positions	Sequence	Average score per residue
+1-2	GL	69.3979935
+5-9	RIVKV	45.618729
+>seq_epochs_()_num_608 
+Positions	Sequence	Average score per residue
+5-11	NMKDMFK	8.50453914285714
+>seq_epochs_()_num_175 
+Positions	Sequence	Average score per residue
+1-12	MILTVIVYMLAM	74.1638796666667
+>seq_epochs_()_num_962 
+Positions	Sequence	Average score per residue
+6-22	RCRAYQNGLTPGLYRWC	55.0068857647059
+>seq_epochs_()_num_26 
+Positions	Sequence	Average score per residue
+1-5	KKNLM	35.7190636
+>seq_epochs_()_num_844 
+Positions	Sequence	Average score per residue
+1-2	RW	12.70903
+4-6	RYM	47.7146043333333
+>seq_epochs_()_num_227 
+Positions	Sequence	Average score per residue
+1-7	GAISAVA	71.094123
+>seq_epochs_()_num_66 
+Positions	Sequence	Average score per residue
+1-13	GTTKNVGTNMCLT	40.0051454615384
+>seq_epochs_()_num_644 
+Positions	Sequence	Average score per residue
+1-10	AKSIYNLVAG	55.2173912
+>seq_epochs_()_num_575 
+Positions	Sequence	Average score per residue
+1-2	IG	19.7324415
+4-4	S	29.09699
+6-18	KKWVFKAWRQVYT	54.9266788461539
+>seq_epochs_()_num_577 
+Positions	Sequence	Average score per residue
+1-9	LMKVIIKLW	69.7138611111111
+>seq_epochs_()_num_970 
+Positions	Sequence	Average score per residue
+1-13	KTSILGVLLKSVI	45.8708513846154
+>seq_epochs_()_num_671 
+Positions	Sequence	Average score per residue
+1-5	GLLSM	58.6622072
+12-25	MGMKTALPAVSSQI	45.2699472857143
+>seq_epochs_()_num_62 
+Positions	Sequence	Average score per residue
+1-2	HF	39.1304345
+4-5	RM	5.852843
+7-16	KKVVQAIKHL	28.0602006
+>seq_epochs_()_num_685 
+Positions	Sequence	Average score per residue
+1-4	ITNW	40.8862875
+8-8	I	8.695652
+10-23	KQIGKVVNQFGNVT	57.6923077857143
+>seq_epochs_()_num_929 
+Positions	Sequence	Average score per residue
+1-5	WNVIM	61.9397992
+7-12	NYRRTT	12.374582
+>seq_epochs_()_num_706 
+Positions	Sequence	Average score per residue
+1-5	FMAHI	34.9832776
+7-13	KLVGRLI	42.0449118571429
+>seq_epochs_()_num_266 
+Positions	Sequence	Average score per residue
+1-20	ASWQNMNNASKTASAMVASK	57.9933109
+>seq_epochs_()_num_680 
+Positions	Sequence	Average score per residue
+1-13	LLGGLLAVSLKVM	56.4188320769231
+>seq_epochs_()_num_979 
+Positions	Sequence	Average score per residue
+1-9	KRTMIKVLH	13.6752137777778
+>seq_epochs_()_num_17 
+Positions	Sequence	Average score per residue
+1-13	AMGIMQLLKAQLI	57.3964497692308
+>seq_epochs_()_num_292 
+Positions	Sequence	Average score per residue
+1-13	KWSKLVQTIRQFN	63.0820681538461
+>seq_epochs_()_num_22 
+Positions	Sequence	Average score per residue
+7-17	KMNKVMQYYCQ	65.3694130909091
+>seq_epochs_()_num_937 
+Positions	Sequence	Average score per residue
+1-2	KW	23.5785955
+4-8	SIMKN	22.4749162
+10-10	H	5.351171
+15-26	KAMKMVLQAIHT	60.3121513333333
+>seq_epochs_()_num_271 
+Positions	Sequence	Average score per residue
+1-15	WLKTLTKLIDMIYSV	63.7235226666667
+>seq_epochs_()_num_256 
+Positions	Sequence	Average score per residue
+1-16	IFGALAMLNASFLAKL	70.5685619375
+>seq_epochs_()_num_702 
+Positions	Sequence	Average score per residue
+1-4	SYLQ	27.75919725
+6-16	VRKVIGVITQL	58.3155975454546
+>seq_epochs_()_num_933 
+Positions	Sequence	Average score per residue
+5-20	KDGEYEGTITGIWLMN	67.7884614375
+>seq_epochs_()_num_974 
+Positions	Sequence	Average score per residue
+1-13	FISAIVQLIARLI	67.8415231538461
+>seq_epochs_()_num_675 
+Positions	Sequence	Average score per residue
+2-2	R	19.397993
+4-17	GKIGSTTKIASYVN	63.1390348571429
+>seq_epochs_()_num_296 
+Positions	Sequence	Average score per residue
+2-6	KLSKY	50.3010034
+>seq_epochs_()_num_710 
+Positions	Sequence	Average score per residue
+1-23	AQGHTLLSSVSNGKVMSGTMTQS	47.0408608695652
+>seq_epochs_()_num_261 
+Positions	Sequence	Average score per residue
+1-6	GLLRSI	58.3612038333333
+11-11	K	13.043478
+13-20	GWRVWSKA	27.1739135
+>seq_epochs_()_num_288 
+Positions	Sequence	Average score per residue
+1-5	GFFSA	38.5953176
+7-16	KKVAKAITCV	57.0234116
+>seq_epochs_()_num_600 
+Positions	Sequence	Average score per residue
+1-3	SVS	26.1984393333333
+5-6	KY	26.923077
+8-10	KKW	28.205128
+12-12	K	25.083612
+>seq_epochs_()_num_724 
+Positions	Sequence	Average score per residue
+1-7	GMLGVVK	33.8748205714286
+14-27	KVRAMNAMSVTKQQ	36.8609650714286
+>seq_epochs_()_num_767 
+Positions	Sequence	Average score per residue
+1-10	GIIRVMVTTM	68.3946489
+>seq_epochs_()_num_734 
+Positions	Sequence	Average score per residue
+1-17	TFFSVVKNVVQVGMGFM	51.0918749411765
+19-19	V	6.354515
+>seq_epochs_()_num_450 
+Positions	Sequence	Average score per residue
+1-7	TIIAMTS	72.5752511428572
+>seq_epochs_()_num_900 
+Positions	Sequence	Average score per residue
+1-5	RLGSI	43.7458196
+10-13	MHGL	13.12709025
+15-17	ALR	59.9777033333333
+>seq_epochs_()_num_775 
+Positions	Sequence	Average score per residue
+1-8	LMKALMAS	55.89464875
+13-13	M	37.123746
+15-24	KAYKPYMQTC	28.2608693
+>seq_epochs_()_num_569 
+Positions	Sequence	Average score per residue
+2-13	KRVRSWFRRYFK	34.0301000833333
+>seq_epochs_()_num_771 
+Positions	Sequence	Average score per residue
+1-5	TFGEF	61.270903
+8-20	TTTKLLNGIYSTT	72.1378955384615
+>seq_epochs_()_num_540 
+Positions	Sequence	Average score per residue
+1-12	LKAVSKTLTKNA	32.2185063333333
+>seq_epochs_()_num_729 
+Positions	Sequence	Average score per residue
+2-5	VHRL	44.7324415
+7-7	L	7.692308
+10-16	RRVVMTV	66.9374107142857
+>seq_epochs_()_num_46 
+Positions	Sequence	Average score per residue
+7-19	RMQRLISRILDLK	27.5533832307692
+>seq_epochs_()_num_436 
+Positions	Sequence	Average score per residue
+1-15	LKVVTHVLKHVLQYL	47.9598664
+>seq_epochs_()_num_465 
+Positions	Sequence	Average score per residue
+1-13	LLSIMSTLLGSMI	55.9814765384615
+>seq_epochs_()_num_522 
+Positions	Sequence	Average score per residue
+1-6	FNVRAI	47.9375698333333
+9-14	LGRKLI	9.0301
+>seq_epochs_()_num_42 
+Positions	Sequence	Average score per residue
+1-6	FIKWIA	49.0523968333333
+8-13	WLQKIL	91.973244
+>seq_epochs_()_num_478 
+Positions	Sequence	Average score per residue
+1-8	GAALVALM	85.200669125
+>seq_epochs_()_num_563 
+Positions	Sequence	Average score per residue
+1-5	GSQAV	55.652174
+>seq_epochs_()_num_500 
+Positions	Sequence	Average score per residue
+1-18	CVCGLIMAIAILALTLYH	77.5548123888889
+>seq_epochs_()_num_580 
+Positions	Sequence	Average score per residue
+1-2	FI	16.889632
+4-10	KLKGITN	31.7725751428571
+12-19	VLKRLIKC	12.29096975
+>seq_epochs_()_num_473 
+Positions	Sequence	Average score per residue
+1-13	GLVKRFIQKLGVI	23.6686389230769
+>seq_epochs_()_num_384 
+Positions	Sequence	Average score per residue
+1-7	QIVKIVN	60.6784518571429
+>seq_epochs_()_num_495 
+Positions	Sequence	Average score per residue
+1-6	KQLARK	17.335563
+10-10	M	12.040134
+12-18	KKLMTQS	41.9493552857143
+>seq_epochs_()_num_759 
+Positions	Sequence	Average score per residue
+1-12	GSVIVSTTYKAS	55.7971013333333
+>seq_epochs_()_num_405 
+Positions	Sequence	Average score per residue
+1-5	KISKL	34.1137122
+>seq_epochs_()_num_469 
+Positions	Sequence	Average score per residue
+5-14	KRIAKMLTKL	15.9197323
+>seq_epochs_()_num_388 
+Positions	Sequence	Average score per residue
+1-12	KQCQIHLITLNL	68.25529525
+>seq_epochs_()_num_504 
+Positions	Sequence	Average score per residue
+1-6	LAFLLR	82.274247
+>seq_epochs_()_num_380 
+Positions	Sequence	Average score per residue
+2-12	IARVVAIRFAR	34.5697781818182
+>seq_epochs_()_num_290 
+Positions	Sequence	Average score per residue
+1-1	V	5.351171
+3-5	KTT	17.2798213333333
+7-7	I	56.856187
+10-19	KIAKLFLAFH	82.508361
+>seq_epochs_()_num_626 
+Positions	Sequence	Average score per residue
+1-20	KKWSLKVQSKSWGIYDVFIS	48.4949833
+>seq_epochs_()_num_667 
+Positions	Sequence	Average score per residue
+1-5	FINWI	68.0936454
+7-13	RFVGKIL	72.8619204285714
+>seq_epochs_()_num_987 
+Positions	Sequence	Average score per residue
+1-5	GIIVI	47.4916388
+8-13	KTVKTI	39.130435
+>seq_epochs_()_num_252 
+Positions	Sequence	Average score per residue
+1-4	KWKS	38.12709
+14-16	RTV	40.0222966666667
+18-26	HTAVKAITS	65.1430698888889
+>seq_epochs_()_num_210 
+Positions	Sequence	Average score per residue
+1-5	GMISM	58.9966556
+8-9	SS	21.9063545
+11-13	KQV	36.231884
+15-25	KMGVNTVYNKI	65.3998176363636
+>seq_epochs_()_num_704 
+Positions	Sequence	Average score per residue
+7-7	V	22.742475
+9-16	VRTVSVLL	48.6204015
+>seq_epochs_()_num_259 
+Positions	Sequence	Average score per residue
+1-4	ASLV	17.1404685
+7-7	K	55.518395
+9-19	KHIARVFWSFK	75.4028577272727
+>seq_epochs_()_num_442 
+Positions	Sequence	Average score per residue
+8-23	MHEMLENMINQLVNKL	62.4790968125
+>seq_epochs_()_num_997 
+Positions	Sequence	Average score per residue
+1-6	KHSALT	52.2296543333333
+8-10	SAD	25.975474
+12-17	PTAAQM	30.769231
+>seq_epochs_()_num_225 
+Positions	Sequence	Average score per residue
+1-10	GVFHVMGTLV	64.3143812
+>seq_epochs_()_num_173 
+Positions	Sequence	Average score per residue
+1-6	LSVVLN	79.93311
+>seq_epochs_()_num_440 
+Positions	Sequence	Average score per residue
+1-20	GAMRLIARHILLVVMHFSSM	57.35785945
+>seq_epochs_()_num_931 
+Positions	Sequence	Average score per residue
+1-1	S	5.685619
+5-13	DKLNRLSAI	26.9416574444444
+>seq_epochs_()_num_642 
+Positions	Sequence	Average score per residue
+1-2	WL	37.2909695
+4-9	WKWNRR	13.712375
+>seq_epochs_()_num_673 
+Positions	Sequence	Average score per residue
+5-9	MTMNK	50.7023412
+11-12	SI	20.234114
+>seq_epochs_()_num_972 
+Positions	Sequence	Average score per residue
+1-9	GLGSVIISS	59.4574506666667
+11-12	KA	34.280936
+14-27	WRGAIKGFGSTYVN	50.645007
+>seq_epochs_()_num_968 
+Positions	Sequence	Average score per residue
+1-4	LELI	74.66555175
+6-16	RIFKRLLSMYH	57.0994225454546
+>seq_epochs_()_num_683 
+Positions	Sequence	Average score per residue
+1-19	LMGTVVYAVGHVVTMAKVC	45.55536
+>seq_epochs_()_num_269 
+Positions	Sequence	Average score per residue
+1-3	GQY	35.451505
+6-20	HGPVIASLMVKFTSM	67.8037904666667
+>seq_epochs_()_num_954 
+Positions	Sequence	Average score per residue
+2-2	I	43.143813
+5-10	RIVRSI	52.7313268333333
+12-18	KYMVKMM	63.784042
+>seq_epochs_()_num_484 
+Positions	Sequence	Average score per residue
+1-10	LANVLSAMHS	46.4214046
+>seq_epochs_()_num_960 
+Positions	Sequence	Average score per residue
+1-11	QQWAFQFLGKQ	48.0085133636364
+14-19	KRGLAV	8.026756
+>seq_epochs_()_num_482 
+Positions	Sequence	Average score per residue
+1-13	GLFRMTVQVVSTG	45.5364033076923
+15-20	NKMKSM	8.361204
+>seq_epochs_()_num_324 
+Positions	Sequence	Average score per residue
+1-12	LFVNLFRGMVTV	57.77591975
+14-14	R	7.35786
+16-22	IKRVIKA	21.6913522857143
+>seq_epochs_()_num_964 
+Positions	Sequence	Average score per residue
+1-2	FM	56.8561875
+4-13	WMGKWLARIL	65.5183948
+>seq_epochs_()_num_382 
+Positions	Sequence	Average score per residue
+6-13	TGKVAGQV	31.22909725
+16-24	KPMNMTATK	44.5187664444445
+>seq_epochs_()_num_418 
+Positions	Sequence	Average score per residue
+1-7	KLVYQND	45.3416152857143
+>seq_epochs_()_num_582 
+Positions	Sequence	Average score per residue
+1-15	SLKGYVAWACLLLKW	59.3534
+>seq_epochs_()_num_765 
+Positions	Sequence	Average score per residue
+1-12	LLGAMMVAVAQV	60.89743575
+15-20	KLMHAV	11.036789
+>seq_epochs_()_num_602 
+Positions	Sequence	Average score per residue
+1-9	GGRVSVVIV	57.1534744444444
+11-11	V	8.695652
+14-21	KTGTTYRQ	52.884615625
+>seq_epochs_()_num_460 
+Positions	Sequence	Average score per residue
+3-10	KRLGLMWM	65.6354515
+>seq_epochs_()_num_902 
+Positions	Sequence	Average score per residue
+1-6	GIFSII	62.4860645
+8-25	GAAKHIIGKVIPMLYERI	46.7855816111111
+>seq_epochs_()_num_757 
+Positions	Sequence	Average score per residue
+1-5	RWCKY	64.6153846
+10-10	M	66.555184
+12-14	SAL	47.6031213333333
+>seq_epochs_()_num_752 
+Positions	Sequence	Average score per residue
+5-13	KRVHAMSTG	25.2694166666667
+16-21	HGGAYL	85.618729
+>seq_epochs_()_num_498 
+Positions	Sequence	Average score per residue
+3-5	WKV	7.91527333333333
+7-17	RKAVSLIKNAI	53.8765581818182
+>seq_epochs_()_num_116 
+Positions	Sequence	Average score per residue
+1-8	LTIVLRMP	38.963210875
+>seq_epochs_()_num_650 
+Positions	Sequence	Average score per residue
+1-9	RKWWRWKLR	19.2865105555556
+>seq_epochs_()_num_925 
+Positions	Sequence	Average score per residue
+1-11	RRMTIWIIHRK	35.8771662727273
+>seq_epochs_()_num_571 
+Positions	Sequence	Average score per residue
+1-13	LWSVIAKVAAGYM	67.3269876153846
+>seq_epochs_()_num_578 
+Positions	Sequence	Average score per residue
+5-23	KMVKSGGSGISHIALTATP	49.5863405263158
+>seq_epochs_()_num_648 
+Positions	Sequence	Average score per residue
+1-1	G	98.327759
+4-4	K	13.377926
+9-17	KLQAIAKAV	67.5213673333333
+>seq_epochs_()_num_761 
+Positions	Sequence	Average score per residue
+2-10	TKVKLLWRM	44.5187658888889
+>seq_epochs_()_num_233 
+Positions	Sequence	Average score per residue
+1-2	RN	58.026756
+8-8	K	5.685619
+10-10	L	38.12709
+13-17	AKVHQ	17.458194
+>seq_epochs_()_num_181 
+Positions	Sequence	Average score per residue
+1-9	GLATFWGWI	52.9171311111111
+>seq_epochs_()_num_235 
+Positions	Sequence	Average score per residue
+1-5	FLSAV	70.2341136
+7-17	KMSAKVLTAVF	61.8729097272727
+>seq_epochs_()_num_434 
+Positions	Sequence	Average score per residue
+6-6	K	55.852843
+8-20	RKIVTMLIVLGVM	49.2410600769231
+>seq_epochs_()_num_179 
+Positions	Sequence	Average score per residue
+1-4	GYWT	57.3578595
+7-25	MMGPTAAGHAGLSSVATMM	48.3013551578947
+>seq_epochs_()_num_586 
+Positions	Sequence	Average score per residue
+1-9	LKHTLMSLI	48.3463396666667
+>seq_epochs_()_num_467 
+Positions	Sequence	Average score per residue
+1-3	LIA	53.6231883333333
+6-13	LKQHWRCI	13.252508
+>seq_epochs_()_num_784 
+Positions	Sequence	Average score per residue
+5-24	KTAKSVGSLGMIGINMMTVK	42.8762542
+>seq_epochs_()_num_275 
+Positions	Sequence	Average score per residue
+1-5	KLISQ	47.4247492
+9-17	KRVTKWLKQ	25.3437382222222
+>seq_epochs_()_num_546 
+Positions	Sequence	Average score per residue
+1-25	GKIYYHVQSKVALNLSALSVQYVQK	57.458194
+>seq_epochs_()_num_476 
+Positions	Sequence	Average score per residue
+6-9	HRQR	26.67224075
+11-12	KI	7.0234115
+15-22	KKKGIMST	38.6705685
+>seq_epochs_()_num_277 
+Positions	Sequence	Average score per residue
+1-8	VFGIMKSF	37.70903025
+10-20	NSVGRMVSTFM	68.1058070909091
+>seq_epochs_()_num_691 
+Positions	Sequence	Average score per residue
+1-11	LMAVVILKLVK	37.0021284545454
+>seq_epochs_()_num_538 
+Positions	Sequence	Average score per residue
+2-4	KYK	10.0334446666667
+6-6	M	8.695652
+8-16	KKHNIGTYQ	45.001858
+18-24	KAVVKRP	18.3468702857143
+>seq_epochs_()_num_689 
+Positions	Sequence	Average score per residue
+1-1	F	16.722408
+4-8	GMHKL	33.5117056
+12-12	M	21.404682
+15-17	KIK	30.211817
+19-24	SLTKHV	8.361204
+>seq_epochs_()_num_55 
+Positions	Sequence	Average score per residue
+1-5	GLWAA	41.270903
+7-22	KKVVVTVMTLILHVFK	58.2984950625
+>seq_epochs_()_num_553 
+Positions	Sequence	Average score per residue
+1-6	ANRIAG	32.4414715
+>seq_epochs_()_num_814 
+Positions	Sequence	Average score per residue
+1-8	GIALLAAA	75.376253875
+>seq_epochs_()_num_87 
+Positions	Sequence	Average score per residue
+3-6	KLMH	31.43812725
+>seq_epochs_()_num_793 
+Positions	Sequence	Average score per residue
+1-2	MW	25.7525085
+4-15	IIRKIIPFMVHW	31.2151618333333
+>seq_epochs_()_num_769 
+Positions	Sequence	Average score per residue
+2-8	MPSQRQQ	26.2302915714286
+13-15	HKV	54.292085
+18-18	I	5.351171
+>seq_epochs_()_num_542 
+Positions	Sequence	Average score per residue
+2-6	KWRGI	42.6755854
+8-14	ATGKKLV	10.2723361428571
+>seq_epochs_()_num_726 
+Positions	Sequence	Average score per residue
+2-2	Q	15.719064
+5-20	KTVLCALWMKVVYTVR	57.943143625
+>seq_epochs_()_num_58 
+Positions	Sequence	Average score per residue
+1-13	FIGAIYKSVTSAV	50.6303062307693
