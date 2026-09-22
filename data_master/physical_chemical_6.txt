@@ -1,4 +1,4 @@
- H1 V P1 Pl PKa NCI (H1:hydrophobicity, V:volume of side chain, P1(polarity), Pl:pH at the isoelectric point, the dissociation constant for the -COOH group (pKa), and the net charge index of the side chain (NCI)  ## doi: 10.1128/mSystems.00299-21 )
+ H1 V P1 Pl PKa NCI (H1:hydrophobicity, V:volume of side chain, P1(polarity), Pl:pH at the isoelectric point, the dissociation constant for the -COOH group (pKa), and the net charge index of the side chain (NCI)  ## doi: 10.1128/mSystems.00299-21, J == amidated, Z == non-amidated )
 A 0.62 27.5 8.1 6 2.34 0.007187
 C 0.29 44.6 5.5 5.07 1.96 -0.03661
 D -0.9 40 13 2.77 1.88 -0.02382
