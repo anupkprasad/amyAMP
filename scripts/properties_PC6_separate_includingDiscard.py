@@ -42,24 +42,22 @@ PATH_PC6 = os.path.abspath(os.path.join(PATH_ROOT, "data_master", "physical_chem
 
 # Dataset configuration
 FASTA_FILES = [
-    "seqs_generated_postprocessed.fasta",
-    "dbaasp_APR_processed_removedJZ.fasta",
-    "amys_uniqueAI4AMP_normalized.fasta",
-    "random_peptides_1000.fasta",
-    "dbaasp_non_APR.fasta",
-    "AMY_nonAntibacterial.fasta"
+    "seqs_generated_postprocessed.fasta",  # amyAMP
+    None,                                   # trainPep - combined AMP+AMY (special case)
+    "dbaasp_non_APR.fasta",                # AMP(D)
+    "AMY_nonAntibacterial.fasta",          # AMY(D)
+    "random_peptides_1000.fasta"           # randPep
 ]
-DATASET_LABELS = ["amyAMP", "AMP", "AMY", "randPep", "AMP(D)", "AMY(D)"]
+DATASET_LABELS = ["amyAMP", "trainPep", "AMP(D)", "AMY(D)", "randPep"]
 
 # Color scheme based on functional categories:
-# AMPs (red shades), AMYs (blue shades), amyAMPs (green), randPep (yellow)
+# amyAMP (green), trainPep (purple), AMP(D) (light red), AMY(D) (light blue), randPep (yellow)
 DATASET_COLORS = [
     '#2ECC40',  # amyAMP - Green (dual functional)
-    '#FF4136',  # AMP - Red (antimicrobial only)
-    '#0074D9',  # AMY - Blue (amyloid only)
-    '#FFD60A',  # randPep - Yellow (random/control)
+    '#B10DC9',  # trainPep - Purple (training set: AMP + AMY combined)
     '#FF6B6B',  # AMP(D) - Light Red (antimicrobial database)
-    '#4DA6FF'   # AMY(D) - Light Blue (amyloid database)
+    '#4DA6FF',  # AMY(D) - Light Blue (amyloid database)
+    '#FFD60A'   # randPep - Yellow (random/control)
 ]
 
 # PC6 property names (based on physical_chemical_6.txt file format)
@@ -190,6 +188,7 @@ def calculate_pc6_properties(seq, pc6_scales):
 def load_and_analyze_sequences(pc6_scales):
     """
     Load sequences from FASTA files and calculate PC6 properties.
+    Includes trainPep as combined AMP + AMY training set.
     
     Args:
         pc6_scales (dict): PC6 scale dictionaries
@@ -204,6 +203,33 @@ def load_and_analyze_sequences(pc6_scales):
     all_data = []
     
     for fasta_file, label in zip(FASTA_FILES, DATASET_LABELS):
+        # Handle special case: trainPep is combination of AMP and AMY
+        if label == "trainPep":
+            print(f"Processing {label} (combination of AMP + AMY sequences used for model training)...")
+
+            # Get AMP sequences from training set
+            amp_file_path = os.path.join(PATH_SEQUENCE, "dbaasp_APR_processed_removedJZ.fasta")
+            if os.path.exists(amp_file_path):
+                amp_records = list(SeqIO.parse(amp_file_path, "fasta"))
+                for record in amp_records:
+                    properties = calculate_pc6_properties(record.seq, pc6_scales)
+                    if properties:
+                        properties['dataset'] = label
+                        properties['sequence_id'] = record.id
+                        all_data.append(properties)
+
+            # Get AMY sequences from training set
+            amy_file_path = os.path.join(PATH_SEQUENCE, "amys_uniqueAI4AMP_normalized.fasta")
+            if os.path.exists(amy_file_path):
+                amy_records = list(SeqIO.parse(amy_file_path, "fasta"))
+                for record in amy_records:
+                    properties = calculate_pc6_properties(record.seq, pc6_scales)
+                    if properties:
+                        properties['dataset'] = label
+                        properties['sequence_id'] = record.id
+                        all_data.append(properties)
+            continue
+
         # Handle datasets in different locations
         if label == "AMP(D)":
             file_path = os.path.join(PATH_ROOT, "data_master", "amps", "dbaasp", fasta_file)
@@ -259,7 +285,7 @@ def save_summary_statistics(df, output_path):
 
 def plot_pc6_distributions(df, save_path):
     """
-    Create 2x3 violin plots for PC6 properties across 6 datasets.
+    Create 2x3 violin plots for PC6 properties across 5 datasets.
     
     Args:
         df (pd.DataFrame): DataFrame with PC6 properties
