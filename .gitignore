@@ -72,7 +72,7 @@ ehthumbs.db
 # *.pickle
 
 # Generated outputs (these can be regenerated)
-*.png
+# *.png  # temporarily allow committing figure PNGs
 *.pdf
 *.jpg
 *.jpeg
