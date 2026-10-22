@@ -1,0 +1,2 @@
+"dataset","fasta","n_fasta","n_scored","n_skipped_nonstandard","n_skipped_short","n_failed","mean_probability","median_probability"
+"amyAMP","seqs_generated_postprocessed.fasta",968,968,0,0,0,0.490934864684077,0.500051483554491

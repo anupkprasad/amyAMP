@@ -1,0 +1,249 @@
+group,index,sequence,sheet_row,status,output,source,candidate_count,sha256
+GenSeq,1,GTLLSAIKRTI,2,verified,GenSeq/1.pdb,/home/v9/Downloads/fold_cgmartini_1.zip::fold_cgmartini_1_model_0.cif,1,6ac45fedc1becca0dafcf098bfe2caae84decaa24e765f2fcb14ad93fcbdf235
+GenSeq,2,GMWSMMSTVGKNCAKGYMPTVTSC,3,verified,GenSeq/2.pdb,/home/v9/Downloads/fold_cgmartini_2.zip::fold_cgmartini_2_model_0.cif,1,f77be2ae827b8fe5ac070abdce2b1da44fbfd80e6870f398756df82e63f8e87c
+GenSeq,3,KQMVRRILKKLTKTMGKT,4,verified,GenSeq/3.pdb,/home/v9/Downloads/fold_cgmartini_3.zip::fold_cgmartini_3_model_0.cif,1,a7f4723ffa04ba538766cf1fd5ba4a749693c6fa0be3f145792a9677f721df8a
+GenSeq,4,GKIEQMWKTKTMIKAVQYKVTMK,5,verified,GenSeq/4.pdb,/home/v9/Downloads/fold_cgmartini_4.zip::fold_cgmartini_4_model_0.cif,1,fd57d2d0636fb779e3f2e99fb56782efdb95c8ce043e30cee3544b129fbe8de2
+GenSeq,5,SMSVSQKLGVVKIAG,6,verified,GenSeq/5.pdb,/home/v9/Downloads/fold_cgmartini_5.zip::fold_cgmartini_5_model_0.cif,1,f9841e81fb35549221de63d774c0ffe68ae9f1e79e9acba7c2117cc1b7894780
+GenSeq,6,GSENRVLTATIKAMKK,7,verified,GenSeq/6.pdb,/home/v9/Downloads/fold_cgmartini_6.zip::fold_cgmartini_6_model_0.cif,1,92be5627e098aeb03f7f3b5f00eb48ffd5900feee09a9e345403da8b5e591d0f
+GenSeq,7,IQKAAFLIAAHRKTIKVTNRTYCP,8,verified,GenSeq/7.pdb,/home/v9/Downloads/fold_cgmartini_7.zip::fold_cgmartini_7_model_0.cif,1,c747fca8faf4f8955fa551df07d68eb38dc92cfe16c2f85554259ae35db34b22
+GenSeq,8,KQVALVWSKLLIA,9,verified,GenSeq/8.pdb,/home/v9/Downloads/fold_cgmartini_8.zip::fold_cgmartini_8_model_0.cif,1,6ef0bdc406f12321729124b60307d5904a8624f7b6152843c26351df9b0d566f
+GenSeq,9,SSVLISR,10,verified,GenSeq/9.pdb,/home/v9/Downloads/fold_cgmartini_9 (1).zip::fold_cgmartini_9_model_0.cif,1,ab3c1786a17dd10cb7a1bd7af5d06cf00f2bce244a905b5c60b6153287fb6547
+GenSeq,10,ALGAMMNK,11,verified,GenSeq/10.pdb,/home/v9/Downloads/fold_cgmartini_10.zip::fold_cgmartini_10_model_0.cif,1,679ae32a92cfe047d8abd958177f165efaf784b2a788e5ada5994f4c51ba1cf2
+GenSeq,11,KILKLVG,12,verified,GenSeq/11.pdb,/home/v9/Downloads/fold_cgmartini_11.zip::fold_cgmartini_11_model_0.cif,1,105c4663d44defedfcaa52dcc72537da57d73845de2bdd86a3b4251614641b6e
+GenSeq,12,KNNKVTLFVICK,13,verified,GenSeq/12.pdb,/home/v9/Downloads/fold_cgmartini_12.zip::fold_cgmartini_12_model_0.cif,1,91bdbdf410d9474e9645816009df1e4096c36a672b0caef8439aa261fe13660f
+GenSeq,13,AMGIMQLLKAQLITKPIMKA,14,verified,GenSeq/13.pdb,/home/v9/Downloads/fold_cgmartini_13.zip::fold_cgmartini_13_model_0.cif,1,6707ee6efa806dabece08d345e5955568fe99aac9b81041891c2f9ab1d59dbb1
+GenSeq,14,KIARYLLTRTSTR,15,verified,GenSeq/14.pdb,/home/v9/Downloads/fold_cgmartini_14.zip::fold_cgmartini_14_model_0.cif,1,60dc32d49b67e05d992cebc7bcc5cf7a2cf0123cf82126e58dae0cb5e6f1b3b4
+GenSeq,15,RLKVFKVVAKMLTLVSMSMKKVVKKA,16,verified,GenSeq/15.pdb,/home/v9/Downloads/fold_cgmartini_15.zip::fold_cgmartini_15_model_0.cif,1,977b3fbf9168fcb84eb30b1056013e46bd3692714132b74a9cbe27165fbc363a
+GenSeq,16,LIVTIMS,17,verified,GenSeq/16.pdb,/home/v9/Downloads/fold_cgmartini_16.zip::fold_cgmartini_16_model_0.cif,1,e8f60483edffeec8d0007f82bab055058a1cb3f2c0d4601c1531f19847ea36d7
+GenSeq,17,LLTNTMKMNKVMQYYCQ,18,verified,GenSeq/17.pdb,/home/v9/Downloads/fold_cgmartini_17.zip::fold_cgmartini_17_model_0.cif,1,cc6896e00f0c38f6382ca1198cba7fa449769af7d1d4d936488e03970838fddc
+GenSeq,18,GIVVMVTLVKKAIRSCYRVVQ,19,verified,GenSeq/18.pdb,/home/v9/Downloads/fold_cgmartini_18.zip::fold_cgmartini_18_model_0.cif,1,b13dac3e91ce82fea1cd609ff5e28d2fa189ac322b2633014dd5ebf770cb5527
+GenSeq,19,KKNLMSVTKRK,20,verified,GenSeq/19.pdb,/home/v9/Downloads/fold_cgmartini_19.zip::fold_cgmartini_19_model_0.cif,1,fe42ccdbe76742daeb64d654c33b2995e9249ca41013e467d220ce28b942f0e0
+GenSeq,20,ASMTMRGSKMKAQMKVMSVM,21,verified,GenSeq/20.pdb,/home/v9/Downloads/fold_cgmartini_20.zip::fold_cgmartini_20_model_0.cif,1,16dcb96135515297614b80674d9c624ef84cb2646717813062aeeb25cb1c2d2b
+GenSeq,21,AALCRMANRAMASYFPSGAR,22,verified,GenSeq/21.pdb,/home/v9/Downloads/fold_cgmartini_21.zip::fold_cgmartini_21_model_0.cif,1,223f0008bb947e86ba8c97f92f0124cfc2e67ff3b1028520ea686dbedd14abb8
+GenSeq,22,LLGSVMYKIVHAVTAISKV,23,verified,GenSeq/22.pdb,/home/v9/Downloads/fold_cgmartini_22.zip::fold_cgmartini_22_model_0.cif,1,63e47cbdd769025e51e55e6e1c60e97ebf9dbd98d3a05203b789f4832d42a68a
+GenSeq,23,VGKKMTASSMRSVVNKIASM,24,verified,GenSeq/23.pdb,/home/v9/Downloads/fold_cgmartini_23.zip::fold_cgmartini_23_model_0.cif,1,e39d0b2d7e1cd2a6553a14fcb4ffdaa87cdf800e3da33e7f1d909368edca445e
+GenSeq,24,AQSIMRQLKSQVNYGVMHPM,25,verified,GenSeq/24.pdb,/home/v9/Downloads/fold_cg24.zip::fold_cg24_model_0.cif,3,28257395c5d8e2eaea62dc1d4e74d01f50ce0f6765fb7240fa8f3f261b31c9b0
+GenSeq,25,LLVVMWLWKLIKKIPK,26,verified,GenSeq/25.pdb,/home/v9/Downloads/fold_cgmartini_25.zip::fold_cgmartini_25_model_0.cif,1,250569056f3254cb3eb978f94c82cd6ecdf3c0eda32108997ae4aa40d644b9cd
+GenSeq,26,KMRAYTHLSKIIMRRAMK,27,verified,GenSeq/26.pdb,/home/v9/Downloads/fold_cgmartini_26.zip::fold_cgmartini_26_model_0.cif,1,cde64bdd777871577748573c604fbaf9094effaf8dcf21988d27cc08ed235c5b
+GenSeq,27,GIYRSFLTKWQRGLKM,28,verified,GenSeq/27.pdb,/home/v9/Downloads/fold_cgmartini_27.zip::fold_cgmartini_27_model_0.cif,1,13cc3adaec3e5a8a0be04a0ee2858a4202dfe69bcab0083f4e5169ddb090df8a
+GenSeq,28,APWREIARGMQAGGSKTQSC,29,verified,GenSeq/28.pdb,/home/v9/Downloads/fold_cgmartini_28.zip::fold_cgmartini_28_model_0.cif,1,2a3f3d1d176b24ef9db662fa253851b52b4f461b6ef5424843ea9451ec6c5ddd
+GenSeq,29,GFFTYRVIGRMGKWFGDSYYRVKKNVY,30,verified,GenSeq/29.pdb,/home/v9/Downloads/fold_cgmartini_29.zip::fold_cgmartini_29_model_0.cif,1,6b4827566410e3b6cbbdc7d0dedeee2b5760db2b3bf987bd795e3e5d2aacd32d
+GenSeq,30,TRLRWRVAMFKA,31,verified,GenSeq/30.pdb,/home/v9/Downloads/fold_cgmartini_30.zip::fold_cgmartini_30_model_0.cif,1,11439afe588e7d435a50ad249282bf21ae1c4da0f5540250a546d47f5ec099ab
+GenSeq,31,GKFTMTQKTGSILSP,32,verified,GenSeq/31.pdb,/home/v9/Downloads/fold_cgmartini_31.zip::fold_cgmartini_31_model_0.cif,1,243c6fae158fc397b589593a6d1fe0658c1389fb7198e3847c7f4926019cab9c
+GenSeq,32,LLKALKRIIALIVHFK,33,verified,GenSeq/32.pdb,/home/v9/Downloads/fold_cgmartini_32.zip::fold_cgmartini_32_model_0.cif,1,129f6a2f444800354faa788c9035a6912c6d5f47d222d3d614b99778bebf6166
+GenSeq,33,MSLVMKIQKWWKWFKK,34,verified,GenSeq/33.pdb,/home/v9/Downloads/fold_cgmartini_33.zip::fold_cgmartini_33_model_0.cif,1,a4dfb7385c92f4fb7a99020b9a4a1dd5b93978e762c53df9e1b969237e323f71
+GenSeq,34,HASKSIKTSFK,35,verified,GenSeq/34.pdb,/home/v9/Downloads/fold_cgmartini_34.zip::fold_cgmartini_34_model_0.cif,1,9e5adf220d47d343af1e020a3433b1e202399a6e59830efa929b4da141bb69ba
+GenSeq,35,GLWAAIKKVVVTVMTLILHVFK,36,verified,GenSeq/35.pdb,/home/v9/Downloads/fold_cgmartini_35.zip::fold_cgmartini_35_model_0.cif,1,9bb6f44ee58819d0d304c8e2cbf5b5ccea8b260c48dc607a38e4d11d28f50ce2
+GenSeq,36,FLSKIFRMVMRLM,37,verified,GenSeq/36.pdb,/home/v9/Downloads/fold_cgmartini_36.zip::fold_cgmartini_36_model_0.cif,1,6fdca22e03ad42938067d7b899ade6d334684d47ce87c2093ce0a86dfea1fa5d
+GenSeq,37,FIGAIYKSVTSAV,38,verified,GenSeq/37.pdb,/home/v9/Downloads/fold_cgmartini_37.zip::fold_cgmartini_37_model_0.cif,1,cac9d185df24ae5e386aaf519a6367c56477239f6795e76d84bd25c2abe3c9ee
+GenSeq,38,HFFRMIKKVVQAIKHL,39,verified,GenSeq/38.pdb,/home/v9/Downloads/fold_cgmartini_38.zip::fold_cgmartini_38_model_0.cif,1,d0758f2d290c2a22d3acd104104d5e82f58973fb385d3199874c96d11243b4fb
+GenSeq,39,ANSAKSAAYKG,40,verified,GenSeq/39.pdb,/home/v9/Downloads/fold_cgmartini_39.zip::fold_cgmartini_39_model_0.cif,1,228a2e52ee5bcfeeab9f3a92dece5742a697e1f639facb8780c18ec58aafe7fa
+GenSeq,40,RSFAKKVTKQLFTMLASYTTKNV,41,verified,GenSeq/40.pdb,/home/v9/Downloads/fold_cgmartini_40 (1).zip::fold_cgmartini_40_model_0.cif,1,188c9160294cca33330388e668ed5ac6c6ecbaf13952cf972f682032eaa93ed0
+GenSeq,41,GTTKNVGTNMCLT,42,verified,GenSeq/41.pdb,/home/v9/Downloads/fold_cgmartini_41.zip::fold_cgmartini_41_model_0.cif,1,2755b5b23e908f42fedd70affeec9d5e44b6b147065f55a823db168d61b05e84
+GenSeq,42,QFRISDLDELLKDGLVQYVC,43,verified,GenSeq/42.pdb,/home/v9/Downloads/fold_cgmartini_42.zip::fold_cgmartini_42_model_0.cif,1,b562e9ef7ab602affbcd364e7d23e1433023a0d43861e227fea96ece37038bb1
+GenSeq,43,GLYSAVVSAGQHVICGITGIC,44,verified,GenSeq/43.pdb,/home/v9/Downloads/fold_cgmartini_43.zip::fold_cgmartini_43_model_0.cif,1,2c536433c2a978955958cd224bd0f4a1355cbe5ebdad0baa72914e726ce3cb20
+GenSeq,44,GFLSVVKKVASLIQKV,45,verified,GenSeq/44.pdb,/home/v9/Downloads/fold_cgmartini_44 (1).zip::fold_cgmartini_44_model_0.cif,1,c1079834e4b3f44ea152a4fe4464a4a440978c7e1cb8a7ed3e4bbd1fed7691d5
+GenSeq,45,RNQIFTRISLGSAPGFAGFM,46,verified,GenSeq/45.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_45/fold_cgmartini_45_model_0.cif,1,5e6ba4c349e8357fc04d08b207f4c78b47312e102f757870232628db16490d69
+GenSeq,46,FLGALALGVGKVLTSIMTGICKHC,47,verified,GenSeq/46.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_46/fold_cgmartini_46_model_0.cif,1,cd9bf862bdb74c160bef260abd1930c954f914ef8ff1b1783293a0f7a984dc84
+GenSeq,47,GKATRRVAKYVAMYVRTGGY,48,verified,GenSeq/47.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_47/fold_cgmartini_47_model_0.cif,1,fd67f450c33a53bfe727f19d194c0e6d6abcd749bdc5ed38769b4e80efde490d
+GenSeq,48,EMNSNTGTA,49,verified,GenSeq/48.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_48/fold_cgmartini_48_model_0.cif,1,db2dd96b36200c944a766bdeaa7dc0df221eb523fe443bbb251f8dfe959ef5b2
+GenSeq,49,FLPALAGMSAKLVPQIFCAISKKC,50,verified,GenSeq/49.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_49/fold_cgmartini_49_model_0.cif,1,93f44f5f02190d64db1929181935e7c196337530943fbe0802a3954f4d86a178
+GenSeq,50,ASWKKTVSTGKDVVKAV,51,verified,GenSeq/50.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_50/fold_cgmartini_50_model_0.cif,1,917c8ca955efa8fef6365d06a83330a2ce42f0a30a267e8cf61a14b4c104141c
+GenSeq,51,RILSFMVMKIRKMTTTTV,52,verified,GenSeq/51.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_51/fold_cgmartini_51_model_0.cif,1,c3c4644a2be0f8c47bc74b0851706d8eb111b8a50ec3da860f9685c788d65bbc
+GenSeq,52,TNSTYTTMATNMIAA,53,verified,GenSeq/52.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::cgmartini_52/fold_cgmartini_52_model_0.cif,1,6d9f42b61f16e693756865d2bf180ce6fd61e3259513a5d58d84cbf6b482fadc
+GenSeq,53,GMEDITSLLRGP,54,verified,GenSeq/53.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_53/fold_cgmartini_53_model_0.cif,1,c630978e592c3f13dd7431da40d12adf33d80f6b86f4e920d70e56d0af2cbd24
+GenSeq,54,LKKLMHILKRVH,55,verified,GenSeq/54.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_54/fold_cgmartini_54_model_0.cif,1,763ac907299376b412f08858d80e503a70ca1877367796827dc8161f0a219251
+GenSeq,55,GISNIVK,56,verified,GenSeq/55.pdb,/home/v9/Downloads/fold_cg55.zip::fold_cg55_model_0.cif,1,5f0b169f472610798cf6e0340a2edea2c577c854ff9a20be1090c2963ca8e9ad
+GenSeq,56,EEVISTIFGRVVGFMP,57,verified,GenSeq/56.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_56/fold_cgmartini_56_model_0.cif,1,4fb6dffdda56b5798582715cb9782ce7e67749c89bede5d96b83b9f0163bdd8f
+GenSeq,57,KVLKMALTHL,58,verified,GenSeq/57.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_57/fold_cgmartini_57_model_0.cif,1,8b34414b67ddfc28eca4c82e9239c52558899583f6461c46bb33c174a7d4f940
+GenSeq,58,GMKMSLRQKKMQYILKRATKKVTNW,59,verified,GenSeq/58.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_58/fold_cgmartini_58_model_0.cif,1,bfad54af34918763105f729021d7502323ff62854c5be80754e1028e39fb5bff
+GenSeq,59,QMIALTKM,60,verified,GenSeq/59.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_59/fold_cgmartini_59_model_0.cif,1,278c45c0530e771cfd4c2043b4e1d6d9343adbe1852d399de4139c57928bad4c
+GenSeq,60,MYKWIWSWV,61,verified,GenSeq/60.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_60/fold_cgmartini_60_model_0.cif,1,13d89d668109f459796ff18993f36abe1b906f4c8f31baa81b4eb1a33c7cab6e
+GenSeq,61,SNKCVSVAKT,62,verified,GenSeq/61.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_61/fold_cgmartini_61_model_0.cif,1,049b38e76a4b319a9d3d36105582e36bcc259f9aab613e3773579434e1f0fa62
+GenSeq,62,WMKLMSSLRKQK,63,verified,GenSeq/62.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_62/fold_cgmartini_62_model_0.cif,1,315ee947a91fedf4ca0328b8b8014a560aced20aed7f65b936cd47b9e7b0e084
+GenSeq,63,ILCPKMTLATVGYILMK,64,verified,GenSeq/63.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_101/fold_cgmartini_101_model_0.cif,1,a772d89d671c9621e4f898969967d413b57761295840e853c02f4828321a6e37
+GenSeq,64,IIAKNDMR,65,verified,GenSeq/64.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_102/fold_cgmartini_102_model_0.cif,1,acffd721a4e61396fa4f07e2bd56e4a64141e051633e3357a57d1e73e58bb7e8
+GenSeq,65,IRRVTKWIKFFMKKH,66,verified,GenSeq/65.pdb,/home/v9/Downloads/fold_cgmartini_65.zip::fold_cgmartini_65_model_0.cif,1,ebaa98c5565975a338ae0f1402e3f407e31a6b1d2a8554a76b2e46c969da83d3
+GenSeq,66,RICNIAK,67,verified,GenSeq/66.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_103/fold_cgmartini_103_model_0.cif,1,5d2fdf9e9a683e9da06da3dc5679de1593c98c65ec88f87a0355905a70f66bf1
+GenSeq,67,VLRCVTSTMR,68,verified,GenSeq/67.pdb,/home/v9/Downloads/fold_cgmartini_67.zip::fold_cgmartini_67_model_0.cif,1,37065fd69a001693d245e067af4a58cf9d293a414da5337dc8fa74ac876fc79d
+GenSeq,68,MRRRYWIWV,69,verified,GenSeq/68.pdb,/home/v9/Downloads/fold_cgmartini_68.zip::fold_cgmartini_68_model_0.cif,1,c958a07973537b1ab7bddd012e867d3f8fa69e98f3efb4b3ddb62bebd76361ec
+GenSeq,69,YGVRQKYLRAFAKTGVVFHR,70,verified,GenSeq/69.pdb,/home/v9/Downloads/fold_cgmartini_69.zip::fold_cgmartini_69_model_0.cif,1,7304d66b8826678d2d36d0c3bca52976ab8859cbe269e3a06f69b1bdbb09ef18
+GenSeq,70,SVKQQVVMQSHVMKVRSR,71,verified,GenSeq/70.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_104/fold_cgmartini_104_model_0.cif,1,53feaa006ab4e7180557a02dde7f8d4671a0925138a6f8494ce4043106e42b32
+GenSeq,71,KRKRHRCRAYENGFHPGVFRWC,72,verified,GenSeq/71.pdb,/home/v9/Downloads/fold_cgmartini_71 (1).zip::fold_cgmartini_71_model_0.cif,1,1f11a08ed09e501d032a618a596d76304702a8fe50eed1f06aa712297e8ddf3c
+GenSeq,72,GMTSMTKLV,73,verified,GenSeq/72.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_105/fold_cgmartini_105_model_0.cif,1,b035b85a62c2501d34570602b782da23a0fe594755ddc9bbab1eda6d9de777d8
+GenSeq,73,GFWKKAKSVGGDIPSGYTSAMK,74,verified,GenSeq/73.pdb,/home/v9/Downloads/fold_cgmartini_73 (1).zip::fold_cgmartini_73_model_0.cif,1,6df9e938c9f94c06e72f1b9e9ff0e5fa8ffd6ca5af1d335020770d7acecc3aee
+GenSeq,74,ITYTVKMVKTVPRKTVTRFLTQ,75,verified,GenSeq/74.pdb,/home/v9/Downloads/fold_cgmartini_74.zip::fold_cgmartini_74_model_0.cif,1,955c6639c07017b2784ec7af9d3c319ab94ce89b2a0ccf406ae45a9d045074ed
+GenSeq,75,FIKWIARWLQKIL,76,verified,GenSeq/75.pdb,/home/v9/Downloads/fold_cgmartini_75.zip::fold_cgmartini_75_model_0.cif,1,917cf82d5130d4e70f447a95179662b0dcc96f741e7fa58dcaee622953c30c0c
+GenSeq,76,GLLNIIVSAGKVGLKSVVTAVAEKF,77,verified,GenSeq/76.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_107/fold_cgmartini_107_model_0.cif,1,81d2bf09137129ed0acc333f63bcf01b73e1d4a65c7bbfff49fa5913eada1a91
+GenSeq,77,LLKAYLMWHFLRR,78,verified,GenSeq/77.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_108/fold_cgmartini_108_model_0.cif,1,6036a9deaffd6b47843d39e65843cd4f8fc15a2702f6335e535fc050c5fe8f90
+GenSeq,78,FLGALMAGTASVITSITHNL,79,verified,GenSeq/78.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cg78/fold_cg78_model_0.cif,1,59f6978008569c196074d331033f9021a8f57391cc0621a699e4b5ebe2f5154f
+GenSeq,79,IWVVYKKWIRIMMQYRCP,80,verified,GenSeq/79.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (3).zip::cgmartini_79/fold_cgmartini_79_model_0.cif,1,d7400f2f13b701cb8eccd0ed60a7ba87c727f59bd2d76c2810cb62204adb8b6b
+GenSeq,80,GIFDLMKQCVKMIK,81,verified,GenSeq/80.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (3).zip::cgmartini_80/fold_cgmartini_80_model_0.cif,1,882212c30dfe7c4ab96e5e7f1834197d85da75da6ff14e2aa1e4052e014aa207
+GenSeq,81,LQMKIVSKVLTYGV,82,verified,GenSeq/81.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (3).zip::cgmartini_81/fold_cgmartini_81_model_0.cif,1,b56efd32222163cd54eb1625b291cc224838070f01f60dc80493464c899b314d
+GenSeq,82,RAIAEIWRKASSLIAKQLSANYK,83,verified,GenSeq/82.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (3).zip::cgmartini_82/fold_cgmartini_82_model_0.cif,1,c656c29609512053f71c1d333656b88c78403254a7580ed9933ff26e808b2cfe
+GenSeq,83,LTIVLRMP,84,verified,GenSeq/83.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cg83/fold_cg83_model_0.cif,1,8ee969cf3218f88ec390df4631bfdb6a79cfb65f0849d8a5f885a6a622e2af09
+GenSeq,84,STIVLS,85,verified,GenSeq/84.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cg84/fold_cg84_model_0.cif,1,bbc717552880e3122a938c8fc5849d532f88d28b1088fc93c192f188f4fcebe1
+GenSeq,85,RTVHVIVLMLLK,86,verified,GenSeq/85.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (3).zip::cgmartini_85/fold_cgmartini_85_model_0.cif,1,95d2ea189550fda435c3661dcfd3e171b504f233e95cd1942e60575d4c3401c1
+GenSeq,86,MFWKKVKSAGKSIAKAM,87,verified,GenSeq/86.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (3).zip::cgmartini_86/fold_cgmartini_86_model_0.cif,1,cc119689e7997fef02d27673ae714229410fba6a6554c2d03b6b6bbd28d9caa8
+GenSeq,87,KLWSYILIKLIK,88,verified,GenSeq/87.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::cgmartini_87/fold_cgmartini_87_model_0.cif,1,30848d103c860b565fb64461b29c9fe76d22e687c307a11172d4f0d4528f5804
+GenSeq,88,KWHSKVRQIMSRHLKVATKF,89,verified,GenSeq/88.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::cgmartini_88/fold_cgmartini_88_model_0.cif,1,d5df836cb6dffac5ffee8de4d2ac6cf7a088c92add2293f04bb132a860d6ce83
+GenSeq,89,ARRAKRKTSRLTSKVINFH,90,verified,GenSeq/89.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::cgmartini_89/fold_cgmartini_89_model_0.cif,1,f73b16b2bdc46023838b16a0801b8e1951418cd7575fe69ce37a1ff4516ba75e
+GenSeq,90,IGQWIWRWIKK,91,verified,GenSeq/90.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::cgmartini_90/fold_cgmartini_90_model_0.cif,1,bbb925d22ed0241b7e0cf994cbfafb2f99945d11d135b836b6f2b8c83305dd60
+GenSeq,91,KWHGLKRMFHAAKKYCITYVAKQKTS,92,verified,GenSeq/91.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::cgmartini_91/fold_cgmartini_91_model_0.cif,1,5c94fa58ac8ff132b1ff1c8ada095443c7232e022ac74e0e4cc07446a864da63
+GenSeq,92,ILHRLYMIGSTWLKCAYRLMKTVKH,93,verified,GenSeq/92.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::cgmartini_92/fold_cgmartini_92_model_0.cif,1,12af044ccd363e91a679280bce9bc32b3510c657ede6795a21d5e7e9367df6de
+GenSeq,93,RIFRAILIRIIK,94,verified,GenSeq/93.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_93/fold_cgmartini_93_model_0.cif,1,0c38790bd3db60c801dfea804cc6acc5ad4663f30330ede78296befa04830329
+GenSeq,94,RICRVILIRIAR,95,verified,GenSeq/94.pdb,/home/v9/Downloads/fold_cg94.zip::fold_cg94_model_0.cif,1,bc849e8b45a5e70ca63d793b561edc0aeee805132cf01c36c7f35b9793f4873f
+GenSeq,95,ALGSKVISSLKATFRGAIEDFASTKVQ,96,verified,GenSeq/95.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_95/fold_cgmartini_95_model_0.cif,1,5226ab8a318e2e0f663612b375a0f52182ce6bc97fc09c0f194342801c2f9356
+GenSeq,96,GRRYIYHWM,97,verified,GenSeq/96.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::cgmartini_96/fold_cgmartini_96_model_0.cif,1,d2e2b262450edced2a9f37750986bba41e659e34d23f1dda585251bc7d66eb38
+GenSeq,97,VGLVLAMA,98,verified,GenSeq/97.pdb,/home/v9/Downloads/fold_cg97.zip::fold_cg97_model_0.cif,1,5344c00b0d868ddc1a658f1a5a65cf567fd0765930c631f9e37d1abc18fd1afc
+GenSeq,98,VIAARWLWRVMKR,99,verified,GenSeq/98.pdb,/home/v9/Downloads/fold_cg98.zip::fold_cg98_model_0.cif,1,1612522ccd9e88338aac707fb1e32b1496ebb4ddd44e0298cc44f2f7b25fa429
+GenSeq,99,SLRVFKRVAFLTGTV,100,verified,GenSeq/99.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::cgmartini_109/fold_cgmartini_109_model_0.cif,1,03e8191664f112e5c7aa39448dd5b5137d155aff77069ffc0df41ede88aa0da7
+GenSeq,100,IMAKLIKKTIGAIHKI,101,verified,GenSeq/100.pdb,/home/v9/Downloads/fold_cg100.zip::fold_cg100_model_0.cif,2,d707c1be900c836d42d7100b2e73f05da67b623e259ed07bb66a093d2c4b9c7e
+HighMIC,1,VQNQHGQVVKIFHH,2,verified,HighMIC/1.pdb,/home/v9/Downloads/fold_hdb1.zip::fold_hdb1_model_0.cif,1,ed8def166338c37c74584abed07c53c8f0b63044f5ef1bc868e3d87d0700292b
+HighMIC,2,KVQNQHGQVVKIFHH,3,verified,HighMIC/2.pdb,/home/v9/Downloads/fold_hdb2.zip::fold_hdb2_model_0.cif,1,c71dc54842b83cfec1931588b380216ef331b559473433c49201214e82e0387b
+HighMIC,3,NQHGQVVKIFHH,4,verified,HighMIC/3.pdb,/home/v9/Downloads/fold_hdb3.zip::fold_hdb3_model_0.cif,1,e3b9579f090ccf8127f4ff8181d63bad3001cbe3efac7519c35548cefbe3a431
+HighMIC,4,LLNPTHQIYPVTQPLAPVHNPIS,5,verified,HighMIC/4.pdb,/home/v9/Downloads/fold_hdb4.zip::fold_hdb4_model_0.cif,1,66ab2cb7d3c4ec5eadfdc80434021561b4613315465019b1c4687cfb232295a6
+HighMIC,5,HQIYPVTQPL,6,verified,HighMIC/5.pdb,/home/v9/Downloads/fold_hdb5.zip::fold_hdb5_model_0.cif,1,fb35d8d1f8693ecb36ed0afb19cd1b51c968f0c186adb6e098b7c6cb5dd75278
+HighMIC,6,MTSALPIIQK,7,verified,HighMIC/6.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb6/fold_hdb6_model_0.cif,1,9b50272100920d59b2fdf269d8bc3bcab153e8cbaf9101a8e79dc5af5014e574
+HighMIC,7,VINENLLR,8,verified,HighMIC/7.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb7/fold_hdb7_model_0.cif,1,1add3ed19b62b82a865443156f59a779045df5f010ba991fe47f849315385bd7
+HighMIC,8,VLNDNLLR,9,verified,HighMIC/8.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb8/fold_hdb8_model_0.cif,1,d5231895ce35928d3f9b252ff4d9c2eb2c09da29c3615858836ce4a58fac3715
+HighMIC,9,VLNENLLK,10,verified,HighMIC/9.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb9/fold_hdb9_model_0.cif,1,d4f06e1a1bf8896353aff829f5d095fe9190cb513449091ed3222129f1c3e07a
+HighMIC,10,VANENLLR,11,verified,HighMIC/10.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb10/fold_hdb10_model_0.cif,1,8442fa88bf512ff0b338091d828fb4035ac07f9f27f2f25c0fd4c3d6655fe3fb
+HighMIC,11,KKLAKEILKAL,12,verified,HighMIC/11.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb11/fold_hdb11_model_0.cif,1,05bdd4d4ba86d6b02850259658cd965ada398546276675fb860128c91935a933
+HighMIC,12,LRCDYGRFFASKSLYDPLKKRR,13,verified,HighMIC/12.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb12/fold_hdb12_model_0.cif,1,e24d3c3ce90f67bb9b5ffbaaab2f34487e6d3af6ee4d642b38bab97be96768fb
+HighMIC,13,HIQKEDVPSERYLGYLEQLLRLK,14,verified,HighMIC/13.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb13/fold_hdb13_model_0.cif,1,0a67c15b62e5758cbddc95d4d7cbfa163dc5626f77834b696a16a0e5139ead66
+HighMIC,14,VLNENLLR,15,verified,HighMIC/14.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb14/fold_hdb14_model_0.cif,1,f19df3a48c50dc09969ef8361c0dfa6d59533cf8c4d1d2033820f332084e6b25
+HighMIC,15,VLNENLL,16,verified,HighMIC/15.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb15/fold_hdb15_model_0.cif,1,9546b4fe8e0d1aa2ff4aa4fe3abd86c6076987aaadb3ffee9320bb8285df4e3b
+HighMIC,16,VLNENLAR,17,verified,HighMIC/16.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (2).zip::hdb16/fold_hdb16_model_0.cif,1,4c0d270dfcc580cc1220320607af51d491bd3877191cab4bbd2834703831cdfa
+HighMIC,17,KKFKETADKLIESAKQQLESLAKEMK,18,verified,HighMIC/17.pdb,/home/v9/Downloads/fold_hdb17.zip::fold_hdb17_model_0.cif,1,b123ac2cb267b45abc0fd3f67263438a4406f7bfc6bf87da6d7593b7706d1c21
+HighMIC,18,KVEIVAINDPFIDL,19,verified,HighMIC/18.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb18/fold_hdb18_model_0.cif,1,bc4cd510a79b312dd8db9bfd22ed94a4a8b73bccee41d0248865a1d0c8fcb0a0
+HighMIC,19,DVIKKVASVIGGL,20,verified,HighMIC/19.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::hdb35/fold_hdb35_model_0.cif,1,c7c58203811a5d52a29b487cb72a24dc25d8cd6df095ad9905f8d0aa4efaaf8c
+HighMIC,20,IKKVASVIGGL,21,verified,HighMIC/20.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::hdb36/fold_hdb36_model_0.cif,1,bbc60861c33ce89b410b69a32698b67da4c9492b338a6a367d660f9ca7c6d3b3
+HighMIC,21,KVASVIGGL,22,verified,HighMIC/21.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb37/fold_hdb37_model_0.cif,1,3c46151249d4e9d4d4b96f0eda1268c5e8060d47e2c56ec128cde23478b23e9d
+HighMIC,22,GLFDVIKKV,23,verified,HighMIC/22.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb22/fold_hdb22_model_0.cif,1,bbb7485be328e2107fa5ed6850e3c2d4fc8eb361144ed89b65889b9b2d729a05
+HighMIC,23,GLFDVIK,24,verified,HighMIC/23.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb23/fold_hdb23_model_0.cif,1,5455e76ba868830043b0d674e1c83c15bbae9c1ce9193a09aa20f0522be0c7f5
+HighMIC,24,DVIKKVASVIG,25,verified,HighMIC/24.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb24/fold_hdb24_model_0.cif,1,a570145ef475f2a9fb42565f4ef5380d662293292692e0b69f07db6eee551d32
+HighMIC,25,GLFDVVIGGL,26,verified,HighMIC/25.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::hdb34/fold_hdb34_model_0.cif,1,6a03146b48dd6b9a8798bea54e6b95526a82b47f0791a1b55154caedc8353113
+HighMIC,26,PGTAVFA,27,verified,HighMIC/26.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb26/fold_hdb26_model_0.cif,1,927c7952d78edea5c0bb1deab83f452793762ada2aa4b75e691a7d29acf4532e
+HighMIC,27,AANIPFKVHFRCKSIFC,28,verified,HighMIC/27.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb27/fold_hdb27_model_0.cif,1,e85c8977161a7e2ec64892bcc32675441a5dc722a574815927875e0c28816ba5
+HighMIC,28,CKSIFC,29,verified,HighMIC/28.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb28/fold_hdb28_model_0.cif,1,b8b8ae7bfd4b3056a9f99527a746be444e78020805eba85e0dc7337eec62bc74
+HighMIC,29,GRNEDEEKGAIVKVKGGL,30,verified,HighMIC/29.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb29/fold_hdb29_model_0.cif,1,32ad7d4badd203c846b610846cec45dc4d89fc0c1f7527f6645210fa9c1c233c
+HighMIC,30,KLQGRNEDEEKGAIVKVK,31,verified,HighMIC/30.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb30/fold_hdb30_model_0.cif,1,1f2aebadb79b3a904e424a4b39e96ae7046eaf07433b8e1240100a7ea3b8539a
+HighMIC,31,KLQGRNEDEEKGAIVKVKGGL,32,verified,HighMIC/31.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb31/fold_hdb31_model_0.cif,1,ce4f9c88b93b03be96dd39d1a78cfdfce5224cd93bd1d2f900591b30634625c6
+HighMIC,32,KTNDRAAIGKLVGATSSL,33,verified,HighMIC/32.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb32/fold_hdb32_model_0.cif,1,616c3d3993415b71d2edb59c9c019de902cf7db8e37178513cc9865323bda0f9
+HighMIC,33,KVKESIIRKL,34,verified,HighMIC/33.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb33/fold_hdb33_model_0.cif,1,f3aed3cc3d4b70602b62aab4844c627dd3f710c818759f02bd45d7606633c711
+HighMIC,34,QGRNEDEEKGAIVKVK,35,verified,HighMIC/34.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb34/fold_hdb34_model_0.cif,1,f2caa0ccbb47959fe36ae35268c01bc3cb411aeaba50e1d9127159386a98c935
+HighMIC,35,RKIKRYLRRMIIIW,36,verified,HighMIC/35.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb35/fold_hdb35_model_0.cif,1,2330cba225ee8dfaf0dd0400359ee610b53f03d752fc7fc1a7e7c22618280ecd
+HighMIC,36,FLGALIPAITG,37,verified,HighMIC/36.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb36/fold_hdb36_model_0.cif,1,2e8dbfa532e9571f50c07b1047c0e06014d0e7acc929a2b08e936ccfde022834
+HighMIC,37,FLGALIPAIAG,38,verified,HighMIC/37.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb37/fold_hdb37_model_0.cif,1,9a6f4e16274def536deb51477217c62b5da8c12b67f1425a6ed2cb8ccbb8d782
+HighMIC,38,GCKKFRRFKLKCKQKLWLWCG,39,verified,HighMIC/38.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb38/fold_hdb38_model_0.cif,1,baf835ffb302fe58000bfa216a1d0e1c91d45b224e0a2e409cd584369a511ffa
+HighMIC,39,GKKYRRFWKFKGKWFWFWG,40,verified,HighMIC/39.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb39/fold_hdb39_model_0.cif,1,b893f4cf244e878abf2ddf649c20a988e45d53e556c4aeb959c9ec463a1009ba
+HighMIC,40,IDWKKLPDAAKQIL,41,verified,HighMIC/40.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb40/fold_hdb40_model_0.cif,1,09a7d2b166be305867537df8b9b489c51d8a60a8a779ee46066cd6367df9d9a4
+HighMIC,41,SVIGCWTKSIPPRPCFVK,42,verified,HighMIC/41.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb41/fold_hdb41_model_0.cif,1,407c5a8eecbd3ef09453076a9541cdfa153e14c31aea72d207377660e2052c49
+HighMIC,42,SVIGCWTFSIPPRPCFVK,43,verified,HighMIC/42.pdb,/home/v9/Downloads/folds_2026_10_19_06_44 (1).zip::hdb42/fold_hdb42_model_0.cif,1,85d578b57585e243d09e24f58e8db4789d1efaf769d13ddba08a672fa3aba0f4
+HighMIC,43,GVFDIIKDAGKQLVAHAMGKIAEKV,44,verified,HighMIC/43.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb43/fold_hdb43_model_0.cif,1,11e5db7d739a2b555b5207b398a47a6da87375afb8d58399f14982f1490a9752
+HighMIC,44,GVFDIIKDAGKQLVAHATGKIAEKV,45,verified,HighMIC/44.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb44/fold_hdb44_model_0.cif,1,72a8f8587dc68570a6b9a9092641d3af02a8ea3a15c1913e047326b684d4a624
+HighMIC,45,GVIDIIKGAGKDLIAHAIGKLAEKV,46,verified,HighMIC/45.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb45/fold_hdb45_model_0.cif,1,68e551ee8631bbac4667d5d04152fa6a75eb120502158ea09321cda79ec5bb94
+HighMIC,46,GVFDIIKDAGRQLVAHAMGKIAEKV,47,verified,HighMIC/46.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb46/fold_hdb46_model_0.cif,1,3b20fdf5b39f173c480d5ea99c7c7e683d83aec5f504e4b1377195391eeb7694
+HighMIC,47,LIGGLINR,48,verified,HighMIC/47.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb47/fold_hdb47_model_0.cif,1,87968225d77da56cf7854ce3294b0cf6813343b1ad08bb984e20d05ea2d1008b
+HighMIC,48,LISGLIKK,49,verified,HighMIC/48.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb48/fold_hdb48_model_0.cif,1,965f6015ff59af3ec81db6692b01d7d4a6090209dee52648172a78ddeaad807a
+HighMIC,49,AIGGLIRK,50,verified,HighMIC/49.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::hdb49/fold_hdb49_model_0.cif,1,60735846b9cc690efa8ff3c1ddcdf8d583d5f886b0bc9c3ed185b7730bc25a71
+InterMIC,1,WGWRDIVRGIRKVAAPVLST,2,verified,InterMIC/1.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb1/fold_idb1_model_0.cif,1,9c8a3cffcb2972a55e688489f8c7d96746796a0a265d37de3f91f59b527015b5
+InterMIC,2,WGWRDIVRAIRKVAAPVLST,3,verified,InterMIC/2.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb2/fold_idb2_model_0.cif,1,8fc916b1d30cf8ba1173a55c5ba8a337f20db741f08d4c0a980f57c5b6c725b3
+InterMIC,3,FIHHIIGGLFHVGKSIHDLIR,4,verified,InterMIC/3.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb3/fold_idb3_model_0.cif,1,3bb100c9307f5556fb30a45cbf3bb1a00674877596ee96b035991823b34d3f4f
+InterMIC,4,WFGKLYRGKTKVVKKVKGLLKG,5,verified,InterMIC/4.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb4/fold_idb4_model_0.cif,1,26034fef2e67a875494d5f84bdf9c9270e93841357c292ee81443dc97f4c7b2d
+InterMIC,5,FFRHIVGAISRIFGQKQRDMAD,6,verified,InterMIC/5.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb5/fold_idb5_model_0.cif,1,6f724466c4f7364c105d60e2672a3e7ed4f9da4b834ae072c458f7f4b830615d
+InterMIC,6,GKSLVKWIVKSVRKA,7,verified,InterMIC/6.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb6/fold_idb6_model_0.cif,1,0dbdfee71f2709a6b71b9567bd2f4aec5ec8535f611007839b5c2c52d6376a0b
+InterMIC,7,KVFTLFQARAQGKLMRI,8,verified,InterMIC/7.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb7/fold_idb7_model_0.cif,1,a3fc2d8d114dfb6e1c143f16358ac734a734a53cb62e3e51d4336fa89a9dc263
+InterMIC,8,KVWTLFRAAGKLMAK,9,verified,InterMIC/8.pdb,/home/v9/Downloads/folds_2026_10_19_05_56.zip::idb8/fold_idb8_model_0.cif,1,ad3dbc76db32f95a89898fbda32f842698f9d0b75edfb638850cc7561186ca48
+InterMIC,9,AILRKATRRLVQLIVSG,10,verified,InterMIC/9.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb9/fold_idb9_model_0.cif,1,041951d1b8c7a1eace2cbb15ed95469dafbe5a0f51ec00635f33a68535428b21
+InterMIC,10,RILAKATRRLVKLIVSG,11,verified,InterMIC/10.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb10/fold_idb10_model_0.cif,1,ea5ce5ebea525fcf655592a9b425d3c5bd0061184c99584fb28835979b1224d0
+InterMIC,11,LRKATRRLVQLIVSG,12,verified,InterMIC/11.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb11/fold_idb11_model_0.cif,1,bbdf764a70181d8b888aca930b2dabd960b59ef645db0d049ec5a60de3902a50
+InterMIC,12,KALAALAKKIL,13,verified,InterMIC/12.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb12/fold_idb12_model_0.cif,1,19bb52e05523f3447dbc964c4d1326575853f2760687fefd093cd5da79fc918c
+InterMIC,13,FFGHLLRGIVSVGKHIHGLITG,14,verified,InterMIC/13.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb13/fold_idb13_model_0.cif,1,c0cb45ecaa40d20ddf27d88bb7db43b9f70c3abb8b43aa3100b9e0fd68a7eb87
+InterMIC,14,FLPAALAGIGGILGKLF,15,verified,InterMIC/14.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb14/fold_idb14_model_0.cif,1,c884422b93ec7014b3af7c91471d62ed74213c1dad24e3ed8888606884b4ac1d
+InterMIC,15,RIWKIWWKR,16,verified,InterMIC/15.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb15/fold_idb15_model_0.cif,1,4fd317a4a05fdf1ef04448e9a11211ba5dfb7a98e138272ca8589e7a9c93a39c
+InterMIC,16,FVPWFSKFLWRIL,17,verified,InterMIC/16.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb16/fold_idb16_model_0.cif,1,3108cfed18c47e0a0377e19493e2a909997eaddd92ced0583a6e04df8a9b7bb2
+InterMIC,17,AIGSILGALAKGLPTLKSWIKNR,18,verified,InterMIC/17.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb17/fold_idb17_model_0.cif,1,0e927cc1220e7d19edf7c0647ee5e43f43045392614fb0fc2e23b9014ef90bab
+InterMIC,18,RIGSILGALAKGLPTLKSWIKNR,19,verified,InterMIC/18.pdb,/home/v9/Downloads/folds_2026_10_19_06_27 (1).zip::idb18/fold_idb18_model_0.cif,1,2d6b8ff4d965e4b2d24dcb91d9e664659a5583590c3688a68f738235c8ce37f5
+InterMIC,19,AIGSILGRLAKGLPTLKSWIKNR,20,verified,InterMIC/19.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb19/fold_idb19_model_0.cif,1,ca42c547ebbde4c1a6eff61e3e26089b9d4905c6331164bc83ea524a7bbfab1f
+InterMIC,20,KLLLLLK,21,verified,InterMIC/20.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb20/fold_idb20_model_0.cif,1,00768d93fd4bf596245624140ebb956eefeea6a6492d9f441af628a42623a536
+InterMIC,21,FLSLIPKIAGGIASLVKNL,22,verified,InterMIC/21.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb21/fold_idb21_model_0.cif,1,08fee78438554102bc59ff47c6a9c3829514bcf338456e4b4362a2207a373efe
+InterMIC,22,GWAKLITKAIKKI,23,verified,InterMIC/22.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb22/fold_idb22_model_0.cif,1,20898370a09a9949556866ad2f261c669a8db9673d9816cec91c0ae943bd0898
+InterMIC,23,KFRKFGKQVWVRL,24,verified,InterMIC/23.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb23/fold_idb23_model_0.cif,1,04402ee890e355c4c0c98a7674b7919d704ec81ead6f4f51c48db48b27b59a02
+InterMIC,24,RLLRIVVIRVLR,25,verified,InterMIC/24.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb24/fold_idb24_model_0.cif,1,6b38db4950f4d0f42571c5e260aee9abba31d900bc2b98954d5d2fabf0ddcfd7
+InterMIC,25,RLLRIWWIRVLR,26,verified,InterMIC/25.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb25/fold_idb25_model_0.cif,1,4235e861801337d7afdf83b4882388e311d9a3f561d0cc3c209be2acec2e5e39
+InterMIC,26,KIAGLAANFLPQILCKIARKC,27,verified,InterMIC/26.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb26/fold_idb26_model_0.cif,1,8502d06edfc2cd8fb97119498e10dc3a81d883ba6b8046475a5641e3e16fe606
+InterMIC,27,RIAGLAANFLPQILCKIARKC,28,verified,InterMIC/27.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb27/fold_idb27_model_0.cif,1,66a8abb9571b243e559c9e9fda6e06ef30864f819a604352150e5cd82b57a951
+InterMIC,28,IAGLAANFLPQILCKIARK,29,verified,InterMIC/28.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb28/fold_idb28_model_0.cif,1,5c583639ca7d7270d33de3222ef1aa887d5305113a03c0c12effd2a6428064ed
+InterMIC,29,GLASLLSLLGKLL,30,verified,InterMIC/29.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb29/fold_idb29_model_0.cif,1,f3564d7063d455cb3f915c7c1ee3d530ebf1f9a2008689f2760f6b165570db50
+InterMIC,30,GLLSLLSALGKLL,31,verified,InterMIC/30.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb30/fold_idb30_model_0.cif,1,8c51a27149591471afe2672f425182eba3b21aab52a317d8c9d994bf795fd08d
+InterMIC,31,GALSALKALGKLL,32,verified,InterMIC/31.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb31/fold_idb31_model_0.cif,1,a53f7c578578591e53cf392ad3f4be468a42a211b37553cb2ab4461d86c40023
+InterMIC,32,GALSALKALGKAL,33,verified,InterMIC/32.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb32/fold_idb32_model_0.cif,1,6efefd2775bb4a92599ea28e37478c7f5523e794505e5c15bb25494896274f64
+InterMIC,33,GLLSLSLLGKLL,34,verified,InterMIC/33.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb33/fold_idb33_model_0.cif,1,3366098cb3310053956b80ef803b6e9019fb1140e30d5cd8093a57298bc9e98e
+InterMIC,34,GLLSLSLGKLL,35,verified,InterMIC/34.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb34/fold_idb34_model_0.cif,1,2e8e8dc2dfb22b07ca09c605a242c24416de5337e60c6b13c88bfe42742e197a
+InterMIC,35,GLLSSLGKLL,36,verified,InterMIC/35.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb35/fold_idb35_model_0.cif,1,ef018c88a8388fca15c52a95e75842cd725d34442d9f257e7cbbc5cf43d86711
+InterMIC,36,GLSLLLSLLGKLL,37,verified,InterMIC/36.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb36/fold_idb36_model_0.cif,1,1bfa12ad09251e493d4c5ee1bd70aa4dbd8a37057a40dc694e3948dffad2b9d6
+InterMIC,37,GLSLLLSLGLKLL,38,verified,InterMIC/37.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb37/fold_idb37_model_0.cif,1,fe803d6531b84d5033ef61211874739b3cfac27fcacde425557cc4406c0b7bf3
+InterMIC,38,GLSLLLSLLLGKL,39,verified,InterMIC/38.pdb,/home/v9/Downloads/folds_2026_10_19_06_27.zip::idb38/fold_idb38_model_0.cif,1,c936de89809a1aa73d436af80bbd506bd78803321db8c040979e3a4211d0998f
+InterMIC,39,GLLSSLLLLGKLL,40,verified,InterMIC/39.pdb,/home/v9/Downloads/fold_idb39.zip::fold_idb39_model_0.cif,1,05516d39167d5f48c429479f6d387b3b4b4e889d3e816394f09aa685f9deda1b
+InterMIC,40,GKLLSLLSLLGLL,41,verified,InterMIC/40.pdb,/home/v9/Downloads/fold_idb40.zip::fold_idb40_model_0.cif,1,0481a5fdac6da38e184cc6f20e1cf7db470bf7b74091d073b350026c01429033
+InterMIC,41,GLLSLLSLGLKLL,42,verified,InterMIC/41.pdb,/home/v9/Downloads/fold_idb41.zip::fold_idb41_model_0.cif,1,4b7a91816237ef3ef903e79b2e7f747df53ec8b70eadffa21d9005d6b06ef0f5
+InterMIC,42,LLGSLLSLGLKLL,43,verified,InterMIC/42.pdb,/home/v9/Downloads/fold_idb42.zip::fold_idb42_model_0.cif,1,bc685777dca84e6f117bb09b86b564a904ea25bb06cad9f39343cdd9e389c2ed
+InterMIC,43,KLSLLLSLGLKLL,44,verified,InterMIC/43.pdb,/home/v9/Downloads/fold_idb43.zip::fold_idb43_model_0.cif,1,39bbe99ac8637c71574992afa899d0d05761ddf4261fa6bbed85cce0417c4ed8
+InterMIC,44,GLSLLLKLGLKLL,45,verified,InterMIC/44.pdb,/home/v9/Downloads/fold_idb44.zip::fold_idb44_model_0.cif,1,197312e054851ca6b5f60d691f2dd36915056e13ae91cea567de0dbd75e63340
+InterMIC,45,GLSLLLSLKLKLL,46,verified,InterMIC/45.pdb,/home/v9/Downloads/fold_idb45.zip::fold_idb45_model_0.cif,1,bf57bc34d0f3a7d033ca96709a78eb95d0bfd450893d891d57db0cc3754f7490
+InterMIC,46,GLKLLLSLGLKLL,47,verified,InterMIC/46.pdb,/home/v9/Downloads/fold_idb46.zip::fold_idb46_model_0.cif,1,7fa3e88bef78df00ac08e443df5dd7071ef6bb55e8e298fb9d034ea3a1880a91
+InterMIC,47,GLKLLLKLGLKLL,48,verified,InterMIC/47.pdb,/home/v9/Downloads/fold_idb47.zip::fold_idb47_model_0.cif,1,2a322911b3859a3ea1ed026e666d1567811a179db74039d4a1fd40f04fb48706
+InterMIC,48,KKKAAFAKAWAKAFKAA,49,verified,InterMIC/48.pdb,/home/v9/Downloads/fold_idb48.zip::fold_idb48_model_0.cif,1,86798757f4f04cee78c63a40d118c682edd45516eeec0797805785a1a937e9bc
+InterMIC,49,GKLLVKKIVSLVRSA,50,verified,InterMIC/49.pdb,/home/v9/Downloads/fold_idb49.zip::fold_idb49_model_0.cif,1,bdba31991776f26499edaf2fdf79ae941afd86beda36a1602f66e3e91d3159ce
+InterMIC,50,KIAKVALAKLGIGAVLKVLTTGL,51,verified,InterMIC/50.pdb,/home/v9/Downloads/fold_idb50.zip::fold_idb50_model_0.cif,1,06e0384f184714ce6acb0fe20632bde107443936aa561b07ba40498f96d79d7a
+LowMIC,1,KCRRLCYRQRCVTYCRGR,2,verified,LowMIC/1.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb1/fold_ldb1_model_0.cif,1,ea2b14100af2aebe80434474de05952a9f72118b70533bbbcb571a8cc0f6e505
+LowMIC,2,AWTEKIFQRLKKTIQEGKKIAKRAW,3,verified,LowMIC/2.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb2/fold_ldb2_model_0.cif,1,cd9527999ad50fea033038c4407edbbef306231e3cc2226815e468800b8100e4
+LowMIC,3,AGKETIFQRLKKKIQEKGKRAWIAW,4,verified,LowMIC/3.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb3/fold_ldb3_model_0.cif,1,7161973e91d8e0646d8c1a151f30e6f2d472473b5ea39d11d99b55ae4e1f74da
+LowMIC,4,GGAGHVPEYFVGIGTPISFYG,5,verified,LowMIC/4.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb4/fold_ldb4_model_0.cif,1,a54046bacb8983898a3b8422511bced2c3b891e8eb3f27941cd51a7ccb712b91
+LowMIC,5,GNNRPVYIPQPRPPHPRL,6,verified,LowMIC/5.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb5/fold_ldb5_model_0.cif,1,9adc967c29f04c99a9db5d9a111350e9c05ac30b23c6e6d3046944ee4bec7717
+LowMIC,6,KWCFRVCYAGICYRRCA,7,verified,LowMIC/6.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb6/fold_ldb6_model_0.cif,1,1a21f8942076b5d9ed5187b1ce6da6dc32e2b76cd0a9025eb1ff379f77e41ac8
+LowMIC,7,GVVDIIKGAGKKFAKGLAGKIANKK,8,verified,LowMIC/7.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb7/fold_ldb7_model_0.cif,1,06c5ca90853d4873cc15134bea29ddb3e7b9b5a7c891338e57f924ecc4f8b0d1
+LowMIC,8,GNNKPVYIPQPRPPRPRL,9,verified,LowMIC/8.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb8/fold_ldb8_model_0.cif,1,81ca9cadfa493495a76429bcdc2ef31fa2861ef5814503f69767a1c98cbc1e47
+LowMIC,9,GLMDTVKNAAKNLAGQLLDKIKCKITG,10,verified,LowMIC/9.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb9/fold_ldb9_model_0.cif,1,9446e2d85e75d09897ff98976944f6ae3ec6a9f480ff4697a6ec7448e5f28755
+LowMIC,10,GFCWHVCARRNGVRVCYRRCN,11,verified,LowMIC/10.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb10/fold_ldb10_model_0.cif,1,4c3d25e8eb0dea2efb55bac5c487e0cf6b24a374f23ddf05b16d0ed73106504f
+LowMIC,11,KWCFRVCYRAICYRRCR,12,verified,LowMIC/11.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb11/fold_ldb11_model_0.cif,1,9509f41bace75e6eb350ed0d9f7d85f6b40242f40fe0ae6c6988c619228d972b
+LowMIC,12,GCRRLCYKQRCVTYCRGR,13,verified,LowMIC/12.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb12/fold_ldb12_model_0.cif,1,09b52730950ec785c50f3af3eeab96d5d051ebabb9d261f432bebd28d87c2ca5
+LowMIC,13,GYCFTACARRNGVRICYRRCN,14,verified,LowMIC/13.pdb,/home/v9/Downloads/folds_2026_10_19_06_28 (1).zip::ldb13/fold_ldb13_model_0.cif,1,e9355a05a8a70ec74eafca3c105413bb73f4ba0c67046001dbb2b6909891dbb9
+LowMIC,14,GYCFTACYRRNGVRICYRRCN,15,verified,LowMIC/14.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb14/fold_ldb14_model_0.cif,1,00ba06f7247a362157d812aec062c0b03963b8ef11d19940fa2b0ab088032f74
+LowMIC,15,GYCFTACYARNGVRICYRRCN,16,verified,LowMIC/15.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb15/fold_ldb15_model_0.cif,1,7f2165a4e88d5bd29100067a5f4481b28e20283912e8f3b5685a609c7d381104
+LowMIC,16,RWCVYAYRRVRGVLVRYRRCW,17,verified,LowMIC/16.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb16/fold_ldb16_model_0.cif,1,e2a653c638281138ea2ce0fdf982fab378fd8c4bc223a247a5c0cf79eb7b1b9f
+LowMIC,17,YKSKKPLFKIWK,18,verified,LowMIC/17.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb17/fold_ldb17_model_0.cif,1,b17387734a73e9a29abe260a5eeb04d527e62f7979b09a7c39144f680d91ef67
+LowMIC,18,GIINTLQKYYSRVRGGRSAVLSS,19,verified,LowMIC/18.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb18/fold_ldb18_model_0.cif,1,daf16df0af02ca2e9c6a05635fb305571df6cc0258022625cb9ab49e8f05ab39
+LowMIC,19,RMMRIFWVIKLAR,20,verified,LowMIC/19.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb19/fold_ldb19_model_0.cif,1,370df926a9f51a752868a0e8cc41813db9c3c5632966a22dc4288ddec14bf5d0
+LowMIC,20,GNNRPVYIPQPRPPHPRI,21,verified,LowMIC/20.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb20/fold_ldb20_model_0.cif,1,52169f64b0bc2a392d7a83cd2ee2fe2e7b3e0d81e411b076c3c2e7ba1529fb9f
+LowMIC,21,GNNRPVYIPQPRPPHPR,22,verified,LowMIC/21.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb21/fold_ldb21_model_0.cif,1,e531f92e64a91b83afc963c9853a5cd01bcef7389551a3903a5b1595b16315df
+LowMIC,22,FLLKIVALLKKKLL,23,verified,LowMIC/22.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb22/fold_ldb22_model_0.cif,1,a5cb9b70b26e49cb5b56dcfdd893da2edc4e9e2c9a529b92a3f960bf1c9f26b9
+LowMIC,23,GYCFTACYRRNGARICYRRCN,24,verified,LowMIC/23.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb23/fold_ldb23_model_0.cif,1,b08140e5eaa279d1b69e8bb28e1b3739b616769f84f6e7f8b1a27fb3dcedbeea
+LowMIC,24,GYCFTACYLRNGRRICYRRCN,25,verified,LowMIC/24.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb24/fold_ldb24_model_0.cif,1,fa77768e7427f6c44743a7fb38942003aec36ef6de716e70be11ecf55b770f4b
+LowMIC,25,GYCFTACYLRNGARICYRRCN,26,verified,LowMIC/25.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb25/fold_ldb25_model_0.cif,1,cde835b815c1989213e0c0a475767b4b3e023012ec597363b07a731f7e266a2b
+LowMIC,26,GYCFTACALRNGVRICYRRCN,27,verified,LowMIC/26.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb26/fold_ldb26_model_0.cif,1,585e4c29cad81818dd938c851d7caff8b41b5cc4a276a9f6e5e4e327092bfa54
+LowMIC,27,GFCWRACVYRNGVRACYRRCN,28,verified,LowMIC/27.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb27/fold_ldb27_model_0.cif,1,875f0569aa67e24cf077c3e3f11e46809a17073ced6921fd01f733a1ddd23ded
+LowMIC,28,GFCWYVCVKRNGVRSCYRRCN,29,verified,LowMIC/28.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb28/fold_ldb28_model_0.cif,1,b30d2807c85db085f7fb0fcb09177dcf2990f800b2197364cd20c170fa10d188
+LowMIC,29,GFCWYACAKRNGLRVCYRRCN,30,verified,LowMIC/29.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb29/fold_ldb29_model_0.cif,1,8bfafb42fa3bedd91dcdf35614ebda3c3155b8470fc37e2740e8281628077c5c
+LowMIC,30,GFCWRVCASRNGLRVCYRRCN,31,verified,LowMIC/30.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb30/fold_ldb30_model_0.cif,1,9809057c4bfeaed152f8476601e581d7de73800f17545811bcf4dbf12739f06f
+LowMIC,31,GFCWYVCARRNGARVCYRRCN,32,verified,LowMIC/31.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb31/fold_ldb31_model_0.cif,1,e17dc5d01879ff1aa6bcde74432648d4c8d51460702ad4edb1bb0e9b23783e54
+LowMIC,32,KWCFRVAYRGIAYRRCR,33,verified,LowMIC/32.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb32/fold_ldb32_model_0.cif,1,6adc42e47376ba3ee94657e597dba9eb6cc5412b1e6bfcb3172232cc96a8ea8a
+LowMIC,33,KWCFRVCYRGICYARCR,34,verified,LowMIC/33.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb33/fold_ldb33_model_0.cif,1,4f1726b06c22fa68d4d4afcafab97bcca3d1e4009a60eb521b901e9a281ffc52
+LowMIC,34,KWCFRVCYAGICYRRCR,35,verified,LowMIC/34.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb34/fold_ldb34_model_0.cif,1,7d540ef3f6a9ac99439889dedfab0780a023e50bdc1c815900a29966c364d542
+LowMIC,35,KWCFAVCYRGICYRRCR,36,verified,LowMIC/35.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb35/fold_ldb35_model_0.cif,1,55f0319ad8bb1aa2a1939d5f34e51a02bce6c9d219d2fdde641f5302dbe89dcf
+LowMIC,36,GFCWYVCVYRNGVRVCYRRCN,37,verified,LowMIC/36.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb36/fold_ldb36_model_0.cif,1,4a54ee814707725e89b6672d0f6496a62ec4d318f62d93c3ac7a2f63a685edcb
+LowMIC,37,SPRVCIRVCRNGVCYRRCWG,38,verified,LowMIC/37.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb37/fold_ldb37_model_0.cif,1,7c4a1ce142eb9eaeaf1dbfd98c6d36c14ba291f750b34241e899182b4c8600fd
+LowMIC,38,KTKQQFLIKAQTQLFKVFGYTL,39,verified,LowMIC/38.pdb,/home/v9/Downloads/folds_2026_10_19_06_28.zip::ldb38/fold_ldb38_model_0.cif,1,8eeb52c92b7348212815d619e9e694db3f8263eadac8855219ff1b53aad5fb11
+LowMIC,39,YKSKKPLFKIWKCVENVCVLWYK,40,verified,LowMIC/39.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb39/fold_ldb39_model_0.cif,1,42b554700edfb46c33e05c37634ca5a7c5f5e9fe6948ffdcd9c1fd8b8b46c8ad
+LowMIC,40,KTRNWFSEHFKKVKEKLKDTFA,41,verified,LowMIC/40.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb40/fold_ldb40_model_0.cif,1,2bcfc505e1b1899596f221a3f463e094e5b195c9860a129d460485dbb1221d9e
+LowMIC,41,FSTKTRNWFSEHFKKVKEKLKDTFA,42,verified,LowMIC/41.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb41/fold_ldb41_model_0.cif,1,930500e9feaa3460c96b6262f90816a9d88f846f9bc8a76fb948effad6770f0a
+LowMIC,42,LRKFRNKIKEKLKKIGQKIQG,43,verified,LowMIC/42.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb42/fold_ldb42_model_0.cif,1,e16f1bbc5cbaaa3153ac4153c281404ea0c7ec92e8fc428c8acd8f2b0bc62134
+LowMIC,43,KKLLPIVKNLLKSLL,44,verified,LowMIC/43.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb43/fold_ldb43_model_0.cif,1,f89a702a30f8379568e3e4fa9b142d0e8071013ffd810ec000b9ecf608f2ad99
+LowMIC,44,GKSNFLKSYVSKHPK,45,verified,LowMIC/44.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb44/fold_ldb44_model_0.cif,1,7349a24cdf75b640fc87f9ba20ec8a74ad217c4d9deaaea2c433bb551bdd3f12
+LowMIC,45,RPKHPIKHQGLPQEVLNENLLRF,46,verified,LowMIC/45.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb45/fold_ldb45_model_0.cif,1,babfed63e06f403ed78727d5628fa0c18752121066c92e6eb2ca2decf0ea33f8
+LowMIC,46,GNNRPIYIPQPRPPHPRL,47,verified,LowMIC/46.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb46/fold_ldb46_model_0.cif,1,3ab830d48ae0aeb7052134744c8af07a4345869e4dacc5c5a4a23e33d21307ee
+LowMIC,47,GLVGTLLGHIGKAILGG,48,verified,LowMIC/47.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb47/fold_ldb47_model_0.cif,1,18c7d64c547ba08f83fcfe55bf1ab916d44dab88c3e0aeaabcfdaf6f356ce500
+LowMIC,48,RGGRLCYCRRRFCVCVGR,49,verified,LowMIC/48.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb48/fold_ldb48_model_0.cif,1,f4dd6938252ec9cc0173db9a3a9ec76dd957c7917684932fa8a60130cf07015e
+LowMIC,49,AKKVFKRLPKLFSKIWNWK,50,verified,LowMIC/49.pdb,/home/v9/Downloads/folds_2026_10_19_05_46 (1).zip::ldb49/fold_ldb49_model_0.cif,1,aa40bef6eb086f5d5509237581f5a3a7552cd2acd306cc1c6f3959ff129978bc

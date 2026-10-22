@@ -302,12 +302,27 @@ def padding_seqs(seqs, length=None, pad_value=None):
     return data
 
 
-def unpadding_seqs(seqs: list, pad_value="X"):
+def strip_c_terminal_pad(seq, pad_value="X"):
+    """Remove C-terminal pad only. Return None if pad appears internally or seq is empty.
 
+    Trailing pad (e.g. ACDEFXXXX) is valid padding. Any non-terminal pad
+    (e.g. ACDXEFXX) marks an incorrect design and is rejected.
+    """
+    if not isinstance(seq, str):
+        seq = "".join(seq)
+    stripped = seq.rstrip(pad_value)
+    if pad_value in stripped or len(stripped) == 0:
+        return None
+    return stripped
+
+
+def unpadding_seqs(seqs: list, pad_value="X"):
+    """Strip C-terminal pad; omit sequences with internal pad tokens."""
     data = {}
     for key, seq in enumerate(seqs):
-        cur_seq = [aa for aa in seq if aa != "X"] ## unpadding
-        data[key] = "".join(cur_seq)
+        cur_seq = strip_c_terminal_pad(seq, pad_value=pad_value)
+        if cur_seq is not None:
+            data[key] = cur_seq
     return data
 
 def encode(fasta, table):
@@ -384,13 +399,22 @@ def generate_seqs(net, table, noise, epoch = None):
     
     decoded_seqs = decode_elucidian(generated, table)
     seqs = {}
+    n_rejected = 0
     for i, decoded_seq in enumerate(decoded_seqs):
-        seq = [aa for aa in decoded_seq if aa != "X"] ## unpadding
+        seq = strip_c_terminal_pad(decoded_seq)
+        if seq is None:
+            n_rejected += 1
+            continue
         if epoch == None:
-            seqs["seq_num_{num}".format(num = i + 1)] = "".join(seq)
+            seqs["seq_num_{num}".format(num = i + 1)] = seq
         else:
-            seqs["seq_epochs_{epoch}_num_{num}".format(epoch = epoch, num = i + 1)] = "".join(seq)
+            seqs["seq_epochs_{epoch}_num_{num}".format(epoch = epoch, num = i + 1)] = seq
 
+    if n_rejected:
+        print(
+            f"Rejected {n_rejected}/{len(decoded_seqs)} designs with internal pad 'X'; "
+            f"retained {len(seqs)}"
+        )
     return seqs
 
 
