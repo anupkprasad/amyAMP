@@ -109,3 +109,6 @@ htmlcov/
 # Local development
 debug_path.py
 notebook_config.py
+
+# Office lock files
+.~lock.*
