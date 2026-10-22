@@ -1,0 +1,2 @@
+"dataset","fasta","n_fasta","n_scored","n_skipped_nonstandard","n_skipped_short","n_failed","mean_probability","median_probability"
+"randPep","random_peptides_1000.fasta",1000,895,0,105,0,0.441073747569181,0.439485160427807

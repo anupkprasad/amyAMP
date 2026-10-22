@@ -1,0 +1,2 @@
+"dataset","fasta","n_fasta","n_scored","n_skipped_nonstandard","n_skipped_short","n_failed","mean_probability","median_probability"
+"trainPep","trainPep.fasta",6887,6884,0,3,0,0.500407157925566,0.493264946562847

@@ -1,0 +1,6 @@
+"dataset","fasta","n_fasta","n_scored","n_skipped_nonstandard","n_skipped_short","n_failed","mean_probability","median_probability"
+"amyAMP","seqs_generated_postprocessed.fasta",968,968,0,0,0,0.490934864684077,0.500051483554491
+"trainPep","trainPep.fasta",6887,6884,0,3,0,0.500407157925566,0.493264946562847
+"AMP(D)","dbaasp_non_APR.fasta",8208,8023,0,185,0,0.335612278031139,0.30116810966811
+"AMY(D)","AMY_nonAntibacterial.fasta",8401,8388,0,13,0,0.469430224761877,0.470200462961283
+"randPep","random_peptides_1000.fasta",1000,895,0,105,0,0.441073747569181,0.439485160427807

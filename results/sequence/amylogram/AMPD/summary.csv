@@ -1,0 +1,2 @@
+"dataset","fasta","n_fasta","n_scored","n_skipped_nonstandard","n_skipped_short","n_failed","mean_probability","median_probability"
+"AMP(D)","dbaasp_non_APR.fasta",8208,8023,0,185,0,0.335612278031139,0.30116810966811

@@ -1,0 +1,2 @@
+"dataset","fasta","n_fasta","n_scored","n_skipped_nonstandard","n_skipped_short","n_failed","mean_probability","median_probability"
+"AMY(D)","AMY_nonAntibacterial.fasta",8401,8388,0,13,0,0.469430224761877,0.470200462961283
