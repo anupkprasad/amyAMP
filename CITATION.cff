@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+title: "amyAMP: BiGAN-based Amyloidogenic-Antimicrobial Peptide Generator"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Prasad
+    given-names: Anup K.
+    email: anupkprasad121@gmail.com
+  - family-names: Patel
+    given-names: Manoj K.
+  - family-names: Awatade
+    given-names: Vijay
+  - family-names: Plisson
+    given-names: Fabien
+  - family-names: Martin
+    given-names: Lisandra L.
+  - family-names: Panwar
+    given-names: Ajay S.
+repository-code: "https://github.com/anupkprasad/amyAMP"
+license: Apache-2.0
+version: "1.0.0"
+date-released: "2025-10-31"
+abstract: >-
+  amyAMP is a bidirectional generative adversarial network (BiGAN) for de novo
+  design of peptides that combine antimicrobial and amyloidogenic sequence
+  features. The repository provides pretrained weights, training data pointers,
+  and analysis scripts. Generated sequences are computational designs and require
+  experimental validation.
+keywords:
+  - antimicrobial peptides
+  - amyloid
+  - generative adversarial networks
+  - BiGAN
+  - peptide design
+  - molecular dynamics
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Prasad
+      given-names: Anup K.
+    - family-names: Patel
+      given-names: Manoj K.
+    - family-names: Awatade
+      given-names: Vijay
+    - family-names: Plisson
+      given-names: Fabien
+    - family-names: Martin
+      given-names: Lisandra L.
+    - family-names: Panwar
+      given-names: Ajay S.
+  title: "Generative Deep Learning and Molecular Dynamics Reveal Design Principles for Amyloid-Like Antimicrobial Peptides"
+  journal: "The Journal of Physical Chemistry B"
+  year: 2025
+  notes: "Update with volume/pages/DOI when the article is published."

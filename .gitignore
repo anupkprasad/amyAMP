@@ -112,3 +112,8 @@ notebook_config.py
 
 # Office lock files
 .~lock.*
+
+# Local / exploratory artifacts (do not publish)
+tools/
+results/garbage/
+results/sequence/amypredfrl/

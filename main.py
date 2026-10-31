@@ -276,9 +276,12 @@ def analyze_generated_data():
     print("Analyzing Generated Data")
     print("=" * 80)
     
-    # Analysis module is currently commented out
-    print("Analysis module not yet implemented.")
-    print("Please refer to scripts/analysis_generated_seqs.py for analysis functions.")
+    print("Built-in analyze task is a stub.")
+    print("Run analysis scripts from the repo root instead, for example:")
+    print("  python3 scripts/properties_AMP_AMY_separate.py")
+    print("  python3 scripts/tSNE.py")
+    print("  python3 scripts/percent_identity.py")
+    print("See README.md (Analysis scripts) for details.")
 
 
 # ==============================================================================
@@ -367,12 +370,12 @@ if __name__ == "__main__":
     # Options: "train", "generate", "analyze", "summary"
     TASK = "generate"
     
-    # Optional: Specify custom output path for generated sequences
-    # If None, default path will be used: ~/workspace/amyAMP/results/sequence/
+    # Optional: custom output path for generated sequences.
+    # If None, default is results/sequence/seqs_generated{BATCH_GENERATE}.fasta
     # Examples:
-    #   OUTPUT_PATH = "/home/anupkumar/custom_output/peptides.fasta"  # Full file path
-    #   OUTPUT_PATH = "/home/anupkumar/custom_output/"                # Directory path
-    #   OUTPUT_PATH = None                                            # Use default
+    #   OUTPUT_PATH = "my_peptides.fasta"   # relative or absolute file path
+    #   OUTPUT_PATH = "output/"             # directory (filename is added)
+    #   OUTPUT_PATH = None                  # use default under results/sequence/
     OUTPUT_PATH = None
     # ================================
     

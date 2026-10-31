@@ -245,11 +245,10 @@ def get_conversion_table(path=None, norm=True):
     
     # Verify the path exists before trying to read
     if not os.path.exists(path):
-        # Try alternative paths
+        # Portable fallbacks only (no machine-specific absolute paths)
         alternatives = [
-            os.path.expanduser("~/workspace/amyAMP/data_master/physical_chemical_6.txt"),
-            "/home/anupkumar/workspace/amyAMP/data_master/physical_chemical_6.txt",
             os.path.join(os.getcwd(), "data_master", "physical_chemical_6.txt"),
+            os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data_master", "physical_chemical_6.txt")),
         ]
         for alt_path in alternatives:
             if os.path.exists(alt_path):

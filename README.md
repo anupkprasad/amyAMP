@@ -1,455 +1,283 @@
 # amyAMP: Amyloidogenic-Antimicrobial Peptide Generator
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![GitHub stars](https://img.shields.io/github/stars/anupkprasad/amyAMP?style=social)](https://github.com/anupkprasad/amyAMP/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/anupkprasad/amyAMP?style=social)](https://github.com/anupkprasad/amyAMP/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/anupkprasad/amyAMP)](https://github.com/anupkprasad/amyAMP/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/anupkprasad/amyAMP)](https://github.com/anupkprasad/amyAMP/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/anupkprasad/amyAMP)](https://github.com/anupkprasad/amyAMP/commits)
 
-**amyAMP** is a BiGAN (Bidirectional Generative Adversarial Network) based machine learning model for generating novel amyloidogenic-antimicrobial peptides (AMPs). The model learns from both antimicrobial peptides and amyloidogenic sequences to generate peptides with dual functionality.
+**amyAMP** is a BiGAN (Bidirectional Generative Adversarial Network) for de novo design of peptides that combine antimicrobial and amyloidogenic sequence features. The model is trained on curated antimicrobial (DBAASP) and amyloidogenic peptide sets after cross-property screening, and ships with pretrained weights for immediate generation.
 
-## 🎯 Features
+> **Disclaimer:** Generated sequences are computational designs for research use only. They are **not** approved therapeutics. Antimicrobial or amyloid activity must be treated as hypotheses until experimentally validated. This software is provided under Apache-2.0 **without warranty**.
 
-- **BiGAN Architecture**: Encoder-Generator-Discriminator model with gradient penalty
-- **PC6 Encoding**: 6-dimensional physicochemical property-based sequence encoding
-- **Peptide Generation**: Generate thousands of novel peptides with desired properties
-- **Comprehensive Analysis**: Built-in tools for t-SNE, PCA, UMAP visualization
-- **Property Analysis**: Calculate and visualize physicochemical properties
-- **Sequence Identity**: Compare generated peptides with reference datasets
-- **CPU Optimized**: Stable execution on CPU hardware
+## Features
 
-## 📋 Table of Contents
+- **BiGAN architecture**: encoder–generator–critic with gradient penalty
+- **PC6 encoding**: six physicochemical properties per residue
+- **Ready-to-run generation**: pretrained models in `model_saved/`
+- **Analysis scripts**: UMAP/PCA/t-SNE, property distributions, percent identity
+- **CPU-friendly default**: generation runs on CPU out of the box
+
+## Table of contents
 
 - [Installation](#installation)
-- [Quick Start](#quick-start)
+- [Quick start](#quick-start)
 - [Usage](#usage)
-  - [Training](#training)
-  - [Generation](#generation)
-  - [Analysis](#analysis)
-- [Project Structure](#project-structure)
-- [Examples](#examples)
+- [Project structure](#project-structure)
+- [Requirements](#requirements)
+- [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- pip3
-- Git (for cloning the repository)
+- Python 3.8+ (tested on 3.8–3.11)
+- `pip` / `pip3`
+- Git
 
-### Step 1: Clone the Repository
+### 1. Clone
 
 ```bash
-# Clone to any directory you prefer
-git clone https://github.com/anupkumar/amyAMP.git
+git clone https://github.com/anupkprasad/amyAMP.git
 cd amyAMP
 ```
 
-### Step 2: Install Dependencies
+### 2. Create an environment (recommended)
 
 ```bash
-pip3 install -r requirements.txt
-```
-
-**Note:** The project uses relative paths, so you can place it anywhere on your system.
-
-### Step 3: Verify Installation
-
-```bash
-python3 -c "import torch; import Bio; print('✓ Installation successful!')"
-```
-
-### Using Virtual Environment (Recommended)
-
-```bash
-# Create virtual environment
 python3 -m venv venv
+source venv/bin/activate          # Linux/macOS
+# venv\Scripts\activate           # Windows
 
-# Activate virtual environment
-source venv/bin/activate  # On Linux/Mac
-# OR
-venv\Scripts\activate  # On Windows
-
-# Install dependencies
-pip3 install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-## ⚡ Quick Start
+**GPU (optional):** install a CUDA build of PyTorch from the [official instructions](https://pytorch.org/get-started/locally/), then install the remaining packages from `requirements.txt`.
 
-### Generate 1000 Peptides (Easiest Way)
+### 3. Verify
 
 ```bash
-# Make the script executable
-chmod +x generate_peptides.sh
+python3 -c "import torch; from Bio import SeqIO; print('OK', torch.__version__)"
+```
 
-# Generate peptides
+## Quick start
+
+Generate 1000 peptides with the pretrained model:
+
+```bash
+chmod +x generate_peptides.sh
 ./generate_peptides.sh
 ```
 
-This creates `generated_peptides_1000.fasta` in the current directory.
+Output: `generated_peptides_1000.fasta` in the project root.
 
-**Note:** All paths are relative to the project directory, so the project is fully portable.
+```bash
+# Custom file
+./generate_peptides.sh my_peptides.fasta
 
-## 📖 Usage
+# Custom directory and count
+./generate_peptides.sh ./output/ 2000
+```
+
+## Usage
+
+Edit the task flag near the bottom of `main.py`, then run:
+
+```bash
+python3 main.py
+```
+
+| Task | `TASK =` | Purpose |
+|------|----------|---------|
+| Train | `"train"` | Train BiGAN on bundled FASTA sets |
+| Generate | `"generate"` | Sample peptides from a saved checkpoint |
+| Summary | `"summary"` | Write `model_saved/models_summary.txt` |
+| Analyze | `"analyze"` | Placeholder — use the scripts below |
 
 ### Training
 
-Train the BiGAN model on your peptide datasets:
+In `main.py`:
 
 ```python
-# Edit main.py configuration
 TASK = "train"
 EPOCHS = 7000
-RUN_NUM = 1  # First training run
-
-# Run training
-python3 main.py
+RUN_NUM = 1      # 1 = new run; 2+ resumes from checkpoint naming
 ```
 
-**Configuration Options:**
-- `BATCH_SIZE`: Training batch size (default: 128)
-- `EPOCHS`: Number of training epochs (default: 7000)
-- `FILTER_MAX`: Latent space dimension (default: 100)
-- `RUN_NUM`: Training run number (1 for new, 2+ to resume)
+Default training FASTAs (already in the repo):
+
+- `data_master/amps/dbaasp/dbaasp_APR_processed.fasta`
+- `data_master/amyloid/amys_uniqueAI4AMP_processedtotrain.fasta`
+
+Key hyperparameters in `main.py`:
+
+- `BATCH_SIZE` (default `128`)
+- `EPOCHS` (default `7000`)
+- `FILTER_MAX` (latent width, default `100`)
+- `RUN_NUM` (checkpoint index; generation expects run `2` for the shipped weights)
 
 ### Generation
 
-#### Method 1: Using Bash Script (Recommended)
+**Bash (recommended):**
 
 ```bash
-# Generate 1000 peptides in current directory
-./generate_peptides.sh
-
-# Generate to specific file
-./generate_peptides.sh my_peptides.fasta
-
-# Generate to specific directory
-./generate_peptides.sh ~/output/
-
-# Generate custom number of peptides
-./generate_peptides.sh output.fasta 5000
-
-# Combine both
-./generate_peptides.sh ~/results/ 2000
+./generate_peptides.sh [output_path] [num_peptides]
 ```
 
-#### Method 2: Using Python
+**Python:**
 
 ```python
-# Edit main.py
+# in main.py
 TASK = "generate"
 BATCH_GENERATE = 1000
-OUTPUT_PATH = "/path/to/output.fasta"  # or None for default
+OUTPUT_PATH = None   # or "path/to/out.fasta"
+```
 
-# Run generation
+```bash
 python3 main.py
 ```
 
-#### Method 3: Direct Function Call
+**Function call:**
 
 ```python
 from main import generate_peptides
-
-# Generate to specific location
-output_file = generate_peptides(output_path="/path/to/output.fasta")
-print(f"Generated peptides saved to: {output_file}")
+generate_peptides(output_path="novel_peptides.fasta")
 ```
 
-### Analysis
+### Analysis scripts
 
-#### Visualize Properties
+Run from the project root after generation / with the bundled result FASTAs:
 
-```python
-# Run property analysis
-python3 scripts/properties_AMP_AMY_seperate.py
+```bash
+# Physicochemical property distributions
+python3 scripts/properties_AMP_AMY_separate.py
+
+# Dimensionality reduction (PCA / t-SNE / UMAP)
+python3 scripts/tSNE.py
+
+# Percent identity vs reference sets
+python3 scripts/percent_identity.py
 ```
 
-**Generates:**
-- Violin plots for 9 key properties
-- Positive charge distribution histograms
-- Correlation matrices for each dataset
+Related helpers:
 
-#### Dimensionality Reduction
+- `scripts/properties_AMP_AMY.py`
+- `scripts/properties_AMP_AMY_separate_includingDiscard.py`
+- `scripts/properties_PC6_separate_includingDiscard.py`
+- `scripts/plot_fig4_heldout_validators.py` (AMPScanner / AmyloGram comparison figure)
 
-```python
-# Run t-SNE, PCA, UMAP analysis
-python3 scripts/tSNE_seperate_AMP_AMY.py
-```
+Simulation analysis utilities live under `scripts/simulation/` (see that folder’s README).
 
-**Generates:**
-- 2D/3D PCA plots
-- t-SNE visualizations
-- UMAP projections
-- Physicochemical property violin plots
-
-#### Sequence Identity Analysis
-
-```python
-# Calculate percent identity across epochs
-python3 scripts/percent_identity_seperate.py
-```
-
-**Generates:**
-- Box plots showing identity evolution
-- Histogram plots for final epoch
-- Statistical comparisons with AMP, AMY, and random peptides
-
-### Model Summary
-
-Generate architecture summaries:
-
-```python
-# Edit main.py
-TASK = "summary"
-
-# Run
-python3 main.py
-```
-
-Creates `model_saved/models_summary.txt` with detailed architecture information.
-
-## 📁 Project Structure
+## Project structure
 
 ```
 amyAMP/
-├── main.py                          # Main controller script
-├── generate_peptides.sh             # Quick peptide generation script
-├── requirements.txt                 # Python dependencies
-├── README.md                        # This file
-│
-├── models_nn/                       # Neural network models
-│   ├── model.py                     # BiGAN architecture
-│   └── train.py                     # Training and loading functions
-│
-├── scripts/                         # Utility scripts
-│   ├── util.py                      # Core utility functions
-│   ├── plotStyle.py                 # Plotting configurations
-│   ├── tSNE_seperate_AMP_AMY.py    # Dimensionality reduction
-│   ├── properties_AMP_AMY_seperate.py  # Property analysis
-│   └── percent_identity_seperate.py    # Sequence identity analysis
-│
-├── data_master/                     # Training data
-│   ├── amps/                        # Antimicrobial peptides
-│   ├── amyloid/                     # Amyloidogenic peptides
-│   ├── physical_chemical_6.txt      # PC6 encoding table
-│   └── random_peptides_1000.fasta   # Random control sequences
-│
-├── model_saved/                     # Trained models
-│   ├── G.pkl                        # Generator model
-│   ├── E.pkl                        # Encoder model
-│   ├── D.pkl                        # Discriminator model
-│   └── *.tar                        # Training checkpoints
-│
-└── results/                         # Output directory
-    ├── sequence/                    # Generated FASTA files
-    └── *.png                        # Analysis plots
+├── main.py                      # Train / generate / summary controller
+├── generate_peptides.sh         # One-command generation wrapper
+├── requirements.txt
+├── LICENSE                      # Apache-2.0
+├── models_nn/
+│   ├── model.py                 # BiGAN modules
+│   └── train.py                 # Training + checkpoint I/O
+├── scripts/
+│   ├── util.py                  # PC6 encode/decode, I/O helpers
+│   ├── tSNE.py
+│   ├── properties_AMP_AMY_separate.py
+│   ├── percent_identity.py
+│   └── simulation/              # CG MD post-processing helpers
+├── data_master/
+│   ├── amps/                    # AMP training / reference FASTAs
+│   ├── amyloid/                 # AMY training / reference FASTAs
+│   ├── physical_chemical_6.txt  # PC6 table
+│   └── Input_files_simulations/ # Optional MD inputs
+├── model_saved/                 # Pretrained G/E/D + checkpoints
+└── results/                     # Generated FASTAs and analysis outputs
 ```
 
-## 💡 Examples
+## Requirements
 
-### Example 1: Train a New Model
+See [`requirements.txt`](requirements.txt). Core stack:
 
-```bash
-# Prepare your data
-# - Place AMP sequences in data_master/amps/
-# - Place AMY sequences in data_master/amyloid/
+- `torch`, `torchvision`
+- `numpy`, `pandas`, `scipy`
+- `matplotlib`, `seaborn`, `plotly`
+- `scikit-learn`, `umap-learn`
+- `biopython`, `peptides`
+- `torchsummary` (for architecture summary)
 
-# Edit main.py
-TASK = "train"
-EPOCHS = 7000
-RUN_NUM = 1
+Minimum ~4 GB RAM; 8 GB+ recommended for training.
 
-# Start training
-python3 main.py
-```
+## Output format
 
-### Example 2: Generate Peptides in Batch
-
-```bash
-#!/bin/bash
-# Generate 5 batches of 1000 peptides each
-for i in {1..5}; do
-    ./generate_peptides.sh ~/output/batch_${i}/ 1000
-done
-```
-
-### Example 3: Complete Workflow
-
-```python
-# 1. Train model
-from main import main, prepare_dataset, train_model
-
-dataloader = prepare_dataset()
-train_model(dataloader)
-
-# 2. Generate peptides
-from main import generate_peptides
-output = generate_peptides(output_path="~/results/novel_peptides.fasta")
-
-# 3. Analyze properties
-import os
-os.system("python3 scripts/properties_AMP_AMY_seperate.py")
-```
-
-### Example 4: Custom Generation Parameters
-
-```python
-from main import main
-import main as m
-
-# Configure generation
-m.BATCH_GENERATE = 5000
-m.FILTER_MAX = 100
-
-# Generate
-main("generate", output_path="~/large_batch.fasta")
-```
-
-## 📊 Output Format
-
-Generated peptides are saved in FASTA format:
-
-```
+```text
 >seq_num_1
 KFGWLIPKAVGH
 >seq_num_2
 RLLIWKGFPQSA
->seq_num_3
-GWFKLRIPHAQV
 ```
 
-## 🔧 Configuration
+## Troubleshooting
 
-### Path Configuration
+**CUDA / device errors**
 
-The project now uses **relative paths** automatically. All paths are calculated relative to the script location, making the project portable across different systems and directories.
-
-**No configuration needed!** Just place the project anywhere and run.
-
-### Main Configuration (`main.py`)
-
-```python
-# Device
-DEVICE = torch.device("cpu")
-
-# Training
-BATCH_SIZE = 128
-EPOCHS = 7000
-RUN_NUM = 2
-FILTER_MAX = 100
-
-# Generation
-BATCH_GENERATE = 1000
-
-# Paths are automatically set relative to project root
-```
-
-## 🐛 Troubleshooting
-
-### CUDA/CPU Issues
-
-If you encounter CUDA errors:
-
-```python
-# In main.py, ensure:
-DEVICE = torch.device("cpu")
-
-# And run with:
+```bash
 export CUDA_VISIBLE_DEVICES=""
 python3 main.py
 ```
 
-### Path Issues
+`main.py` defaults to CPU.
 
-If you encounter path-related errors:
-
-```bash
-# Ensure you're in the project directory
-cd /path/to/amyAMP
-
-# Run scripts from the project root
-python3 main.py
-python3 scripts/tSNE_seperate_AMP_AMY.py
-```
-
-### Moving the Project
-
-The project is fully portable! You can move it to any location:
+**Model not found**
 
 ```bash
-# Move project
-mv amyAMP /new/location/
-
-# Navigate to new location
-cd /new/location/amyAMP
-
-# Works immediately - no reconfiguration needed!
-./generate_peptides.sh
+ls model_saved/G.pkl model_saved/E.pkl model_saved/D.pkl
+ls model_saved/modelsNoptimiser_state_dict_r2.tar
 ```
 
-### Model Not Found
+Generation uses `RUN_NUM = 2` to match the shipped checkpoint.
+
+**Import / dependency errors**
 
 ```bash
-# Check if model files exist
-ls ~/workspace/amyAMP/model_saved/
-
-# Should show: G.pkl, E.pkl, D.pkl, *.tar files
+pip install --upgrade -r requirements.txt
+# or CPU PyTorch wheel:
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
 
-### Import Errors
+**PC6 table not found**
 
-```bash
-# Reinstall dependencies
-pip3 install --upgrade -r requirements.txt
+Ensure `data_master/physical_chemical_6.txt` is present and run commands from the repo root.
+
+## Citation
+
+If you use amyAMP, please cite:
+
+```bibtex
+@article{prasad2025amyamp,
+  author  = {Prasad, Anup K. and Patel, Manoj K. and Awatade, Vijay and Plisson, Fabien and Martin, Lisandra L. and Panwar, Ajay S.},
+  title   = {Generative Deep Learning and Molecular Dynamics Reveal Design Principles for Amyloid-Like Antimicrobial Peptides},
+  journal = {The Journal of Physical Chemistry B},
+  year    = {2025},
+  note    = {In revision / update with final citation when available},
+  url     = {https://github.com/anupkprasad/amyAMP}
+}
 ```
 
-## 📚 Documentation
+## License
 
-- **Model Architecture**: See `models_nn/model.py` for BiGAN implementation
-- **Training Details**: See `models_nn/train.py` for training loop
-- **Utility Functions**: See `scripts/util.py` for encoding/decoding
-- **Analysis Scripts**: See `scripts/` directory for visualization tools
+This project is licensed under the [Apache License 2.0](LICENSE).
 
-## 🤝 Contributing
+## Contact
 
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📧 Contact
-
-For questions or collaborations:
 - Email: anupkprasad121@gmail.com
 - GitHub: [@anupkprasad](https://github.com/anupkprasad)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- PyTorch team for the deep learning framework
-- BioPython for sequence handling tools
-- The peptide research community
-
-## 📝 Citation
-
-If you use amyAMP in your research, please cite:
-
-```bibtex
-@software{amyamp2024,
-  author = {Anup K. Prasad},
-  title = {amyAMP: BiGAN-based Amyloidogenic-Antimicrobial Peptide Generator},
-  year = {2024},
-  url = {https://github.com/anupkprasad/amyAMP}
-}
-
-**Made for the peptide research community**
+- PyTorch, BioPython, and the peptide / MD research communities
+- Training data sources include DBAASP, WALTZ-DB, CARs-DB, and CPAD (see manuscript Methods)
