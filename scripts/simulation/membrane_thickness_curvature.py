@@ -197,6 +197,7 @@ def analyze_membrane_properties(
     curv_u_sum = curv_l_sum = thick_sum = None
     count_u = count_l = count_h = None
     X_grid = Y_grid = None
+    n_rejected = 0
     series: Dict[str, List[float]] = {
         "time_ns": [],
         "upper_mean_curvature": [],
@@ -216,6 +217,13 @@ def analyze_membrane_properties(
         curv_u = mean_curvature_monge(X_u, Y_u, Z_u)
         curv_l = mean_curvature_monge(X_l, Y_l, Z_l)
         thick = thickness_map(Z_u, Z_l)
+
+        # Cubic griddata can spike on a single frame (>> bilayer thickness).
+        mean_h = float(np.nanmean(thick))
+        max_h = float(np.nanmax(thick)) if np.isfinite(thick).any() else np.nan
+        if (not np.isfinite(mean_h)) or mean_h < 5.0 or mean_h > 40.0 or max_h > 80.0:
+            n_rejected += 1
+            continue
 
         if curv_u_sum is None:
             curv_u_sum = np.zeros_like(curv_u)
@@ -239,6 +247,9 @@ def analyze_membrane_properties(
         series["lower_mean_curvature"].append(float(np.nanmean(curv_l)))
         series["mean_thickness"].append(float(np.nanmean(thick)))
 
+    if thick_sum is None:
+        return None, None
+
     with np.errstate(invalid="ignore", divide="ignore"):
         curv_u_avg = np.where(count_u > 0, curv_u_sum / count_u, np.nan)
         curv_l_avg = np.where(count_l > 0, curv_l_sum / count_l, np.nan)
@@ -258,6 +269,7 @@ def analyze_membrane_properties(
         "grid_resolution": grid_resolution,
         "curvature_smooth_sigma": curvature_smooth_sigma,
         "series": series,
+        "n_frames_rejected": n_rejected,
         "thickness_mean_A": float(np.nanmean(thick_avg)),
         "thickness_std_A": float(np.nanstd(thick_avg)),
         "upper_H_mean_per_A": float(np.nanmean(heatmaps["upper_curvature"])),

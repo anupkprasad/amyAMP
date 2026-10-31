@@ -1,0 +1,10 @@
+amyAMP membrane thickness and curvature analysis
+software: MDAnalysis (trajectory I/O and selections); NumPy; SciPy (scipy.interpolate.griddata, scipy.ndimage.gaussian_filter); Matplotlib (optional map plotting)
+leaflet_assignment: median lipid COM z (upper if z > median)
+surface_interpolation: scipy.interpolate.griddata cubic (+ nearest fill)
+default_grid_resolution: 50 x 50
+thickness: h(x,y) = |Z_upper(x,y) - Z_lower(x,y)| (Å)
+mean_curvature_H: Monge-patch formula H=[(1+fy^2)fxx - 2 fx fy fxy + (1+fx^2)fyy] / [2(1+fx^2+fy^2)^(3/2)] (finite differences via numpy.gradient); units Å^-1
+curvature_smoothing: Gaussian sigma=1.2 (grid units)
+default_lipids: POPE, POPG
+default_headgroups: PO4, NH3

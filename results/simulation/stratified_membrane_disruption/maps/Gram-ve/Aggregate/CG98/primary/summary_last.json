@@ -1,0 +1,22 @@
+{
+  "tag": "Gram-ve__Aggregate__CG98__primary",
+  "membrane": "Gram-ve",
+  "quadrant": "Aggregate",
+  "peptide": "CG98",
+  "replicate": "primary",
+  "ok": true,
+  "cached": false,
+  "n_frames_traj": 10001,
+  "dt_ps": 1000.0,
+  "time_window": "last",
+  "analysis_time_ns": 50.0,
+  "thickness_mean_A": 21.34813326172277,
+  "thickness_std_A": 0.4258327860617047,
+  "thickness_min_A": 20.07594594901119,
+  "upper_H_mean_per_A": -0.00027938665414020973,
+  "lower_H_mean_per_A": -0.00019975649309129383,
+  "abs_H_mean_per_A": 0.003926903892635554,
+  "abs_H_max_per_A": 0.013970047901769936,
+  "npz": "/home/anupkumar/workspace/amyAMP/results/simulation/r1q8_quadrant_membrane/maps/Gram-ve/Aggregate/CG98/primary/membrane_maps_last.npz",
+  "run_dir": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/oct17/review_sim/CG_Paper_production_data_2026-10-14/Quadrant/Gram-ve/Aggregate/CG98/primary"
+}

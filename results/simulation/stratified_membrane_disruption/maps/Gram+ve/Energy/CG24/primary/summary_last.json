@@ -1,0 +1,22 @@
+{
+  "tag": "Gram+ve__Energy__CG24__primary",
+  "membrane": "Gram+ve",
+  "quadrant": "Energy",
+  "peptide": "CG24",
+  "replicate": "primary",
+  "ok": true,
+  "cached": false,
+  "n_frames_traj": 10001,
+  "dt_ps": 1000.0,
+  "time_window": "last",
+  "analysis_time_ns": 50.0,
+  "thickness_mean_A": 21.37148528303051,
+  "thickness_std_A": 0.8971719037087154,
+  "thickness_min_A": 19.786555028716986,
+  "upper_H_mean_per_A": 2.1462968365174938e-05,
+  "lower_H_mean_per_A": 0.00010626422335501,
+  "abs_H_mean_per_A": 0.004460513668914031,
+  "abs_H_max_per_A": 0.020753015274923892,
+  "npz": "/home/anupkumar/workspace/amyAMP/results/simulation/r1q8_quadrant_membrane/maps/Gram+ve/Energy/CG24/primary/membrane_maps_last.npz",
+  "run_dir": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/oct17/review_sim/CG_Paper_production_data_2026-10-14/Quadrant/Gram+ve/Energy/CG24/primary"
+}

@@ -1,0 +1,22 @@
+{
+  "tag": "Gram+ve__Both__CG40__replicate_2",
+  "membrane": "Gram+ve",
+  "quadrant": "Both",
+  "peptide": "CG40",
+  "replicate": "replicate_2",
+  "ok": true,
+  "cached": false,
+  "n_frames_traj": 10001,
+  "dt_ps": 1000.0,
+  "time_window": "last",
+  "analysis_time_ns": 50.0,
+  "thickness_mean_A": 21.235562945580583,
+  "thickness_std_A": 0.7014370069013685,
+  "thickness_min_A": 18.931507575951194,
+  "upper_H_mean_per_A": 0.00021074515645835685,
+  "lower_H_mean_per_A": 0.0005599548308833932,
+  "abs_H_mean_per_A": 0.005772401906146625,
+  "abs_H_max_per_A": 0.024959769133679966,
+  "npz": "/home/anupkumar/workspace/amyAMP/results/simulation/r1q8_quadrant_membrane/maps/Gram+ve/Both/CG40/replicate_2/membrane_maps_last.npz",
+  "run_dir": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/oct17/review_sim/CG_Paper_production_data_2026-10-14/Quadrant/Gram+ve/Both/CG40/replicate_2"
+}

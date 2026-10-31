@@ -1,0 +1,30 @@
+R1Q8 membrane analysis notes
+============================
+
+Figure 8a classes (folder names):
+  Energy    = strong membrane interaction energy (< −600 kJ mol⁻¹); AMP-like
+  Aggregate = high aggregation propensity (oligomer size ≥ 5); AMY-like
+  Both      = dual-functional overlap
+  Neither   = satisfies neither criterion
+
+Available (membrane, quadrant) pairs with ≥1 complete trajectory:
+  Gram+ve        Aggregate      n_runs=6
+  Gram+ve        Both           n_runs=4
+  Gram+ve        Energy         n_runs=6
+  Gram+ve        Membrane-Only  n_runs=3
+  Gram+ve        Neither        n_runs=5
+  Gram-ve        Aggregate      n_runs=6
+  Gram-ve        Both           n_runs=4
+  Gram-ve        Energy         n_runs=6
+  Gram-ve        Membrane-Only  n_runs=3
+  Gram-ve        Neither        n_runs=5
+
+Gaps relative to a full stratified design:
+  - Gram-ve Energy (AMP-like) trajectories: PRESENT
+  - Gram+ve peptide-free Membrane-Only control: PRESENT
+  - Map color scales are shared between the Gram-ve and Gram+ve Fig. 7–style figures.
+
+Protocol mirrors Fig. 7 / Methods 2.4 thickness–curvature analysis
+(scripts/simulation/membrane_thickness_curvature.py).
+
+Successful analyses: 48 / 48

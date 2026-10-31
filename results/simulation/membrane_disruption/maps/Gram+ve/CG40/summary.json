@@ -1,0 +1,23 @@
+{
+  "membrane": "Gram+ve",
+  "peptide": "CG40",
+  "mic_class": "Low-MIC analog",
+  "figure": "Figure S6",
+  "ok": true,
+  "cached": false,
+  "source": "trajectory",
+  "topology": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/aug_24/gram+ve/CG40/step7_production.gro",
+  "trajectory": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/aug_24/gram+ve/CG40/step7_production.xtc",
+  "run_dir": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/aug_24/gram+ve/CG40",
+  "time_start_ns": 9950.0,
+  "time_end_ns": 9999.0,
+  "n_frames": 50,
+  "thickness_mean_A": 40.27050009249372,
+  "thickness_std_A": 1.0190946161974312,
+  "upper_curvature_mean": -0.043403321565650285,
+  "lower_curvature_mean": -0.024786845988035548,
+  "npz": "/home/anupkumar/workspace/amyAMP/results/simulation/membrane_disruption/maps/Gram+ve/CG40/membrane_maps_9950-9999ns.npz",
+  "thickness_corr_vs_archived": 0.9979808680425442,
+  "curvature_corr_vs_archived": 0.7189177613645753,
+  "archived_thickness_mean_A": 40.27665930887093
+}

@@ -1,0 +1,22 @@
+{
+  "tag": "Gram+ve__Membrane-Only__control__replicate_1",
+  "membrane": "Gram+ve",
+  "quadrant": "Membrane-Only",
+  "peptide": "control",
+  "replicate": "replicate_1",
+  "ok": true,
+  "cached": false,
+  "n_frames_traj": 10001,
+  "dt_ps": 1000.0,
+  "time_window": "last",
+  "analysis_time_ns": 50.0,
+  "thickness_mean_A": 21.330015689983533,
+  "thickness_std_A": 0.45022757004513864,
+  "thickness_min_A": 20.14392382253305,
+  "upper_H_mean_per_A": 6.983265940901618e-05,
+  "lower_H_mean_per_A": 0.00015782677073407478,
+  "abs_H_mean_per_A": 0.004483291314104841,
+  "abs_H_max_per_A": 0.01912574849648046,
+  "npz": "/home/anupkumar/workspace/amyAMP/results/simulation/r1q8_quadrant_membrane/maps/Gram+ve/Membrane-Only/control/replicate_1/membrane_maps_last.npz",
+  "run_dir": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/oct17/review_sim/CG_Paper_production_data_2026-10-14/Membrane-Only/gram+ve_membrane/replicate_1"
+}

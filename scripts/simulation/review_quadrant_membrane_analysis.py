@@ -15,12 +15,13 @@ For each complete ``step7_production.{tpr,xtc}`` run this script:
   1. Computes last-N-ns thickness and mean-curvature maps
      (``membrane_thickness_curvature.analyze_membrane_properties``).
   2. Writes per-run ``.npz`` heatmaps and a summary CSV.
-  3. Builds comparison figures (maps + scalar bars) suitable for the
-     reviewer response / SI.
+  3. Writes one thickness/curvature map figure per membrane.
 
 Default figure exemplars (one peptide per quadrant):
   Aggregate→CG94, Both→CG40, Energy→CG24, Neither→CG55.
-Replica choice for maps: ``primary`` if present else ``replicate_1``.
+Each figure stacks two replicate blocks. The upper block is the primary
+trajectory, or replicate 1 when primary is missing. The lower block is
+replicate 2, or the other available replicate when replicate 2 is missing.
 Scalar summaries report mean ± s.d. across all available replicates.
 """
 
@@ -64,13 +65,17 @@ DEFAULT_DATA_ROOT = Path(
     "CG_Paper_production_data_2026-10-14"
 )
 
-# Figure 8a class labels used in folder names → display names
+# Analysis products (figures, tables, grid maps). Trajectories stay on the data drive.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUT_DIR = REPO_ROOT / "results" / "simulation" / "stratified_membrane_disruption"
+
+# Figure 8a class labels used in folder names → panel subtitles
 QUADRANT_LABELS = {
-    "Energy": "Energy (AMP-like)",
-    "Aggregate": "Aggregate (AMY-like)",
-    "Both": "Both",
+    "Membrane-Only": "Membrane only",
     "Neither": "Neither",
-    "Membrane-Only": "Membrane-only control",
+    "Energy": "AMP",
+    "Aggregate": "AMY",
+    "Both": "Both",
 }
 
 # Exemplars for map comparison panels (one CG id per Fig. 8a class)
@@ -109,6 +114,36 @@ class RunSpec:
     xtc: Path
 
 
+# Membrane-Only/<composition>/<run>/ folder names → analysis membrane label
+MEMBRANE_ONLY_DIRS = {
+    "gram-ve_membrane": "Gram-ve",
+    "gram+ve_membrane": "Gram+ve",
+    "gram-ve": "Gram-ve",
+    "gram+ve": "Gram+ve",
+}
+
+
+def _production_run(
+    membrane: str,
+    quadrant: str,
+    peptide: str,
+    run_dir: Path,
+) -> Optional[RunSpec]:
+    tpr = run_dir / "step7_production.tpr"
+    xtc = run_dir / "step7_production.xtc"
+    if not (tpr.is_file() and xtc.is_file()):
+        return None
+    return RunSpec(
+        membrane=membrane,
+        quadrant=quadrant,
+        peptide=peptide,
+        replicate=run_dir.name,
+        run_dir=run_dir,
+        tpr=tpr,
+        xtc=xtc,
+    )
+
+
 def discover_runs(data_root: Path) -> List[RunSpec]:
     """Find all complete production runs under the review_sim archive."""
     runs: List[RunSpec] = []
@@ -116,23 +151,25 @@ def discover_runs(data_root: Path) -> List[RunSpec]:
 
     mem_only = root / "Membrane-Only"
     if mem_only.is_dir():
-        for run_dir in sorted(mem_only.iterdir()):
-            if not run_dir.is_dir():
+        for child in sorted(mem_only.iterdir()):
+            if not child.is_dir():
                 continue
-            tpr = run_dir / "step7_production.tpr"
-            xtc = run_dir / "step7_production.xtc"
-            if tpr.is_file() and xtc.is_file():
-                runs.append(
-                    RunSpec(
-                        membrane="Membrane-Only",
-                        quadrant="Membrane-Only",
-                        peptide="control",
-                        replicate=run_dir.name,
-                        run_dir=run_dir,
-                        tpr=tpr,
-                        xtc=xtc,
+            membrane = MEMBRANE_ONLY_DIRS.get(child.name.lower())
+            if membrane is not None:
+                # Membrane-Only/gram±ve_membrane/{primary,replicate_*}
+                for run_dir in sorted(child.iterdir()):
+                    if not run_dir.is_dir():
+                        continue
+                    spec = _production_run(
+                        membrane, "Membrane-Only", "control", run_dir
                     )
-                )
+                    if spec is not None:
+                        runs.append(spec)
+                continue
+            # Legacy flat layout: Membrane-Only/{primary,replicate_*} (Gram−ve lipids)
+            spec = _production_run("Gram-ve", "Membrane-Only", "control", child)
+            if spec is not None:
+                runs.append(spec)
 
     quad = root / "Quadrant"
     if quad.is_dir():
@@ -151,30 +188,87 @@ def discover_runs(data_root: Path) -> List[RunSpec]:
                     for run_dir in sorted(pep_dir.iterdir()):
                         if not run_dir.is_dir():
                             continue
-                        tpr = run_dir / "step7_production.tpr"
-                        xtc = run_dir / "step7_production.xtc"
-                        if tpr.is_file() and xtc.is_file():
-                            runs.append(
-                                RunSpec(
-                                    membrane=membrane,
-                                    quadrant=quadrant,
-                                    peptide=peptide,
-                                    replicate=run_dir.name,
-                                    run_dir=run_dir,
-                                    tpr=tpr,
-                                    xtc=xtc,
-                                )
-                            )
+                        spec = _production_run(membrane, quadrant, peptide, run_dir)
+                        if spec is not None:
+                            runs.append(spec)
     return runs
 
 
 def prefer_replicate(replicates: Sequence[str]) -> str:
-    """Map figure: primary if present, else replicate_1, else first."""
+    """Upper map block: primary, else replicate 1, else the first available."""
     if "primary" in replicates:
         return "primary"
     if "replicate_1" in replicates:
         return "replicate_1"
     return sorted(replicates)[0]
+
+
+def second_replicate(replicates: Sequence[str], used: str) -> Optional[str]:
+    """Lower map block: replicate 2, else the other replicate that is not ``used``."""
+    rest = [name for name in replicates if name != used]
+    if "replicate_2" in rest:
+        return "replicate_2"
+    if "replicate_1" in rest:
+        return "replicate_1"
+    if "primary" in rest:
+        return "primary"
+    if rest:
+        return sorted(rest)[0]
+    return None
+
+
+def other_remaining_replicate(replicates: Sequence[str], used: str) -> Optional[str]:
+    """Membrane-only lower panel: the replicate that is not the upper one and not replicate 2."""
+    rest = [name for name in replicates if name != used and name != "replicate_2"]
+    if "replicate_1" in rest:
+        return "replicate_1"
+    if "primary" in rest:
+        return "primary"
+    if rest:
+        return sorted(rest)[0]
+    return second_replicate(replicates, used)
+
+
+def replicate_file_tag(name: str) -> str:
+    if name == "replicate_1":
+        return "rep1"
+    if name == "replicate_2":
+        return "rep2"
+    return name
+
+
+def _panel_id(summary: Dict) -> str:
+    if summary["quadrant"] == "Membrane-Only":
+        return "membrane-only"
+    return summary["peptide"]
+
+
+def _replicate_chunk(summaries: Sequence[Optional[Dict]]) -> str:
+    reps: List[str] = []
+    ids: List[str] = []
+    for summary in summaries:
+        if summary is None:
+            continue
+        reps.append(replicate_file_tag(summary["replicate"]))
+        ids.append(_panel_id(summary))
+    if not reps:
+        return "missing"
+    chunks: List[str] = []
+    start = 0
+    for i, rep in enumerate(reps + [""]):
+        if i == len(reps) or rep != reps[start]:
+            chunks.append(f"{reps[start]}_{','.join(ids[start:i])}")
+            start = i
+    return "_".join(chunks)
+
+
+def map_figure_name(
+    membrane: str,
+    upper: Sequence[Optional[Dict]],
+    lower: Sequence[Optional[Dict]],
+) -> str:
+    """Filename from both replicate blocks, columns left to right."""
+    return f"{membrane}_{_replicate_chunk(upper)}__{_replicate_chunk(lower)}.png"
 
 
 def run_key(spec: RunSpec) -> str:
@@ -193,7 +287,14 @@ def analyze_one(
 ) -> Dict:
     """Run membrane analysis for one trajectory; cache to npz + json."""
     tag = run_key(spec)
-    run_out = out_dir / "per_run" / tag
+    run_out = (
+        out_dir
+        / "maps"
+        / spec.membrane
+        / spec.quadrant
+        / spec.peptide
+        / spec.replicate
+    )
     run_out.mkdir(parents=True, exist_ok=True)
     npz_path = run_out / f"membrane_maps_{time_window}.npz"
     json_path = run_out / f"summary_{time_window}.json"
@@ -202,6 +303,7 @@ def analyze_one(
         with open(json_path) as fh:
             summary = json.load(fh)
         summary["cached"] = True
+        summary["npz"] = str(npz_path)
         return summary
 
     u = mda.Universe(str(spec.tpr), str(spec.xtc))
@@ -410,252 +512,223 @@ def _style_map_axes(ax, *, xlabel: bool = True, ylabel: bool = True) -> None:
         ax.set_ylabel("Y (Å)", fontsize=8)
 
 
+def _levels_from_maps(
+    thicks: Sequence[np.ndarray], curvs: Sequence[np.ndarray]
+) -> Tuple[np.ndarray, np.ndarray]:
+    """Shared Fig. 7 color levels from smoothed thickness and scaled curvature maps."""
+    t_lo = float(np.nanpercentile(np.concatenate([t.ravel() for t in thicks]), 2))
+    t_hi = float(np.nanpercentile(np.concatenate([t.ravel() for t in thicks]), 98))
+    if t_hi <= t_lo:
+        t_lo, t_hi = t_lo - 0.5, t_hi + 0.5
+    t_lo, t_hi = np.floor(t_lo * 10) / 10, np.ceil(t_hi * 10) / 10
+    thickness_levels = np.linspace(t_lo, t_hi, 30)
+
+    c_abs = float(
+        np.nanpercentile(np.abs(np.concatenate([c.ravel() for c in curvs])), 98)
+    )
+    c_abs = max(c_abs, 0.5)
+    c_abs = float(np.ceil(c_abs * 2) / 2)
+    curvature_levels = np.linspace(-c_abs, c_abs, 30)
+    return thickness_levels, curvature_levels
+
+
+def _candidates(
+    summaries: Sequence[Dict],
+    *,
+    membrane: str,
+    quadrant: str,
+    peptide: Optional[str] = None,
+) -> Dict[str, Dict]:
+    chosen = [
+        s
+        for s in summaries
+        if s.get("ok")
+        and s["membrane"] == membrane
+        and s["quadrant"] == quadrant
+        and (peptide is None or s["peptide"] == peptide)
+    ]
+    return {s["replicate"]: s for s in chosen}
+
+
+def select_map_panels(
+    summaries: Sequence[Dict],
+    *,
+    membrane: str,
+    exemplars: Dict[str, str],
+) -> List[Tuple[str, Dict, Optional[Dict]]]:
+    """Columns left to right, each with an upper and a lower replicate.
+
+    Upper is primary, or replicate 1 when primary is absent. Lower is
+    replicate 2, except Membrane only, which uses the other remaining
+    replicate (not replicate 2). Column order: Membrane only, Neither, AMY, AMP, Both.
+    """
+    panels: List[Tuple[str, Dict, Optional[Dict]]] = []
+    groups: List[Tuple[str, Dict[str, Dict]]] = []
+    ctrl = _candidates(summaries, membrane=membrane, quadrant="Membrane-Only")
+    if ctrl:
+        groups.append((QUADRANT_LABELS["Membrane-Only"], ctrl))
+    for quad in ("Neither", "Aggregate", "Energy", "Both"):
+        pep = exemplars.get(quad)
+        if pep is None:
+            continue
+        by_rep = _candidates(
+            summaries, membrane=membrane, quadrant=quad, peptide=pep
+        )
+        if by_rep:
+            groups.append((QUADRANT_LABELS.get(quad, quad), by_rep))
+    for label, by_rep in groups:
+        top = prefer_replicate(list(by_rep))
+        if label == QUADRANT_LABELS["Membrane-Only"]:
+            bottom = other_remaining_replicate(list(by_rep), top)
+        else:
+            bottom = second_replicate(list(by_rep), top)
+        panels.append((label, by_rep[top], by_rep[bottom] if bottom else None))
+    return panels
+
+
+def smoothed_maps_for_panels(
+    panels: Sequence[Tuple[str, Dict]],
+) -> Tuple[List[Tuple], List[np.ndarray], List[np.ndarray]]:
+    """Load and smooth thickness / scaled curvature for the selected panels."""
+    loaded: List[Tuple] = []
+    thick_s_all: List[np.ndarray] = []
+    curv_s_all: List[np.ndarray] = []
+    for label, summary in panels:
+        hm = _load_npz(summary)
+        if hm is None:
+            loaded.append((label, None, None, None, None))
+            continue
+        thick = _smooth_map(hm["thickness"])
+        curv = _smooth_map(hm["upper_curvature"]) * CURVATURE_DISPLAY_SCALE
+        loaded.append((label, hm["X"], hm["Y"], thick, curv))
+        thick_s_all.append(thick)
+        curv_s_all.append(curv)
+    return loaded, thick_s_all, curv_s_all
+
+
 def plot_exemplar_maps(
     summaries: Sequence[Dict],
     out_png: Path,
     *,
     membrane: str,
     exemplars: Dict[str, str],
-    control_summaries: Sequence[Dict],
+    thickness_levels: Optional[np.ndarray] = None,
+    curvature_levels: Optional[np.ndarray] = None,
 ) -> None:
-    """Fig. 7–style thickness + upper-leaflet curvature maps (smooth + contours)."""
-    panels: List[Tuple[str, Dict]] = []
-
-    ctrl_ok = [s for s in control_summaries if s.get("ok")]
-    if ctrl_ok:
-        by_rep = {s["replicate"]: s for s in ctrl_ok}
-        rep = prefer_replicate(list(by_rep))
-        panels.append(("Membrane-only\ncontrol", by_rep[rep]))
-
-    for quad in ("Neither", "Energy", "Aggregate", "Both"):
-        pep = exemplars.get(quad)
-        if pep is None:
-            continue
-        cands = [
-            s
-            for s in summaries
-            if s.get("ok")
-            and s["membrane"] == membrane
-            and s["quadrant"] == quad
-            and s["peptide"] == pep
-        ]
-        if not cands:
-            continue
-        by_rep = {s["replicate"]: s for s in cands}
-        rep = prefer_replicate(list(by_rep))
-        label = f"{QUADRANT_LABELS.get(quad, quad)}\n{pep} ({rep})"
-        panels.append((label, by_rep[rep]))
-
+    """Thickness and curvature maps, primary (or rep1) above replicate 2."""
+    panels = select_map_panels(summaries, membrane=membrane, exemplars=exemplars)
     if not panels:
         return
 
     n = len(panels)
-    fig, axes = plt.subplots(2, n, figsize=(3.1 * n, 5.6), constrained_layout=True)
-    if n == 1:
-        axes = np.asarray(axes).reshape(2, 1)
+    # Square map cells, a narrow colorbar column, and a short gap between the two blocks.
+    fig = plt.figure(figsize=(2.15 * n + 1.35, 10.15))
+    outer = fig.add_gridspec(
+        2,
+        1,
+        height_ratios=[1, 1],
+        hspace=0.26,
+        left=0.07,
+        right=0.90,
+        top=0.97,
+        bottom=0.045,
+    )
 
-    loaded: List[Tuple] = []
-    thick_s_all, curv_s_all = [], []
-    for label, summary in panels:
-        hm = _load_npz(summary)
-        if hm is None:
-            loaded.append((label, None, None, None, None))
-            continue
-        # Smooth both maps (Fig. 7 look); curvature was already smoothed in analysis
-        thick = _smooth_map(hm["thickness"])
-        curv = _smooth_map(hm["upper_curvature"]) * CURVATURE_DISPLAY_SCALE
-        loaded.append((label, hm["X"], hm["Y"], thick, curv))
-        thick_s_all.append(thick)
-        curv_s_all.append(curv)
-
+    loaded_upper, thick_u, curv_u = smoothed_maps_for_panels(
+        [(label, top) for label, top, _bottom in panels]
+    )
+    loaded_lower, thick_l, curv_l = smoothed_maps_for_panels(
+        [(label, bottom if bottom is not None else {}) for label, _top, bottom in panels]
+    )
+    thick_s_all = thick_u + thick_l
+    curv_s_all = curv_u + curv_l
     if not thick_s_all:
         plt.close(fig)
         return
+    if thickness_levels is None or curvature_levels is None:
+        thickness_levels, curvature_levels = _levels_from_maps(thick_s_all, curv_s_all)
 
-    t_lo = float(np.nanpercentile(np.concatenate([t.ravel() for t in thick_s_all]), 2))
-    t_hi = float(np.nanpercentile(np.concatenate([t.ravel() for t in thick_s_all]), 98))
-    if t_hi <= t_lo:
-        t_lo, t_hi = t_lo - 0.5, t_hi + 0.5
-    # Round to 0.1 Å like Fig. 7 colorbars
-    t_lo, t_hi = np.floor(t_lo * 10) / 10, np.ceil(t_hi * 10) / 10
-    thickness_levels = np.linspace(t_lo, t_hi, 30)
+    def _paint_block(
+        subspec, loaded: Sequence[Tuple], letter0: str, block_title: Optional[str]
+    ):
+        inner = subspec.subgridspec(
+            2,
+            n + 1,
+            width_ratios=[1] * n + [0.055],
+            wspace=0.06,
+            hspace=0.20,
+        )
+        im_t = im_h = None
+        ax_t0 = ax_h0 = None
+        for col, item in enumerate(loaded):
+            label, X, Y, thick, curv = item
+            ax_t = fig.add_subplot(inner[0, col])
+            ax_h = fig.add_subplot(inner[1, col])
+            if col == 0:
+                ax_t0 = ax_t
+                ax_h0 = ax_h
+            if thick is None:
+                ax_t.set_visible(False)
+                ax_h.set_visible(False)
+                continue
+            im_t = _draw_fig7_thickness(ax_t, X, Y, thick, thickness_levels)
+            im_h = _draw_fig7_curvature(ax_h, X, Y, curv, curvature_levels)
+            _style_map_axes(ax_t, xlabel=False, ylabel=(col == 0))
+            _style_map_axes(ax_h, xlabel=True, ylabel=(col == 0))
+            ax_t.set_title(
+                f"({chr(ord(letter0) + col)}) {label}",
+                loc="left",
+                fontsize=10,
+                fontweight="bold",
+                pad=2,
+            )
+            if col == 0:
+                ax_t.set_ylabel("Thickness\nY (Å)", fontsize=8)
+                ax_h.set_ylabel("Upper leaflet curvature\nY (Å)", fontsize=8)
+        if im_t is not None:
+            cax = fig.add_subplot(inner[0, n])
+            cbar = fig.colorbar(im_t, cax=cax)
+            cbar.set_label("Thickness (Å)", fontsize=8)
+            cbar.ax.tick_params(labelsize=7)
+            cbar.ax.yaxis.set_major_formatter(ticker.FormatStrFormatter("%.1f"))
+        if im_h is not None:
+            cax = fig.add_subplot(inner[1, n])
+            cbar = fig.colorbar(im_h, cax=cax)
+            cbar.set_label(r"Mean Curvature (Å$^{-2}$)", fontsize=8)
+            cbar.ax.tick_params(labelsize=7)
+            cbar.ax.yaxis.set_major_formatter(ticker.FormatStrFormatter("%.1f"))
+        if ax_t0 is not None and block_title:
+            ax_t0.annotate(
+                block_title,
+                xy=(0.0, 1.16),
+                xycoords="axes fraction",
+                fontsize=12,
+                fontweight="bold",
+                ha="left",
+                va="bottom",
+                annotation_clip=False,
+            )
+        return ax_t0, ax_h0
 
-    c_abs = float(
-        np.nanpercentile(np.abs(np.concatenate([c.ravel() for c in curv_s_all])), 98)
-    )
-    c_abs = max(c_abs, 0.5)
-    c_abs = float(np.ceil(c_abs * 2) / 2)  # round up to 0.5
-    curvature_levels = np.linspace(-c_abs, c_abs, 30)
+    _, ax_curv = _paint_block(outer[0], loaded_upper, "a", "Replicate 1")
+    ax_thick, _ = _paint_block(outer[1], loaded_lower, "f", None)
+    fig.canvas.draw()
+    if ax_curv is not None and ax_thick is not None:
+        renderer = fig.canvas.get_renderer()
+        above = ax_curv.get_tightbbox(renderer).transformed(fig.transFigure.inverted())
+        below = ax_thick.get_tightbbox(renderer).transformed(fig.transFigure.inverted())
+        fig.text(
+            ax_thick.get_position().x0,
+            (above.y0 + below.y1) / 2.0,
+            "Replicate 2",
+            fontsize=12,
+            fontweight="bold",
+            ha="left",
+            va="center",
+        )
 
-    im0 = im1 = None
-    for col, item in enumerate(loaded):
-        label, X, Y, thick, curv = item
-        ax_t = axes[0, col]
-        ax_h = axes[1, col]
-        if thick is None:
-            ax_t.set_visible(False)
-            ax_h.set_visible(False)
-            continue
-        im0 = _draw_fig7_thickness(ax_t, X, Y, thick, thickness_levels)
-        im1 = _draw_fig7_curvature(ax_h, X, Y, curv, curvature_levels)
-        _style_map_axes(ax_t, xlabel=False, ylabel=(col == 0))
-        _style_map_axes(ax_h, xlabel=True, ylabel=(col == 0))
-        ax_t.set_title(label, fontsize=9)
-        if col == 0:
-            ax_t.set_ylabel("Thickness\nY (Å)", fontsize=8)
-            ax_h.set_ylabel("Upper leaflet curvature\nY (Å)", fontsize=8)
-
-    if im0 is not None:
-        cbar0 = fig.colorbar(im0, ax=axes[0, :].tolist(), fraction=0.025, pad=0.02)
-        cbar0.set_label("Thickness (Å)", fontsize=8)
-        cbar0.ax.tick_params(labelsize=7)
-        cbar0.ax.yaxis.set_major_formatter(ticker.FormatStrFormatter("%.1f"))
-    if im1 is not None:
-        cbar1 = fig.colorbar(im1, ax=axes[1, :].tolist(), fraction=0.025, pad=0.02)
-        # Fig. 7 colorbar label after ×100 scaling of H (Å⁻¹)
-        cbar1.set_label(r"Mean Curvature (Å$^{-2}$)", fontsize=8)
-        cbar1.ax.tick_params(labelsize=7)
-        cbar1.ax.yaxis.set_major_formatter(ticker.FormatStrFormatter("%.1f"))
-
-    fig.suptitle(
-        f"Membrane thickness and curvature — {membrane} (last analysis window)",
-        fontsize=12,
-    )
     out_png.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out_png, dpi=300, bbox_inches="tight", facecolor="white")
-    plt.close(fig)
-
-
-def plot_scalar_comparison(
-    agg_rows: Sequence[Dict],
-    out_png: Path,
-    *,
-    membrane: str,
-) -> None:
-    """Bar chart of mean thickness and |H| vs quadrant (replicate mean±s.d.)."""
-    rows = [r for r in agg_rows if r["membrane"] == membrane]
-    # Also include Membrane-Only control on Gram-ve figure
-    ctrl = [r for r in agg_rows if r["membrane"] == "Membrane-Only"]
-    if membrane == "Gram-ve" and ctrl:
-        rows = ctrl + rows
-
-    if not rows:
-        return
-
-    # One bar per (quadrant, peptide); group by quadrant
-    labels = []
-    thick_m, thick_s, h_m, h_s = [], [], [], []
-    colors = []
-    palette = {
-        "Membrane-Only": "#7f8c8d",
-        "Neither": "#95a5a6",
-        "Energy": "#2980b9",
-        "Aggregate": "#8e44ad",
-        "Both": "#c0392b",
-    }
-    for r in sorted(
-        rows,
-        key=lambda x: (
-            QUADRANT_ORDER.index(x["quadrant"])
-            if x["quadrant"] in QUADRANT_ORDER
-            else 99,
-            x["peptide"],
-        ),
-    ):
-        labels.append(f"{r['quadrant']}\n{r['peptide']}")
-        thick_m.append(r["thickness_mean_A_mean"])
-        thick_s.append(r["thickness_mean_A_std"])
-        h_m.append(r["abs_H_mean_per_A_mean"])
-        h_s.append(r["abs_H_mean_per_A_std"])
-        colors.append(palette.get(r["quadrant"], "#34495e"))
-
-    x = np.arange(len(labels))
-    fig, (ax0, ax1) = plt.subplots(1, 2, figsize=(max(8, 0.9 * len(labels) + 2), 4.2), constrained_layout=True)
-    ax0.bar(x, thick_m, yerr=thick_s, color=colors, edgecolor="k", linewidth=0.4, capsize=3)
-    ax0.set_xticks(x)
-    ax0.set_xticklabels(labels, fontsize=8)
-    ax0.set_ylabel("Mean thickness (Å)")
-    ax0.set_title(f"{membrane}: bilayer thickness")
-
-    ax1.bar(x, h_m, yerr=h_s, color=colors, edgecolor="k", linewidth=0.4, capsize=3)
-    ax1.set_xticks(x)
-    ax1.set_xticklabels(labels, fontsize=8)
-    ax1.set_ylabel(r"Mean $|H|$ (Å$^{-1}$)")
-    ax1.set_title(f"{membrane}: mean |curvature|")
-
-    fig.suptitle(
-        "Replicate mean ± s.d. (last analysis window) — Fig. 8a stratified set",
-        fontsize=11,
-    )
-    out_png.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_png, dpi=200)
-    plt.close(fig)
-
-
-def plot_delta_vs_control(
-    agg_rows: Sequence[Dict],
-    out_png: Path,
-    *,
-    membrane: str,
-) -> None:
-    """Δthickness and Δ|H| relative to Membrane-Only control (Gram-ve–matched)."""
-    ctrl = [r for r in agg_rows if r["membrane"] == "Membrane-Only"]
-    if not ctrl:
-        return
-    c = ctrl[0]
-    c_thick = c["thickness_mean_A_mean"]
-    c_h = c["abs_H_mean_per_A_mean"]
-
-    rows = [r for r in agg_rows if r["membrane"] == membrane]
-    if not rows:
-        return
-
-    labels, d_thick, d_h, colors = [], [], [], []
-    palette = {
-        "Neither": "#95a5a6",
-        "Energy": "#2980b9",
-        "Aggregate": "#8e44ad",
-        "Both": "#c0392b",
-    }
-    for r in sorted(
-        rows,
-        key=lambda x: (
-            QUADRANT_ORDER.index(x["quadrant"])
-            if x["quadrant"] in QUADRANT_ORDER
-            else 99,
-            x["peptide"],
-        ),
-    ):
-        labels.append(f"{r['quadrant']}\n{r['peptide']}")
-        d_thick.append(r["thickness_mean_A_mean"] - c_thick)
-        d_h.append(r["abs_H_mean_per_A_mean"] - c_h)
-        colors.append(palette.get(r["quadrant"], "#34495e"))
-
-    x = np.arange(len(labels))
-    fig, (ax0, ax1) = plt.subplots(1, 2, figsize=(max(8, 0.9 * len(labels) + 2), 4.2), constrained_layout=True)
-    ax0.bar(x, d_thick, color=colors, edgecolor="k", linewidth=0.4)
-    ax0.axhline(0, color="k", lw=0.8)
-    ax0.set_xticks(x)
-    ax0.set_xticklabels(labels, fontsize=8)
-    ax0.set_ylabel(r"Δ thickness vs control (Å)")
-    ax0.set_title(f"{membrane}: thinning relative to Membrane-Only")
-
-    ax1.bar(x, d_h, color=colors, edgecolor="k", linewidth=0.4)
-    ax1.axhline(0, color="k", lw=0.8)
-    ax1.set_xticks(x)
-    ax1.set_xticklabels(labels, fontsize=8)
-    ax1.set_ylabel(r"Δ mean $|H|$ vs control (Å$^{-1}$)")
-    ax1.set_title(f"{membrane}: curvature change vs Membrane-Only")
-
-    note = (
-        "Control bilayer is POPE:POPG ≈ 3:1 (Gram-negative–matched). "
-        "Gram+ve peptide systems are POPG-rich; interpret Δ cautiously."
-        if membrane == "Gram+ve"
-        else "Control bilayer matches Gram-negative POPE:POPG ≈ 3:1 composition."
-    )
-    fig.suptitle(note, fontsize=9)
-    out_png.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_png, dpi=200)
     plt.close(fig)
 
 
@@ -684,7 +757,8 @@ def write_notes(path: Path, runs: Sequence[RunSpec], summaries: Sequence[Dict]) 
         "",
         "Gaps relative to a full stratified design:",
         f"  - Gram-ve Energy (AMP-like) trajectories: {'PRESENT' if has_energy_gneg else 'MISSING in this archive'}",
-        f"  - Gram+ve peptide-free Membrane-Only control: {'PRESENT' if has_gpos_ctrl else 'MISSING (only Gram-ve–matched Membrane-Only deposited)'}",
+        f"  - Gram+ve peptide-free Membrane-Only control: {'PRESENT' if has_gpos_ctrl else 'MISSING'}",
+        "  - Map color scales are shared between the Gram-ve and Gram+ve Fig. 7–style figures.",
         "",
         "Protocol mirrors Fig. 7 / Methods 2.4 thickness–curvature analysis",
         "(scripts/simulation/membrane_thickness_curvature.py).",
@@ -708,7 +782,7 @@ def _build_cli() -> argparse.ArgumentParser:
         "--out-dir",
         type=Path,
         default=None,
-        help="Output directory (default: <data-root>/analysis_membrane_R1Q8)",
+        help="Output directory (default: results/simulation/stratified_membrane_disruption)",
     )
     p.add_argument("--analysis-time-ns", type=float, default=50.0)
     p.add_argument("--window", choices=("first", "last", "both"), default="last")
@@ -728,8 +802,11 @@ def _build_cli() -> argparse.ArgumentParser:
 def main(argv: Optional[Sequence[str]] = None) -> None:
     args = _build_cli().parse_args(argv)
     data_root = Path(args.data_root)
-    out_dir = Path(args.out_dir) if args.out_dir else data_root / "analysis_membrane_R1Q8"
-    out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.out_dir) if args.out_dir else DEFAULT_OUT_DIR
+    fig_dir = out_dir / "figures"
+    tab_dir = out_dir / "tables"
+    for d in (out_dir, fig_dir, tab_dir):
+        d.mkdir(parents=True, exist_ok=True)
     write_method_metadata(out_dir)
 
     exemplars = dict(DEFAULT_EXEMPLARS)
@@ -773,7 +850,7 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
 
         # Per-run CSV
         write_csv(
-            out_dir / f"per_run_summary_{w}.csv",
+            tab_dir / f"per_run_summary_{w}.csv",
             summaries,
             fieldnames=[
                 "tag",
@@ -796,29 +873,53 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
             ],
         )
         agg = aggregate_replicate_stats(summaries)
-        write_csv(out_dir / f"replicate_mean_summary_{w}.csv", agg)
+        write_csv(tab_dir / f"replicate_mean_summary_{w}.csv", agg)
 
-        ctrl = [s for s in summaries if s["membrane"] == "Membrane-Only"]
+        # One color scale for both membrane figures so the maps can be compared.
+        shared_thick: List[np.ndarray] = []
+        shared_curv: List[np.ndarray] = []
         for membrane in ("Gram-ve", "Gram+ve"):
+            panels = select_map_panels(
+                summaries, membrane=membrane, exemplars=exemplars
+            )
+            for block in (
+                [(label, top) for label, top, _bottom in panels],
+                [(label, bottom) for label, _top, bottom in panels if bottom is not None],
+            ):
+                _, thicks, curvs = smoothed_maps_for_panels(block)
+                shared_thick.extend(thicks)
+                shared_curv.extend(curvs)
+        if shared_thick and shared_curv:
+            thickness_levels, curvature_levels = _levels_from_maps(
+                shared_thick, shared_curv
+            )
+        else:
+            thickness_levels = curvature_levels = None
+
+        written = []
+        for membrane in ("Gram-ve", "Gram+ve"):
+            panels = select_map_panels(
+                summaries, membrane=membrane, exemplars=exemplars
+            )
+            name = map_figure_name(
+                membrane,
+                [top for _label, top, _bottom in panels],
+                [bottom for _label, _top, bottom in panels],
+            )
+            written.append(name)
             plot_exemplar_maps(
                 summaries,
-                out_dir / f"fig7_style_maps_{membrane}_{w}.png",
+                fig_dir / name,
                 membrane=membrane,
                 exemplars=exemplars,
-                control_summaries=ctrl,
+                thickness_levels=thickness_levels,
+                curvature_levels=curvature_levels,
             )
-            plot_scalar_comparison(
-                agg,
-                out_dir / f"scalar_bars_{membrane}_{w}.png",
-                membrane=membrane,
-            )
-            plot_delta_vs_control(
-                agg,
-                out_dir / f"delta_vs_control_{membrane}_{w}.png",
-                membrane=membrane,
-            )
+        for stale in fig_dir.glob("*.png"):
+            if stale.name not in written:
+                stale.unlink()
 
-        write_notes(out_dir / "ANALYSIS_NOTES.txt", runs, summaries)
+        write_notes(out_dir / "NOTES.txt", runs, summaries)
         if w == windows[-1]:
             all_summaries = summaries
 
@@ -833,7 +934,7 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
         }
         for r in runs
     ]
-    write_csv(out_dir / "run_inventory.csv", inv)
+    write_csv(tab_dir / "run_inventory.csv", inv)
     print(f"Done. Outputs in {out_dir}")
 
 

@@ -1,0 +1,22 @@
+{
+  "tag": "Gram+ve__Neither__CG9__replicate_1",
+  "membrane": "Gram+ve",
+  "quadrant": "Neither",
+  "peptide": "CG9",
+  "replicate": "replicate_1",
+  "ok": true,
+  "cached": false,
+  "n_frames_traj": 10001,
+  "dt_ps": 1000.0,
+  "time_window": "last",
+  "analysis_time_ns": 50.0,
+  "thickness_mean_A": 21.21419421593244,
+  "thickness_std_A": 0.574787379818112,
+  "thickness_min_A": 19.619652327597606,
+  "upper_H_mean_per_A": -7.420840278590233e-05,
+  "lower_H_mean_per_A": -0.00033220655970513156,
+  "abs_H_mean_per_A": 0.003820534836092426,
+  "abs_H_max_per_A": 0.013368602643776099,
+  "npz": "/home/anupkumar/workspace/amyAMP/results/simulation/r1q8_quadrant_membrane/maps/Gram+ve/Neither/CG9/replicate_1/membrane_maps_last.npz",
+  "run_dir": "/media/anupkumar/BackupPlus/project/ML_project/pytorch_AMP_BiGAN/W_BiGAN_GP_monash/model_saved_231206/vijay/oct17/review_sim/CG_Paper_production_data_2026-10-14/Quadrant/Gram+ve/Neither/CG9/replicate_1"
+}

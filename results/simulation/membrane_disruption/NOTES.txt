@@ -1,0 +1,27 @@
+Membrane disruption maps used in Figure 7 and Figure S6
+=======================================================
+
+Produced by scripts/simulation/membrane_disruption_analysis.py.
+Each figure is a vertical stack, top to bottom:
+  High-MIC analog (CG9), Intermediate-MIC analog (CG44), Low-MIC analog (CG40).
+
+Figure 7 (Gram-ve):
+  CG9  9950-9999 ns   Gram -ve/CG9_9
+  CG44 5850-5899 ns   Gram -ve/CG44_9
+  CG40 9950-9999 ns   Gram -ve/CG40_9
+
+Figure S6 (Gram+ve), same peptide order:
+  CG9  9950-9999 ns   gram+ve/CG9
+  CG44 9950-9999 ns   gram+ve/CG44
+  CG40 9950-9999 ns   gram+ve/CG40
+
+Thickness is the PO4/NH3 headgroup separation (about 40 Å).
+Displayed curvature is mean curvature H times 100.
+Color scales are fixed at 38-43 Å and -2 to 2, shared by both figures.
+
+ok  Figure 7  Gram-ve  CG9  High-MIC analog  source=trajectory
+ok  Figure 7  Gram-ve  CG44  Intermediate-MIC analog  source=trajectory
+ok  Figure 7  Gram-ve  CG40  Low-MIC analog  source=trajectory
+ok  Figure S6  Gram+ve  CG9  High-MIC analog  source=trajectory
+ok  Figure S6  Gram+ve  CG44  Intermediate-MIC analog  source=trajectory
+ok  Figure S6  Gram+ve  CG40  Low-MIC analog  source=trajectory

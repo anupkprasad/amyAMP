@@ -13,8 +13,8 @@ Reads
                    AMP_Data/depth_data/{LDB,IDB,HDB}/{cat}{1..49}/depth.csv
 
 Writes (into ``--output-dir``, default = AMP_Data)::
-  energy_trajectory_plots.png   # (a) depth, (b) interaction energy, (c) violin
-  depth_by_category.png         # Low / Intermediate / High MIC depth panels
+  peptide_membrane_energy.png    # (a) depth, (b) interaction energy, (c) violin
+  insertion_depth_by_class.png   # Low / Intermediate / High MIC depth panels
 
 Depth CSVs are produced upstream by ``pap_insertion_cal.py`` (same aug_24 folder).
 """
@@ -454,7 +454,7 @@ def main(argv: list[str] | None = None) -> None:
 
     # Save and show main figure
     fig.tight_layout()
-    out_main = output_dir / "energy_trajectory_plots.png"
+    out_main = output_dir / "peptide_membrane_energy.png"
     fig.savefig(out_main, dpi=dpi)
     print(f"Wrote {out_main}")
     if not args.no_show:
@@ -477,7 +477,7 @@ def main(argv: list[str] | None = None) -> None:
     plot_depth_data_category(axs2[2], hdb_depth, COLORS["HDB"], "(c) High MIC")
 
     fig2.tight_layout()
-    out_cat = output_dir / "depth_by_category.png"
+    out_cat = output_dir / "insertion_depth_by_class.png"
     fig2.savefig(out_cat, dpi=dpi)
     print(f"Wrote {out_cat}")
     if not args.no_show:
